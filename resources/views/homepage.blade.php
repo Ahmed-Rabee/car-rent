@@ -8,6 +8,16 @@
 
   <div id="homepage-page">
 
+    <div class="alert alert-danger d-flex align-items-center" role="alert">
+      <span class="alert-icon text-danger me-2"><i class="ti ti-bell ti-xs"></i></span>
+      السيارة ( TB - 756 ) تخطط المدة المسموح بها
+    </div><!-- alert -->
+
+    <div class="alert alert-danger d-flex align-items-center" role="alert">
+      <span class="alert-icon text-danger me-2"><i class="ti ti-bell ti-xs"></i></span>
+      السيارة ( TB - 971 ) متبقي عليها مدة التآمين 7 ايام
+    </div><!-- alert -->
+
     <div class="filter-statistics-homepage position-relative mb-4">
       <div class="input-group input-group-merge">
         <span class="input-group-text" id="basic-addon-search31"><i class="ti ti-calendar-month"></i></span>

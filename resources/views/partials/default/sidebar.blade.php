@@ -17,21 +17,21 @@
   <ul class="menu-inner py-1">
     <!-- Homepage -->
     <li class="menu-item">
-      <a href="/" class="menu-link">
+      <a href="{{ url('/') }}" class="menu-link">
         <i class="menu-icon tf-icons ti ti-home"></i>
         <div>{{ __('Homepage') }}</div>
       </a>
     </li>
     <!-- Branches -->
     <li class="menu-item">
-      <a href="/branches/index.html" class="menu-link">
+      <a href="{{ url('/branches') }}" class="menu-link">
         <i class="menu-icon tf-icons ti ti-building"></i>
         <div>الفروع</div>
       </a>
     </li>
     <!-- Employees -->
     <li class="menu-item">
-      <a href="/employees/index.html" class="menu-link">
+      <a href="{{ url('/employees') }}" class="menu-link">
         <i class="menu-icon tf-icons ti ti-users"></i>
         <div>الموظفين</div>
       </a>
