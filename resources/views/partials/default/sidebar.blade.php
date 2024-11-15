@@ -38,7 +38,7 @@
     </li>
     <!-- Manage Permissions -->
     <li class="menu-item">
-      <a href="/permissions/index.html" class="menu-link">
+      <a href="{{ url('/permissions') }}" class="menu-link">
         <i class="menu-icon tf-icons ti ti-file-check"></i>
         <div>إدارة الصلاحيات</div>
       </a>
@@ -51,22 +51,22 @@
       </a>
       <ul class="menu-sub">
         <li class="menu-item">
-          <a href="/cars/index.html" class="menu-link">
+          <a href="{{ url('/cars') }}" class="menu-link">
             <div>كل المركبات</div>
           </a>
         </li>
         <li class="menu-item">
-          <a href="/cars/brands/index.html" class="menu-link">
+          <a href="{{ url('/cars/brands') }}" class="menu-link">
             <div>الماركات</div>
           </a>
         </li>
         <li class="menu-item">
-          <a href="/cars/models/index.html" class="menu-link">
+          <a href="{{ url('/cars/models') }}" class="menu-link">
             <div>الموديلات</div>
           </a>
         </li>
         <li class="menu-item">
-          <a href="/cars/categories/index.html" class="menu-link">
+          <a href="{{ url('/cars/categories') }}" class="menu-link">
             <div>الفئات</div>
           </a>
         </li>
@@ -74,14 +74,14 @@
     </li>
     <!-- Technical Management -->
     <li class="menu-item">
-      <a href="/technical/index.html" class="menu-link">
+      <a href="{{ url('/technical') }}" class="menu-link">
         <i class="menu-icon tf-icons ti ti-car-garage"></i>
         <div>الإدارة الفنية</div>
       </a>
     </li>
     <!-- Manage Reservations -->
     <li class="menu-item">
-      <a href="/reservations/index.html" class="menu-link">
+      <a href="{{ url('/reservations') }}" class="menu-link">
         <i class="menu-icon tf-icons ti ti-calendar-month"></i>
         <div>إدارة الحجوزات</div>
       </a>

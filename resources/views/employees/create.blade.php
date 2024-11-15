@@ -154,41 +154,41 @@
   <script src="{{ asset('assets/vendor/libs/cleavejs/cleave.js') }}"></script>
   <script src="{{ asset('assets/vendor/libs/cleavejs/cleave-phone.js') }}"></script>
   <script src="{{ asset('assets/vendor/libs/select2/select2.js') }}"></script>
-    <script type="module">
-      (function () {
-        // Flat Picker
-        // --------------------------------------------------------------------
-        const flatpickrDate = $('.flatpickr-date');
-        if (flatpickrDate) {
-          flatpickrDate.flatpickr({
-            monthSelectorType: 'static'
-          });
-        }
-      })();
+  <script type="module">
+    (function () {
+      // Flat Picker
+      // --------------------------------------------------------------------
+      const flatpickrDate = $('.flatpickr-date');
+      if (flatpickrDate) {
+        flatpickrDate.flatpickr({
+          monthSelectorType: 'static'
+        });
+      }
+    })();
 
-      (function () {
-        const phoneMask = document.querySelector('.phone-number-mask');
-        // Phone Number
-        if (phoneMask) {
-          new Cleave(phoneMask, {
-            phone: true,
-            phoneRegionCode: 'OM'
-          });
-        }
-      })();
+    (function () {
+      const phoneMask = document.querySelector('.phone-number-mask');
+      // Phone Number
+      if (phoneMask) {
+        new Cleave(phoneMask, {
+          phone: true,
+          phoneRegionCode: 'OM'
+        });
+      }
+    })();
 
-      (function () {
-        const select2 = $('.select2');
-        if (select2.length) {
-          select2.each(function () {
-            var $this = $(this);
-            $this.wrap('<div class="position-relative"></div>').select2({
-              placeholder: 'Select value',
-              dropdownParent: $this.parent()
-            });
+    (function () {
+      const select2 = $('.select2');
+      if (select2.length) {
+        select2.each(function () {
+          var $this = $(this);
+          $this.wrap('<div class="position-relative"></div>').select2({
+            placeholder: 'Select value',
+            dropdownParent: $this.parent()
           });
-        }
-      })();
-    </script>
+        });
+      }
+    })();
+  </script>
 
 @endpush

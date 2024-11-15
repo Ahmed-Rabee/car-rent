@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <div class="card overflow-hidden">
+    <div class="card">
       <div class="card-body p-3">
         <div class="table-responsive text-nowrap">
           <table class="table table-striped table-bordered">
@@ -115,9 +115,6 @@
 @push('scripts')
   <script src="{{ asset('assets/vendor/libs/fancybox/fancybox.umd.js') }}"></script>
   <script>
-    Fancybox.bind("[data-fancybox]", {
-  // Your custom options
-});
-
+    Fancybox.bind("[data-fancybox]");
   </script>
 @endpush
