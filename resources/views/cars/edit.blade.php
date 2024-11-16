@@ -213,6 +213,17 @@
             <div class="col-12 col-sm-10">
               <div class="row">
                 <div class="col-12 col-md-6">
+                  <input type="text" class="form-control" id="employee-name" />
+                </div><!-- col-12 -->
+              </div><!-- row -->
+            </div><!-- col-12 -->
+          </div><!-- row -->
+          <hr class="my-3">
+          <div class="row align-items-center">
+            <label class="col-sm-2 col-form-label fw-medium" for="operating-card">مدة بطاقة التشغيل</label>
+            <div class="col-12 col-sm-10">
+              <div class="row">
+                <div class="col-12 col-md-6">
                   <div class="input-group">
                     <span class="input-group-text">من</span>
                     <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="operating-card-from" readonly="readonly" />

@@ -22,13 +22,133 @@
         <table class="table table-striped">
           <thead>
             <tr>
+              <th width="5%" class="fw-bold">#</th>
               <th class="fw-bold">رقم المركبة</th>
+              <th class="fw-bold">العميل</th>
+              <th class="fw-bold">تاريخ الاستلام</th>
+              <th class="fw-bold">مكان الاستلام</th>
+              <th class="fw-bold">تاريخ العودة</th>
+              <th class="fw-bold">مكان العودة</th>
+              <th class="fw-bold">حالة الحجز</th>
+              <th class="fw-bold">الكاتب</th>
               <th width="5%"></th>
             </tr>
           </thead>
           <tbody class="table-border-bottom-0">
             <tr>
+              <td>
+                <a href="#" title="#">234</a>
+              </td>
               <td>9408 - TB</td>
+              <td>
+                <a href="#" title="#">محمد احمد محمود</a>
+              </td>
+              <td>18 / 11 / 2024</td>
+              <td>المطار</td>
+              <td>18 / 11 / 2024</td>
+              <td>الفندق</td>
+              <td>مؤكد</td>
+              <td>محمد مصطفي</td>
+              <td>
+                <div class="dropdown">
+                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item waves-effect" href="{{ url('/reservations/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
+                    <a class="dropdown-item waves-effect" href="{{ url('/reservations/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#reservationDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" title="#">234</a>
+              </td>
+              <td>9408 - TB</td>
+              <td>
+                <a href="#" title="#">محمد احمد محمود</a>
+              </td>
+              <td>18 / 11 / 2024</td>
+              <td>المطار</td>
+              <td>18 / 11 / 2024</td>
+              <td>الفندق</td>
+              <td>مؤكد</td>
+              <td>محمد مصطفي</td>
+              <td>
+                <div class="dropdown">
+                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item waves-effect" href="{{ url('/reservations/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
+                    <a class="dropdown-item waves-effect" href="{{ url('/reservations/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#reservationDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" title="#">234</a>
+              </td>
+              <td>9408 - TB</td>
+              <td>
+                <a href="#" title="#">محمد احمد محمود</a>
+              </td>
+              <td>18 / 11 / 2024</td>
+              <td>المطار</td>
+              <td>18 / 11 / 2024</td>
+              <td>الفندق</td>
+              <td>مؤكد</td>
+              <td>محمد مصطفي</td>
+              <td>
+                <div class="dropdown">
+                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item waves-effect" href="{{ url('/reservations/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
+                    <a class="dropdown-item waves-effect" href="{{ url('/reservations/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#reservationDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" title="#">234</a>
+              </td>
+              <td>9408 - TB</td>
+              <td>
+                <a href="#" title="#">محمد احمد محمود</a>
+              </td>
+              <td>18 / 11 / 2024</td>
+              <td>المطار</td>
+              <td>18 / 11 / 2024</td>
+              <td>الفندق</td>
+              <td>مؤكد</td>
+              <td>محمد مصطفي</td>
+              <td>
+                <div class="dropdown">
+                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item waves-effect" href="{{ url('/reservations/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
+                    <a class="dropdown-item waves-effect" href="{{ url('/reservations/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#reservationDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" title="#">234</a>
+              </td>
+              <td>9408 - TB</td>
+              <td>
+                <a href="#" title="#">محمد احمد محمود</a>
+              </td>
+              <td>18 / 11 / 2024</td>
+              <td>المطار</td>
+              <td>18 / 11 / 2024</td>
+              <td>الفندق</td>
+              <td>مؤكد</td>
+              <td>محمد مصطفي</td>
               <td>
                 <div class="dropdown">
                   <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>

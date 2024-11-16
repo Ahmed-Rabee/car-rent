@@ -154,7 +154,7 @@
           </div><!-- modal-body -->
           <div class="modal-footer p-3 d-flex align-items-center justify-content-end gap-3">
             <button type="button" class="btn text-secondary waves-effect m-0" data-bs-dismiss="modal">إلغاء</button>
-            <button type="button" class="btn btn-danger px-5 m-0">حفظ</button>
+            <button type="button" class="btn btn-primary px-5 m-0">حفظ</button>
           </div><!-- modal-footer -->
         </form>
       </div>
@@ -190,7 +190,7 @@
           </div><!-- modal-body -->
           <div class="modal-footer p-3 d-flex align-items-center justify-content-end gap-3">
             <button type="button" class="btn text-secondary waves-effect m-0" data-bs-dismiss="modal">إلغاء</button>
-            <button type="button" class="btn btn-danger px-5 m-0">حفظ</button>
+            <button type="button" class="btn btn-primary px-5 m-0">حفظ</button>
           </div>
         </div>
       </div>

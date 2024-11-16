@@ -2,6 +2,7 @@
 * demo.css
 * File include item demo only specific css only
 ******************************************************************************/
+
 .light-style .menu .app-brand.demo {
   height: 64px;
 }
@@ -11,8 +12,11 @@
 }
 
 .app-brand-logo.demo {
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  display: -ms-flexbox;
   display: flex;
   width: 34px;
   height: 24px;
@@ -31,11 +35,9 @@
 .layout-navbar-fixed .layout-wrapper:not(.layout-without-menu) .layout-page {
   padding-top: 64px !important;
 }
-
 .layout-navbar-fixed .layout-wrapper:not(.layout-horizontal):not(.layout-without-menu) .layout-page {
   padding-top: 78px !important;
 }
-
 /* Navbar page z-index issue solution */
 .content-wrapper .navbar {
   z-index: auto;
@@ -44,6 +46,7 @@
 /*
 * Content
 ******************************************************************************/
+
 .demo-blocks > * {
   display: block !important;
 }
@@ -57,7 +60,6 @@
   margin-top: 1rem !important;
   margin-bottom: 0 !important;
 }
-
 .demo-vertical-spacing.demo-only-element > :first-child {
   margin-top: 0 !important;
 }
@@ -66,7 +68,6 @@
   margin-top: 1.875rem !important;
   margin-bottom: 0 !important;
 }
-
 .demo-vertical-spacing-lg.demo-only-element > :first-child {
   margin-top: 0 !important;
 }
@@ -75,7 +76,6 @@
   margin-top: 5rem !important;
   margin-bottom: 0 !important;
 }
-
 .demo-vertical-spacing-xl.demo-only-element > :first-child {
   margin-top: 0 !important;
 }
@@ -86,7 +86,7 @@
   direction: ltr !important;
 }
 
-[dir=rtl] .rtl-only {
+[dir='rtl'] .rtl-only {
   display: block !important;
 }
 
@@ -102,47 +102,63 @@
     right: 0.65rem;
   }
 }
+
 /*
 * Layout demo
 ******************************************************************************/
+
 .layout-demo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 1rem;
 }
-
 .layout-demo-placeholder img {
   width: 900px;
 }
-
 .layout-demo-info {
   text-align: center;
   margin-top: 1rem;
 }
 
+
+
 body {
-  font-family: "Cairo", "Public Sans", Arial, sans-serif !important;
-}
-body [dir=ltr] {
-  font-family: "Public Sans", "Cairo" !important;
-}
+  font-family: 'Cairo', 'Public Sans', Arial, sans-serif !important;
+  [dir="ltr"] {
+    font-family: 'Public Sans', 'Cairo' !important;
+  } // ltr
+} // body
 
-.table th {
-  letter-spacing: 0 !important;
-}
+.table {
+  th {
+    letter-spacing: 0 !important;
+  } // th
+} // table
 
-#reservations-create-page .reservation-cart-side {
-  inset-block-start: calc(78px + 1rem);
-}
+#reservations-create-page {
+  .reservation-cart-side {
+    inset-block-start: calc(78px + 1rem);
+  } // reservation-cart-side
+} // reservations-create-page
 
-label.form-label.required, label.col-form-label.required {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 0.25rem;
-}
-label.form-label.required::after, label.col-form-label.required::after {
-  content: "*";
-  color: red;
-}
+
+label.form-label, label.col-form-label {
+  &.required {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .25rem;
+    &::after {
+      content: "*";
+      color: red;
+    } // after
+  } // .required
+} //

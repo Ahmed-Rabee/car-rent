@@ -86,5 +86,12 @@
         <div>إدارة الحجوزات</div>
       </a>
     </li>
+    <!-- Clients -->
+    <li class="menu-item">
+      <a href="{{ url('/clients') }}" class="menu-link">
+        <i class="menu-icon tf-icons ti ti-friends"></i>
+        <div>العملاء</div>
+      </a>
+    </li>
   </ul>
 </aside>

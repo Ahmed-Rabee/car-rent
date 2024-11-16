@@ -98,61 +98,43 @@
               <tr>
                 <td width="5%" class="p-3">مدة التآمين</td>
                 <td class="p-3">
-                  <div class="row">
-                    <div class="col-12 col-md-6">
-                      <div class="input-group">
-                        <span class="input-group-text">من</span>
-                        <input type="text" class="form-control" value="12-02-2020" readonly="readonly">
-                        <span class="input-group-text">إلي</span>
-                        <input type="text" class="form-control" value="12-02-2020" readonly="readonly">
-                      </div>
-                    </div><!-- col-12 -->
-                  </div><!-- row -->
+                  <div class="d-flex align-items-center justify-content-start gap-1 gap-md-5 flex-wrap">
+                    <span>من : 18 / 11 / 2024</span>
+                    <span>إلي : 18 / 11 / 2024</span>
+                  </div><!-- d-flex -->
                 </td>
               </tr>
               <tr>
                 <td width="5%" class="p-3">ملكية السيارة</td>
                 <td class="p-3">
-                  <div class="row">
-                    <div class="col-12 col-md-6">
-                      <div class="input-group">
-                        <span class="input-group-text">من</span>
-                        <input type="text" class="form-control" value="12-02-2020" readonly="readonly">
-                        <span class="input-group-text">إلي</span>
-                        <input type="text" class="form-control" value="12-02-2020" readonly="readonly">
-                      </div>
-                    </div><!-- col-12 -->
-                  </div><!-- row -->
+                  <div class="d-flex align-items-center justify-content-start gap-1 gap-md-5 flex-wrap">
+                    <span>من : 18 / 11 / 2024</span>
+                    <span>إلي : 18 / 11 / 2024</span>
+                  </div><!-- d-flex -->
                 </td>
               </tr>
               <tr>
                 <td width="5%" class="p-3">رقم بطاقة التشغيل</td>
                 <td class="p-3">
-                  <div class="row">
-                    <div class="col-12 col-md-6">
-                      <div class="input-group">
-                        <span class="input-group-text">من</span>
-                        <input type="text" class="form-control" value="12-02-2020" readonly="readonly">
-                        <span class="input-group-text">إلي</span>
-                        <input type="text" class="form-control" value="12-02-2020" readonly="readonly">
-                      </div>
-                    </div><!-- col-12 -->
-                  </div><!-- row -->
+                  5467894356
+                </td>
+              </tr>
+              <tr>
+                <td width="5%" class="p-3">مدة بطاقة التشغيل</td>
+                <td class="p-3">
+                  <div class="d-flex align-items-center justify-content-start gap-1 gap-md-5 flex-wrap">
+                    <span>من : 18 / 11 / 2024</span>
+                    <span>إلي : 18 / 11 / 2024</span>
+                  </div><!-- d-flex -->
                 </td>
               </tr>
               <tr>
                 <td width="5%" class="p-3">GPS</td>
                 <td class="p-3">
-                  <div class="row">
-                    <div class="col-12 col-md-6">
-                      <div class="input-group">
-                        <span class="input-group-text">من</span>
-                        <input type="text" class="form-control" value="12-02-2020" readonly="readonly">
-                        <span class="input-group-text">إلي</span>
-                        <input type="text" class="form-control" value="12-02-2020" readonly="readonly">
-                      </div>
-                    </div><!-- col-12 -->
-                  </div><!-- row -->
+                  <div class="d-flex align-items-center justify-content-start gap-1 gap-md-5 flex-wrap">
+                    <span>من : 18 / 11 / 2024</span>
+                    <span>إلي : 18 / 11 / 2024</span>
+                  </div><!-- d-flex -->
                 </td>
               </tr>
               <tr>

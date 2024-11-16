@@ -8,6 +8,8 @@ use App\Http\Controllers\pages\Permissions;
 use App\Http\Controllers\pages\Cars;
 use App\Http\Controllers\pages\Technical;
 use App\Http\Controllers\pages\Reservations;
+use App\Http\Controllers\pages\Clients;
+
 
 // Main Page Route
 Route::get('/', [HomePage::class, 'index'])->name('home');
@@ -50,3 +52,9 @@ Route::get('/reservations', [Reservations::class, 'index'])->name('reservations-
 Route::get('/reservations/create', [Reservations::class, 'create'])->name('reservations-create');
 Route::get('/reservations/{id}/edit', [Reservations::class, 'edit'])->name('reservations-edit');
 Route::get('/reservations/{id}/view', [Reservations::class, 'view'])->name('reservations-view');
+
+// Clients Routes
+Route::get('/clients', [Clients::class, 'index'])->name('clients-index');
+Route::get('/clients/create', [Clients::class, 'create'])->name('clients-create');
+Route::get('/clients/{id}/edit', [Clients::class, 'edit'])->name('clients-edit');
+Route::get('/clients/{id}/view', [Clients::class, 'view'])->name('clients-view');

@@ -59,17 +59,6 @@
           </div><!-- modal-header -->
           <div class="modal-body p-3">
             <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label fw-medium" for="select-car-brand">الماركة</label>
-              <div class="col-12 col-sm-9">
-                <select id="select-car-brand" class="select2 form-select" data-allow-clear="true" data-placeholder="" data-dropdown-parent="#categoryCreateModal">
-                  <option></option>
-                  <option value="AK">Alaska</option>
-                  <option value="HI">Hawaii</option>
-                </select>
-              </div><!-- col-12 -->
-            </div><!-- row -->
-            <hr class="my-3">
-            <div class="row align-items-center">
               <label class="col-sm-3 col-form-label fw-medium" for="select-car-model">الموديل</label>
               <div class="col-12 col-sm-9">
                 <select id="select-car-model" class="select2 form-select" data-allow-clear="true" data-placeholder="" data-dropdown-parent="#categoryCreateModal">
@@ -89,7 +78,7 @@
           </div><!-- modal-body -->
           <div class="modal-footer p-3 d-flex align-items-center justify-content-end gap-3">
             <button type="button" class="btn text-secondary waves-effect m-0" data-bs-dismiss="modal">إلغاء</button>
-            <button type="button" class="btn btn-danger px-5 m-0">حفظ</button>
+            <button type="button" class="btn btn-primary px-5 m-0">حفظ</button>
           </div><!-- modal-footer -->
         </form>
       </div>
@@ -101,21 +90,10 @@
       <div class="modal-dialog" role="document">
         <form method="POST" action="#" class="modal-content">
           <div class="modal-header p-3">
-            <h5 class="modal-title" id="categoryEditModalLabel1">إضافة فئة جديدة</h5>
+            <h5 class="modal-title" id="categoryEditModalLabel1">تعديل فئة : اكسنت</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div><!-- modal-header -->
           <div class="modal-body p-3">
-            <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label fw-medium" for="select-car-brand">الماركة</label>
-              <div class="col-12 col-sm-9">
-                <select id="edit-car-brand" class="select2 form-select" data-allow-clear="true" data-placeholder="" data-dropdown-parent="#categoryEditModal">
-                  <option></option>
-                  <option value="AK">Alaska</option>
-                  <option value="HI">Hawaii</option>
-                </select>
-              </div><!-- col-12 -->
-            </div><!-- row -->
-            <hr class="my-3">
             <div class="row align-items-center">
               <label class="col-sm-3 col-form-label fw-medium" for="select-car-model">الموديل</label>
               <div class="col-12 col-sm-9">
@@ -136,7 +114,7 @@
           </div><!-- modal-body -->
           <div class="modal-footer p-3 d-flex align-items-center justify-content-end gap-3">
             <button type="button" class="btn text-secondary waves-effect m-0" data-bs-dismiss="modal">إلغاء</button>
-            <button type="button" class="btn btn-danger px-5 m-0">حفظ</button>
+            <button type="button" class="btn btn-primary px-5 m-0">حفظ</button>
           </div><!-- modal-footer -->
         </form>
       </div>
@@ -144,11 +122,11 @@
     <!-- Category Edit Modal -->
 
     <!-- Category Delete Modal -->
-    <div class="modal fade" id="modelDeleteModal" tabindex="-1" aria-hidden="true">
+    <div class="modal fade" id="categoryDeleteModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header p-3">
-            <h5 class="modal-title" id="modelDeleteModalLabel1">حذف موديل : تويوتا</h5>
+            <h5 class="modal-title" id="modelDeleteModalLabel1">حذف الفئة : تويوتا</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div><!-- modal-header -->
           <div class="modal-body p-3">
@@ -159,7 +137,7 @@
                   <span class="swal2-x-mark-line-right"></span>
                 </span>
               </div><!-- swal2-icon -->
-              <h5 class="d-block text-center fw-medium text-danger m-0">هل أنت متأكد أنك تريد حذف الموديل ؟</h5>
+              <h5 class="d-block text-center fw-medium text-danger m-0">هل أنت متأكد أنك تريد حذف الفئة ؟</h5>
             </div><!-- top-area -->
           </div><!-- modal-body -->
           <div class="modal-footer p-3 d-flex align-items-center justify-content-end gap-3">

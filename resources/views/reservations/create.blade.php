@@ -21,10 +21,10 @@
           <div class="card-body">
             <form action="/upload" method="post">
               <div class="row align-items-center">
-                <label class="col-sm-2 col-form-label" for="employee-name">العميل</label>
-                <div class="col-sm-10">
+                <label class="col-sm-3 col-form-label" for="employee-name">العميل</label>
+                <div class="col-sm-9">
                   <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-7">
                       <select id="employee-permissions756" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر">
                         <option></option>
                         <option value="AK">Alaska</option>
@@ -36,10 +36,10 @@
               </div><!-- row -->
               <hr class="my-3">
               <div class="row align-items-center">
-                <label class="col-sm-2 col-form-label" for="employee-name">الفرع</label>
-                <div class="col-sm-10">
+                <label class="col-sm-3 col-form-label" for="employee-name">الفرع</label>
+                <div class="col-sm-9">
                   <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-7">
                       <select id="employee-permissions1" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر">
                         <option></option>
                         <option value="AK">Alaska</option>
@@ -51,10 +51,10 @@
               </div><!-- row -->
               <hr class="my-3">
               <div class="row align-items-center">
-                <label class="col-sm-2 col-form-label" for="employee-name">المركبة</label>
-                <div class="col-sm-10">
+                <label class="col-sm-3 col-form-label" for="employee-name">المركبة</label>
+                <div class="col-sm-9">
                   <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-7">
                       <select id="employee-permissions10" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر">
                         <option></option>
                         <option value="AK">Alaska</option>
@@ -66,11 +66,18 @@
               </div><!-- row -->
               <hr class="my-3">
               <div class="row align-items-center">
-                <label class="col-sm-2 col-form-label" for="employee-name">المركبة البديلة</label>
-                <div class="col-sm-10">
-                  <div class="row">
+                <label class="col-sm-3 col-form-label" for="employee-name">المركبة البديلة</label>
+                <div class="col-sm-9">
+                  <div class="row g-3">
                     <div class="col-12 col-md-6">
-                      <select id="employee-permissions" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر">
+                      <select id="employee-permissions" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر الماركة">
+                        <option></option>
+                        <option value="AK">Alaska</option>
+                        <option value="HI">Hawaii</option>
+                      </select>
+                    </div><!-- col-12 -->
+                    <div class="col-12 col-md-6">
+                      <select id="employee-permissionsw" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر الفئة">
                         <option></option>
                         <option value="AK">Alaska</option>
                         <option value="HI">Hawaii</option>
@@ -81,10 +88,10 @@
               </div><!-- row -->
               <hr class="my-3">
               <div class="row align-items-center">
-                <label class="col-sm-2 col-form-label" for="employee-name">مكان الاستلام</label>
-                <div class="col-sm-10">
+                <label class="col-sm-3 col-form-label" for="employee-name">مكان الاستلام</label>
+                <div class="col-sm-9">
                   <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-7">
                       <input type="text" class="form-control" />
                     </div><!-- col-12 -->
                   </div><!-- row -->
@@ -92,10 +99,10 @@
               </div><!-- row -->
               <hr class="my-3">
               <div class="row align-items-center">
-                <label class="col-sm-2 col-form-label" for="employee-name">تاريخ الاستلام</label>
-                <div class="col-sm-10">
+                <label class="col-sm-3 col-form-label" for="employee-name">تاريخ الاستلام</label>
+                <div class="col-sm-9">
                   <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-7">
                       <input
                         type="text"
                         class="form-control flatpickr-datetime"
@@ -107,10 +114,10 @@
               </div><!-- row -->
               <hr class="my-3">
               <div class="row align-items-center">
-                <label class="col-sm-2 col-form-label" for="employee-name">مكان العودة</label>
-                <div class="col-sm-10">
+                <label class="col-sm-3 col-form-label" for="employee-name">مكان العودة</label>
+                <div class="col-sm-9">
                   <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-7">
                       <input type="text" class="form-control" />
                     </div><!-- col-12 -->
                   </div><!-- row -->
@@ -118,10 +125,10 @@
               </div><!-- row -->
               <hr class="my-3">
               <div class="row align-items-center">
-                <label class="col-sm-2 col-form-label" for="employee-name">تاريخ العودة</label>
-                <div class="col-sm-10">
+                <label class="col-sm-3 col-form-label" for="employee-name">تاريخ العودة</label>
+                <div class="col-sm-9">
                   <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-7">
                       <input
                         type="text"
                         class="form-control flatpickr-datetime"
@@ -133,10 +140,10 @@
               </div><!-- row -->
               <!-- <hr class="my-3">
               <div class="row align-items-center">
-                <label class="col-sm-2 col-form-label" for="employee-name">مدة الحجر</label>
-                <div class="col-sm-10">
+                <label class="col-sm-3 col-form-label" for="employee-name">مدة الحجر</label>
+                <div class="col-sm-9">
                   <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-7">
                       <input
                         type="text"
                         class="form-control"
@@ -150,10 +157,10 @@
               </div> -->
               <hr class="my-3">
               <div class="row align-items-center">
-                <label class="col-sm-2 col-form-label" for="employee-name">السعر اليومي</label>
-                <div class="col-sm-10">
+                <label class="col-sm-3 col-form-label" for="employee-name">السعر اليومي</label>
+                <div class="col-sm-9">
                   <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-7">
                       <div class="input-group">
                         <input type="number" class="form-control" />
                         <span class="input-group-text">ريال</span>
@@ -164,10 +171,10 @@
               </div><!-- row -->
               <hr class="my-3">
               <div class="row align-items-center">
-                <label class="col-sm-2 col-form-label" for="employee-name">خدمة التوصيل</label>
-                <div class="col-sm-10">
+                <label class="col-sm-3 col-form-label" for="employee-name">خدمة التوصيل</label>
+                <div class="col-sm-9">
                   <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-7">
                       <select id="employee-permissions6987" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر">
                         <option></option>
                         <option value="payment">مدفوعة</option>
@@ -179,10 +186,10 @@
               </div><!-- row -->
               <hr class="my-3">
               <div class="row align-items-center">
-                <label class="col-sm-2 col-form-label" for="employee-name">تكلفة خدمة التوصيل</label>
-                <div class="col-sm-10">
+                <label class="col-sm-3 col-form-label" for="employee-name">تكلفة خدمة التوصيل</label>
+                <div class="col-sm-9">
                   <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-7">
                       <div class="input-group">
                         <input type="number" class="form-control" />
                         <span class="input-group-text">ريال</span>
@@ -193,10 +200,10 @@
               </div><!-- row -->
               <hr class="my-3">
               <div class="row align-items-center">
-                <label class="col-sm-2 col-form-label" for="employee-name">خصم</label>
-                <div class="col-sm-10">
+                <label class="col-sm-3 col-form-label" for="employee-name">خصم</label>
+                <div class="col-sm-9">
                   <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-7">
                       <div class="input-group">
                         <input type="number" class="form-control" />
                         <span class="input-group-text">ريال</span>
@@ -207,10 +214,10 @@
               </div><!-- row -->
               <hr class="my-3">
               <div class="row align-items-center">
-                <label class="col-sm-2 col-form-label" for="employee-name">رقم رحلة الطيران</label>
-                <div class="col-sm-10">
+                <label class="col-sm-3 col-form-label" for="employee-name">رقم رحلة الطيران</label>
+                <div class="col-sm-9">
                   <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-7">
                       <input type="number" class="form-control" />
                     </div><!-- col-12 -->
                   </div><!-- row -->
@@ -218,10 +225,10 @@
               </div><!-- row -->
               <hr class="my-3">
               <div class="row align-items-center">
-                <label class="col-sm-2 col-form-label" for="employee-name">حالة الحجز</label>
-                <div class="col-sm-10">
+                <label class="col-sm-3 col-form-label" for="employee-name">حالة الحجز</label>
+                <div class="col-sm-9">
                   <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-7">
                       <select id="employee-permissions6987aa" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر">
                         <option></option>
                         <option value="payment">مؤكد</option>
@@ -234,13 +241,9 @@
               </div><!-- row -->
               <hr class="my-3">
               <div class="row">
-                <label class="col-sm-2 col-form-label" for="employee-name">الملاحظات</label>
-                <div class="col-sm-10">
-                  <div class="row">
-                    <div class="col-12 col-md-6">
-                      <textarea class="form-control p-3" id="exampleFormControlTextarea1" rows="4"></textarea>
-                    </div><!-- col-12 -->
-                  </div><!-- row -->
+                <label class="col-sm-3 col-form-label" for="employee-name">الملاحظات</label>
+                <div class="col-sm-9">
+                  <textarea class="form-control p-3" id="exampleFormControlTextarea1" rows="4"></textarea>
                 </div><!-- col-12 -->
               </div><!-- row -->
             </form>
