@@ -1,48 +1,27 @@
 @extends('layouts.app')
 
 @push('styles')
-  <link rel="stylesheet" href="{{ asset('assets/vendor/libs/bootstrap-daterangepicker/bootstrap-daterangepicker.css') }}" />
-  <link rel="stylesheet" href="{{ asset('assets/vendor/libs/select2/select2.css') }}" />
+  <link rel="stylesheet" href="{{ asset('assets/vendor/libs/sweetalert2/sweetalert2.css') }}" />
 @endpush
 
 @section('content')
 
-  <div id="homepage-page">
+  <div id="branches-statistics-page">
 
-    <div class="alert alert-danger d-flex align-items-center" role="alert">
-      <span class="alert-icon text-danger me-2"><i class="ti ti-bell ti-xs"></i></span>
-      السيارة ( TB - 756 ) تخطط المدة المسموح بها
-    </div><!-- alert -->
+    <div class="d-flex flex-wrap gap-3 justify-content-between align-items-start align-items-md-center mb-4">
+      <div class="d-flex flex-column justify-content-center flex-grow-1">
+        <h4 class="m-0">فرع الواحة</h4>
+      </div>
+      <div class="d-flex align-content-center flex-wrap gap-2 flex-shrink-0">
+        <a href="/branches/edit.html" class="btn btn-icon btn-label-info waves-effect"><span class="ti ti-pencil"></span></a>
+        <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#branchDeleteModal" class="btn btn-icon btn-label-danger waves-effect"><span class="ti ti-trash"></span></a>
+      </div>
+    </div>
 
-    <div class="alert alert-danger d-flex align-items-center" role="alert">
-      <span class="alert-icon text-danger me-2"><i class="ti ti-bell ti-xs"></i></span>
-      السيارة ( TB - 971 ) متبقي عليها مدة التآمين 7 ايام
-    </div><!-- alert -->
-
-    <div class="card mb-4">
-      <form action="#" class="card-body d-flex align-items-center justify-content-start gap-3 p-3">
-        <div class="col-right flex-grow-1">
-          <div class="row row-cols-1 row-cols-md-2 g-3">
-            <div class="col">
-              <div class="form-group">
-                <input type="text" class="form-control" id="bs-rangepicker-range" aria-describedby="basic-addon-search31" placeholder="التاريخ" readonly />
-              </div><!-- form-group -->
-            </div><!-- col -->
-            <div class="col">
-              <div class="form-group">
-                <select id="car-brand" class="select2 form-select" data-allow-clear="true" data-placeholder="الفرع">
-                  <option></option>
-                  <option value="AK">جدة</option>
-                  <option value="HI">مكة</option>
-                  <option value="HIa">الرياض</option>
-                </select>
-              </div><!-- form-group -->
-            </div><!-- col -->
-          </div><!-- row -->
-        </div><!-- col-right -->
-        <button type="reset" class="btn btn-icon btn-label-secondary waves-effect flex-shrink-0"><span class="ti ti-refresh"></span></button>
-      </form><!-- card-body -->
-    </div><!-- card -->
+    <div class="tabs-area d-flex align-items-center justify-content-start gap-3 flex-wrap mb-4">
+      <a href="{{ url('/branches/{id}/view') }}" title="تفاصيل الفرع" class="btn">تفاصيل الفرع</a>
+      <a href="{{ url('/branches/{id}/statistics') }}" title="إحصائيات الفرع" class="btn btn-primary waves-effect waves-light">إحصائيات الفرع</a>
+    </div><!-- tabs-area -->
 
     <div class="row row-cols-2 row-cols-md-4 g-3">
       <div class="col">
@@ -272,72 +251,13 @@
       </div><!-- col -->
     </div><!-- row -->
 
-  </div><!-- homepage--page -->
+    <!-- Branch Delete Modal -->
+    @include('branches.Modals.delete')
+    <!-- Branch Delete Modal -->
+
+  </div><!-- branches-statistics-page -->
 
 @endsection
 
 @push('scripts')
-  <script src="{{ asset('assets/vendor/libs/moment/moment.js') }}"></script>
-  <script src="{{ asset('assets/vendor/libs/bootstrap-daterangepicker/bootstrap-daterangepicker.js') }}"></script>
-  <script src="{{ asset('assets/vendor/libs/select2/select2.js') }}"></script>
-  <script type="module">
-    $(".select2").select2();
-
-    (function () {
-      // Bootstrap Daterange Picker
-      // --------------------------------------------------------------------
-      var bsRangePickerRange = $('#bs-rangepicker-range');
-      if (bsRangePickerRange.length) {
-        bsRangePickerRange.daterangepicker({
-          ranges: {
-            'اليوم': [moment(), moment()],
-            'امس': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-            'آخر 7 آيام': [moment().subtract(6, 'days'), moment()],
-            'آخر 30 يوم': [moment().subtract(29, 'days'), moment()],
-            'هذا الشهر': [moment().startOf('month'), moment().endOf('month')],
-            'الشهر الماضى': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-          },
-          "locale": {
-            "format": "MM/DD/YYYY",
-            "separator": " - ",
-            "applyLabel": "آختر",
-            "cancelLabel": "إلغاء",
-            "fromLabel": "من",
-            "toLabel": "إلي",
-            "customRangeLabel": "فترة مخصصة",
-            "weekLabel": "W",
-            "daysOfWeek": [
-                "Su",
-                "Mo",
-                "Tu",
-                "We",
-                "Th",
-                "Fr",
-                "Sa"
-            ],
-            "monthNames": [
-                "يناير",
-                "فبراير",
-                "مارس",
-                "ابريل",
-                "مايو",
-                "June",
-                "July",
-                "اغسطس",
-                "سبتمبر",
-                "اكتوبر",
-                "نوفمبر",
-                "ديسمبر"
-            ],
-            "firstDay": 1
-          },
-          "alwaysShowCalendars": true,
-          "parentEl": ".filter-statistics-homepage",
-          opens: isRtl ? 'left' : 'right'
-        });
-      }
-      $('input#bs-rangepicker-range').val('');
-      $('input#bs-rangepicker-range').attr("placeholder","التاريخ");
-    })();
-  </script>
 @endpush

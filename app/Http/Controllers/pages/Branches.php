@@ -23,4 +23,8 @@ class Branches extends Controller
   {
     return view('branches.view');
   }
+  public function statistics()
+  {
+    return view('branches.statistics');
+  }
 }

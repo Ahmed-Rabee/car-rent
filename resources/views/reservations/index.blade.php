@@ -170,7 +170,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header p-3">
-            <h5 class="modal-title" id="reservationDeleteModalLabel1">حذف الحالة الفنية للمركبة : 9408 - TB</h5>
+            <h5 class="modal-title" id="reservationDeleteModalLabel1">حذف الحجز : 9408</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div><!-- modal-header -->
           <div class="modal-body p-3">
@@ -181,7 +181,7 @@
                   <span class="swal2-x-mark-line-right"></span>
                 </span>
               </div><!-- swal2-icon -->
-              <h5 class="d-block text-center fw-medium text-danger m-0">هل أنت متأكد أنك تريد حذف الحالة الفنية ؟</h5>
+              <h5 class="d-block text-center fw-medium text-danger m-0">هل أنت متأكد أنك تريد حذف الحجز ؟</h5>
             </div><!-- top-area -->
           </div><!-- modal-body -->
           <div class="modal-footer p-3 d-flex align-items-center justify-content-end gap-3">
