@@ -2,6 +2,8 @@
 
 @push('styles')
   <link rel="stylesheet" href="{{ asset('assets/vendor/libs/sweetalert2/sweetalert2.css') }}" />
+  <link rel="stylesheet" href="{{ asset('assets/vendor/libs/select2/select2.css') }}" />
+  <link rel="stylesheet" href="{{ asset('assets/vendor/libs/flatpickr/flatpickr.css') }}" />
 @endpush
 
 @section('content')
@@ -16,6 +18,66 @@
         <a href="{{ url('/reservations/create') }}" class="btn btn-primary waves-effect waves-light"><span class="ti-xs ti ti-plus me-2"></span> إضافة حجز جديدة</a>
       </div>
     </div>
+
+    <div class="d-flex justify-content-end mb-4">
+      <button class="btn btn-icon btn-secondary waves-effect waves-light" type="button" data-bs-toggle="collapse" data-bs-target="#cars-filter-collapse" aria-expanded="false" aria-controls="cars-filter-collapse"><span class="ti ti-filter"></span></button>
+    </div><!-- d-flex -->
+
+    <div class="collapse" id="cars-filter-collapse">
+      <div class="card mb-4">
+        <div class="card-body p-3">
+          <div class="row row-cols-1 row-cols-md-4 g-3">
+            <div class="col">
+              <div class="form-group">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="رقم الحجز" />
+              </div><!-- form-group -->
+            </div><!-- col -->
+            <div class="col">
+              <div class="form-group">
+                <select id="car-brand" class="select2 form-select" data-allow-clear="true" data-placeholder="رقم المركبة">
+                  <option></option>
+                  <option value="AK">Alaska</option>
+                  <option value="HI">Hawaii</option>
+                </select>
+              </div><!-- form-group -->
+            </div><!-- col -->
+            <div class="col">
+              <div class="form-group">
+                <select id="car-model" class="select2 form-select" data-allow-clear="true" data-placeholder="العميل">
+                  <option></option>
+                  <option value="AK">Alaska</option>
+                  <option value="HI">Hawaii</option>
+                </select>
+              </div><!-- form-group -->
+            </div><!-- col -->
+            <div class="col">
+              <div class="form-group">
+                <input type="text" class="form-control flatpickr-date" placeholder="تاريخ الاستلام" id="insurance-company-from" readonly="readonly" />
+              </div><!-- form-group -->
+            </div><!-- col -->
+            <div class="col">
+              <div class="form-group">
+                <input type="text" class="form-control flatpickr-date" placeholder="تاريخ العودة" id="insurance-company-to" readonly="readonly" />
+              </div><!-- form-group -->
+            </div><!-- col -->
+            <div class="col">
+              <div class="form-group">
+                <select id="car-status" class="select2 form-select" data-allow-clear="true" data-placeholder="حالة الحجز">
+                  <option></option>
+                  <option value="payment">مؤكد</option>
+                  <option value="free">غير مؤكد</option>
+                  <option value="free">ملغي</option>
+                </select>
+              </div><!-- form-group -->
+            </div><!-- col -->
+          </div><!-- row -->
+        </div><!-- card-body -->
+        <div class="card-footer d-flex justify-content-end gap-2 flex-wrap p-3 pt-0">
+          <button type="submit" class="btn btn-label-primary waves-effect px-5">بحث</button>
+          <button type="reset" class="btn btn-icon btn-label-secondary waves-effect"><span class="ti ti-refresh"></span></button>
+        </div><!-- card-footer -->
+      </div><!-- card -->
+    </div><!-- cars-filter-collapse -->
 
     <div class="card">
       <div class="table-responsive text-nowrap">
@@ -37,7 +99,7 @@
           <tbody class="table-border-bottom-0">
             <tr>
               <td>
-                <a href="#" title="#">234</a>
+                <a href="{{ url('/reservations/{id}/view') }}" title="#">234</a>
               </td>
               <td>9408 - TB</td>
               <td>
@@ -62,7 +124,7 @@
             </tr>
             <tr>
               <td>
-                <a href="#" title="#">234</a>
+                <a href="{{ url('/reservations/{id}/view') }}" title="#">234</a>
               </td>
               <td>9408 - TB</td>
               <td>
@@ -87,7 +149,7 @@
             </tr>
             <tr>
               <td>
-                <a href="#" title="#">234</a>
+                <a href="{{ url('/reservations/{id}/view') }}" title="#">234</a>
               </td>
               <td>9408 - TB</td>
               <td>
@@ -112,7 +174,7 @@
             </tr>
             <tr>
               <td>
-                <a href="#" title="#">234</a>
+                <a href="{{ url('/reservations/{id}/view') }}" title="#">234</a>
               </td>
               <td>9408 - TB</td>
               <td>
@@ -137,7 +199,7 @@
             </tr>
             <tr>
               <td>
-                <a href="#" title="#">234</a>
+                <a href="{{ url('/reservations/{id}/view') }}" title="#">234</a>
               </td>
               <td>9408 - TB</td>
               <td>
@@ -166,31 +228,7 @@
     </div><!-- card -->
 
     <!-- Reservation Delete Modal -->
-    <div class="modal fade" id="reservationDeleteModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header p-3">
-            <h5 class="modal-title" id="reservationDeleteModalLabel1">حذف الحجز : 9408</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div><!-- modal-header -->
-          <div class="modal-body p-3">
-            <div class="top-area d-flex align-items-center justify-content-center gap-4 flex-column">
-              <div class="swal2-icon swal2-error swal2-icon-show d-flex m-0">
-                <span class="swal2-x-mark">
-                  <span class="swal2-x-mark-line-left"></span>
-                  <span class="swal2-x-mark-line-right"></span>
-                </span>
-              </div><!-- swal2-icon -->
-              <h5 class="d-block text-center fw-medium text-danger m-0">هل أنت متأكد أنك تريد حذف الحجز ؟</h5>
-            </div><!-- top-area -->
-          </div><!-- modal-body -->
-          <div class="modal-footer p-3 d-flex align-items-center justify-content-end gap-3">
-            <button type="button" class="btn text-secondary waves-effect m-0" data-bs-dismiss="modal">إلغاء</button>
-            <button type="button" class="btn btn-danger px-5 m-0">نعم, احذف</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    @include('reservations.Modals.delete')
     <!-- Reservation Delete Modal -->
 
   </div><!-- Reservations-index-page -->
@@ -198,4 +236,19 @@
 @endsection
 
 @push('scripts')
+  <script src="{{ asset('assets/vendor/libs/moment/moment.js') }}"></script>
+  <script src="{{ asset('assets/vendor/libs/select2/select2.js') }}"></script>
+  <script src="{{ asset('assets/vendor/libs/flatpickr/flatpickr.js') }}"></script>
+  <script type="module">
+    $(".select2").select2();
+
+    (function () {
+      const flatpickrDate = $('.flatpickr-date');
+      if (flatpickrDate) {
+        flatpickrDate.flatpickr({
+          monthSelectorType: 'static'
+        });
+      }
+    })();
+  </script>
 @endpush

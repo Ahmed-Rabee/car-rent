@@ -31,30 +31,59 @@
                     <td class="p-3">433433</td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-3">رقم المركبة</td>
-                    <td class="p-3">9408 - TB</td>
-                  </tr>
-                  <tr>
                     <td width="5%" class="p-3">العميل</td>
                     <td class="p-3">
                       <a href="#" title="#">محمد احمد محمود</a>
                     </td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-3">تاريخ الاستلام</td>
-                    <td class="p-3">18 / 11 / 2024</td>
+                    <td width="5%" class="p-3">الفرع</td>
+                    <td class="p-3">فرع الواحة</td>
+                  </tr>
+                  <tr>
+                    <td width="5%" class="p-3">المركبة</td>
+                    <td class="p-3">9408 - TB</td>
+                  </tr>
+                  <tr>
+                    <td width="5%" class="p-3">المركبة البديلة</td>
+                    <td class="p-3">
+                      <div class="d-flex align-items-center justify-content-start gap-1 gap-md-5 flex-wrap">
+                        <span>الماركة : تويوتا</span>
+                        <span>الفئة : SVU</span>
+                      </div><!-- d-flex -->
+                    </td>
                   </tr>
                   <tr>
                     <td width="5%" class="p-3">مكان الاستلام</td>
                     <td class="p-3">المطار</td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-3">تاريخ العودة</td>
+                    <td width="5%" class="p-3">تاريخ الاستلام</td>
                     <td class="p-3">18 / 11 / 2024</td>
                   </tr>
                   <tr>
                     <td width="5%" class="p-3">مكان العودة</td>
                     <td class="p-3">الفندق</td>
+                  </tr>
+                  <tr>
+                    <td width="5%" class="p-3">تاريخ العودة</td>
+                    <td class="p-3">18 / 11 / 2024</td>
+                  </tr>
+                  <tr>
+                    <td width="5%" class="p-3">خدمة التوصيل</td>
+                    <td class="p-3">مدفوع</td>
+                  </tr>
+                  <tr>
+                    <td width="5%" class="p-3">تكلفة خدمة التوصيل</td>
+                    <td class="p-3">121 <small>ريال</small></td>
+                  </tr>
+                  <tr>
+                    <td width="5%" class="p-3">خصم</td>
+                    <td class="p-3">- 75 <small>ريال</small></td>
+                  </tr>
+                  <tr>
+                    <td width="5%" class="p-3">رقم رحلة الطيران</td>
+                    <td class="p-3">234423465566</td>
                   </tr>
                   <tr>
                     <td width="5%" class="p-3">حالة الحجز</td>
@@ -63,6 +92,10 @@
                   <tr>
                     <td width="5%" class="p-3">الكاتب</td>
                     <td class="p-3">محمد مصطفي</td>
+                  </tr>
+                  <tr>
+                    <td width="5%" class="p-3">الملاحظات</td>
+                    <td class="p-3">الملاحظات الملاحظات الملاحظات الملاحظات الملاحظات الملاحظات</td>
                   </tr>
                 </tbody>
               </table>
@@ -80,8 +113,12 @@
                   <p class="m-0">4 <small>ايام</small></p>
                 </li>
                 <li class="d-flex align-items-center justify-content-between">
-                  <span>سعر الحجز :</span>
+                  <span>السعر اليومي :</span>
                   <p class="m-0">123 <small>ريال</small></p>
+                </li>
+                <li class="d-flex align-items-center justify-content-between">
+                  <span>سعر الحجز :</span>
+                  <p class="m-0">453 <small>ريال</small></p>
                 </li>
                 <li class="d-flex align-items-center justify-content-between">
                   <span>تكلفة خدمة التوصيل :</span>
@@ -104,31 +141,7 @@
     </div><!-- row -->
 
     <!-- Reservation Delete Modal -->
-    <div class="modal fade" id="reservationDeleteModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header p-3">
-            <h5 class="modal-title" id="reservationDeleteModalLabel1">حذف الحجز : 9408</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div><!-- modal-header -->
-          <div class="modal-body p-3">
-            <div class="top-area d-flex align-items-center justify-content-center gap-4 flex-column">
-              <div class="swal2-icon swal2-error swal2-icon-show d-flex m-0">
-                <span class="swal2-x-mark">
-                  <span class="swal2-x-mark-line-left"></span>
-                  <span class="swal2-x-mark-line-right"></span>
-                </span>
-              </div><!-- swal2-icon -->
-              <h5 class="d-block text-center fw-medium text-danger m-0">هل أنت متأكد أنك تريد حذف الحجز ؟</h5>
-            </div><!-- top-area -->
-          </div><!-- modal-body -->
-          <div class="modal-footer p-3 d-flex align-items-center justify-content-end gap-3">
-            <button type="button" class="btn text-secondary waves-effect m-0" data-bs-dismiss="modal">إلغاء</button>
-            <button type="button" class="btn btn-danger px-5 m-0">نعم, احذف</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    @include('reservations.Modals.delete')
     <!-- Reservation Delete Modal -->
 
   </div><!-- reservations-view-page -->

@@ -13,7 +13,7 @@
         <h4 class="m-0">فرع الواحة</h4>
       </div>
       <div class="d-flex align-content-center flex-wrap gap-2 flex-shrink-0">
-        <a href="/branches/edit.html" class="btn btn-icon btn-label-info waves-effect"><span class="ti ti-pencil"></span></a>
+        <a href="{{ url('/branches/{id}/edit') }}" class="btn btn-icon btn-label-info waves-effect"><span class="ti ti-pencil"></span></a>
         <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#branchDeleteModal" class="btn btn-icon btn-label-danger waves-effect"><span class="ti ti-trash"></span></a>
       </div>
     </div>

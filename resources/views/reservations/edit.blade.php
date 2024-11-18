@@ -7,11 +7,11 @@
 
 @section('content')
 
-  <div id="reservations-create-page">
+  <div id="reservations-edit-page">
 
     <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-4">
       <div class="d-flex flex-column justify-content-center">
-        <h4 class="m-0">إضافة حجز جديد</h4>
+        <h4 class="m-0">تعديل حجز : 1236</h4>
       </div>
     </div>
 
@@ -288,7 +288,7 @@
       </div><!-- col-12 -->
     </div><!-- row -->
 
-  </div><!-- reservations-create-page -->
+  </div><!-- reservations-edit-page -->
 
 @endsection
 

@@ -146,3 +146,118 @@ label.form-label.required::after, label.col-form-label.required::after {
   content: "*";
   color: red;
 }
+
+.dropzoneBasic {
+  padding: 0.422rem 0.875rem !important;
+  border-radius: 0.375rem !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  min-height: 38px;
+}
+.dropzoneBasic.dz-started {
+  gap: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0.5rem !important;
+}
+.dropzoneBasic .dz-message {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+}
+.dropzoneBasic .dz-message:before {
+  position: static;
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  background-size: 14px 14px !important;
+  border-radius: 0.25rem !important;
+}
+.dropzoneBasic .dz-preview {
+  margin: 0;
+  box-shadow: none !important;
+  border-width: 1px !important;
+}
+.dropzoneBasic .dz-preview .dz-remove {
+  pointer-events: auto; /* Re-enable pointer events for the remove link */
+  opacity: 1; /* Ensure the remove link is fully visible */
+  cursor: pointer; /* Show a pointer cursor for clarity */
+}
+.dropzoneBasic.dz-upload-disabled {
+  pointer-events: none;
+}
+
+.iti.iti--allow-dropdown {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  direction: ltr;
+  border: 1px solid #dbdade;
+  border-radius: var(--bs-border-radius);
+  min-height: 38px;
+}
+.iti.iti--allow-dropdown .iti__country-container {
+  inset-inline: 0 auto !important;
+  flex-shrink: 0;
+  position: static;
+  border: none;
+  align-self: stretch;
+  padding-inline-end: 0.25rem;
+}
+.iti.iti--allow-dropdown .iti__country-container button .iti__selected-country-primary {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+}
+.iti.iti--allow-dropdown .iti__country-container button .iti__selected-country-primary .iti__arrow {
+  margin: 0 !important;
+}
+.iti.iti--allow-dropdown .iti__country-container button .iti__selected-dial-code {
+  margin: 0 !important;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: "Public Sans", "Cairo" !important;
+}
+.iti.iti--allow-dropdown .iti__country-container .iti__dropdown-content {
+  padding: 0.5rem;
+}
+.iti.iti--allow-dropdown .iti__country-container .iti__dropdown-content input.iti__search-input {
+  padding: 0.422rem 0.875rem;
+  color: #6f6b7d;
+  border: 1px solid #dbdade;
+  border-radius: var(--bs-border-radius);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  outline: none;
+}
+.iti.iti--allow-dropdown .iti__country-container .iti__dropdown-content ul.iti__country-list {
+  margin-inline: -0.5rem;
+}
+.iti.iti--allow-dropdown .iti__country-container .iti__dropdown-content ul.iti__country-list li.iti__country {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #6f6b7d;
+  gap: 0.5rem;
+}
+.iti.iti--allow-dropdown .iti__country-container .iti__dropdown-content ul.iti__country-list li.iti__country .iti__flag, .iti.iti--allow-dropdown .iti__country-container .iti__dropdown-content ul.iti__country-list li.iti__country span.iti__country-name {
+  margin: 0;
+}
+.iti.iti--allow-dropdown input.iti__tel-input {
+  border: none;
+  box-shadow: none;
+  padding: 0 !important;
+  flex-grow: 1;
+  align-self: stretch;
+}
