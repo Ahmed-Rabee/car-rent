@@ -42,12 +42,35 @@
           <div class="row">
             <label class="col-sm-2 col-form-label" for="working-hours">مواعيد العمل</label>
             <div class="col-sm-10">
-              <div class="input-group">
-                <span class="input-group-text">من</span>
-                <input type="text" id="working-hours-from" placeholder="HH:MMam" class="form-control timepicker-basic" autocomplete="off" />
-                <span class="input-group-text">إلي</span>
-                <input type="text" id="working-hours-to" placeholder="HH:MMam" class="form-control timepicker-basic" autocomplete="off" />
-              </div><!-- input-group -->
+            <div class="form-repeater">
+                <div data-repeater-list="group-a">
+                  <div data-repeater-item>
+                    <div class="row align-items-end">
+                      <div class="mb-3 col-lg-6 col-xl-6 col-12 mb-0">
+                        <div class="input-group">
+                          <span class="input-group-text">من</span>
+                          <input type="text" id="working-hours-from" placeholder="HH:MM am" class="form-control timepicker-basic" autocomplete="off" />
+                          <span class="input-group-text">إلي</span>
+                          <input type="text" id="working-hours-to" placeholder="HH:MM am" class="form-control timepicker-basic" autocomplete="off" />
+                        </div><!-- input-group -->
+                      </div>
+                      <div class="mb-3 col-lg-12 col-xl-2 col-12 d-flex align-items-center mb-0">
+                        <button class="btn btn-label-danger" type="button" data-repeater-delete>
+                          <i class="ti ti-x ti-xs me-1"></i>
+                          <span class="align-middle">حذف</span>
+                        </button>
+                      </div>
+                    </div>
+                    <hr>
+                  </div>
+                </div>
+                <div class="mb-0">
+                  <button class="btn btn-primary" type="button" data-repeater-create>
+                    <i class="ti ti-plus me-1"></i>
+                    <span class="align-middle">إضافة</span>
+                  </button>
+                </div>
+              </div><!-- form-repeater -->
             </div>
           </div>
           <hr class="my-3">
@@ -60,7 +83,7 @@
                     <div class="row align-items-end">
                       <div class="mb-3 col-lg-6 col-xl-6 col-12 mb-0">
                         <div class="input-group">
-                          <input type="text" id="phone-number-mask" dir="ltr" class="form-control" placeholder="00 00 00 00 0" />
+                          <input type="text" id="phone-number-mask" dir="ltr" class="form-control" />
                           <span class="input-group-text" dir="ltr">+966</span>
                         </div>
                       </div>
@@ -80,9 +103,9 @@
                     <span class="align-middle">إضافة</span>
                   </button>
                 </div>
-              </div>
-            </div>
-          </div>
+              </div><!-- form-repeater -->
+            </div><!-- col-12 -->
+          </div><!-- row -->
         </form>
       </div>
     </div><!-- card -->

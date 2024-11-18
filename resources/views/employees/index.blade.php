@@ -22,7 +22,9 @@
         <table class="table table-striped">
           <thead>
             <tr>
+              <th width="5%" class="fw-bold">#</th>
               <th class="fw-bold">اسم الموظف</th>
+              <th class="fw-bold">الفرع</th>
               <th class="fw-bold">رقم الهاتف</th>
               <th class="fw-bold">تاريخ التعيين</th>
               <th class="fw-bold">المسمي الوظيفي</th>
@@ -32,91 +34,11 @@
           </thead>
           <tbody class="table-border-bottom-0">
             <tr>
+              <td>
+                <a href="{{ url('/employees/{id}/view') }}">423</a>
+              </td>
               <td>محمد احمد محمود</td>
-              <td>
-                <span dir="ltr">+966 554433221</span>
-              </td>
-              <td>2024-10-13</td>
-              <td>موظف استقبال</td>
-              <td>
-                <span class="d-flex align-items-center justify-content-start gap-1">1421 <small>ريال</small></span>
-              </td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/employees/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/employees/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#employeeDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>محمد احمد محمود</td>
-              <td>
-                <span dir="ltr">+966 554433221</span>
-              </td>
-              <td>2024-10-13</td>
-              <td>موظف استقبال</td>
-              <td>
-                <span class="d-flex align-items-center justify-content-start gap-1">1421 <small>ريال</small></span>
-              </td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/employees/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/employees/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#employeeDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>محمد احمد محمود</td>
-              <td>
-                <span dir="ltr">+966 554433221</span>
-              </td>
-              <td>2024-10-13</td>
-              <td>موظف استقبال</td>
-              <td>
-                <span class="d-flex align-items-center justify-content-start gap-1">1421 <small>ريال</small></span>
-              </td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/employees/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/employees/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#employeeDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>محمد احمد محمود</td>
-              <td>
-                <span dir="ltr">+966 554433221</span>
-              </td>
-              <td>2024-10-13</td>
-              <td>موظف استقبال</td>
-              <td>
-                <span class="d-flex align-items-center justify-content-start gap-1">1421 <small>ريال</small></span>
-              </td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/employees/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/employees/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#employeeDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>محمد احمد محمود</td>
+              <td>فرع الواحة</td>
               <td>
                 <span dir="ltr">+966 554433221</span>
               </td>

@@ -29,6 +29,21 @@
             </div><!-- col-12 -->
           </div><!-- row -->
           <hr class="my-3">
+          <div class="row">
+            <label class="col-sm-2 col-form-label" for="employee-permissions">الفرع</label>
+            <div class="col-sm-10">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <select id="employee-permissions2" class="select2 form-select" data-allow-clear="false" data-placeholder="">
+                    <option></option>
+                    <option value="AK">Alaska</option>
+                    <option value="HI">Hawaii</option>
+                  </select>
+                </div><!-- col-12 -->
+              </div><!-- row -->
+            </div><!-- col-12 -->
+          </div><!-- row -->
+          <hr class="my-3">
           <div class="row align-items-center">
             <label class="col-sm-2 col-form-label" for="employee-phone">رقم الهاتف</label>
             <div class="col-sm-10">

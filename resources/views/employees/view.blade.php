@@ -29,6 +29,10 @@
                 <td class="p-3">محمد احمد محمود</td>
               </tr>
               <tr>
+                <td width="5%" class="p-3">الفرع</td>
+                <td class="p-3">فرع الواحة</td>
+              </tr>
+              <tr>
                 <td width="5%" class="p-3">رقم الهاتف</td>
                 <td class="p-3"><span dir="ltr">+966 554433221</span></td>
               </tr>
