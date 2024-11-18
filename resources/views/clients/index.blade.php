@@ -24,10 +24,12 @@
           <thead>
             <tr>
               <th width="5%" class="fw-bold">#</th>
-              <th class="fw-bold">الصورة الشخصية</th>
-              <th class="fw-bold">الإسم بالعربية</th>
-              <th class="fw-bold">الإسم بالإنجليزية</th>
+              <th class="fw-bold">اسم العميل</th>
+              <th class="fw-bold">تصنيف العميل</th>
               <th class="fw-bold">الجنسية</th>
+              <th class="fw-bold">دولة الإقامة</th>
+              <th class="fw-bold">رقم الجوال</th>
+              <th class="fw-bold">رقم الواتس اب</th>
               <th width="5%"></th>
             </tr>
           </thead>
@@ -36,14 +38,24 @@
               <td>
                 <a href="{{ url('/clients/{id}/view') }}" title="#">137</a>
               </td>
-              <td>
-                <a href="../../assets/img/avatars/1.png" data-fancybox data-caption="محمد احمد محمود" class="avatar avatar-md d-block">
-                  <img src="../../assets/img/avatars/1.png" class="rounded-circle m-0" alt="محمد احمد محمود">
-                </a>
-              </td>
               <td>محمد احمد محمود</td>
-              <td>AKEKSANDR GULCHENKO</td>
-              <td>باكستان</td>
+              <td>محلي</td>
+              <td>قطري</td>
+              <td>عمان</td>
+              <td>
+                <div class="d-flex align-items-center justify-content-start">
+                  <a href="tel:96892035086" class="d-flex align-items-center justify-content-center gap-1" dir="ltr">
+                    <span class="ti-xs ti ti-phone"></span> +96892035086
+                  </a>
+                </div><!-- d-flex -->
+              </td>
+              <td>
+                <div class="d-flex align-items-center justify-content-start">
+                  <a href="https://wa.me/96892035086" class="d-flex align-items-center justify-content-center gap-1" dir="ltr">
+                    <span class="ti-xs ti ti-brand-whatsapp"></span> +96892035086
+                  </a>
+                </div><!-- d-flex -->
+              </td>
               <td>
                 <div class="dropdown">
                   <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
@@ -61,31 +73,7 @@
     </div><!-- card -->
 
     <!-- Client Delete Modal -->
-    <div class="modal fade" id="clientDeleteModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header p-3">
-            <h5 class="modal-title" id="clientDeleteModalLabel1">حذف عميل : احمد محمد</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div><!-- modal-header -->
-          <div class="modal-body p-3">
-            <div class="top-area d-flex align-items-center justify-content-center gap-4 flex-column">
-              <div class="swal2-icon swal2-error swal2-icon-show d-flex m-0">
-                <span class="swal2-x-mark">
-                  <span class="swal2-x-mark-line-left"></span>
-                  <span class="swal2-x-mark-line-right"></span>
-                </span>
-              </div><!-- swal2-icon -->
-              <h5 class="d-block text-center fw-medium text-danger m-0">هل أنت متأكد أنك تريد حذف العميل ؟</h5>
-            </div><!-- top-area -->
-          </div><!-- modal-body -->
-          <div class="modal-footer p-3 d-flex align-items-center justify-content-end gap-3">
-            <button type="button" class="btn text-secondary waves-effect m-0" data-bs-dismiss="modal">إلغاء</button>
-            <button type="button" class="btn btn-danger px-5 m-0">نعم, احذف</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    @include('clients.Modals.delete')
     <!-- Client Delete Modal -->
 
   </div><!-- clients-index-page -->

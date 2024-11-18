@@ -13,7 +13,7 @@
 
     <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-4">
       <div class="d-flex flex-column justify-content-center">
-        <h4 class="m-0">إضافة عميل جديد</h4>
+        <h4 class="m-0">تعديل عميل : محمد احمد محمود</h4>
       </div>
     </div>
 

@@ -27,8 +27,9 @@
                     <div class="col-12 col-md-7">
                       <select id="employee-permissions756" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر">
                         <option></option>
-                        <option value="AK">Alaska</option>
-                        <option value="HI">Hawaii</option>
+                        <option value="AK">#1123 | 343434 | محمد احمد</option>
+                        <option value="AK">#5790 | 365970 | مصطفي محفوظ</option>
+                        <option value="AK">#2376 | 206872 | زين عبدالله</option>
                       </select>
                     </div><!-- col-12 -->
                   </div><!-- row -->
