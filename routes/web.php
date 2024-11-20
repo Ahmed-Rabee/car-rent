@@ -20,12 +20,15 @@ Route::get('/branches/create', [Branches::class, 'create'])->name('branches-crea
 Route::get('/branches/{id}/edit', [Branches::class, 'edit'])->name('branches-edit');
 Route::get('/branches/{id}/view', [Branches::class, 'view'])->name('branches-view');
 Route::get('/branches/{id}/statistics', [Branches::class, 'statistics'])->name('branches-statistics');
+Route::get('/branches/{id}/employees', [Branches::class, 'employees'])->name('branches-employees');
 
 // Employees Routes
 Route::get('/employees', [Employees::class, 'index'])->name('employees-index');
 Route::get('/employees/create', [Employees::class, 'create'])->name('employees-create');
 Route::get('/employees/{id}/edit', [Employees::class, 'edit'])->name('employees-edit');
 Route::get('/employees/{id}/view', [Employees::class, 'view'])->name('employees-view');
+Route::get('/employees/penalties', [Employees::class, 'penalties'])->name('employees-penalties-index');
+Route::get('/employees/advances', [Employees::class, 'advances'])->name('employees-advances-index');
 
 // Permissions Routes
 Route::get('/permissions', [Permissions::class, 'index'])->name('permissions-index');

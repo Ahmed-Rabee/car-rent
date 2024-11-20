@@ -21,6 +21,7 @@
     <div class="tabs-area d-flex align-items-center justify-content-start gap-3 flex-wrap mb-4">
       <a href="{{ url('/branches/{id}/view') }}" title="تفاصيل الفرع" class="btn btn-primary waves-effect waves-light">تفاصيل الفرع</a>
       <a href="{{ url('/branches/{id}/statistics') }}" title="إحصائيات الفرع" class="btn">إحصائيات الفرع</a>
+      <a href="{{ url('/branches/{id}/employees') }}" title="موظفي الفرع" class="btn">موظفي الفرع</a>
     </div><!-- tabs-area -->
 
     <div class="card overflow-hidden">
@@ -39,21 +40,26 @@
               <tr>
                 <td width="5%" class="p-3">مواعيد العمل</td>
                 <td class="p-3">
-                  <div class="d-flex align-items-center justify-content-start gap-1">من <span dir="ltr">11:30 AM</span> - إلي <span dir="ltr">04:30 PM</span></div>
+                  <div class="d-flex flex-column gap-1">
+                    <div class="d-flex align-items-center justify-content-start gap-1">من <span dir="ltr">11:30 AM</span> - إلي <span dir="ltr">04:30 PM</span></div>
+                    <div class="d-flex align-items-center justify-content-start gap-1">من <span dir="ltr">11:30 AM</span> - إلي <span dir="ltr">04:30 PM</span></div>
+                  </div><!-- d-flex -->
                 </td>
               </tr>
               <tr>
                 <td width="5%" class="p-3">ارقام التواصل</td>
                 <td class="p-3">
-                  <div class="d-flex flex-wrap gap-2 flex-wrap">
-                    <span class="badge bg-label-dark d-flex align-items-center justify-content-start gap-1">
-                      <span dir="ltr">+966 554433221</span>
-                      <i class="tf-icons ti ti-phone ti-xs"></i>
-                    </span>
-                    <span class="badge bg-label-dark d-flex align-items-center justify-content-start gap-1">
-                      <span dir="ltr">+966 554433221</span>
-                      <i class="tf-icons ti ti-phone ti-xs"></i>
-                    </span>
+                  <div class="d-flex flex-column gap-1">
+                    <div class="d-flex align-items-center justify-content-start">
+                      <a href="tel:96892035086" class="d-flex align-items-center justify-content-center gap-1" dir="ltr">
+                        <span class="ti-xs ti ti-phone"></span> +96892035086
+                      </a>
+                    </div><!-- d-flex -->
+                    <div class="d-flex align-items-center justify-content-start">
+                      <a href="tel:96892035086" class="d-flex align-items-center justify-content-center gap-1" dir="ltr">
+                        <span class="ti-xs ti ti-phone"></span> +96892035086
+                      </a>
+                    </div><!-- d-flex -->
                   </div><!-- d-flex -->
                 </td>
               </tr>

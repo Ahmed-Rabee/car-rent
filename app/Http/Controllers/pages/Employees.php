@@ -23,4 +23,12 @@ class Employees extends Controller
   {
     return view('employees.view');
   }
+  public function penalties()
+  {
+    return view('employees.penalties.index');
+  }
+  public function advances()
+  {
+    return view('employees.advances.index');
+  }
 }

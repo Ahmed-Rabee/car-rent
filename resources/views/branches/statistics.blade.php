@@ -21,6 +21,7 @@
     <div class="tabs-area d-flex align-items-center justify-content-start gap-3 flex-wrap mb-4">
       <a href="{{ url('/branches/{id}/view') }}" title="تفاصيل الفرع" class="btn">تفاصيل الفرع</a>
       <a href="{{ url('/branches/{id}/statistics') }}" title="إحصائيات الفرع" class="btn btn-primary waves-effect waves-light">إحصائيات الفرع</a>
+      <a href="{{ url('/branches/{id}/employees') }}" title="موظفي الفرع" class="btn">موظفي الفرع</a>
     </div><!-- tabs-area -->
 
     <div class="row row-cols-2 row-cols-md-4 g-3">

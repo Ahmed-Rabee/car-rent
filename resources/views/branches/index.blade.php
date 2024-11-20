@@ -45,7 +45,16 @@
               </td>
               <td>
                 <div class="d-flex flex-column gap-1">
-                  <div class="d-flex align-items-center justify-content-start gap-1"><span dir="ltr">+966 554433221</span></div>
+                  <div class="d-flex align-items-center justify-content-start">
+                    <a href="tel:96892035086" class="d-flex align-items-center justify-content-center gap-1" dir="ltr">
+                      <span class="ti-xs ti ti-phone"></span> +96892035086
+                    </a>
+                  </div><!-- d-flex -->
+                  <div class="d-flex align-items-center justify-content-start">
+                    <a href="tel:96892035086" class="d-flex align-items-center justify-content-center gap-1" dir="ltr">
+                      <span class="ti-xs ti ti-phone"></span> +96892035086
+                    </a>
+                  </div><!-- d-flex -->
                 </div><!-- d-flex -->
               </td>
               <td>
@@ -73,93 +82,11 @@
               </td>
               <td>
                 <div class="d-flex flex-column gap-1">
-                  <div class="d-flex align-items-center justify-content-start gap-1"><span dir="ltr">+966 554433221</span></div>
-                  <div class="d-flex align-items-center justify-content-start gap-1"><span dir="ltr">+966 554433221</span></div>
-                </div><!-- d-flex -->
-              </td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/branches/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/branches/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#branchDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="{{ url('/branches/{id}/view') }}">24</a>
-              </td>
-              <td>فرع الواحه</td>
-              <td>6</td>
-              <td>
-                <div class="d-flex flex-column gap-1">
-                  <div class="d-flex align-items-center justify-content-start gap-1">من <span dir="ltr">11:30 AM</span> - إلي <span dir="ltr">04:30 PM</span></div>
-                  <div class="d-flex align-items-center justify-content-start gap-1">من <span dir="ltr">11:30 AM</span> - إلي <span dir="ltr">04:30 PM</span></div>
-                </div><!-- d-flex -->
-              </td>
-              <td>
-                <div class="d-flex flex-column gap-1">
-                  <div class="d-flex align-items-center justify-content-start gap-1"><span dir="ltr">+966 554433221</span></div>
-                </div><!-- d-flex -->
-              </td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/branches/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/branches/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#branchDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="{{ url('/branches/{id}/view') }}">24</a>
-              </td>
-              <td>فرع الواحه</td>
-              <td>3</td>
-              <td>
-                <div class="d-flex flex-column gap-1">
-                  <div class="d-flex align-items-center justify-content-start gap-1">من <span dir="ltr">11:30 AM</span> - إلي <span dir="ltr">04:30 PM</span></div>
-                  <div class="d-flex align-items-center justify-content-start gap-1">من <span dir="ltr">11:30 AM</span> - إلي <span dir="ltr">04:30 PM</span></div>
-                </div><!-- d-flex -->
-              </td>
-              <td>
-                <div class="d-flex flex-column gap-1">
-                  <div class="d-flex align-items-center justify-content-start gap-1"><span dir="ltr">+966 554433221</span></div>
-                  <div class="d-flex align-items-center justify-content-start gap-1"><span dir="ltr">+966 554433221</span></div>
-                </div><!-- d-flex -->
-              </td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/branches/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/branches/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#branchDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="{{ url('/branches/{id}/view') }}">24</a>
-              </td>
-              <td>فرع الواحه</td>
-              <td>6</td>
-              <td>
-                <div class="d-flex flex-column gap-1">
-                  <div class="d-flex align-items-center justify-content-start gap-1">من <span dir="ltr">11:30 AM</span> - إلي <span dir="ltr">04:30 PM</span></div>
-                  <div class="d-flex align-items-center justify-content-start gap-1">من <span dir="ltr">11:30 AM</span> - إلي <span dir="ltr">04:30 PM</span></div>
-                </div><!-- d-flex -->
-              </td>
-              <td>
-                <div class="d-flex flex-column gap-1">
-                  <div class="d-flex align-items-center justify-content-start gap-1"><span dir="ltr">+966 554433221</span></div>
+                  <div class="d-flex align-items-center justify-content-start">
+                    <a href="tel:96892035086" class="d-flex align-items-center justify-content-center gap-1" dir="ltr">
+                      <span class="ti-xs ti ti-phone"></span> +96892035086
+                    </a>
+                  </div><!-- d-flex -->
                 </div><!-- d-flex -->
               </td>
               <td>
