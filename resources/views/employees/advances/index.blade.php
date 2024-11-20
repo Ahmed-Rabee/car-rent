@@ -125,125 +125,15 @@
     </div><!-- card -->
 
     <!-- advance Create Modal -->
-    <div class="modal fade" id="advanceCreateModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header p-3">
-            <h5 class="modal-title" id="advanceCreateModalLabel1">إضافة سَلَفَهُ جديدة</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div><!-- modal-header -->
-          <div class="modal-body p-3">
-            <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label fw-medium" for="employee-name-1">الموظف</label>
-              <div class="col-12 col-sm-9">
-                <select id="employee-name-1" class="select2 form-select" data-allow-clear="false" data-placeholder="" data-dropdown-parent="#advanceCreateModal">
-                  <option></option>
-                  <option value="AK">احمد محمود</option>
-                  <option value="HI">مصطفي محمد</option>
-                  <option value="ew">عبدالرحمن عمر</option>
-                </select>
-              </div><!-- col-12 -->
-            </div><!-- row -->
-            <hr class="my-3">
-            <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label fw-medium" for="employee-advance-amount">المبلغ</label>
-              <div class="col-12 col-sm-9">
-                <div class="input-group">
-                  <input type="number" inputmode="numeric" class="form-control" id="employee-advance-amount" />
-                  <span class="input-group-text">ريال</span>
-                </div><!-- input-group -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-            <hr class="my-3">
-            <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label fw-medium" for="employee-advance-date">التاريخ</label>
-              <div class="col-12 col-sm-9">
-                <input type="date" class="form-control flatpickr-date" id="employee-advance-date" placeholder="YYYY-MM-DD" readonly="readonly" />
-              </div><!-- col-12 -->
-            </div><!-- row -->
-          </div><!-- modal-body -->
-          <div class="modal-footer p-3 d-flex align-items-center justify-content-end gap-3">
-            <button type="button" class="btn text-secondary waves-effect m-0" data-bs-dismiss="modal">إلغاء</button>
-            <button type="button" class="btn btn-primary px-5 m-0">حفظ</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    @include('employees.Modals.Advances.create')
     <!-- advance Create Modal -->
 
     <!-- advance Edit Modal -->
-    <div class="modal fade" id="advanceEditModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header p-3">
-            <h5 class="modal-title" id="advanceEditModalLabel1">تعديل سَلَفَهُ : احمد محمد محمود</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div><!-- modal-header -->
-          <div class="modal-body p-3">
-            <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label fw-medium" for="employee-name-2">الموظف</label>
-              <div class="col-12 col-sm-9">
-                <select id="employee-name-2" class="select2 form-select" data-allow-clear="false" data-placeholder="" data-dropdown-parent="#advanceEditModal">
-                  <option></option>
-                  <option value="AK">احمد محمود</option>
-                  <option value="HI">مصطفي محمد</option>
-                  <option value="ew">عبدالرحمن عمر</option>
-                </select>
-              </div><!-- col-12 -->
-            </div><!-- row -->
-            <hr class="my-3">
-            <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label fw-medium" for="employee-advance-amount">المبلغ</label>
-              <div class="col-12 col-sm-9">
-                <div class="input-group">
-                  <input type="number" inputmode="numeric" class="form-control" id="employee-advance-amount" />
-                  <span class="input-group-text">ريال</span>
-                </div><!-- input-group -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-            <hr class="my-3">
-            <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label fw-medium" for="employee-advance-date">التاريخ</label>
-              <div class="col-12 col-sm-9">
-                <input type="date" class="form-control flatpickr-date" id="employee-advance-date" placeholder="YYYY-MM-DD" readonly="readonly" />
-              </div><!-- col-12 -->
-            </div><!-- row -->
-          </div><!-- modal-body -->
-          <div class="modal-footer p-3 d-flex align-items-center justify-content-end gap-3">
-            <button type="button" class="btn text-secondary waves-effect m-0" data-bs-dismiss="modal">إلغاء</button>
-            <button type="button" class="btn btn-primary px-5 m-0">حفظ</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    @include('employees.Modals.Advances.edit')
     <!-- advance Edit Modal -->
 
     <!-- advance Delete Modal -->
-    <div class="modal fade" id="advanceDeleteModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header p-3">
-            <h5 class="modal-title" id="advanceDeleteModalLabel1">حذف سَلَفَهُ : احمد محمد محمود</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div><!-- modal-header -->
-          <div class="modal-body p-3">
-            <div class="top-area d-flex align-items-center justify-content-center gap-4 flex-column">
-              <div class="swal2-icon swal2-error swal2-icon-show d-flex m-0">
-                <span class="swal2-x-mark">
-                  <span class="swal2-x-mark-line-left"></span>
-                  <span class="swal2-x-mark-line-right"></span>
-                </span>
-              </div><!-- swal2-icon -->
-              <h5 class="d-block text-center fw-medium text-danger m-0">هل أنت متأكد أنك تريد حذف السَلَفَهُ ؟</h5>
-            </div><!-- top-area -->
-          </div><!-- modal-body -->
-          <div class="modal-footer p-3 d-flex align-items-center justify-content-end gap-3">
-            <button type="button" class="btn text-secondary waves-effect m-0" data-bs-dismiss="modal">إلغاء</button>
-            <button type="button" class="btn btn-danger px-5 m-0">نعم, احذف</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    @include('employees.Modals.Advances.delete')
     <!-- advance Delete Modal -->
 
   </div><!-- brands-index-page -->

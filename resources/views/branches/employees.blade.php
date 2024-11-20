@@ -6,7 +6,7 @@
 
 @section('content')
 
-  <div id="branches-statistics-page">
+  <div id="branches-employees-page">
 
     <div class="d-flex flex-wrap gap-3 justify-content-between align-items-start align-items-md-center mb-4">
       <div class="d-flex flex-column justify-content-center flex-grow-1">
@@ -35,7 +35,6 @@
               <th class="fw-bold">تاريخ التعيين</th>
               <th class="fw-bold">المسمي الوظيفي</th>
               <th class="fw-bold">الراتب</th>
-              <th width="5%"></th>
             </tr>
           </thead>
           <tbody class="table-border-bottom-0">
@@ -56,16 +55,6 @@
               <td>
                 <span class="d-flex align-items-center justify-content-start gap-1">1421 <small>ريال</small></span>
               </td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/employees/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/employees/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#employeeDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
             </tr>
           </tbody>
         </table>
@@ -76,11 +65,7 @@
     @include('branches.Modals.delete')
     <!-- Branch Delete Modal -->
 
-     <!-- Employee Delete Modal -->
-    @include('employees.Modals.delete')
-    <!-- Employee Delete Modal -->
-
-  </div><!-- branches-statistics-page -->
+  </div><!-- branches-employees-page -->
 
 @endsection
 

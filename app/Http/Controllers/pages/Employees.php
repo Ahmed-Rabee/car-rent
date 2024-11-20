@@ -31,4 +31,8 @@ class Employees extends Controller
   {
     return view('employees.advances.index');
   }
+  public function rewards()
+  {
+    return view('employees.rewards.index');
+  }
 }

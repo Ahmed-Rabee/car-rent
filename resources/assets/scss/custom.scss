@@ -281,3 +281,35 @@ label.form-label, label.col-form-label {
     } // input.iti__tel-input
   } // iti--allow-dropdown
 } // iti
+
+
+.flatpickr-monthSelect-theme-light, .flatpickr-monthSelect-theme-dark {
+  .flatpickr-innerContainer {
+    display: block !important;
+    .flatpickr-rContainer {
+      display: block;
+      width: 100%;
+      .flatpickr-monthSelect-months {
+        display: grid;
+        gap: .5rem;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        padding: .5rem;
+        span.flatpickr-monthSelect-month {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          border-radius: .25rem;
+          min-height: 30px;
+          &:hover {
+            background-color: #f8f8f8;
+          } // hover
+          &.selected {
+            background-color: #7367f0;
+            color: #fff;
+          } // selected
+        } // span.flatpickr-monthSelect-month
+      } // flatpickr-monthSelect-months
+    } // flatpickr-rContainer
+  } // flatpickr-innerContainer
+} // flatpickr-monthSelect-theme-light

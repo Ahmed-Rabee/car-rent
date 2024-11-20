@@ -29,6 +29,9 @@ Route::get('/employees/{id}/edit', [Employees::class, 'edit'])->name('employees-
 Route::get('/employees/{id}/view', [Employees::class, 'view'])->name('employees-view');
 Route::get('/employees/penalties', [Employees::class, 'penalties'])->name('employees-penalties-index');
 Route::get('/employees/advances', [Employees::class, 'advances'])->name('employees-advances-index');
+Route::get('/employees/rewards', [Employees::class, 'rewards'])->name('employees-rewards-index');
+
+
 
 // Permissions Routes
 Route::get('/permissions', [Permissions::class, 'index'])->name('permissions-index');

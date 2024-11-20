@@ -51,6 +51,11 @@
             <div>السَّلَفُ</div>
           </a>
         </li>
+        <li class="menu-item">
+          <a href="{{ url('/employees/rewards') }}" class="menu-link">
+            <div>المكافآت</div>
+          </a>
+        </li>
       </ul>
     </li>
     <!-- Manage Permissions -->

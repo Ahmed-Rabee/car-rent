@@ -23,12 +23,12 @@
           <thead>
             <tr>
               <th width="5%" class="fw-bold">#</th>
-              <th class="fw-bold">اسم الموظف</th>
+              <th class="fw-bold">الاسم</th>
               <th class="fw-bold">الفرع</th>
               <th class="fw-bold">رقم الهاتف</th>
               <th class="fw-bold">تاريخ التعيين</th>
               <th class="fw-bold">المسمي الوظيفي</th>
-              <th class="fw-bold">الراتب</th>
+              <th class="fw-bold">الصلاحيات</th>
               <th width="5%"></th>
             </tr>
           </thead>
@@ -48,9 +48,7 @@
               </td>
               <td>2024-10-13</td>
               <td>موظف استقبال</td>
-              <td>
-                <span class="d-flex align-items-center justify-content-start gap-1">1421 <small>ريال</small></span>
-              </td>
+              <td>موظف</td>
               <td>
                 <div class="dropdown">
                   <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
