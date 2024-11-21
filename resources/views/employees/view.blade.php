@@ -162,16 +162,16 @@
               <table class="table table-striped table-bordered">
                 <tbody class="table-border-bottom-0">
                   <tr>
-                    <td width="5%" class="p-2 text-nowrap">تاريخ التعيين</td>
-                    <td class="p-2">2024-11-17</td>
+                    <td width="5%" class="p-3 text-nowrap">تاريخ التعيين</td>
+                    <td class="p-3">2024-11-17</td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-2 text-nowrap">الحالة</td>
-                    <td class="p-2">مفعل</td>
+                    <td width="5%" class="p-3 text-nowrap">الحالة</td>
+                    <td class="p-3">مفعل</td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-2 text-nowrap">ايام العطلات</td>
-                    <td class="p-2">
+                    <td width="5%" class="p-3 text-nowrap">ايام العطلات</td>
+                    <td class="p-3">
                       <div class="d-flex align-items-center justify-content-start flex-wrap gap-2">
                         <span class="badge bg-label-dark">الجمعة</span>
                         <span class="badge bg-label-dark">السبت</span>
@@ -179,20 +179,20 @@
                     </td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-2 text-nowrap">ساعات العمل</td>
-                    <td class="p-2">
+                    <td width="5%" class="p-3 text-nowrap">ساعات العمل</td>
+                    <td class="p-3">
                       <div class="d-flex align-items-center justify-content-start gap-1">
                         8 <small>ساعة</small>
                       </div><!-- d-flex -->
                     </td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-2 text-nowrap">الصلاحيات</td>
-                    <td class="p-2">موظف</td>
+                    <td width="5%" class="p-3 text-nowrap">الصلاحيات</td>
+                    <td class="p-3">موظف</td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-2 text-nowrap">الفرع</td>
-                    <td class="p-2">فرع الواحة</td>
+                    <td width="5%" class="p-3 text-nowrap">الفرع</td>
+                    <td class="p-3">فرع الواحة</td>
                   </tr>
                 </tbody>
               </table>
@@ -204,9 +204,9 @@
               <table class="table table-striped table-bordered">
                 <tbody class="table-border-bottom-0">
                   <tr>
-                    <td width="5%" class="p-2 text-nowrap">بطاقة الهوية الوطنية</td>
-                    <td class="p-2">
-                      <div class="d-flex justify-content-start flex-wrap gap-2">
+                    <td width="5%" class="p-3 text-nowrap">بطاقة الهوية الوطنية</td>
+                    <td class="p-3">
+                      <div class="d-flex justify-content-start flex-wrap gap-3">
                         <a href="../../assets/img/elements/4.jpg" data-fancybox="employee-id-card" data-caption="بطاقة الهوية الوطنية">
                           <img src="../../assets/img/elements/4.jpg" class="rounded-1 m-0" alt="بطاقة الهوية الوطنية" height="32" width="32">
                         </a>
@@ -217,13 +217,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-2 text-nowrap">تاريخ إنتهاء الهوية الوطنية</td>
-                    <td class="p-2">2024-11-17</td>
+                    <td width="5%" class="p-3 text-nowrap">تاريخ إنتهاء الهوية الوطنية</td>
+                    <td class="p-3">2024-11-17</td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-2 text-nowrap">رخصة القيادة</td>
-                    <td class="p-2">
-                      <div class="d-flex justify-content-start flex-wrap gap-2">
+                    <td width="5%" class="p-3 text-nowrap">رخصة القيادة</td>
+                    <td class="p-3">
+                      <div class="d-flex justify-content-start flex-wrap gap-3">
                         <a href="../../assets/img/elements/5.jpg" data-fancybox="employee-vehicle-license" data-caption="رخصة القيادة">
                           <img src="../../assets/img/elements/5.jpg" class="rounded-1 m-0" alt="رخصة القيادة" height="32" width="32">
                         </a>
@@ -234,9 +234,9 @@
                     </td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-2 text-nowrap">مدة رخصة القيادة</td>
-                    <td class="p-2">
-                      <div class="d-flex align-items-center justify-content-start gap-2">
+                    <td width="5%" class="p-3 text-nowrap">مدة رخصة القيادة</td>
+                    <td class="p-3">
+                      <div class="d-flex align-items-center justify-content-start gap-3">
                         <span>من : 18 / 11 / 2024</span>
                         <span>-</span>
                         <span>إلي : 18 / 11 / 2024</span>
@@ -244,21 +244,21 @@
                     </td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-2 text-nowrap">صورة جواز السفر</td>
-                    <td class="p-2">
+                    <td width="5%" class="p-3 text-nowrap">صورة جواز السفر</td>
+                    <td class="p-3">
                       <a href="../../assets/img/elements/1.jpg" data-fancybox data-caption="صورة جواز السفر">
                         <img src="../../assets/img/elements/1.jpg" class="rounded-1 m-0" alt="صورة جواز السفر" height="32" width="32">
                       </a>
                     </td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-2 text-nowrap">رقم جواز السفر</td>
-                    <td class="p-2">74466367373737</td>
+                    <td width="5%" class="p-3 text-nowrap">رقم جواز السفر</td>
+                    <td class="p-3">74466367373737</td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-2 text-nowrap">مدة جواز السفر</td>
-                    <td class="p-2">
-                      <div class="d-flex align-items-center justify-content-start gap-2">
+                    <td width="5%" class="p-3 text-nowrap">مدة جواز السفر</td>
+                    <td class="p-3">
+                      <div class="d-flex align-items-center justify-content-start gap-3">
                         <span>من : 18 / 11 / 2024</span>
                         <span>-</span>
                         <span>إلي : 18 / 11 / 2024</span>
@@ -266,20 +266,20 @@
                     </td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-2 text-nowrap">صورة التآشيرة</td>
-                    <td class="p-2">
+                    <td width="5%" class="p-3 text-nowrap">صورة التآشيرة</td>
+                    <td class="p-3">
                       <a href="../../assets/img/elements/11.jpg" data-fancybox data-caption="صورة التآشيرة">
                         <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="صورة التآشيرة" height="32" width="32">
                       </a>
                     </td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-2 text-nowrap">رقم التآشيرة</td>
-                    <td class="p-2">45684735348758734</td>
+                    <td width="5%" class="p-3 text-nowrap">رقم التآشيرة</td>
+                    <td class="p-3">45684735348758734</td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-2 text-nowrap">مدة التآشيرة</td>
-                    <td class="p-2">
+                    <td width="5%" class="p-3 text-nowrap">مدة التآشيرة</td>
+                    <td class="p-3">
                       <div class="d-flex align-items-center justify-content-start gap-2">
                         <span>من : 18 / 11 / 2024</span>
                         <span>-</span>
@@ -297,20 +297,20 @@
               <table class="table table-striped table-bordered">
                 <tbody class="table-border-bottom-0">
                   <tr>
-                    <td width="5%" class="p-2 text-nowrap">الراتب الشهري</td>
-                    <td class="p-2">
+                    <td width="5%" class="p-3 text-nowrap">الراتب الشهري</td>
+                    <td class="p-3">
                       <div class="d-flex align-items-center justify-content-start gap-1">
                         1213 <small>ريال</small>
                       </div><!-- d-flex -->
                     </td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-2 text-nowrap">رقم الحساب البنكي</td>
-                    <td class="p-2">76348765783465347</td>
+                    <td width="5%" class="p-3 text-nowrap">رقم الحساب البنكي</td>
+                    <td class="p-3">76348765783465347</td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-2 text-nowrap">اسم البنك التابع له الحساب</td>
-                    <td class="p-2">البنك الوطني المتحد</td>
+                    <td width="5%" class="p-3 text-nowrap">اسم البنك التابع له الحساب</td>
+                    <td class="p-3">البنك الوطني المتحد</td>
                   </tr>
                 </tbody>
               </table>
@@ -330,22 +330,22 @@
               <table class="table table-striped table-bordered">
                 <thead>
                   <tr>
-                    <th class="fw-bold p-2">التفاصيل</th>
-                    <th width="5%" class="fw-bold p-2">المبلغ</th>
-                    <th width="5%" class="fw-bold p-2">التاريخ</th>
+                    <th class="fw-bold p-3">التفاصيل</th>
+                    <th width="5%" class="fw-bold p-3">المبلغ</th>
+                    <th width="5%" class="fw-bold p-3">التاريخ</th>
                   </tr>
                 </thead>
                 <tbody class="table-border-bottom-0">
                   <tr>
-                    <td class="p-2">
+                    <td class="p-3">
                       التحدث مع العميل بشكل غير لائق
                     </td>
-                    <td class="p-2">
+                    <td class="p-3">
                       <div class="d-flex align-items-center justify-content-start gap-1">
                         121 <small>ريال</small>
                       </div><!-- d-flex -->
                     </td>
-                    <td class="p-2">
+                    <td class="p-3">
                       2024-11-11
                     </td>
                   </tr>
@@ -367,18 +367,18 @@
               <table class="table table-striped table-bordered">
                 <thead>
                   <tr>
-                    <th class="fw-bold p-2">المبلغ</th>
-                    <th width="5%" class="fw-bold p-2">التاريخ</th>
+                    <th class="fw-bold p-3">المبلغ</th>
+                    <th width="5%" class="fw-bold p-3">التاريخ</th>
                   </tr>
                 </thead>
                 <tbody class="table-border-bottom-0">
                   <tr>
-                    <td class="p-2">
+                    <td class="p-3">
                       <div class="d-flex align-items-center justify-content-start gap-1">
                         121 <small>ريال</small>
                       </div><!-- d-flex -->
                     </td>
-                    <td class="p-2">
+                    <td class="p-3">
                       2024-11-11
                     </td>
                   </tr>
@@ -400,20 +400,20 @@
               <table class="table table-striped table-bordered">
                 <thead>
                   <tr>
-                    <th class="fw-bold p-2">التفاصيل</th>
-                    <th width="5%" class="fw-bold p-2">المبلغ</th>
-                    <th width="5%" class="fw-bold p-2">التاريخ</th>
+                    <th class="fw-bold p-3">التفاصيل</th>
+                    <th width="5%" class="fw-bold p-3">المبلغ</th>
+                    <th width="5%" class="fw-bold p-3">التاريخ</th>
                   </tr>
                 </thead>
                 <tbody class="table-border-bottom-0">
                   <tr>
-                    <td class="p-2">إيجاد حلول لمشاكل العملاء وتحسين خدمات العملاء</td>
-                    <td class="p-2">
+                    <td class="p-3">إيجاد حلول لمشاكل العملاء وتحسين خدمات العملاء</td>
+                    <td class="p-3">
                       <div class="d-flex align-items-center justify-content-start gap-1">
                         121 <small>ريال</small>
                       </div><!-- d-flex -->
                     </td>
-                    <td class="p-2">
+                    <td class="p-3">
                       2024-11-11
                     </td>
                   </tr>

@@ -24,8 +24,8 @@
           <thead>
             <tr>
               <th width="5%" class="fw-bold">#</th>
-              <th class="fw-bold">اسم العميل</th>
-              <th class="fw-bold">تصنيف العميل</th>
+              <th class="fw-bold">الاسم</th>
+              <th class="fw-bold">التصنيف</th>
               <th class="fw-bold">الجنسية</th>
               <th class="fw-bold">دولة الإقامة</th>
               <th class="fw-bold">رقم الجوال</th>
@@ -44,14 +44,14 @@
               <td>عمان</td>
               <td>
                 <div class="d-flex align-items-center justify-content-start">
-                  <a href="tel:96892035086" class="d-flex align-items-center justify-content-center gap-1" dir="ltr">
+                  <a href="tel:96892035086" target="_blank" class="d-flex align-items-center justify-content-center gap-1" dir="ltr">
                     <span class="ti-xs ti ti-phone"></span> +96892035086
                   </a>
                 </div><!-- d-flex -->
               </td>
               <td>
                 <div class="d-flex align-items-center justify-content-start">
-                  <a href="https://wa.me/96892035086" class="d-flex align-items-center justify-content-center gap-1" dir="ltr">
+                  <a href="https://wa.me/96892035086" target="_blank" class="d-flex align-items-center justify-content-center gap-1" dir="ltr">
                     <span class="ti-xs ti ti-brand-whatsapp"></span> +96892035086
                   </a>
                 </div><!-- d-flex -->

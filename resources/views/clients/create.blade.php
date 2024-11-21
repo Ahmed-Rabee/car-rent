@@ -9,60 +9,69 @@
 
 @section('content')
 
-  <div id="employees-create-page">
+  <div id="clients-create-page">
 
     <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-4">
       <div class="d-flex flex-column justify-content-center">
         <h4 class="m-0">إضافة عميل جديد</h4>
       </div>
-    </div>
+    </div><!-- d-flex -->
 
-    <div class="row row-cols-1 row-cols-md-2 g-3">
-      <div class="col">
-        <div class="card">
-          <div class="card-body d-flex flex-column gap-4 p-3">
+    <div class="card mb-4">
+      <div class="card-body p-3">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
             <div class="form-group">
-              <label class="form-label fs-6 mb-2 required" for="customer-classification">تصنيف العميل</label>
-              <select id="customer-classification" class="select2 form-select" data-allow-clear="false" data-placeholder="اختر">
+              <label class="form-label mb-2 fs-6 required" for="customer-classification">تصنيف العميل</label>
+              <select id="customer-classification" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
                 <option></option>
                 <option value="local-client-fields" selected>محلي</option>
                 <option value="gcc-client-fields">مجلس تعاون الخليج</option>
                 <option value="foreign-client-fields">اجنبي</option>
               </select>
             </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
             <div class="form-group">
-              <label class="form-label fs-6 mb-2 required" for="customer-name">اسم العميل</label>
+              <label class="form-label mb-2 fs-6 required" for="customer-name">اسم العميل</label>
               <input type="text" class="form-control" id="customer-name" />
             </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
             <div class="form-group">
-              <label class="form-label fs-6 mb-2 required" for="customer-nationality">الجنس</label>
-              <select id="customer-sex" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر">
+              <label class="form-label mb-2 fs-6 required" for="customer-sex">الجنس</label>
+              <select id="customer-sex" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
                 <option></option>
                 <option value="AK">ذكر</option>
                 <option value="HI">آنثي</option>
               </select>
             </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
             <div class="form-group">
-              <label class="form-label fs-6 mb-2 required" for="customer-nationality">الجنسية</label>
-              <select id="customer-nationality" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر">
+              <label class="form-label mb-2 fs-6 required" for="customer-nationality">الجنسية</label>
+              <select id="customer-nationality" class="select2 form-select" data-allow-clear="false" data-placeholder="اختر">
                 <option></option>
                 <option value="AK">مصري</option>
                 <option value="HI">سوري</option>
               </select>
             </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
             <div class="form-group">
-              <label class="form-label fs-6 mb-2 required" for="customer-country-residence">دولة الإقامة</label>
-              <select id="customer-country-residence" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر">
+              <label class="form-label mb-2 fs-6 required" for="customer-country-residence">دولة الإقامة</label>
+              <select id="customer-country-residence" class="select2 form-select" data-allow-clear="false" data-placeholder="اختر">
                 <option></option>
                 <option value="AK">النمسا</option>
                 <option value="HI">العراق</option>
               </select>
             </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
             <div class="form-group">
-              <label class="form-label fs-6 mb-2 required" for="customer-mobile-number">رقم الجوال</label>
-              <div class="d-flex align-items-center justify-content-start gap-3">
-                <input type="tel" inputmode="numeric" id="customer-mobile-number" dir="ltr" class="form-control input-phone-flags">
-                <label class="switch switch-square switch-lg flex-shrink-0">
+              <div class="d-flex align-items-center justify-content-start gap-3 mb-2">
+                <label class="form-label m-0 flex-grow-1 fs-6 required" for="customer-mobile-number">رقم الجوال</label>
+                <label class="switch switch-square flex-shrink-0 m-0">
                   <input type="checkbox" id="customer-mobile-number-switch" class="switch-input" checked />
                   <span class="switch-toggle-slider">
                     <span class="switch-on"><i class="ti ti-check"></i></span>
@@ -71,221 +80,273 @@
                   <span class="switch-label">متاح واتس اب</span>
                 </label>
               </div><!-- d-flex -->
+              <input type="tel" inputmode="numeric" id="customer-mobile-number" dir="ltr" class="form-control input-phone-flags">
             </div><!-- form-group -->
-            <div id="customer-whatsapp-number-element" style="display: none;">
-              <div class="form-group">
-                <label class="form-label fs-6 mb-2" for="customer-whatsapp-number">رقم الواتس اب</label>
-                <input type="tel" inputmode="numeric" id="customer-whatsapp-number" dir="ltr" class="form-control input-phone-flags">
-              </div><!-- form-group -->
-            </div><!-- customer-whatsapp-number-element -->
+          </div><!-- col -->
+          <div class="col" id="customer-whatsapp-number-element" style="display: none;">
             <div class="form-group">
-              <label class="form-label fs-6 mb-2" for="customer-email">البريد الالكتروني</label>
+              <label class="form-label mb-2 fs-6 required" for="customer-whatsapp-number">رقم الواتس اب</label>
+              <input type="tel" inputmode="numeric" id="customer-whatsapp-number" dir="ltr" class="form-control input-phone-flags">
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label mb-2 fs-6 required" for="customer-email">البريد الالكتروني</label>
               <input type="email" inputmode="email" id="customer-email" dir="ltr" class="form-control" />
             </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
             <div class="form-group">
-              <label class="form-label fs-6 mb-2" for="customer-address">العنوان</label>
+              <label class="form-label mb-2 fs-6 required" for="customer-address">العنوان</label>
               <input type="text" id="customer-address" dir="ltr" class="form-control" />
             </div><!-- form-group -->
+          </div><!-- col -->
+        </div><!-- row -->
+        <div class="form-group mt-4">
+          <label class="form-label mb-2 fs-6 required" for="customer-notes">الملاحظات</label>
+          <textarea class="form-control p-2" id="customer-notes" rows="4"></textarea>
+        </div><!-- form-group -->
+      </div><!-- card-body -->
+    </div><!-- card -->
+
+    <div class="card">
+      <div class="card-header p-3">
+        <h5 class="card-title m-0">الوثائق الرسمية</h5>
+      </div><!-- card-header -->
+      <div class="card-body p-3">
+
+        <!-- تصنيف العميل محلي -->
+        <div id="local-client-fields" class="toggle-element row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
             <div class="form-group">
-              <label class="form-label fs-6 mb-2" for="customer-notes">الملاحظات</label>
-              <textarea class="form-control" id="customer-notes" rows="3"></textarea>
+              <label class="form-label mb-2 fs-6 required" for="local-customer-national-id-number">رقم الهوية الوطنية</label>
+              <input type="text" class="form-control" id="local-customer-national-id-number" />
             </div><!-- form-group -->
-          </div><!-- card-body -->
-        </div><!-- card -->
-      </div><!-- col -->
-      <div class="col">
-        <div class="card">
-          <div class="card-header p-3">
-            <h4 class="card-title m-0">الوثائق الرسمية</h4>
-          </div><!-- card-header -->
-          <div class="card-body p-3">
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label mb-2 fs-6 required" for="local-customer-national-id-image">صورة الهوية الوطنية</label>
+              <div action="/upload" class="dropzone needsclick dropzoneBasic" id="local-customer-national-id-image">
+                <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
+                <div class="fallback">
+                  <input name="local-customer-national-id-image" type="file" />
+                </div>
+              </div><!-- dropzone -->
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label mb-2 fs-6 required" for="local-customer-national-id-expiry-date">تاريخ إنتهاء الهوية الوطنية</label>
+              <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="local-customer-national-id-expiry-date" readonly="readonly" />
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label mb-2 fs-6 required" for="local-customer-driving-license-number">رقم رخصة القيادة</label>
+              <input type="text" class="form-control" id="local-customer-driving-license-number" disabled value="" />
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label mb-2 fs-6 required" for="local-customer-driving-license-issuer">جهة إصدار رخصة القيادة</label>
+              <input type="text" class="form-control" id="local-customer-driving-license-issuer" />
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label mb-2 fs-6 required" for="local-customer-driving-license-photo">صورة رخصة القيادة</label>
+              <div action="/upload" class="dropzone needsclick dropzoneBasic" id="local-customer-driving-license-photo">
+                <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
+                <div class="fallback">
+                  <input name="local-customer-driving-license-photo" type="file" />
+                </div>
+              </div><!-- dropzone -->
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label mb-2 fs-6 required" for="local-customer-driving-license-duration">مدة رخصة القيادة</label>
+              <div class="input-group">
+                <span class="input-group-text">من</span>
+                <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="local-customer-driving-license-duration" readonly="readonly" />
+                <span class="input-group-text">إلي</span>
+                <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="local-customer-driving-license-duration-to" readonly="readonly" />
+              </div><!-- input-group -->
+            </div><!-- form-group -->
+          </div><!-- col -->
+        </div><!-- local-client-fields -->
+        <!-- تصنيف العميل محلي -->
 
-            <!-- تصنيف العميل محلي -->
-            <div id="local-client-fields" class="toggle-element">
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 mb-2 required" for="local-customer-national-id-number">رقم الهوية الوطنية</label>
-                <input type="text" class="form-control" id="local-customer-national-id-number" />
-              </div><!-- form-group -->
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 mb-2 required" for="local-customer-national-id-image">صورة الهوية الوطنية</label>
-                <div action="/upload" class="dropzone needsclick dropzoneBasic" id="local-customer-national-id-image">
-                  <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
-                  <div class="fallback">
-                    <input name="local-customer-national-id-image" type="file" />
-                  </div>
-                </div><!-- dropzone -->
-              </div><!-- form-group -->
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 required" for="local-customer-national-id-expiry-date">تاريخ إنتهاء الهوية الوطنية</label>
-                <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="local-customer-national-id-expiry-date" readonly="readonly" />
-              </div><!-- form-group -->
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 required" for="local-customer-driving-license-number">رقم رخصة القيادة</label>
-                <input type="text" class="form-control" id="local-customer-driving-license-number" disabled value="" />
-              </div><!-- form-group -->
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 required" for="local-customer-driving-license-issuer">جهة إصدار رخصة القيادة</label>
-                <input type="text" class="form-control" id="local-customer-driving-license-issuer" />
-              </div><!-- form-group -->
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 mb-2 required" for="local-customer-driving-license-photo">صورة رخصة القيادة</label>
-                <div action="/upload" class="dropzone needsclick dropzoneBasic" id="local-customer-driving-license-photo">
-                  <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
-                  <div class="fallback">
-                    <input name="local-customer-driving-license-photo" type="file" />
-                  </div>
-                </div><!-- dropzone -->
-              </div><!-- form-group -->
-              <div class="form-group">
-                <label class="form-label fs-6 mb-2 required" for="local-customer-driving-license-duration">مدة رخصة القيادة</label>
-                <div class="input-group">
-                  <span class="input-group-text">من</span>
-                  <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="local-customer-driving-license-duration" readonly="readonly" />
-                  <span class="input-group-text">إلي</span>
-                  <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="local-customer-driving-license-duration-to" readonly="readonly" />
-                </div><!-- input-group -->
-              </div><!-- form-group -->
-            </div><!-- local-client-fields -->
-            <!-- تصنيف العميل محلي -->
+        <!-- تصنيف العميل مجلس تعاون الخليج -->
+        <div id="gcc-client-fields" class="toggle-element row row-cols-1 row-cols-md-3 g-4" style="display:none;">
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label fs-6 mb-2 required" for="gcc-customer-national-id-number">رقم الهوية الوطنية</label>
+              <input type="text" class="form-control" id="gcc-customer-national-id-number" />
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label fs-6 mb-2 required" for="gcc-customer-national-id-photo">صورة الهوية الوطنية</label>
+              <div action="/upload" class="dropzone needsclick dropzoneBasic" id="gcc-customer-national-id-photo">
+                <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
+                <div class="fallback">
+                  <input name="local-customer-national-id-image" type="file" />
+                </div>
+              </div><!-- dropzone -->
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label fs-6 mb-2 required" for="gcc-customer-national-id-duration">مدة الهوية الوطنية</label>
+              <div class="input-group">
+                <span class="input-group-text">من</span>
+                <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="gcc-customer-national-id-duration" readonly="readonly" />
+                <span class="input-group-text">إلي</span>
+                <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="gcc-customer-national-id-duration-to" readonly="readonly" />
+              </div><!-- input-group -->
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label fs-6 mb-2 required" for="gcc-customer-driving-license-number">رقم رخصة القيادة</label>
+              <input type="text" class="form-control" id="gcc-customer-driving-license-number" />
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label fs-6 mb-2 required" for="gcc-customer-driving-license-issuing-authority">جهة إصدار رخصة القيادة</label>
+              <input type="text" class="form-control" id="gcc-customer-driving-license-issuing-authority" />
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label fs-6 mb-2 required" for="gcc-customer-driving-license-photo">صورة رخصة القيادة</label>
+              <div action="/upload" class="dropzone needsclick dropzoneBasic" id="gcc-customer-driving-license-photo">
+                <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
+                <div class="fallback">
+                  <input name="file" type="file" />
+                </div>
+              </div><!-- dropzone -->
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label fs-6 mb-2 required" for="gcc-customer-driving-license-duration">مدة رخصة القيادة</label>
+              <div class="input-group">
+                <span class="input-group-text">من</span>
+                <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="gcc-customer-driving-license-duration" readonly="readonly" />
+                <span class="input-group-text">إلي</span>
+                <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="gcc-customer-driving-license-duration-to" readonly="readonly" />
+              </div><!-- input-group -->
+            </div><!-- form-group -->
+          </div><!-- col -->
+        </div><!-- gcc-client-fields -->
+        <!-- تصنيف العميل مجلس تعاون الخليج -->
 
-            <!-- تصنيف العميل مجلس تعاون الخليج -->
-            <div id="gcc-client-fields" class="toggle-element" style="display:none;">
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 mb-2 required" for="gcc-customer-national-id-number">رقم الهوية الوطنية</label>
-                <input type="text" class="form-control" id="gcc-customer-national-id-number" />
-              </div><!-- form-group -->
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 mb-2 required" for="gcc-customer-national-id-photo">صورة الهوية الوطنية</label>
-                <div action="/upload" class="dropzone needsclick dropzoneBasic" id="gcc-customer-national-id-photo">
-                  <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
-                  <div class="fallback">
-                    <input name="local-customer-national-id-image" type="file" />
-                  </div>
-                </div><!-- dropzone -->
-              </div><!-- form-group -->
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 mb-2 required" for="gcc-customer-national-id-duration">مدة الهوية الوطنية</label>
-                <div class="input-group">
-                  <span class="input-group-text">من</span>
-                  <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="gcc-customer-national-id-duration" readonly="readonly" />
-                  <span class="input-group-text">إلي</span>
-                  <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="gcc-customer-national-id-duration-to" readonly="readonly" />
-                </div><!-- input-group -->
-              </div><!-- form-group -->
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 mb-2 required" for="gcc-customer-driving-license-number">رقم رخصة القيادة</label>
-                <input type="text" class="form-control" id="gcc-customer-driving-license-number" />
-              </div><!-- form-group -->
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 mb-2 required" for="gcc-customer-driving-license-issuing-authority">جهة إصدار رخصة القيادة</label>
-                <input type="text" class="form-control" id="gcc-customer-driving-license-issuing-authority" />
-              </div><!-- form-group -->
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 mb-2 required" for="gcc-customer-driving-license-photo">صورة رخصة القيادة</label>
-                <div action="/upload" class="dropzone needsclick dropzoneBasic" id="gcc-customer-driving-license-photo">
-                  <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
-                  <div class="fallback">
-                    <input name="file" type="file" />
-                  </div>
-                </div><!-- dropzone -->
-              </div><!-- form-group -->
-              <div class="form-group">
-                <label class="form-label fs-6 mb-2 required" for="gcc-customer-driving-license-duration">مدة رخصة القيادة</label>
-                <div class="input-group">
-                  <span class="input-group-text">من</span>
-                  <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="gcc-customer-driving-license-duration" readonly="readonly" />
-                  <span class="input-group-text">إلي</span>
-                  <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="gcc-customer-driving-license-duration-to" readonly="readonly" />
-                </div><!-- input-group -->
-              </div><!-- form-group -->
-            </div><!-- gcc-client-fields -->
-            <!-- تصنيف العميل مجلس تعاون الخليج -->
+        <!-- تصنيف العميل اجنبي -->
+        <div id="foreign-client-fields" class="toggle-element row row-cols-1 row-cols-md-3 g-4" style="display:none;">
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label fs-6 mb-2 required" for="foreign-customer-passport-number">رقم جواز السفر</label>
+              <input type="text" class="form-control" id="foreign-customer-passport-number" />
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label fs-6 mb-2 required" for="foreign-customer-passport-duration">مدة جواز السفر</label>
+              <div class="input-group">
+                <span class="input-group-text">من</span>
+                <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="foreign-customer-passport-duration-from" readonly="readonly" />
+                <span class="input-group-text">إلي</span>
+                <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="foreign-customer-passport-duration" readonly="readonly" />
+              </div><!-- input-group -->
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label fs-6 mb-2 required" for="foreign-customer-passport-photo">صورة جواز السفر</label>
+              <div action="/upload" class="dropzone needsclick dropzoneBasic" id="foreign-customer-passport-photo">
+                <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
+                <div class="fallback">
+                  <input name="file" type="file" />
+                </div>
+              </div><!-- dropzone -->
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label fs-6 mb-2 required" for="foreign-customer-visa-number">رقم التآشيرة</label>
+              <input type="text" class="form-control" id="foreign-customer-visa-number" />
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label fs-6 mb-2 required" for="foreign-customer-visa-duration">مدة التآشيرة</label>
+              <div class="input-group">
+                <span class="input-group-text">من</span>
+                <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="foreign-customer-visa-duration-from" readonly="readonly" />
+                <span class="input-group-text">إلي</span>
+                <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="foreign-customer-visa-duration" readonly="readonly" />
+              </div><!-- input-group -->
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label fs-6 mb-2 required" for="foreign-customer-visa-photo">صورة التآشيرة</label>
+              <div action="/upload" class="dropzone needsclick dropzoneBasic" id="foreign-customer-visa-photo">
+                <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
+                <div class="fallback">
+                  <input name="file" type="file" />
+                </div>
+              </div><!-- dropzone -->
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label fs-6 mb-2 required" for="foreign-customer-driving-license-number">رقم رخصة القيادة</label>
+              <input type="text" class="form-control" id="foreign-customer-driving-license-number" />
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label fs-6 mb-2 required" for="foreign-customer-driving-license-issuing-authority">جهة إصدار رخصة القيادة</label>
+              <input type="text" class="form-control" id="foreign-customer-driving-license-issuing-authority" />
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label fs-6 mb-2 required" for="foreign-customer-driving-license-photo">صورة رخصة القيادة</label>
+              <div action="/upload" class="dropzone needsclick dropzoneBasic" id="foreign-customer-driving-license-photo">
+                <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
+                <div class="fallback">
+                  <input name="file" type="file" />
+                </div>
+              </div><!-- dropzone -->
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="form-group">
+              <label class="form-label fs-6 mb-2 required" for="foreign-customer-driving-license-duration">مدة رخصة القيادة</label>
+              <div class="input-group">
+                <span class="input-group-text">من</span>
+                <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="foreign-customer-driving-license-duration-from" readonly="readonly" />
+                <span class="input-group-text">إلي</span>
+                <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="foreign-customer-driving-license-duration" readonly="readonly" />
+              </div><!-- input-group -->
+            </div><!-- form-group -->
+          </div><!-- col -->
+        </div><!-- foreign-client-fields -->
+        <!-- تصنيف العميل اجنبي -->
 
-            <!-- تصنيف العميل اجنبي -->
-            <div id="foreign-client-fields" class="toggle-element" style="display:none;">
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 mb-2 required" for="foreign-customer-passport-number">رقم جواز السفر</label>
-                <input type="text" class="form-control" id="foreign-customer-passport-number" />
-              </div><!-- form-group -->
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 mb-2 required" for="foreign-customer-passport-duration">مدة جواز السفر</label>
-                <div class="input-group">
-                  <span class="input-group-text">من</span>
-                  <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="foreign-customer-passport-duration-from" readonly="readonly" />
-                  <span class="input-group-text">إلي</span>
-                  <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="foreign-customer-passport-duration" readonly="readonly" />
-                </div><!-- input-group -->
-              </div><!-- form-group -->
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 mb-2 required" for="foreign-customer-passport-photo">صورة جواز السفر</label>
-                <div action="/upload" class="dropzone needsclick dropzoneBasic" id="foreign-customer-passport-photo">
-                  <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
-                  <div class="fallback">
-                    <input name="file" type="file" />
-                  </div>
-                </div><!-- dropzone -->
-              </div><!-- form-group -->
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 mb-2 required" for="foreign-customer-visa-number">رقم التآشيرة</label>
-                <input type="text" class="form-control" id="foreign-customer-visa-number" />
-              </div><!-- form-group -->
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 mb-2 required" for="foreign-customer-visa-duration">مدة التآشيرة</label>
-                <div class="input-group">
-                  <span class="input-group-text">من</span>
-                  <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="foreign-customer-visa-duration-from" readonly="readonly" />
-                  <span class="input-group-text">إلي</span>
-                  <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="foreign-customer-visa-duration" readonly="readonly" />
-                </div><!-- input-group -->
-              </div><!-- form-group -->
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 mb-2 required" for="foreign-customer-visa-photo">صورة التآشيرة</label>
-                <div action="/upload" class="dropzone needsclick dropzoneBasic" id="foreign-customer-visa-photo">
-                  <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
-                  <div class="fallback">
-                    <input name="file" type="file" />
-                  </div>
-                </div><!-- dropzone -->
-              </div><!-- form-group -->
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 mb-2 required" for="foreign-customer-driving-license-number">رقم رخصة القيادة</label>
-                <input type="text" class="form-control" id="foreign-customer-driving-license-number" />
-              </div><!-- form-group -->
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 mb-2 required" for="foreign-customer-driving-license-issuing-authority">جهة إصدار رخصة القيادة</label>
-                <input type="text" class="form-control" id="foreign-customer-driving-license-issuing-authority" />
-              </div><!-- form-group -->
-              <div class="form-group mb-4">
-                <label class="form-label fs-6 mb-2 required" for="foreign-customer-driving-license-photo">صورة رخصة القيادة</label>
-                <div action="/upload" class="dropzone needsclick dropzoneBasic" id="foreign-customer-driving-license-photo">
-                  <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
-                  <div class="fallback">
-                    <input name="file" type="file" />
-                  </div>
-                </div><!-- dropzone -->
-              </div><!-- form-group -->
-              <div class="form-group">
-                <label class="form-label fs-6 mb-2 required" for="foreign-customer-driving-license-duration">مدة رخصة القيادة</label>
-                <div class="input-group">
-                  <span class="input-group-text">من</span>
-                  <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="foreign-customer-driving-license-duration-from" readonly="readonly" />
-                  <span class="input-group-text">إلي</span>
-                  <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="foreign-customer-driving-license-duration" readonly="readonly" />
-                </div><!-- input-group -->
-              </div><!-- form-group -->
-            </div><!-- foreign-client-fields -->
-            <!-- تصنيف العميل اجنبي -->
-
-          </div><!-- card-body -->
-        </div><!-- card -->
-      </div><!-- col -->
-    </div><!-- row -->
+      </div><!-- card-body -->
+    </div><!-- card -->
 
     <div class="button-area d-flex align-items-center justify-content-end mt-4">
       <button type="submit" class="btn btn-lg btn-primary px-5">حفظ</button>
     </div><!-- button-area -->
 
-  </div><!-- employees-create-page -->
+  </div><!-- clients-create-page -->
 
 @endsection
 

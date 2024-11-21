@@ -22,7 +22,7 @@
         <div class="accordion-header" id="heading-personal-information">
           <button
             type="button"
-            class="accordion-button d-flex align-items-center justify-content-between"
+            class="accordion-button d-flex align-items-center justify-content-between p-3"
             data-bs-toggle="collapse"
             data-bs-target="#accordion-personal-information"
             aria-expanded="true"
@@ -33,7 +33,7 @@
         </div><!-- accordion-header -->
         <div id="accordion-personal-information" class="accordion-collapse collapse show" data-bs-parent="#accordionEmployee">
           <div class="accordion-body p-3">
-            <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
                 <div class="form-group">
                   <label class="form-label mb-2 fs-6 required" for="employee-name">الاسم</label>
@@ -132,7 +132,7 @@
         <div class="accordion-header" id="heading-job-info">
           <button
             type="button"
-            class="accordion-button d-flex align-items-center justify-content-between collapsed"
+            class="accordion-button d-flex align-items-center justify-content-between p-3 collapsed"
             data-bs-toggle="collapse"
             data-bs-target="#accordion-job-info"
             aria-expanded="false"
@@ -143,7 +143,7 @@
         </div><!-- accordion-header -->
         <div id="accordion-job-info" class="accordion-collapse collapse" aria-labelledby="heading-job-info" data-bs-parent="#accordionEmployee">
           <div class="accordion-body p-3">
-            <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
                 <div class="form-group">
                   <label class="form-label mb-2 fs-6 required" for="employee-job-title">المسمي الوظيفي</label>
@@ -226,7 +226,7 @@
         <div class="accordion-header" id="heading-official-documents">
           <button
             type="button"
-            class="accordion-button d-flex align-items-center justify-content-between collapsed"
+            class="accordion-button d-flex align-items-center justify-content-between p-3 collapsed"
             data-bs-toggle="collapse"
             data-bs-target="#accordion-official-documents"
             aria-expanded="false"
@@ -237,7 +237,7 @@
         </div><!-- accordion-header -->
         <div id="accordion-official-documents" class="accordion-collapse collapse" aria-labelledby="heading-official-documents" data-bs-parent="#accordionEmployee">
           <div class="accordion-body p-3">
-            <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
                 <div class="form-group">
                   <label class="form-label mb-2 fs-6 required" for="employee-selfie">الصورة الشخصية</label>
@@ -353,7 +353,7 @@
         <div class="accordion-header" id="heading-financial-information">
           <button
             type="button"
-            class="accordion-button d-flex align-items-center justify-content-between collapsed"
+            class="accordion-button d-flex align-items-center justify-content-between p-3 collapsed"
             data-bs-toggle="collapse"
             data-bs-target="#accordion-financial-information"
             aria-expanded="false"
@@ -364,7 +364,7 @@
         </div><!-- accordion-header -->
         <div id="accordion-financial-information" class="accordion-collapse collapse" aria-labelledby="heading-financial-information" data-bs-parent="#accordionEmployee">
           <div class="accordion-body p-3">
-            <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
                 <div class="form-group">
                   <label class="form-label mb-2 fs-6 required" for="employee-salary">الراتب الشهري</label>
