@@ -9,6 +9,7 @@ use App\Http\Controllers\pages\Cars;
 use App\Http\Controllers\pages\Technical;
 use App\Http\Controllers\pages\Reservations;
 use App\Http\Controllers\pages\Clients;
+use App\Http\Controllers\pages\Contracts;
 
 
 // Main Page Route
@@ -30,8 +31,6 @@ Route::get('/employees/{id}/view', [Employees::class, 'view'])->name('employees-
 Route::get('/employees/penalties', [Employees::class, 'penalties'])->name('employees-penalties-index');
 Route::get('/employees/advances', [Employees::class, 'advances'])->name('employees-advances-index');
 Route::get('/employees/rewards', [Employees::class, 'rewards'])->name('employees-rewards-index');
-
-
 
 // Permissions Routes
 Route::get('/permissions', [Permissions::class, 'index'])->name('permissions-index');
@@ -65,3 +64,9 @@ Route::get('/clients', [Clients::class, 'index'])->name('clients-index');
 Route::get('/clients/create', [Clients::class, 'create'])->name('clients-create');
 Route::get('/clients/{id}/edit', [Clients::class, 'edit'])->name('clients-edit');
 Route::get('/clients/{id}/view', [Clients::class, 'view'])->name('clients-view');
+
+// Contracts Routes
+Route::get('/contracts', [Contracts::class, 'index'])->name('contracts-index');
+Route::get('/contracts/create', [Contracts::class, 'create'])->name('contracts-create');
+Route::get('/contracts/{id}/edit', [Contracts::class, 'edit'])->name('contracts-edit');
+Route::get('/contracts/{id}/view', [Contracts::class, 'view'])->name('contracts-view');

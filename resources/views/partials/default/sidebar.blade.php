@@ -115,5 +115,12 @@
         <div>العملاء</div>
       </a>
     </li>
+    <!-- Clients -->
+    <li class="menu-item">
+      <a href="{{ url('/contracts') }}" class="menu-link">
+        <i class="menu-icon tf-icons ti ti-contract"></i>
+        <div>إدارة العقود</div>
+      </a>
+    </li>
   </ul>
 </aside>
