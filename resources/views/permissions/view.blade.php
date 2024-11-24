@@ -17,121 +17,671 @@
       </div>
     </div>
 
-    <div class="card overflow-hidden">
-      <div class="table-responsive text-nowrap">
-        <table class="table">
-          <tbody class="table-border-bottom-0">
-            <tr>
-              <td width="20%" class="fw-bold p-3">اسم الدور</td>
-              <td width="80%">المدير العام</td>
-            </tr>
-            <tr>
-              <td width="20%" class="fw-bold p-3 align-top">صلاحيات الدور</td>
-              <td class="p-3" width="80%">
-              <div class="row row-cols-1 row-cols-xl-4 g-2 g-md-3">
-                <div class="col">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
-                    <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
-                  </div><!-- d-flex -->
-                </div><!-- col -->
-                <div class="col">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
-                    <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
-                  </div><!-- d-flex -->
-                </div><!-- col -->
-                <div class="col">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
-                    <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
-                  </div><!-- d-flex -->
-                </div><!-- col -->
-                <div class="col">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
-                    <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
-                  </div><!-- d-flex -->
-                </div><!-- col -->
-                <div class="col">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
-                    <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
-                  </div><!-- d-flex -->
-                </div><!-- col -->
-                <div class="col">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
-                    <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
-                  </div><!-- d-flex -->
-                </div><!-- col -->
-                <div class="col">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
-                    <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
-                  </div><!-- d-flex -->
-                </div><!-- col -->
-                <div class="col">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
-                    <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
-                  </div><!-- d-flex -->
-                </div><!-- col -->
-                <div class="col">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
-                    <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
-                  </div><!-- d-flex -->
-                </div><!-- col -->
-                <div class="col">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
-                    <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
-                  </div><!-- d-flex -->
-                </div><!-- col -->
-                <div class="col">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
-                    <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
-                  </div><!-- d-flex -->
-                </div><!-- col -->
-                <div class="col">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
-                    <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
-                  </div><!-- d-flex -->
-                </div><!-- col -->
-                <div class="col">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
-                    <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
-                  </div><!-- d-flex -->
-                </div><!-- col -->
-                <div class="col">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
-                    <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
-                  </div><!-- d-flex -->
-                </div><!-- col -->
-                <div class="col">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
-                    <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
-                  </div><!-- d-flex -->
-                </div><!-- col -->
-                <div class="col">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
-                    <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
-                  </div><!-- d-flex -->
-                </div><!-- col -->
-              </div><!-- row -->
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div><!-- table-responsive -->
+    <div class="card mb-4">
+      <div class="card-body p-3">
+        <div class="row align-items-center">
+          <label class="col-sm-2 col-form-label fw-medium" for="car-number">اسم الدور</label>
+          <div class="col-12 col-sm-10">
+            <span>المشرف العام</span>
+          </div><!-- col-12 -->
+        </div><!-- row -->
+      </div><!-- card-body -->
     </div><!-- card -->
+
+    <div class="accordion d-flex flex-column gap-4 mb-4" id="accordionPermissions">
+
+      <div class="card accordion-item m-0 active">
+        <div class="accordion-header" id="heading-permissions-branches">
+          <button
+            type="button"
+            class="accordion-button d-flex align-items-center justify-content-between p-3"
+            data-bs-toggle="collapse"
+            data-bs-target="#accordion-permissions-branches"
+            aria-expanded="true"
+            aria-controls="accordion-permissions-branches"
+          >
+            <h5 class="m-0">صلاحيات الفروع</h5>
+          </button>
+        </div><!-- accordion-header -->
+        <div id="accordion-permissions-branches" class="accordion-collapse collapse show" data-bs-parent="#accordionPermissions">
+          <div class="accordion-body p-3">
+            <div class="row row-cols-2 row-cols-xl-4 g-4">
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+            </div><!-- row -->
+          </div><!-- accordion-body -->
+        </div><!-- accordion-collapse -->
+      </div><!-- card -->
+
+      <div class="card accordion-item m-0">
+        <div class="accordion-header" id="heading-permissions-employees">
+          <button
+            type="button"
+            class="accordion-button d-flex align-items-center justify-content-between p-3 collapsed"
+            data-bs-toggle="collapse"
+            data-bs-target="#accordion-permissions-employees"
+            aria-expanded="false"
+            aria-controls="accordion-permissions-employees"
+          >
+            <h5 class="m-0">صلاحيات الموظفين</h5>
+          </button>
+        </div><!-- accordion-header -->
+        <div id="accordion-permissions-employees" class="accordion-collapse collapse" aria-labelledby="heading-permissions-employees" data-bs-parent="#accordionPermissions">
+          <div class="accordion-body p-3">
+            <div class="row row-cols-2 row-cols-xl-4 g-4">
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+            </div><!-- row -->
+          </div><!-- accordion-body -->
+        </div><!-- accordion-collapse -->
+      </div><!-- card -->
+
+      <div class="card accordion-item m-0">
+        <div class="accordion-header" id="heading-permissions-cars">
+          <button
+            type="button"
+            class="accordion-button d-flex align-items-center justify-content-between p-3 collapsed"
+            data-bs-toggle="collapse"
+            data-bs-target="#accordion-permissions-cars"
+            aria-expanded="false"
+            aria-controls="accordion-permissions-cars"
+          >
+            <h5 class="m-0">صلاحيات المركبات</h5>
+          </button>
+        </div><!-- accordion-header -->
+        <div id="accordion-permissions-cars" class="accordion-collapse collapse" aria-labelledby="heading-permissions-cars" data-bs-parent="#accordionPermissions">
+          <div class="accordion-body p-3">
+            <div class="row row-cols-2 row-cols-xl-4 g-4">
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+            </div><!-- row -->
+          </div><!-- accordion-body -->
+        </div><!-- accordion-collapse -->
+      </div><!-- card -->
+
+      <div class="card accordion-item m-0">
+        <div class="accordion-header" id="heading-permissions-technical">
+          <button
+            type="button"
+            class="accordion-button d-flex align-items-center justify-content-between p-3 collapsed"
+            data-bs-toggle="collapse"
+            data-bs-target="#accordion-permissions-technical"
+            aria-expanded="false"
+            aria-controls="accordion-permissions-technical"
+          >
+            <h5 class="m-0">صلاحيات الإدارة الفنية</h5>
+          </button>
+        </div><!-- accordion-header -->
+        <div id="accordion-permissions-technical" class="accordion-collapse collapse" aria-labelledby="heading-permissions-technical" data-bs-parent="#accordionPermissions">
+          <div class="accordion-body p-3">
+            <div class="row row-cols-2 row-cols-xl-4 g-4">
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+            </div><!-- row -->
+          </div><!-- accordion-body -->
+        </div><!-- accordion-collapse -->
+      </div><!-- card -->
+
+      <div class="card accordion-item m-0">
+        <div class="accordion-header" id="heading-permissions-reservations">
+          <button
+            type="button"
+            class="accordion-button d-flex align-items-center justify-content-between p-3 collapsed"
+            data-bs-toggle="collapse"
+            data-bs-target="#accordion-permissions-reservations"
+            aria-expanded="false"
+            aria-controls="accordion-permissions-reservations"
+          >
+            <h5 class="m-0">صلاحيات الحجوزات</h5>
+          </button>
+        </div><!-- accordion-header -->
+        <div id="accordion-permissions-reservations" class="accordion-collapse collapse" aria-labelledby="heading-permissions-reservations" data-bs-parent="#accordionPermissions">
+          <div class="accordion-body p-3">
+            <div class="row row-cols-2 row-cols-xl-4 g-4">
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+            </div><!-- row -->
+          </div><!-- accordion-body -->
+        </div><!-- accordion-collapse -->
+      </div><!-- card -->
+
+      <div class="card accordion-item m-0">
+        <div class="accordion-header" id="heading-permissions-clients">
+          <button
+            type="button"
+            class="accordion-button d-flex align-items-center justify-content-between p-3 collapsed"
+            data-bs-toggle="collapse"
+            data-bs-target="#accordion-permissions-clients"
+            aria-expanded="false"
+            aria-controls="accordion-permissions-clients"
+          >
+            <h5 class="m-0">صلاحيات العملاء</h5>
+          </button>
+        </div><!-- accordion-header -->
+        <div id="accordion-permissions-clients" class="accordion-collapse collapse" aria-labelledby="heading-permissions-clients" data-bs-parent="#accordionPermissions">
+          <div class="accordion-body p-3">
+            <div class="row row-cols-2 row-cols-xl-4 g-4">
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+            </div><!-- row -->
+          </div><!-- accordion-body -->
+        </div><!-- accordion-collapse -->
+      </div><!-- card -->
+
+      <div class="card accordion-item m-0">
+        <div class="accordion-header" id="heading-permissions-contracts">
+          <button
+            type="button"
+            class="accordion-button d-flex align-items-center justify-content-between p-3 collapsed"
+            data-bs-toggle="collapse"
+            data-bs-target="#accordion-permissions-contracts"
+            aria-expanded="false"
+            aria-controls="accordion-permissions-contracts"
+          >
+            <h5 class="m-0">صلاحيات العقود</h5>
+          </button>
+        </div><!-- accordion-header -->
+        <div id="accordion-permissions-contracts" class="accordion-collapse collapse" aria-labelledby="heading-permissions-contracts" data-bs-parent="#accordionPermissions">
+          <div class="accordion-body p-3">
+            <div class="row row-cols-2 row-cols-xl-4 g-4">
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-check flex-shrink-0 text-primary"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  <i class="ti ti-circle-dashed-x flex-shrink-0 text-danger"></i>
+                  <span class="d-block flex-grow-1">اسم الصلاحية هنا</span>
+                </div><!-- d-flex -->
+              </div><!-- col -->
+            </div><!-- row -->
+          </div><!-- accordion-body -->
+        </div><!-- accordion-collapse -->
+      </div><!-- card -->
+
+    </div><!-- accordion -->
 
     <!-- Permission Delete Modal -->
     <div class="modal fade" id="permissionDeleteModal" tabindex="-1" aria-hidden="true">

@@ -35,6 +35,7 @@
               <label class="col-sm-4 col-form-label fw-medium" for="car-number">مفتاح إحتياطي</label>
               <div class="col-12 col-sm-8">
                 <span class="badge badge-center bg-label-success"><i class="ti ti-check"></i></span>
+                <span class="badge badge-center bg-label-danger"><i class="ti ti-x"></i></span>
               </div><!-- col-12 -->
             </div><!-- row -->
           </div><!-- col -->
@@ -110,31 +111,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -160,31 +161,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -260,31 +261,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -307,34 +308,34 @@
                   </div><!-- card-header -->
                   <div class="card-body p-3 pt-0">
                     <div class="table-responsive text-nowrap">
-                      <table class="table table-striped table-bordered">
+                    <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -371,68 +372,92 @@
         >
           <div class="accordion-body pt-4 px-0 pb-0">
 
-            <div class="card mb-4">
-              <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                <h5 class="m-0 text-capitalize fw-semibold">Battery</h5>
-              </div><!-- card-header -->
-              <div class="card-body p-3 pt-0">
-                <div class="table-responsive text-nowrap">
-                  <table class="table table-striped table-bordered">
-                    <tbody class="table-border-bottom-0">
-                      <tr>
-                        <td class="table-light" width="5%">Installation Date</td>
-                        <td>18 / 11 / 2024</td>
-                      </tr>
-                      <tr>
-                        <td class="table-light" width="5%">Battery Type</td>
-                        <td>Indego</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div><!-- table-responsive -->
-              </div><!-- card-body -->
-            </div><!-- card -->
+            <div class="row mb-4">
+              <div class="col-12 col-md-1">
+                <div class="d-flex align-items-center justify-content-center">
+                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
+                </div><!-- d-flex -->
+              </div><!-- col-12 -->
+              <div class="col-12 col-md-11">
 
-            <div class="card mb-4">
-              <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                <h5 class="m-0 text-capitalize fw-semibold">Battery Test</h5>
-              </div><!-- card-header -->
-              <div class="card-body p-3 pt-0">
-                <div class="table-responsive text-nowrap">
-                  <table class="table table-striped table-bordered">
-                    <thead class="table-light">
-                      <tr>
-                        <th class="fw-bold" width="5%">كم</th>
-                        <th class="fw-bold">التفاصيل</th>
-                        <th class="fw-bold" width="5%">التاريخ</th>
-                      </tr>
-                    </thead>
-                    <tbody class="table-border-bottom-0">
-                      <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
-                      </tr>
-                      <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
-                      </tr>
-                      <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
-                      </tr>
-                      <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div><!-- table-responsive -->
-              </div><!-- card-body -->
-            </div><!-- card -->
+                <div class="card mb-4">
+                  <div class="card-header p-3">
+                    <h5 class="m-0 text-capitalize fw-semibold">Battery</h5>
+                  </div><!-- card-header -->
+                  <div class="card-body p-3 pt-0">
+                    <div class="table-responsive text-nowrap">
+                      <table class="table table-striped table-bordered">
+                        <thead class="table-light">
+                          <tr>
+                            <th class="fw-bold p-2">نوع البطارية</th>
+                            <th class="fw-bold p-2" width="5%">تاريخ التركيب</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-border-bottom-0">
+                          <tr>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                          </tr>
+                          <tr>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                          </tr>
+                          <tr>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                          </tr>
+                          <tr>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div><!-- table-responsive -->
+                  </div><!-- card-body -->
+                </div><!-- card -->
+
+                <div class="card m-0">
+                  <div class="card-header p-3">
+                    <h5 class="m-0 text-capitalize fw-semibold">Battery Test</h5>
+                  </div><!-- card-header -->
+                  <div class="card-body p-3 pt-0">
+                    <div class="table-responsive text-nowrap">
+                      <table class="table table-striped table-bordered">
+                        <thead class="table-light">
+                          <tr>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-border-bottom-0">
+                          <tr>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
+                          </tr>
+                          <tr>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
+                          </tr>
+                          <tr>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
+                          </tr>
+                          <tr>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div><!-- table-responsive -->
+                  </div><!-- card-body -->
+                </div><!-- card -->
+              </div><!-- col-12 -->
+            </div><!-- row -->
 
             <div class="row">
               <div class="col-12 col-md-1">
@@ -450,31 +475,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -493,38 +518,38 @@
               <div class="col-12 col-md-11">
                 <div class="card">
                   <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Spark Coils</h5>
+                    <h5 class="m-0 text-capitalize fw-semibold">Coils</h5>
                   </div><!-- card-header -->
                   <div class="card-body p-3 pt-0">
                     <div class="table-responsive text-nowrap">
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -577,31 +602,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -627,31 +652,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -673,7 +698,7 @@
                         <th class="fw-bold">كم</th>
                         <th class="fw-bold">الحساس</th>
                         <th class="fw-bold">الماركة</th>
-                        <th class="fw-bold">التاريخ</th>
+                        <th class="fw-bold">تاريخ الإنتاج</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
@@ -681,7 +706,7 @@
                         <td>1243</td>
                         <td><span class="badge bg-label-success">نعم</span></td>
                         <td>YOKOHAMA</td>
-                        <td>18 / 11 / 2024</td>
+                        <td>22-24</td>
                       </tr>
                     </tbody>
                   </table>
@@ -698,31 +723,31 @@
                   <table class="table table-striped table-bordered">
                     <thead class="table-light">
                       <tr>
-                        <th class="fw-bold" width="5%">كم</th>
-                        <th class="fw-bold">التفاصيل</th>
-                        <th class="fw-bold" width="5%">التاريخ</th>
+                        <th class="fw-bold p-2">التفاصيل</th>
+                        <th class="fw-bold p-2" width="5%">التاريخ</th>
+                        <th class="fw-bold p-2" width="5%">كم</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">سير مجموعة جديد وكالة</td>
+                        <td class="p-2">2024-11-12</td>
+                        <td class="p-2">36137</td>
                       </tr>
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                        <td class="p-2">2024-11-22</td>
+                        <td class="p-2">85223</td>
                       </tr>
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                        <td class="p-2">2024-11-11</td>
+                        <td class="p-2">78240</td>
                       </tr>
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">جازجت راس مكينة</td>
+                        <td class="p-2">2024-11-04</td>
+                        <td class="p-2">10928</td>
                       </tr>
                     </tbody>
                   </table>
@@ -742,7 +767,7 @@
                         <th class="fw-bold">كم</th>
                         <th class="fw-bold">الحساس</th>
                         <th class="fw-bold">الماركة</th>
-                        <th class="fw-bold">التاريخ</th>
+                        <th class="fw-bold">تاريخ الإنتاج</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
@@ -750,7 +775,7 @@
                         <td>1243</td>
                         <td><span class="badge bg-label-success">نعم</span></td>
                         <td>YOKOHAMA</td>
-                        <td>18 / 11 / 2024</td>
+                        <td>22-24</td>
                       </tr>
                     </tbody>
                   </table>
@@ -767,31 +792,31 @@
                   <table class="table table-striped table-bordered">
                     <thead class="table-light">
                       <tr>
-                        <th class="fw-bold" width="5%">كم</th>
-                        <th class="fw-bold">التفاصيل</th>
-                        <th class="fw-bold" width="5%">التاريخ</th>
+                        <th class="fw-bold p-2">التفاصيل</th>
+                        <th class="fw-bold p-2" width="5%">التاريخ</th>
+                        <th class="fw-bold p-2" width="5%">كم</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">سير مجموعة جديد وكالة</td>
+                        <td class="p-2">2024-11-12</td>
+                        <td class="p-2">36137</td>
                       </tr>
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                        <td class="p-2">2024-11-22</td>
+                        <td class="p-2">85223</td>
                       </tr>
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                        <td class="p-2">2024-11-11</td>
+                        <td class="p-2">78240</td>
                       </tr>
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">جازجت راس مكينة</td>
+                        <td class="p-2">2024-11-04</td>
+                        <td class="p-2">10928</td>
                       </tr>
                     </tbody>
                   </table>
@@ -811,7 +836,7 @@
                         <th class="fw-bold">كم</th>
                         <th class="fw-bold">الحساس</th>
                         <th class="fw-bold">الماركة</th>
-                        <th class="fw-bold">التاريخ</th>
+                        <th class="fw-bold">تاريخ الإنتاج</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
@@ -819,7 +844,7 @@
                         <td>1243</td>
                         <td><span class="badge bg-label-success">نعم</span></td>
                         <td>YOKOHAMA</td>
-                        <td>18 / 11 / 2024</td>
+                        <td>22-24</td>
                       </tr>
                     </tbody>
                   </table>
@@ -836,31 +861,31 @@
                   <table class="table table-striped table-bordered">
                     <thead class="table-light">
                       <tr>
-                        <th class="fw-bold" width="5%">كم</th>
-                        <th class="fw-bold">التفاصيل</th>
-                        <th class="fw-bold" width="5%">التاريخ</th>
+                        <th class="fw-bold p-2">التفاصيل</th>
+                        <th class="fw-bold p-2" width="5%">التاريخ</th>
+                        <th class="fw-bold p-2" width="5%">كم</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">سير مجموعة جديد وكالة</td>
+                        <td class="p-2">2024-11-12</td>
+                        <td class="p-2">36137</td>
                       </tr>
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                        <td class="p-2">2024-11-22</td>
+                        <td class="p-2">85223</td>
                       </tr>
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                        <td class="p-2">2024-11-11</td>
+                        <td class="p-2">78240</td>
                       </tr>
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">جازجت راس مكينة</td>
+                        <td class="p-2">2024-11-04</td>
+                        <td class="p-2">10928</td>
                       </tr>
                     </tbody>
                   </table>
@@ -880,7 +905,7 @@
                         <th class="fw-bold">كم</th>
                         <th class="fw-bold">الحساس</th>
                         <th class="fw-bold">الماركة</th>
-                        <th class="fw-bold">التاريخ</th>
+                        <th class="fw-bold">تاريخ الإنتاج</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
@@ -888,7 +913,7 @@
                         <td>1243</td>
                         <td><span class="badge bg-label-success">نعم</span></td>
                         <td>YOKOHAMA</td>
-                        <td>18 / 11 / 2024</td>
+                        <td>22-24</td>
                       </tr>
                     </tbody>
                   </table>
@@ -905,31 +930,31 @@
                   <table class="table table-striped table-bordered">
                     <thead class="table-light">
                       <tr>
-                        <th class="fw-bold" width="5%">كم</th>
-                        <th class="fw-bold">التفاصيل</th>
-                        <th class="fw-bold" width="5%">التاريخ</th>
+                        <th class="fw-bold p-2">التفاصيل</th>
+                        <th class="fw-bold p-2" width="5%">التاريخ</th>
+                        <th class="fw-bold p-2" width="5%">كم</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">سير مجموعة جديد وكالة</td>
+                        <td class="p-2">2024-11-12</td>
+                        <td class="p-2">36137</td>
                       </tr>
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                        <td class="p-2">2024-11-22</td>
+                        <td class="p-2">85223</td>
                       </tr>
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                        <td class="p-2">2024-11-11</td>
+                        <td class="p-2">78240</td>
                       </tr>
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">جازجت راس مكينة</td>
+                        <td class="p-2">2024-11-04</td>
+                        <td class="p-2">10928</td>
                       </tr>
                     </tbody>
                   </table>
@@ -949,7 +974,7 @@
                         <th class="fw-bold">كم</th>
                         <th class="fw-bold">الحساس</th>
                         <th class="fw-bold">الماركة</th>
-                        <th class="fw-bold">التاريخ</th>
+                        <th class="fw-bold">تاريخ الإنتاج</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
@@ -957,7 +982,7 @@
                         <td>1243</td>
                         <td><span class="badge bg-label-success">نعم</span></td>
                         <td>YOKOHAMA</td>
-                        <td>18 / 11 / 2024</td>
+                        <td>22-24</td>
                       </tr>
                     </tbody>
                   </table>
@@ -974,31 +999,31 @@
                   <table class="table table-striped table-bordered">
                     <thead class="table-light">
                       <tr>
-                        <th class="fw-bold" width="5%">كم</th>
-                        <th class="fw-bold">التفاصيل</th>
-                        <th class="fw-bold" width="5%">التاريخ</th>
+                        <th class="fw-bold p-2">التفاصيل</th>
+                        <th class="fw-bold p-2" width="5%">التاريخ</th>
+                        <th class="fw-bold p-2" width="5%">كم</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">سير مجموعة جديد وكالة</td>
+                        <td class="p-2">2024-11-12</td>
+                        <td class="p-2">36137</td>
                       </tr>
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                        <td class="p-2">2024-11-22</td>
+                        <td class="p-2">85223</td>
                       </tr>
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                        <td class="p-2">2024-11-11</td>
+                        <td class="p-2">78240</td>
                       </tr>
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">جازجت راس مكينة</td>
+                        <td class="p-2">2024-11-04</td>
+                        <td class="p-2">10928</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1049,31 +1074,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1099,31 +1124,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1149,31 +1174,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1199,31 +1224,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1249,31 +1274,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1299,31 +1324,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1349,31 +1374,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1399,31 +1424,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1449,31 +1474,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1499,31 +1524,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1549,31 +1574,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1599,31 +1624,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1649,31 +1674,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1699,31 +1724,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1749,31 +1774,31 @@
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2" width="5%">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">سير مجموعة جديد وكالة</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">36137</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                            <td class="p-2">2024-11-22</td>
+                            <td class="p-2">85223</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                            <td class="p-2">2024-11-11</td>
+                            <td class="p-2">78240</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">جازجت راس مكينة</td>
+                            <td class="p-2">2024-11-04</td>
+                            <td class="p-2">10928</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1809,64 +1834,99 @@
           data-bs-parent="#accordionTechnical"
         >
           <div class="accordion-body pt-4 px-0 pb-0">
-            <div class="card mb-4">
-              <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                <h5 class="m-0 text-capitalize fw-semibold">Cooling Rate</h5>
-              </div><!-- card-header -->
-              <div class="card-body p-3 pt-0">
-                <div class="table-responsive text-nowrap">
-                  <table class="table table-striped table-bordered">
-                    <tbody class="table-border-bottom-0">
-                      <tr>
-                        <td width="5%" class="table-light">Latest Maintenance</td>
-                        <td>وكالة</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div><!-- table-responsive -->
-              </div><!-- card-body -->
-            </div><!-- card -->
 
-            <div class="card mb-4">
-              <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                <h5 class="m-0 text-capitalize fw-semibold">Cooling Rate Test</h5>
-              </div><!-- card-header -->
-              <div class="card-body p-3 pt-0">
-                <div class="table-responsive text-nowrap">
-                  <table class="table table-striped table-bordered">
-                    <thead class="table-light">
-                      <tr>
-                        <th class="fw-bold" width="5%">كم</th>
-                        <th class="fw-bold">التفاصيل</th>
-                        <th class="fw-bold" width="5%">التاريخ</th>
-                      </tr>
-                    </thead>
-                    <tbody class="table-border-bottom-0">
-                      <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
-                      </tr>
-                      <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
-                      </tr>
-                      <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
-                      </tr>
-                      <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div><!-- table-responsive -->
-              </div><!-- card-body -->
-            </div><!-- card -->
+            <div class="row mb-4">
+              <div class="col-12 col-md-1">
+                <div class="d-flex align-items-center justify-content-center">
+                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
+                </div><!-- d-flex -->
+              </div><!-- col-12 -->
+              <div class="col-12 col-md-11">
+                <div class="card mb-4">
+                  <div class="card-header p-3">
+                    <h5 class="m-0 text-capitalize fw-semibold">AC - Condition FILTER</h5>
+                  </div><!-- card-header -->
+                  <div class="card-body p-3 pt-0">
+                    <div class="table-responsive text-nowrap">
+                      <table class="table table-striped table-bordered">
+                        <thead class="table-light">
+                          <tr>
+                            <th class="fw-bold p-2">نوع الفلتر</th>
+                            <th class="fw-bold p-2">حالة الفلتر</th>
+                            <th class="fw-bold p-2">نوع الفلتر</th>
+                            <th class="fw-bold p-2">تاريخ التركيب</th>
+                            <th class="fw-bold p-2">كم</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-border-bottom-0">
+                          <tr>
+                            <td class="p-2">وكالة</td>
+                            <td class="p-2">جديد</td>
+                            <td class="p-2">AWS</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">3473</td>
+                          </tr>
+                          <tr>
+                            <td class="p-2">وكالة</td>
+                            <td class="p-2">جديد</td>
+                            <td class="p-2">AWS</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">3473</td>
+                          </tr>
+                          <tr>
+                            <td class="p-2">وكالة</td>
+                            <td class="p-2">جديد</td>
+                            <td class="p-2">AWS</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">3473</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div><!-- table-responsive -->
+                  </div><!-- card-body -->
+                </div><!-- card -->
+
+                <div class="card m-0">
+                  <div class="card-header p-3">
+                    <h5 class="m-0 text-capitalize fw-semibold">Cooling Rate Test</h5>
+                  </div><!-- card-header -->
+                  <div class="card-body p-3 pt-0">
+                    <div class="table-responsive text-nowrap">
+                      <table class="table table-striped table-bordered">
+                        <thead class="table-light">
+                          <tr>
+                            <th class="fw-bold p-2">التفاصيل</th>
+                            <th class="fw-bold p-2">يمين</th>
+                            <th class="fw-bold p-2">يسار</th>
+                            <th class="fw-bold p-2" width="5%">التاريخ</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-border-bottom-0">
+                          <tr>
+                            <td class="p-2">وكالة</td>
+                            <td class="p-2">جديد</td>
+                            <td class="p-2">AWS</td>
+                            <td class="p-2">2024-11-12</td>
+                          </tr>
+                          <tr>
+                            <td class="p-2">وكالة</td>
+                            <td class="p-2">جديد</td>
+                            <td class="p-2">AWS</td>
+                            <td class="p-2">2024-11-12</td>
+                          </tr>
+                          <tr>
+                            <td class="p-2">وكالة</td>
+                            <td class="p-2">جديد</td>
+                            <td class="p-2">AWS</td>
+                            <td class="p-2">2024-11-12</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div><!-- table-responsive -->
+                  </div><!-- card-body -->
+                </div><!-- card -->
+              </div><!-- col-12 -->
+            </div><!-- row -->
 
             <div class="row">
               <div class="col-12 col-md-1">
@@ -1875,40 +1935,39 @@
                 </div><!-- d-flex -->
               </div><!-- col-12 -->
               <div class="col-12 col-md-11">
-                <div class="card mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">AC - Condition FILTER</h5>
+                <div class="card">
+                  <div class="card-header p-3">
+                    <h5 class="m-0 text-capitalize fw-semibold">Air FILTER</h5>
                   </div><!-- card-header -->
                   <div class="card-body p-3 pt-0">
                     <div class="table-responsive text-nowrap">
                       <table class="table table-striped table-bordered">
                         <thead class="table-light">
                           <tr>
-                            <th class="fw-bold" width="5%">كم</th>
-                            <th class="fw-bold">التفاصيل</th>
-                            <th class="fw-bold" width="5%">التاريخ</th>
+                            <th class="fw-bold p-2">نوع الفلتر</th>
+                            <th class="fw-bold p-2">حالة الفلتر</th>
+                            <th class="fw-bold p-2">تاريخ التركيب</th>
+                            <th class="fw-bold p-2">كم</th>
                           </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">وكالة</td>
+                            <td class="p-2">جديد</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">343433</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">وكالة</td>
+                            <td class="p-2">جديد</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">343433</td>
                           </tr>
                           <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
-                          </tr>
-                          <tr>
-                            <td>267429</td>
-                            <td>سير مجموعة جديد وكالة</td>
-                            <td>18 / 11 / 2024</td>
+                            <td class="p-2">وكالة</td>
+                            <td class="p-2">جديد</td>
+                            <td class="p-2">2024-11-12</td>
+                            <td class="p-2">343433</td>
                           </tr>
                         </tbody>
                       </table>
@@ -2036,31 +2095,22 @@
                   <table class="table table-striped table-bordered">
                     <thead class="table-light">
                       <tr>
-                        <th class="fw-bold" width="5%">كم</th>
-                        <th class="fw-bold">التفاصيل</th>
-                        <th class="fw-bold" width="5%">التاريخ</th>
+                        <th class="fw-bold p-2">التفاصيل</th>
+                        <th class="fw-bold p-2" width="5%">التاريخ</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">سير مجموعة جديد وكالة</td>
+                        <td class="p-2">2024-11-12</td>
                       </tr>
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">يوجد ليك قديم اسفل راس المكينه</td>
+                        <td class="p-2">2024-11-22</td>
                       </tr>
                       <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
-                      </tr>
-                      <tr>
-                        <td>267429</td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">جازجيت+حلقات بستم+مخرطة 4 بستم</td>
+                        <td class="p-2">2024-11-11</td>
                       </tr>
                     </tbody>
                   </table>
@@ -2104,47 +2154,29 @@
                   <table class="table table-striped table-bordered">
                     <thead class="table-light">
                       <tr>
-                        <th class="fw-bold" width="5%">صورة</th>
-                        <th class="fw-bold">التفاصيل</th>
-                        <th class="fw-bold" width="5%">التاريخ</th>
+                        <th class="fw-bold p-2" width="5%">صورة</th>
+                        <th class="fw-bold p-2">التفاصيل</th>
+                        <th class="fw-bold p-2" width="5%">التاريخ</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
                       <tr>
-                        <td>
+                        <td class="p-2">
                           <a href="../../assets/img/elements/11.jpg" data-fancybox data-caption="بطاقة الهوية">
-                    <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="بطاقة الهوية" height="64" width="64">
-                  </a>
+                            <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="بطاقة الهوية" height="32" width="32">
+                          </a>
                         </td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">سير مجموعة جديد وكالة</td>
+                        <td class="p-2">18 / 11 / 2024</td>
                       </tr>
                       <tr>
-                        <td>
+                        <td class="p-2">
                           <a href="../../assets/img/elements/11.jpg" data-fancybox data-caption="بطاقة الهوية">
-                    <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="بطاقة الهوية" height="64" width="64">
-                  </a>
+                            <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="بطاقة الهوية" height="32" width="32">
+                          </a>
                         </td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="../../assets/img/elements/11.jpg" data-fancybox data-caption="بطاقة الهوية">
-                    <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="بطاقة الهوية" height="64" width="64">
-                  </a>
-                        </td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="../../assets/img/elements/11.jpg" data-fancybox data-caption="بطاقة الهوية">
-                    <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="بطاقة الهوية" height="64" width="64">
-                  </a>
-                        </td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">سير مجموعة جديد وكالة</td>
+                        <td class="p-2">18 / 11 / 2024</td>
                       </tr>
                     </tbody>
                   </table>
@@ -2161,47 +2193,29 @@
                   <table class="table table-striped table-bordered">
                     <thead class="table-light">
                       <tr>
-                        <th class="fw-bold" width="5%">صورة</th>
-                        <th class="fw-bold">التفاصيل</th>
-                        <th class="fw-bold" width="5%">التاريخ</th>
+                        <th class="fw-bold p-2" width="5%">صورة</th>
+                        <th class="fw-bold p-2">التفاصيل</th>
+                        <th class="fw-bold p-2" width="5%">التاريخ</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
                       <tr>
-                        <td>
+                        <td class="p-2">
                           <a href="../../assets/img/elements/11.jpg" data-fancybox data-caption="بطاقة الهوية">
-                    <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="بطاقة الهوية" height="64" width="64">
-                  </a>
+                            <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="بطاقة الهوية" height="32" width="32">
+                          </a>
                         </td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">سير مجموعة جديد وكالة</td>
+                        <td class="p-2">18 / 11 / 2024</td>
                       </tr>
                       <tr>
-                        <td>
+                        <td class="p-2">
                           <a href="../../assets/img/elements/11.jpg" data-fancybox data-caption="بطاقة الهوية">
-                    <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="بطاقة الهوية" height="64" width="64">
-                  </a>
+                            <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="بطاقة الهوية" height="32" width="32">
+                          </a>
                         </td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="../../assets/img/elements/11.jpg" data-fancybox data-caption="بطاقة الهوية">
-                    <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="بطاقة الهوية" height="64" width="64">
-                  </a>
-                        </td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="../../assets/img/elements/11.jpg" data-fancybox data-caption="بطاقة الهوية">
-                    <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="بطاقة الهوية" height="64" width="64">
-                  </a>
-                        </td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">سير مجموعة جديد وكالة</td>
+                        <td class="p-2">18 / 11 / 2024</td>
                       </tr>
                     </tbody>
                   </table>
@@ -2218,47 +2232,29 @@
                   <table class="table table-striped table-bordered">
                     <thead class="table-light">
                       <tr>
-                        <th class="fw-bold" width="5%">صورة</th>
-                        <th class="fw-bold">التفاصيل</th>
-                        <th class="fw-bold" width="5%">التاريخ</th>
+                        <th class="fw-bold p-2" width="5%">صورة</th>
+                        <th class="fw-bold p-2">التفاصيل</th>
+                        <th class="fw-bold p-2" width="5%">التاريخ</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
                       <tr>
-                        <td>
+                        <td class="p-2">
                           <a href="../../assets/img/elements/11.jpg" data-fancybox data-caption="بطاقة الهوية">
-                    <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="بطاقة الهوية" height="64" width="64">
-                  </a>
+                            <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="بطاقة الهوية" height="32" width="32">
+                          </a>
                         </td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">سير مجموعة جديد وكالة</td>
+                        <td class="p-2">18 / 11 / 2024</td>
                       </tr>
                       <tr>
-                        <td>
+                        <td class="p-2">
                           <a href="../../assets/img/elements/11.jpg" data-fancybox data-caption="بطاقة الهوية">
-                    <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="بطاقة الهوية" height="64" width="64">
-                  </a>
+                            <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="بطاقة الهوية" height="32" width="32">
+                          </a>
                         </td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="../../assets/img/elements/11.jpg" data-fancybox data-caption="بطاقة الهوية">
-                    <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="بطاقة الهوية" height="64" width="64">
-                  </a>
-                        </td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="../../assets/img/elements/11.jpg" data-fancybox data-caption="بطاقة الهوية">
-                    <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="بطاقة الهوية" height="64" width="64">
-                  </a>
-                        </td>
-                        <td>سير مجموعة جديد وكالة</td>
-                        <td>18 / 11 / 2024</td>
+                        <td class="p-2">سير مجموعة جديد وكالة</td>
+                        <td class="p-2">18 / 11 / 2024</td>
                       </tr>
                     </tbody>
                   </table>

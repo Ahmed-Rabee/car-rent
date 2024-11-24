@@ -70,3 +70,6 @@ Route::get('/contracts', [Contracts::class, 'index'])->name('contracts-index');
 Route::get('/contracts/create', [Contracts::class, 'create'])->name('contracts-create');
 Route::get('/contracts/{id}/edit', [Contracts::class, 'edit'])->name('contracts-edit');
 Route::get('/contracts/{id}/view', [Contracts::class, 'view'])->name('contracts-view');
+
+
+

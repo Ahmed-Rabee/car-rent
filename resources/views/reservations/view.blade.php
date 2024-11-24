@@ -3,6 +3,7 @@
 @push('styles')
   <link rel="stylesheet" href="{{ asset('assets/vendor/libs/sweetalert2/sweetalert2.css') }}" />
   <link rel="stylesheet" href="{{ asset('assets/vendor/libs/fancybox/fancybox.css') }}" />
+  <link rel="stylesheet" href="{{ asset('assets/vendor/libs/select2/select2.css') }}" />
 @endpush
 
 @section('content')
@@ -19,6 +20,11 @@
       </div>
     </div>
 
+    <div class="alert alert-warning d-flex align-items-center" role="alert">
+      <span class="alert-icon text-warning me-2"><i class="ti ti-contract ti-xs"></i></span>
+      تم إنشاء عقد لهذا الحجز برقم - <a href="#" class="alert-link">#45435</a>
+    </div>
+
     <div class="row g-3">
       <div class="col-12 col-md-9">
         <div class="card">
@@ -29,6 +35,28 @@
                   <tr>
                     <td width="5%" class="p-3">رقم الحجز</td>
                     <td class="p-3">433433</td>
+                  </tr>
+                  <tr>
+                    <td width="5%" class="p-3">
+                      <div class="d-flex align-items-center justify-content-start gap-2">
+                        حالة الحجز
+                        <button type="button" class="p-0 bg-transparent border-0 text-primary" data-bs-toggle="modal" data-bs-target="#reservationStatusModal"><i class="ti ti-edit ti-xs"></i></button>
+                      </div><!-- d-flex -->
+                    </td>
+                    <td class="p-3">
+                      <span class="badge bg-label-success">مكتمل</span>
+                      <span class="badge bg-label-primary">مؤكد</span>
+                      <span class="badge bg-label-secondary">غير مؤكد</span>
+                      <span class="badge bg-label-danger">ملغي</span>
+                    </td>
+                  </tr>
+                  <tr class="tr-reservation-status">
+                    <td width="5%" class="p-0">
+                      <div class="p-3 m-0 w-100 h-100 align-middle badge bg-label-danger text-start fs-6">سبب الإلغاء</div>
+                    </td>
+                    <td class="p-0">
+                      <div class="p-3 m-0 w-100 h-100 align-middle badge bg-label-danger text-start fs-6">العميل لم يتواجد في الوقت المحدد للحجز</div>
+                    </td>
                   </tr>
                   <tr>
                     <td width="5%" class="p-3">العميل</td>
@@ -86,10 +114,6 @@
                     <td class="p-3">234423465566</td>
                   </tr>
                   <tr>
-                    <td width="5%" class="p-3">حالة الحجز</td>
-                    <td class="p-3">مؤكد</td>
-                  </tr>
-                  <tr>
                     <td width="5%" class="p-3">الكاتب</td>
                     <td class="p-3">محمد مصطفي</td>
                   </tr>
@@ -136,6 +160,7 @@
               </div>
             </div><!-- card-body -->
           </div><!-- card -->
+          <button type="button" class="btn btn-lg btn-primary px-5 w-100 waves-effect waves-light mt-4">إنشاء عقد</button>
         </div><!--  -->
       </div><!-- col-12 -->
     </div><!-- row -->
@@ -144,14 +169,38 @@
     @include('reservations.Modals.delete')
     <!-- Reservation Delete Modal -->
 
+    <!-- Reservation Status Modal -->
+    @include('reservations.Modals.status')
+    <!-- Reservation Status Modal -->
+
   </div><!-- reservations-view-page -->
 
 @endsection
 
 @push('scripts')
   <script src="{{ asset('assets/vendor/libs/fancybox/fancybox.umd.js') }}"></script>
+  <script src="{{ asset('assets/vendor/libs/select2/select2.js') }}"></script>
   <script>
+    // --------------------------------------------------------------------
+    // Fancybox
+    // --------------------------------------------------------------------
     Fancybox.bind("[data-fancybox]");
     Fancybox.bind('[data-fancybox="gallery"]');
+
+    // --------------------------------------------------------------------
+    // Select 2
+    // --------------------------------------------------------------------
+    $(".select2").select2();
+
+
+    $(document).ready(function () {
+      $('#reservation-status').on('change', function () {
+        if ($(this).val() === 'Cancelled') {
+          $('#reason-cancellation').show(); // Show the details div
+        } else {
+          $('#reason-cancellation').hide(); // Hide the details div
+        }
+      });
+    });
   </script>
 @endpush

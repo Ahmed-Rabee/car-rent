@@ -22,6 +22,7 @@
         <table class="table table-striped">
           <thead>
             <tr>
+              <th width="5%" class="fw-bold">#</th>
               <th class="fw-bold">رقم المركبة</th>
               <th class="fw-bold">الماركة</th>
               <th class="fw-bold">مفتاح احتياطي</th>
@@ -34,6 +35,9 @@
           </thead>
           <tbody class="table-border-bottom-0">
             <tr>
+              <td>
+                <a href="{{ url('/technical/{id}/view') }}">34</a>
+              </td>
               <td>9408 - TB</td>
               <td>تويوتا</td>
               <td>
@@ -55,6 +59,9 @@
               </td>
             </tr>
             <tr>
+              <td>
+                <a href="{{ url('/technical/{id}/view') }}">34</a>
+              </td>
               <td>8182 - TA</td>
               <td>كيا</td>
               <td>

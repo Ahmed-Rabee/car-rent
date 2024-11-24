@@ -399,37 +399,53 @@
         >
           <div class="accordion-body pt-4 px-0 pb-0">
 
-            <div class="card mb-4">
-              <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                <h5 class="m-0 text-capitalize fw-semibold">Battery</h5>
-              </div><!-- card-header -->
-              <div class="card-body p-3">
-                <div class="row row-cols-1 row-cols-md-2 g-3">
-                  <div class="col">
-                    <div class="row align-items-center">
-                      <label class="col-sm-4 col-form-label fw-medium" for="car-number">Installation Date</label>
-                      <div class="col-12 col-sm-8">
-                        <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col -->
-                  <div class="col">
-                    <div class="row align-items-center">
-                      <label class="col-sm-4 col-form-label fw-medium" for="car-number">Battery Type</label>
-                      <div class="col-12 col-sm-8">
-                        <select id="Battery-Type" class="select2 form-select" data-placeholder="Choose" data-allow-clear="true">
-                          <option></option>
-                          <option value="1">8977 - TB</option>
-                          <option value="2">7565 - T</option>
-                          <option value="3">9856 - TH</option>
-                          <option value="4">5709 - TB</option>
-                        </select>
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col -->
-                </div><!-- row -->
-                <hr class="my-3">
-                <div class="card shadow-none bg-transparent border border-secondary form-repeater m-0">
+            <div class="row mb-4">
+              <div class="col-12 col-md-1">
+                <div class="d-flex align-items-center justify-content-center">
+                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
+                </div><!-- d-flex -->
+              </div><!-- col-12 -->
+              <div class="col-12 col-md-11">
+                <div class="card form-repeater mb-4">
+                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+                    <h5 class="m-0 text-capitalize fw-semibold">Battery</h5>
+                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
+                      <span class="ti ti-plus"></span>
+                    </button>
+                  </div><!-- card-header -->
+                  <div class="card-body p-3">
+                    <div data-repeater-list="group-a">
+                      <div data-repeater-item>
+                        <div class="row align-items-end g-3">
+                          <div class="col-lg-6 col-xl-6 col-12">
+                            <div class="from-group">
+                              <label class="form-label mb-2" for="battary-type">نوع البطارية</label>
+                              <select id="battary-type" class="select2 form-select" data-placeholder="اختر" data-allow-clear="flase" data-minimum-results-for-search="Infinity">
+                                <option></option>
+                                <option value="1">وكالة</option>
+                                <option value="2">تجاري</option>
+                              </select>
+                            </div><!-- from-group -->
+                          </div><!-- col -->
+                          <div class="col-lg-6 col-xl-5 col-12">
+                            <div class="from-group">
+                              <label class="form-label mb-2" for="battary-statuss">تاريخ التركيب</label>
+                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="insurance-company-from" readonly="readonly" />
+                            </div><!-- from-group -->
+                          </div><!-- col -->
+                          <div class="col-lg-12 col-xl-1 col-12 d-flex align-items-center">
+                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
+                              <i class="ti ti-x ti-xs"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <hr>
+                      </div>
+                    </div>
+                  </div><!-- card-body -->
+                </div><!-- card -->
+
+                <div class="card form-repeater m-0">
                   <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
                     <h5 class="m-0 text-capitalize fw-semibold">Battery Test</h5>
                     <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
@@ -472,8 +488,8 @@
                     </div>
                   </div><!-- card-body -->
                 </div><!-- card -->
-              </div><!-- card-body -->
-            </div><!-- card -->
+              </div><!-- col-12 -->
+            </div><!-- row -->
 
             <div class="row">
               <div class="col-12 col-md-1">
@@ -537,7 +553,7 @@
               <div class="col-12 col-md-11">
                 <div class="card form-repeater mb-4">
                   <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Spark Coils</h5>
+                    <h5 class="m-0 text-capitalize fw-semibold">Coils</h5>
                     <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
                       <span class="ti ti-plus"></span>
                     </button>
@@ -761,11 +777,11 @@
                 </div><!-- row -->
                 <hr class="my-3">
                 <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">Date</label>
+                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">تاريخ الإنتاج</label>
                   <div class="col-12 col-sm-10">
                     <div class="row">
                       <div class="col-12 col-md-6">
-                        <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        <input type="number" inputmode="numeric" class="form-control" />
                       </div><!-- col-12 -->
                     </div><!-- row -->
                   </div><!-- col-12 -->
@@ -878,11 +894,11 @@
                 </div><!-- row -->
                 <hr class="my-3">
                 <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">Date</label>
+                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">تاريخ الإنتاج</label>
                   <div class="col-12 col-sm-10">
                     <div class="row">
                       <div class="col-12 col-md-6">
-                        <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        <input type="number" inputmode="numeric" class="form-control" />
                       </div><!-- col-12 -->
                     </div><!-- row -->
                   </div><!-- col-12 -->
@@ -995,11 +1011,11 @@
                 </div><!-- row -->
                 <hr class="my-3">
                 <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">Date</label>
+                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">تاريخ الإنتاج</label>
                   <div class="col-12 col-sm-10">
                     <div class="row">
                       <div class="col-12 col-md-6">
-                        <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        <input type="number" inputmode="numeric" class="form-control" />
                       </div><!-- col-12 -->
                     </div><!-- row -->
                   </div><!-- col-12 -->
@@ -1112,11 +1128,11 @@
                 </div><!-- row -->
                 <hr class="my-3">
                 <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">Date</label>
+                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">تاريخ الإنتاج</label>
                   <div class="col-12 col-sm-10">
                     <div class="row">
                       <div class="col-12 col-md-6">
-                        <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        <input type="number" inputmode="numeric" class="form-control" />
                       </div><!-- col-12 -->
                     </div><!-- row -->
                   </div><!-- col-12 -->
@@ -1229,11 +1245,11 @@
                 </div><!-- row -->
                 <hr class="my-3">
                 <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">Date</label>
+                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">تاريخ الإنتاج</label>
                   <div class="col-12 col-sm-10">
                     <div class="row">
                       <div class="col-12 col-md-6">
-                        <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        <input type="number" inputmode="numeric" class="form-control" />
                       </div><!-- col-12 -->
                     </div><!-- row -->
                   </div><!-- col-12 -->
@@ -2148,76 +2164,7 @@
         >
           <div class="accordion-body pt-4 px-0 pb-0">
 
-            <div class="card mb-4">
-              <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                <h5 class="m-0 text-capitalize fw-semibold">Cooling Rate</h5>
-              </div><!-- card-header -->
-              <div class="card-body p-3">
-                <div class="row row-cols-1 row-cols-md-2 g-3">
-                  <div class="col">
-                    <div class="row align-items-center">
-                      <label class="col-sm-4 col-form-label fw-medium" for="car-number">Latest Maintenance</label>
-                      <div class="col-12 col-sm-8">
-                        <select id="Battery-Type" class="select2 form-select" data-placeholder="اختر" data-allow-clear="true">
-                          <option></option>
-                          <option value="1">وكالة</option>
-                          <option value="2">تجاري</option>
-                        </select>
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col -->
-                </div><!-- row -->
-                <hr class="my-3">
-                <div class="card shadow-none bg-transparent border border-secondary form-repeater m-0">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Cooling Rate Test</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-4 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-2 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">يمين</label>
-                              <input type="text" class="form-control" id="insurance-company-from"  />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-2 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">يسار</label>
-                              <input type="text" class="form-control" id="insurance-company-from"  />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
-              </div><!-- card-body -->
-            </div><!-- card -->
-
-            <div class="row">
+            <div class="row mb-4">
               <div class="col-12 col-md-1">
                 <div class="d-flex align-items-center justify-content-center">
                   <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
@@ -2234,29 +2181,157 @@
                   <div class="card-body p-3">
                     <div data-repeater-list="group-a">
                       <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
+                        <div class="row align-items-end g-3">
+                          <div class="col-lg-6 col-xl-3 col-12">
+                            <div class="from-group">
+                              <label class="form-label mb-2" for="latest-maintenance">نوع الفلتر</label>
+                              <select id="latest-maintenance" class="select2 form-select" data-placeholder="اختر" data-allow-clear="flase" data-minimum-results-for-search="Infinity">
+                                <option></option>
+                                <option value="1">وكالة</option>
+                                <option value="2">تجاري</option>
+                              </select>
+                            </div><!-- from-group -->
+                          </div><!-- col -->
+                          <div class="col-lg-6 col-xl-3 col-12">
+                            <div class="from-group">
+                              <label class="form-label mb-2" for="filter-status">حالة الفلتر</label>
+                              <select id="filter-status" class="select2 form-select" data-placeholder="اختر" data-allow-clear="flase" data-minimum-results-for-search="Infinity">
+                                <option></option>
+                                <option value="1">وكالة</option>
+                                <option value="2">تجاري</option>
+                              </select>
+                            </div><!-- from-group -->
+                          </div><!-- col -->
+                          <div class="col-lg-6 col-xl-2 col-12">
+                            <div class="from-group">
+                              <label class="form-label mb-2" for="car-statuss">تاريخ التركيب</label>
+                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="insurance-company-from" readonly="readonly" />
+                            </div><!-- from-group -->
+                          </div><!-- col -->
+                          <div class="col-lg-6 col-xl-3 col-12">
+                            <div class="from-group">
+                              <label class="form-label mb-2" for="car-statuss">العداد</label>
+                              <div class="input-group">
+                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
+                                <span class="input-group-text" id="basic-addon11">كم</span>
+                              </div><!-- input-group -->
+                            </div><!-- from-group -->
+                          </div><!-- col -->
+                          <div class="col-lg-12 col-xl-1 col-12 d-flex align-items-center">
+                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
+                              <i class="ti ti-x ti-xs"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <hr>
+                      </div>
+                    </div>
+                  </div><!-- card-body -->
+                </div><!-- card -->
+
+                <div class="card form-repeater m-0">
+                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+                    <h5 class="m-0 text-capitalize fw-semibold">Cooling Rate Test</h5>
+                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
+                      <span class="ti ti-plus"></span>
+                    </button>
+                  </div><!-- card-header -->
+                  <div class="card-body p-3">
+                    <div data-repeater-list="group-a">
+                      <div data-repeater-item>
+                        <div class="row align-items-end g-3">
+                          <div class="col-lg-6 col-xl-3 col-12">
                             <div>
                               <label for="defaultFormControlInput" class="form-label">التاريخ</label>
                               <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
                             </div>
                           </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
+                          <div class="col-lg-6 col-xl-4 col-12">
                             <div>
                               <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
                               <input type="text" class="form-control" id="defaultFormControlInput"/>
                             </div>
                           </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
+                          <div class="col-lg-6 col-xl-2 col-12">
                             <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
+                              <label for="defaultFormControlInput" class="form-label">يمين</label>
+                              <input type="text" class="form-control" id="insurance-company-from"  />
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-xl-2 col-12">
+                            <div>
+                              <label for="defaultFormControlInput" class="form-label">يسار</label>
+                              <input type="text" class="form-control" id="insurance-company-from"  />
+                            </div>
+                          </div>
+                          <div class="col-lg-12 col-xl-1 col-12 d-flex align-items-center">
+                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
+                              <i class="ti ti-x ti-xs"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <hr>
+                      </div>
+                    </div>
+                  </div><!-- card-body -->
+                </div><!-- card -->
+              </div><!-- col-12 -->
+            </div><!-- row -->
+
+            <div class="row">
+              <div class="col-12 col-md-1">
+                <div class="d-flex align-items-center justify-content-center">
+                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
+                </div><!-- d-flex -->
+              </div><!-- col-12 -->
+              <div class="col-12 col-md-11">
+                <div class="card form-repeater mb-4">
+                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+                    <h5 class="m-0 text-capitalize fw-semibold">Air FILTER</h5>
+                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
+                      <span class="ti ti-plus"></span>
+                    </button>
+                  </div><!-- card-header -->
+                  <div class="card-body p-3">
+                    <div data-repeater-list="group-a">
+                      <div data-repeater-item>
+                        <div class="row align-items-end g-3">
+                          <div class="col-lg-6 col-xl-3 col-12">
+                            <div class="from-group">
+                              <label class="form-label mb-2" for="latest-maintenance">نوع الفلتر</label>
+                              <select id="latest-maintenance" class="select2 form-select" data-placeholder="اختر" data-allow-clear="flase" data-minimum-results-for-search="Infinity">
+                                <option></option>
+                                <option value="1">وكالة</option>
+                                <option value="2">تجاري</option>
+                              </select>
+                            </div><!-- from-group -->
+                          </div><!-- col -->
+                          <div class="col-lg-6 col-xl-3 col-12">
+                            <div class="from-group">
+                              <label class="form-label mb-2" for="filter-status">حالة الفلتر</label>
+                              <select id="filter-status" class="select2 form-select" data-placeholder="اختر" data-allow-clear="flase" data-minimum-results-for-search="Infinity">
+                                <option></option>
+                                <option value="1">وكالة</option>
+                                <option value="2">تجاري</option>
+                              </select>
+                            </div><!-- from-group -->
+                          </div><!-- col -->
+                          <div class="col-lg-6 col-xl-2 col-12">
+                            <div class="from-group">
+                              <label class="form-label mb-2" for="car-statuss">تاريخ التركيب</label>
+                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="insurance-company-from" readonly="readonly" />
+                            </div><!-- from-group -->
+                          </div><!-- col -->
+                          <div class="col-lg-6 col-xl-3 col-12">
+                            <div class="from-group">
+                              <label class="form-label mb-2" for="car-statuss">العداد</label>
                               <div class="input-group">
                                 <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
                                 <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
+                              </div><!-- input-group -->
+                            </div><!-- from-group -->
+                          </div><!-- col -->
+                          <div class="col-lg-12 col-xl-1 col-12 d-flex align-items-center">
                             <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
                               <i class="ti ti-x ti-xs"></i>
                             </button>
@@ -2497,29 +2572,20 @@
                   <div class="card-body p-3">
                     <div data-repeater-list="group-a">
                       <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
+                        <div class="row align-items-end g-3">
+                          <div class="col-lg-6 col-xl-3 col-12">
                             <div>
                               <label for="defaultFormControlInput" class="form-label">التاريخ</label>
                               <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
                             </div>
                           </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
+                          <div class="col-lg-6 col-xl-8 col-12">
                             <div>
                               <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
                               <input type="text" class="form-control" id="defaultFormControlInput"/>
                             </div>
                           </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
+                          <div class="col-lg-12 col-xl-1 col-12 d-flex align-items-center">
                             <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
                               <i class="ti ti-x ti-xs"></i>
                             </button>

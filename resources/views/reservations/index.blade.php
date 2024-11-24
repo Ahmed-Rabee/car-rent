@@ -15,7 +15,7 @@
         <h4 class="m-0">إدارة الحجوزات</h4>
       </div>
       <div class="d-flex align-content-center flex-wrap gap-3 flex-shrink-0">
-        <a href="{{ url('/reservations/create') }}" class="btn btn-primary waves-effect waves-light"><span class="ti-xs ti ti-plus me-2"></span> إضافة حجز جديدة</a>
+        <a href="{{ url('/reservations/create') }}" class="btn btn-primary waves-effect waves-light"><span class="ti-xs ti ti-plus me-2"></span> إضافة حجز جديد</a>
       </div>
     </div>
 

@@ -410,30 +410,66 @@
             </div><!-- input-group -->
           </div><!-- col-12 -->
         </div><!-- row -->
-        <div class="table-responsive text-nowrap">
-          <table class="table table-striped table-bordered">
-            <thead>
-              <tr>
-                <th class="fw-bold p-3">التفاصيل</th>
-                <th width="5%" class="fw-bold p-3">المبلغ</th>
-                <th width="5%" class="fw-bold p-3">التاريخ</th>
-              </tr>
-            </thead>
-            <tbody class="table-border-bottom-0">
-              <tr>
-                <td class="p-3">إيجاد حلول لمشاكل العملاء وتحسين خدمات العملاء</td>
-                <td class="p-3">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    121 <small>ريال</small>
-                  </div><!-- d-flex -->
-                </td>
-                <td class="p-3">
-                  2024-11-11
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div><!-- table-responsive -->
+        <div class="card">
+          <div class="table-responsive text-nowrap">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="fw-bold">التفاصيل</th>
+                  <th width="5%" class="fw-bold">المبلغ</th>
+                  <th width="5%" class="fw-bold">التاريخ</th>
+                </tr>
+              </thead>
+              <tbody class="table-border-bottom-0">
+                <tr>
+                  <td>إيجاد حلول لمشاكل العملاء وتحسين خدمات العملاء</td>
+                  <td>
+                    <div class="d-flex align-items-center justify-content-start gap-1">
+                      121 <small>ريال</small>
+                    </div><!-- d-flex -->
+                  </td>
+                  <td>2024-11-11</td>
+                </tr>
+                <tr>
+                  <td>إيجاد حلول لمشاكل العملاء وتحسين خدمات العملاء</td>
+                  <td>
+                    <div class="d-flex align-items-center justify-content-start gap-1">
+                      121 <small>ريال</small>
+                    </div><!-- d-flex -->
+                  </td>
+                  <td>2024-11-11</td>
+                </tr>
+                <tr>
+                  <td>إيجاد حلول لمشاكل العملاء وتحسين خدمات العملاء</td>
+                  <td>
+                    <div class="d-flex align-items-center justify-content-start gap-1">
+                      121 <small>ريال</small>
+                    </div><!-- d-flex -->
+                  </td>
+                  <td>2024-11-11</td>
+                </tr>
+                <tr>
+                  <td>إيجاد حلول لمشاكل العملاء وتحسين خدمات العملاء</td>
+                  <td>
+                    <div class="d-flex align-items-center justify-content-start gap-1">
+                      121 <small>ريال</small>
+                    </div><!-- d-flex -->
+                  </td>
+                  <td>2024-11-11</td>
+                </tr>
+                <tr>
+                  <td>إيجاد حلول لمشاكل العملاء وتحسين خدمات العملاء</td>
+                  <td>
+                    <div class="d-flex align-items-center justify-content-start gap-1">
+                      121 <small>ريال</small>
+                    </div><!-- d-flex -->
+                  </td>
+                  <td>2024-11-11</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- table-responsive -->
+        </div><!-- card -->
       </div><!-- tab-pane -->
 
     </div><!-- tab-content -->
