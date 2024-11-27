@@ -214,6 +214,7 @@ label.form-label, label.col-form-label {
       pointer-events: auto; /* Re-enable pointer events for the remove link */
       opacity: 1; /* Ensure the remove link is fully visible */
       cursor: pointer; /* Show a pointer cursor for clarity */
+      border: none;
     } // dz-remove
   } // dz-preview
   &.dz-upload-disabled  {
@@ -336,3 +337,41 @@ label.form-label, label.col-form-label {
 .slider-disabled {
   pointer-events: none; /* Prevent interactions */
 } // slider-disabled
+
+
+ul#select2-car-color-results {
+  li.select2-results__option {
+    .car-class-option {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: .5rem;
+      font-size: 16px;
+      font-weight: 500;
+      .color-box {
+        width: 25px;
+        height: 25px;
+        border-radius: .25rem;
+        border: 1px solid #dddddd;
+      } // color-box
+    } // car-class-option
+  } // li.select2-results__option
+} // select2-car-color-results
+
+
+#select2-car-color-container {
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+    font-size: 16px;
+    font-weight: 500;
+    .color-box {
+      width: 25px;
+      height: 25px;
+      border-radius: .25rem;
+      border: 1px solid #dddddd;
+    } // color-box
+  } // span
+} // select2-car-color-container

@@ -201,6 +201,7 @@ label.form-label.required::after, label.col-form-label.required::after {
   pointer-events: auto; /* Re-enable pointer events for the remove link */
   opacity: 1; /* Ensure the remove link is fully visible */
   cursor: pointer; /* Show a pointer cursor for clarity */
+  border: none;
 }
 .dropzoneBasic.dz-upload-disabled {
   pointer-events: none;
@@ -311,4 +312,34 @@ label.form-label.required::after, label.col-form-label.required::after {
 
 .slider-disabled {
   pointer-events: none; /* Prevent interactions */
+}
+
+ul#select2-car-color-results li.select2-results__option .car-class-option {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+ul#select2-car-color-results li.select2-results__option .car-class-option .color-box {
+  width: 25px;
+  height: 25px;
+  border-radius: 0.25rem;
+  border: 1px solid #dddddd;
+}
+
+#select2-car-color-container span {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+#select2-car-color-container span .color-box {
+  width: 25px;
+  height: 25px;
+  border-radius: 0.25rem;
+  border: 1px solid #dddddd;
 }
