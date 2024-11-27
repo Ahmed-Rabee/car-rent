@@ -128,6 +128,20 @@ body [dir=ltr] {
   font-family: "Public Sans", "Cairo" !important;
 }
 
+.table-hover > tbody > tr:hover > * {
+  --bs-table-bg-state: rgba(0, 0, 0, 0.08) !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .table th {
   letter-spacing: 0 !important;
 }
@@ -289,4 +303,8 @@ label.form-label.required::after, label.col-form-label.required::after {
 .flatpickr-monthSelect-theme-light .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-monthSelect-months span.flatpickr-monthSelect-month.selected, .flatpickr-monthSelect-theme-dark .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-monthSelect-months span.flatpickr-monthSelect-month.selected {
   background-color: #7367f0;
   color: #fff;
+}
+
+.flatpickr-calendar {
+  direction: ltr !important;
 }

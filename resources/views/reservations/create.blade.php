@@ -18,18 +18,18 @@
     <div class="row g-3">
       <div class="col-12 col-md-9">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body p-3">
             <form action="/upload" method="post">
               <div class="row align-items-center">
-                <label class="col-sm-3 col-form-label" for="employee-name">العميل</label>
+                <label class="col-sm-3 col-form-label required" for="employee-name">العميل</label>
                 <div class="col-sm-9">
                   <div class="row">
                     <div class="col-12 col-md-7">
                       <select id="employee-permissions756" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر">
                         <option></option>
-                        <option value="AK">#1123 | 343434 | محمد احمد</option>
-                        <option value="AK">#5790 | 365970 | مصطفي محفوظ</option>
-                        <option value="AK">#2376 | 206872 | زين عبدالله</option>
+                        <option value="ar">#1123 | 96892035086 | محمد احمد</option>
+                        <option value="af">#5790 | 96813035086 | مصطفي محفوظ</option>
+                        <option value="ac">#2376 | 96897145086 | زين عبدالله</option>
                       </select>
                     </div><!-- col-12 -->
                   </div><!-- row -->
@@ -37,14 +37,26 @@
               </div><!-- row -->
               <hr class="my-3">
               <div class="row align-items-center">
-                <label class="col-sm-3 col-form-label" for="employee-name">الفرع</label>
+                <label class="col-sm-3 col-form-label fw-medium" for="reservation-company-name">اسم الشركة</label>
+                <div class="col-12 col-sm-9">
+                  <div class="row">
+                    <div class="col-12 col-md-7">
+                      <input type="text" id="reservation-company-name" class="form-control" />
+                    </div><!-- col-12 -->
+                  </div><!-- row -->
+                </div><!-- col-12 -->
+              </div><!-- row -->
+              <hr class="my-3">
+              <div class="row align-items-center">
+                <label class="col-sm-3 col-form-label required" for="employee-name">الفرع</label>
                 <div class="col-sm-9">
                   <div class="row">
                     <div class="col-12 col-md-7">
                       <select id="employee-permissions1" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر">
                         <option></option>
-                        <option value="AK">Alaska</option>
-                        <option value="HI">Hawaii</option>
+                        <option value="AK">فرع الواحة</option>
+                        <option value="HI">فرع جدة</option>
+                        <option value="qw">فرع الخبر</option>
                       </select>
                     </div><!-- col-12 -->
                   </div><!-- row -->
@@ -52,14 +64,14 @@
               </div><!-- row -->
               <hr class="my-3">
               <div class="row align-items-center">
-                <label class="col-sm-3 col-form-label" for="employee-name">المركبة</label>
+                <label class="col-sm-3 col-form-label required" for="employee-name">المركبة</label>
                 <div class="col-sm-9">
                   <div class="row">
                     <div class="col-12 col-md-7">
                       <select id="employee-permissions10" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر">
                         <option></option>
-                        <option value="AK">Alaska</option>
-                        <option value="HI">Hawaii</option>
+                        <option value="AK">TB - 125 | كيا | سبورتاج | بي 1</option>
+                        <option value="HI">BC - 472 | كيا | سبورتاج | بي 2</option>
                       </select>
                     </div><!-- col-12 -->
                   </div><!-- row -->
@@ -73,142 +85,18 @@
                     <div class="col-12 col-md-6">
                       <select id="employee-permissions" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر الماركة">
                         <option></option>
-                        <option value="AK">Alaska</option>
-                        <option value="HI">Hawaii</option>
+                        <option value="AK">كيا</option>
+                        <option value="HI">لادا</option>
+                        <option value="ad">ام جي</option>
                       </select>
                     </div><!-- col-12 -->
                     <div class="col-12 col-md-6">
                       <select id="employee-permissionsw" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر الفئة">
                         <option></option>
-                        <option value="AK">Alaska</option>
-                        <option value="HI">Hawaii</option>
+                        <option value="AK">B1</option>
+                        <option value="HI">B2</option>
+                        <option value="ad">B8</option>
                       </select>
-                    </div><!-- col-12 -->
-                  </div><!-- row -->
-                </div><!-- col-12 -->
-              </div><!-- row -->
-              <hr class="my-3">
-              <div class="row align-items-center">
-                <label class="col-sm-3 col-form-label" for="employee-name">مكان الاستلام</label>
-                <div class="col-sm-9">
-                  <div class="row">
-                    <div class="col-12 col-md-7">
-                      <input type="text" class="form-control" />
-                    </div><!-- col-12 -->
-                  </div><!-- row -->
-                </div><!-- col-12 -->
-              </div><!-- row -->
-              <hr class="my-3">
-              <div class="row align-items-center">
-                <label class="col-sm-3 col-form-label" for="employee-name">تاريخ الاستلام</label>
-                <div class="col-sm-9">
-                  <div class="row">
-                    <div class="col-12 col-md-7">
-                      <input
-                        type="text"
-                        class="form-control flatpickr-datetime"
-                        placeholder="YYYY-MM-DD HH:MM"
-                      />
-                    </div><!-- col-12 -->
-                  </div><!-- row -->
-                </div><!-- col-12 -->
-              </div><!-- row -->
-              <hr class="my-3">
-              <div class="row align-items-center">
-                <label class="col-sm-3 col-form-label" for="employee-name">مكان العودة</label>
-                <div class="col-sm-9">
-                  <div class="row">
-                    <div class="col-12 col-md-7">
-                      <input type="text" class="form-control" />
-                    </div><!-- col-12 -->
-                  </div><!-- row -->
-                </div><!-- col-12 -->
-              </div><!-- row -->
-              <hr class="my-3">
-              <div class="row align-items-center">
-                <label class="col-sm-3 col-form-label" for="employee-name">تاريخ العودة</label>
-                <div class="col-sm-9">
-                  <div class="row">
-                    <div class="col-12 col-md-7">
-                      <input
-                        type="text"
-                        class="form-control flatpickr-datetime"
-                        placeholder="YYYY-MM-DD HH:MM"
-                      />
-                    </div><!-- col-12 -->
-                  </div><!-- row -->
-                </div><!-- col-12 -->
-              </div><!-- row -->
-              <!-- <hr class="my-3">
-              <div class="row align-items-center">
-                <label class="col-sm-3 col-form-label" for="employee-name">مدة الحجر</label>
-                <div class="col-sm-9">
-                  <div class="row">
-                    <div class="col-12 col-md-7">
-                      <input
-                        type="text"
-                        class="form-control"
-                        value="5 ايام + 3 ساعات + 1 يوم إضافي"
-                        readonly
-                        disabled
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-              <hr class="my-3">
-              <div class="row align-items-center">
-                <label class="col-sm-3 col-form-label" for="employee-name">السعر اليومي</label>
-                <div class="col-sm-9">
-                  <div class="row">
-                    <div class="col-12 col-md-7">
-                      <div class="input-group">
-                        <input type="number" class="form-control" />
-                        <span class="input-group-text">ريال</span>
-                      </div>
-                    </div><!-- col-12 -->
-                  </div><!-- row -->
-                </div><!-- col-12 -->
-              </div><!-- row -->
-              <hr class="my-3">
-              <div class="row align-items-center">
-                <label class="col-sm-3 col-form-label" for="employee-name">خدمة التوصيل</label>
-                <div class="col-sm-9">
-                  <div class="row">
-                    <div class="col-12 col-md-7">
-                      <select id="employee-permissions6987" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر">
-                        <option></option>
-                        <option value="payment">مدفوعة</option>
-                        <option value="free">مجانية</option>
-                      </select>
-                    </div><!-- col-12 -->
-                  </div><!-- row -->
-                </div><!-- col-12 -->
-              </div><!-- row -->
-              <hr class="my-3">
-              <div class="row align-items-center">
-                <label class="col-sm-3 col-form-label" for="employee-name">تكلفة خدمة التوصيل</label>
-                <div class="col-sm-9">
-                  <div class="row">
-                    <div class="col-12 col-md-7">
-                      <div class="input-group">
-                        <input type="number" class="form-control" />
-                        <span class="input-group-text">ريال</span>
-                      </div>
-                    </div><!-- col-12 -->
-                  </div><!-- row -->
-                </div><!-- col-12 -->
-              </div><!-- row -->
-              <hr class="my-3">
-              <div class="row align-items-center">
-                <label class="col-sm-3 col-form-label" for="employee-name">خصم</label>
-                <div class="col-sm-9">
-                  <div class="row">
-                    <div class="col-12 col-md-7">
-                      <div class="input-group">
-                        <input type="number" class="form-control" />
-                        <span class="input-group-text">ريال</span>
-                      </div>
                     </div><!-- col-12 -->
                   </div><!-- row -->
                 </div><!-- col-12 -->
@@ -226,20 +114,141 @@
               </div><!-- row -->
               <hr class="my-3">
               <div class="row align-items-center">
-                <label class="col-sm-3 col-form-label" for="employee-name">حالة الحجز</label>
+                <label class="col-sm-3 col-form-label required" for="employee-name">مكان الاستلام</label>
                 <div class="col-sm-9">
                   <div class="row">
                     <div class="col-12 col-md-7">
-                      <select id="employee-permissions6987aa" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر">
+                      <input type="text" class="form-control" />
+                    </div><!-- col-12 -->
+                  </div><!-- row -->
+                </div><!-- col-12 -->
+              </div><!-- row -->
+              <hr class="my-3">
+              <div class="row align-items-center">
+                <label class="col-sm-3 col-form-label required" for="employee-name">تاريخ الاستلام</label>
+                <div class="col-sm-9">
+                  <div class="row">
+                    <div class="col-12 col-md-7">
+                      <input
+                        type="text"
+                        class="form-control flatpickr-datetime"
+                        placeholder="YYYY-MM-DD HH:MM"
+                      />
+                    </div><!-- col-12 -->
+                  </div><!-- row -->
+                </div><!-- col-12 -->
+              </div><!-- row -->
+              <hr class="my-3">
+              <div class="row align-items-center">
+                <label class="col-sm-3 col-form-label required" for="employee-name">مكان العودة</label>
+                <div class="col-sm-9">
+                  <div class="row">
+                    <div class="col-12 col-md-7">
+                      <input type="text" class="form-control" />
+                    </div><!-- col-12 -->
+                  </div><!-- row -->
+                </div><!-- col-12 -->
+              </div><!-- row -->
+              <hr class="my-3">
+              <div class="row align-items-center">
+                <label class="col-sm-3 col-form-label required" for="employee-name">تاريخ العودة</label>
+                <div class="col-sm-9">
+                  <div class="row">
+                    <div class="col-12 col-md-7">
+                      <input
+                        type="text"
+                        class="form-control flatpickr-datetime"
+                        placeholder="YYYY-MM-DD HH:MM"
+                      />
+                    </div><!-- col-12 -->
+                  </div><!-- row -->
+                </div><!-- col-12 -->
+              </div><!-- row -->
+              <hr class="my-3">
+              <div class="row align-items-center">
+                <label class="col-sm-3 col-form-label required" for="employee-name">السعر اليومي</label>
+                <div class="col-sm-9">
+                  <div class="row">
+                    <div class="col-12 col-md-7">
+                      <div class="input-group">
+                        <input type="number" class="form-control" />
+                        <span class="input-group-text">ريال</span>
+                      </div>
+                    </div><!-- col-12 -->
+                  </div><!-- row -->
+                </div><!-- col-12 -->
+              </div><!-- row -->
+              <hr class="my-3">
+              <div class="row align-items-center">
+                <label class="col-sm-3 col-form-label required" for="reservations-delivery-service">خدمة التوصيل</label>
+                <div class="col-sm-9">
+                  <div class="row">
+                    <div class="col-12 col-md-7">
+                      <select id="reservations-delivery-service" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
                         <option></option>
-                        <option value="payment">مؤكد</option>
-                        <option value="free">غير مؤكد</option>
-                        <option value="free">ملغي</option>
+                        <option value="payment">مدفوعة</option>
+                        <option value="free">مجانية</option>
                       </select>
                     </div><!-- col-12 -->
                   </div><!-- row -->
                 </div><!-- col-12 -->
               </div><!-- row -->
+              <div id="reservations-delivery-service-cost-element" style="display: none;">
+                <hr class="my-3">
+                <div class="row align-items-center">
+                  <label class="col-sm-3 col-form-label" for="reservations-delivery-service-cost">تكلفة خدمة التوصيل</label>
+                  <div class="col-sm-9">
+                    <div class="row">
+                      <div class="col-12 col-md-7">
+                        <div class="input-group">
+                          <input type="number" inputmode="numeric" id="reservations-delivery-service-cost" class="form-control" />
+                          <span class="input-group-text">ريال</span>
+                        </div><!-- input-group -->
+                      </div><!-- col-12 -->
+                    </div><!-- row -->
+                  </div><!-- col-12 -->
+                </div><!-- row -->
+              </div><!-- reservations-delivery-service-payment -->
+              <hr class="my-3">
+              <div class="row align-items-center">
+                <label class="col-sm-3 col-form-label" for="employee-name">خصم</label>
+                <div class="col-sm-9">
+                  <div class="row">
+                    <div class="col-12 col-md-7">
+                      <div class="input-group">
+                        <input type="number" class="form-control" />
+                        <span class="input-group-text">ريال</span>
+                      </div>
+                    </div><!-- col-12 -->
+                  </div><!-- row -->
+                </div><!-- col-12 -->
+              </div><!-- row -->
+              <hr class="my-3">
+              <div class="row align-items-center">
+                <label class="col-sm-3 col-form-label fw-medium" for="reservation-status">حالة الحجز</label>
+                <div class="col-sm-9">
+                  <div class="row">
+                    <div class="col-12 col-md-7">
+                      <select id="reservation-status" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
+                        <option></option>
+                        <option value="Completed">مكتمل</option>
+                        <option value="Confirmed">مؤكد</option>
+                        <option value="Unconfirmed">غير مؤكد</option>
+                        <option value="Cancelled">ملغي</option>
+                      </select>
+                    </div><!-- col-12 -->
+                  </div><!-- row -->
+                </div><!-- col-12 -->
+              </div><!-- row -->
+              <div id="reason-cancellation" style="display: none;">
+                <hr class="my-3">
+                <div class="row align-items-start">
+                  <label class="col-sm-3 col-form-label fw-medium" for="reservation-reason-cancellation">سبب الإلغاء</label>
+                  <div class="col-12 col-sm-9">
+                    <textarea class="form-control p-2" id="reservation-reason-cancellation" rows="3"></textarea>
+                  </div><!-- col-12 -->
+                </div><!-- row -->
+              </div><!-- reason-cancellation -->
               <hr class="my-3">
               <div class="row">
                 <label class="col-sm-3 col-form-label" for="employee-name">الملاحظات</label>
@@ -296,19 +305,34 @@
 @push('scripts')
   <script src="{{ asset('assets/vendor/libs/flatpickr/flatpickr.js') }}"></script>
   <script src="{{ asset('assets/vendor/libs/select2/select2.js') }}"></script>
-  <script type="module">
-    (function () {
-      const select2 = $('.select2');
-      if (select2.length) {
-        select2.each(function () {
-          var $this = $(this);
-          $this.wrap('<div class="position-relative"></div>').select2({
-            placeholder: 'Select value',
-            dropdownParent: $this.parent()
-          });
-        });
-      }
+  <script>
+    $(document).ready(function() {
+      $('.select2').select2();
+    });
 
+    $(document).ready(function() {
+      $('#reservations-delivery-service').change(function() {
+        var selectedValue = $(this).val();
+        if (selectedValue === 'payment') {
+          $('#reservations-delivery-service-cost-element').show(); // Show the element
+        } else {
+          $('#reservations-delivery-service-cost-element').hide(); // Hide the element
+        }
+      });
+    });
+
+    $(document).ready(function () {
+      $('#reservation-status').on('change', function () {
+        if ($(this).val() === 'Cancelled') {
+          $('#reason-cancellation').show(); // Show the details div
+        } else {
+          $('#reason-cancellation').hide(); // Hide the details div
+        }
+      });
+    });
+
+
+    (function () {
       // Flat Picker
       // --------------------------------------------------------------------
       const flatpickrDateTime = $('.flatpickr-datetime');

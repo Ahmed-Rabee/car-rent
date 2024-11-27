@@ -32,7 +32,7 @@
     <!-- Employees -->
     <li class="menu-item">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons ti ti-car"></i>
+        <i class="menu-icon tf-icons ti ti-users"></i>
         <div>إدارة الموظفين</div>
       </a>
       <ul class="menu-sub">

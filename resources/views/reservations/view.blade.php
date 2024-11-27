@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="{{ asset('assets/vendor/libs/sweetalert2/sweetalert2.css') }}" />
   <link rel="stylesheet" href="{{ asset('assets/vendor/libs/fancybox/fancybox.css') }}" />
   <link rel="stylesheet" href="{{ asset('assets/vendor/libs/select2/select2.css') }}" />
+  <link rel="stylesheet" href="{{ asset('assets/vendor/libs/nouislider/nouislider.css') }}" />
 @endpush
 
 @section('content')
@@ -23,7 +24,7 @@
     <div class="alert alert-warning d-flex align-items-center" role="alert">
       <span class="alert-icon text-warning me-2"><i class="ti ti-contract ti-xs"></i></span>
       تم إنشاء عقد لهذا الحجز برقم - <a href="#" class="alert-link">#45435</a>
-    </div>
+    </div><!-- alert -->
 
     <div class="row g-3">
       <div class="col-12 col-md-9">
@@ -65,6 +66,10 @@
                     </td>
                   </tr>
                   <tr>
+                    <td width="5%" class="p-3">اسم الشركة</td>
+                    <td class="p-3">-</td>
+                  </tr>
+                  <tr>
                     <td width="5%" class="p-3">الفرع</td>
                     <td class="p-3">فرع الواحة</td>
                   </tr>
@@ -100,14 +105,6 @@
                   <tr>
                     <td width="5%" class="p-3">خدمة التوصيل</td>
                     <td class="p-3">مدفوع</td>
-                  </tr>
-                  <tr>
-                    <td width="5%" class="p-3">تكلفة خدمة التوصيل</td>
-                    <td class="p-3">121 <small>ريال</small></td>
-                  </tr>
-                  <tr>
-                    <td width="5%" class="p-3">خصم</td>
-                    <td class="p-3">- 75 <small>ريال</small></td>
                   </tr>
                   <tr>
                     <td width="5%" class="p-3">رقم رحلة الطيران</td>
@@ -160,7 +157,7 @@
               </div>
             </div><!-- card-body -->
           </div><!-- card -->
-          <button type="button" class="btn btn-lg btn-primary px-5 w-100 waves-effect waves-light mt-4">إنشاء عقد</button>
+          <a href="{{ url('/contracts/create') }}" class="btn btn-lg btn-primary px-5 w-100 waves-effect waves-light mt-4">إنشاء عقد</a>
         </div><!--  -->
       </div><!-- col-12 -->
     </div><!-- row -->
@@ -180,6 +177,7 @@
 @push('scripts')
   <script src="{{ asset('assets/vendor/libs/fancybox/fancybox.umd.js') }}"></script>
   <script src="{{ asset('assets/vendor/libs/select2/select2.js') }}"></script>
+  <script src="{{ asset('assets/vendor/libs/nouislider/nouislider.js') }}"></script>
   <script>
     // --------------------------------------------------------------------
     // Fancybox
@@ -193,14 +191,53 @@
     $(".select2").select2();
 
 
-    $(document).ready(function () {
-      $('#reservation-status').on('change', function () {
-        if ($(this).val() === 'Cancelled') {
-          $('#reason-cancellation').show(); // Show the details div
-        } else {
-          $('#reason-cancellation').hide(); // Hide the details div
+
+    /**
+ * Sliders
+ */
+'use strict';
+
+(function () {
+  const sliderPips = document.getElementById('slider-pips');
+  const customLabels = {
+    0: 'E',
+    1: '',
+    2: '1/4',
+    3: '',
+    4: '%',
+    5: '',
+    6: '3/4',
+    7: '',
+    8: 'F',
+  };
+
+  // Scale and Pips
+  // --------------------------------------------------------------------
+  if (sliderPips) {
+    noUiSlider.create(sliderPips, {
+      start: [0],
+      behaviour: 'tap-drag',
+      step: 1,
+      tooltips: false,
+      connect: [true, false],
+      range: {
+        min: 0,
+        max: 8
+      },
+      pips: {
+        mode: 'steps',
+        stepped: true,
+        density: 10,
+        format: {
+          to: value => customLabels[value] || '', // Show custom labels or empty
+          from: value => value
         }
-      });
+      },
+      direction: isRtl ? 'rtl' : 'ltr'
     });
+  }
+
+})();
+
   </script>
 @endpush

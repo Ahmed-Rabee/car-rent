@@ -70,35 +70,35 @@
               <div class="col">
                 <div class="form-group">
                   <label class="form-label mb-2 fs-6 required" for="employee-sex">الجنس</label>
-                    <div class="row row-cols-2 g-1 g-md-3">
-                      <div class="col">
-                        <div class="form-check custom-option custom-option-basic m-0">
-                          <label class="form-check-label custom-option-content py-2" for="employee-male">
-                            <input
-                              name="employee-sex"
-                              class="form-check-input"
-                              type="radio"
-                              id="employee-male"
-                              checked
-                            />
-                            <span class="custom-option-header p-0">ذكر</span>
-                          </label>
-                        </div><!-- form-check -->
-                      </div><!-- col -->
-                      <div class="col">
-                        <div class="form-check custom-option custom-option-basic m-0">
-                          <label class="form-check-label custom-option-content py-2" for="employee-female">
-                            <input
-                              name="employee-sex"
-                              class="form-check-input"
-                              type="radio"
-                              id="employee-female"
-                            />
-                            <span class="custom-option-header p-0">آنثي</span>
-                          </label>
-                        </div><!-- form-check -->
-                      </div><!-- col -->
-                    </div><!-- row -->
+                  <div class="row row-cols-2 g-1 g-md-3">
+                    <div class="col">
+                      <div class="form-check custom-option custom-option-basic m-0">
+                        <label class="form-check-label custom-option-content py-2" for="employee-male">
+                          <input
+                            name="employee-sex"
+                            class="form-check-input"
+                            type="radio"
+                            id="employee-male"
+                            checked
+                          />
+                          <span class="custom-option-header p-0">ذكر</span>
+                        </label>
+                      </div><!-- form-check -->
+                    </div><!-- col -->
+                    <div class="col">
+                      <div class="form-check custom-option custom-option-basic m-0">
+                        <label class="form-check-label custom-option-content py-2" for="employee-female">
+                          <input
+                            name="employee-sex"
+                            class="form-check-input"
+                            type="radio"
+                            id="employee-female"
+                          />
+                          <span class="custom-option-header p-0">آنثي</span>
+                        </label>
+                      </div><!-- form-check -->
+                    </div><!-- col -->
+                  </div><!-- row -->
                 </div><!-- form-group -->
               </div><!-- col -->
               <div class="col">

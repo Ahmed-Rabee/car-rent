@@ -9,7 +9,7 @@
         <div class="row align-items-center">
           <label class="col-sm-3 col-form-label fw-medium" for="reservation-status">حالة الحجز</label>
           <div class="col-12 col-sm-9">
-            <select id="reservation-status" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="" data-dropdown-parent="#reservationStatusModal">
+            <select id="reservation-status" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر" data-dropdown-parent="#reservationStatusModal">
               <option></option>
               <option value="Completed">مكتمل</option>
               <option value="Confirmed">مؤكد</option>
