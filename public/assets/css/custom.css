@@ -308,3 +308,7 @@ label.form-label.required::after, label.col-form-label.required::after {
 .flatpickr-calendar {
   direction: ltr !important;
 }
+
+.slider-disabled {
+  pointer-events: none; /* Prevent interactions */
+}

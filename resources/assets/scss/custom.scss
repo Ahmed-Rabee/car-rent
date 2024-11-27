@@ -331,3 +331,8 @@ label.form-label, label.col-form-label {
 .flatpickr-calendar {
   direction: ltr !important;
 } // flatpickr-calendar
+
+
+.slider-disabled {
+  pointer-events: none; /* Prevent interactions */
+} // slider-disabled

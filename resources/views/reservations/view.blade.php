@@ -23,7 +23,7 @@
 
     <div class="alert alert-warning d-flex align-items-center" role="alert">
       <span class="alert-icon text-warning me-2"><i class="ti ti-contract ti-xs"></i></span>
-      تم إنشاء عقد لهذا الحجز برقم - <a href="#" class="alert-link">#45435</a>
+      تم إنشاء عقد لهذا الحجز برقم - <a href="#" class="alert-link text-decoration-underline">#45435</a>
     </div><!-- alert -->
 
     <div class="row g-3">
@@ -62,7 +62,7 @@
                   <tr>
                     <td width="5%" class="p-3">العميل</td>
                     <td class="p-3">
-                      <a href="#" title="#">محمد احمد محمود</a>
+                      <a href="{{ url('/clients/{id}/view') }}" title="#">محمد احمد محمود</a>
                     </td>
                   </tr>
                   <tr>
@@ -71,11 +71,15 @@
                   </tr>
                   <tr>
                     <td width="5%" class="p-3">الفرع</td>
-                    <td class="p-3">فرع الواحة</td>
+                    <td class="p-3">
+                      <a href="{{ url('/branches/{id}/view') }}" title="#">فرع الواحة</a>
+                    </td>
                   </tr>
                   <tr>
                     <td width="5%" class="p-3">المركبة</td>
-                    <td class="p-3">9408 - TB</td>
+                    <td class="p-3">
+                      <a href="{{ url('/cars/{id}/view') }}" title="#" dir="ltr">TB - 2343</a>
+                    </td>
                   </tr>
                   <tr>
                     <td width="5%" class="p-3">المركبة البديلة</td>
@@ -177,7 +181,6 @@
 @push('scripts')
   <script src="{{ asset('assets/vendor/libs/fancybox/fancybox.umd.js') }}"></script>
   <script src="{{ asset('assets/vendor/libs/select2/select2.js') }}"></script>
-  <script src="{{ asset('assets/vendor/libs/nouislider/nouislider.js') }}"></script>
   <script>
     // --------------------------------------------------------------------
     // Fancybox
@@ -189,55 +192,5 @@
     // Select 2
     // --------------------------------------------------------------------
     $(".select2").select2();
-
-
-
-    /**
- * Sliders
- */
-'use strict';
-
-(function () {
-  const sliderPips = document.getElementById('slider-pips');
-  const customLabels = {
-    0: 'E',
-    1: '',
-    2: '1/4',
-    3: '',
-    4: '%',
-    5: '',
-    6: '3/4',
-    7: '',
-    8: 'F',
-  };
-
-  // Scale and Pips
-  // --------------------------------------------------------------------
-  if (sliderPips) {
-    noUiSlider.create(sliderPips, {
-      start: [0],
-      behaviour: 'tap-drag',
-      step: 1,
-      tooltips: false,
-      connect: [true, false],
-      range: {
-        min: 0,
-        max: 8
-      },
-      pips: {
-        mode: 'steps',
-        stepped: true,
-        density: 10,
-        format: {
-          to: value => customLabels[value] || '', // Show custom labels or empty
-          from: value => value
-        }
-      },
-      direction: isRtl ? 'rtl' : 'ltr'
-    });
-  }
-
-})();
-
   </script>
 @endpush

@@ -307,54 +307,54 @@
     });
 
     /**
- * Sliders
- */
-'use strict';
+     * Sliders
+     */
+    'use strict';
 
-(function () {
-  const sliderPips = document.getElementById('slider-pips');
-  const customLabels = {
-    0: 'E',
-    1: '',
-    2: '',
-    3: '1/4',
-    4: '',
-    5: '',
-    6: '%',
-    7: '',
-    8: '',
-    9: '3/4',
-    10: '',
-    11: '',
-    12: 'F',
-  };
+    (function () {
+      const sliderPips = document.getElementById('slider-pips');
+      const customLabels = {
+        0: 'E',
+        1: '',
+        2: '',
+        3: '1/4',
+        4: '',
+        5: '',
+        6: '%',
+        7: '',
+        8: '',
+        9: '3/4',
+        10: '',
+        11: '',
+        12: 'F',
+      };
 
-  // Scale and Pips
-  // --------------------------------------------------------------------
-  if (sliderPips) {
-    noUiSlider.create(sliderPips, {
-      start: [0],
-      behaviour: 'tap-drag',
-      step: 1,
-      tooltips: false,
-      connect: [true, false],
-      range: {
-        min: 0,
-        max: 12
-      },
-      pips: {
-        mode: 'steps',
-        stepped: true,
-        density: 10,
-        format: {
-          to: value => customLabels[value] || '', // Show custom labels or empty
-          from: value => value
-        }
-      },
-      direction: isRtl ? 'rtl' : 'ltr'
-    });
-  }
+      // Scale and Pips
+      // --------------------------------------------------------------------
+      if (sliderPips) {
+        noUiSlider.create(sliderPips, {
+          start: [0],
+          behaviour: 'tap-drag',
+          step: 1,
+          tooltips: false,
+          connect: [true, false],
+          range: {
+            min: 0,
+            max: 12
+          },
+          pips: {
+            mode: 'steps',
+            stepped: true,
+            density: 10,
+            format: {
+              to: value => customLabels[value] || '', // Show custom labels or empty
+              from: value => value
+            }
+          },
+          direction: isRtl ? 'rtl' : 'ltr'
+        });
+      }
 
-})();
+    })();
   </script>
 @endpush

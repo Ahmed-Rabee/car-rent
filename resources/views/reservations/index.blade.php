@@ -102,9 +102,7 @@
                 <a href="{{ url('/reservations/{id}/view') }}" title="#">234</a>
               </td>
               <td>9408 - TB</td>
-              <td>
-                <a href="#" title="#">محمد احمد محمود</a>
-              </td>
+              <td>محمد احمد محمود</td>
               <td>18 / 11 / 2024</td>
               <td>المطار</td>
               <td>18 / 11 / 2024</td>
@@ -127,9 +125,7 @@
                 <a href="{{ url('/reservations/{id}/view') }}" title="#">234</a>
               </td>
               <td>9408 - TB</td>
-              <td>
-                <a href="#" title="#">محمد احمد محمود</a>
-              </td>
+              <td>محمد احمد محمود</td>
               <td>18 / 11 / 2024</td>
               <td>المطار</td>
               <td>18 / 11 / 2024</td>
@@ -152,9 +148,7 @@
                 <a href="{{ url('/reservations/{id}/view') }}" title="#">234</a>
               </td>
               <td>9408 - TB</td>
-              <td>
-                <a href="#" title="#">محمد احمد محمود</a>
-              </td>
+              <td>محمد احمد محمود</td>
               <td>18 / 11 / 2024</td>
               <td>المطار</td>
               <td>18 / 11 / 2024</td>
@@ -177,9 +171,7 @@
                 <a href="{{ url('/reservations/{id}/view') }}" title="#">234</a>
               </td>
               <td>9408 - TB</td>
-              <td>
-                <a href="#" title="#">محمد احمد محمود</a>
-              </td>
+              <td>محمد احمد محمود</td>
               <td>18 / 11 / 2024</td>
               <td>المطار</td>
               <td>18 / 11 / 2024</td>
@@ -202,9 +194,7 @@
                 <a href="{{ url('/reservations/{id}/view') }}" title="#">234</a>
               </td>
               <td>9408 - TB</td>
-              <td>
-                <a href="#" title="#">محمد احمد محمود</a>
-              </td>
+              <td>محمد احمد محمود</td>
               <td>18 / 11 / 2024</td>
               <td>المطار</td>
               <td>18 / 11 / 2024</td>
