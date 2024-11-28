@@ -20,8 +20,6 @@ Route::get('/branches', [Branches::class, 'index'])->name('branches-index');
 Route::get('/branches/create', [Branches::class, 'create'])->name('branches-create');
 Route::get('/branches/{id}/edit', [Branches::class, 'edit'])->name('branches-edit');
 Route::get('/branches/{id}/view', [Branches::class, 'view'])->name('branches-view');
-Route::get('/branches/{id}/statistics', [Branches::class, 'statistics'])->name('branches-statistics');
-Route::get('/branches/{id}/employees', [Branches::class, 'employees'])->name('branches-employees');
 
 // Employees Routes
 Route::get('/employees', [Employees::class, 'index'])->name('employees-index');

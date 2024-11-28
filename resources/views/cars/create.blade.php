@@ -10,14 +10,14 @@
 
   <div id="cars-create-page">
 
-  <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-4">
-    <div class="d-flex flex-column justify-content-center">
-      <h4 class="m-0">إضافة مركبة جديدة</h4>
-    </div>
-  </div>
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-4">
+      <div class="d-flex flex-column justify-content-center">
+        <h4 class="m-0">إضافة مركبة جديدة</h4>
+      </div>
+    </div><!-- d-flex -->
 
     <div class="card mb-4">
-      <div class="card-body">
+      <div class="card-body p-3">
         <form>
           <div class="row align-items-center">
             <label class="col-sm-2 col-form-label fw-medium" for="car-number">رقم السيارة</label>
@@ -35,7 +35,7 @@
             <div class="col-12 col-sm-10">
               <div class="row">
                 <div class="col-12 col-md-6">
-                  <select id="car-branch" class="select2 form-select" data-allow-clear="fasle" data-placeholder="اختر">
+                  <select id="car-branch" class="select2 form-select" data-allow-clear="false" data-placeholder="اختر">
                     <option></option>
                     <option value="AK">فرع الواحة</option>
                     <option value="HI">فرع مكة</option>
@@ -258,6 +258,17 @@
           </div><!-- row -->
           <hr class="my-3">
           <div class="row align-items-center">
+            <label class="col-sm-2 col-form-label fw-medium" for="car-gps-service-provider">مزود خدمة GPS</label>
+            <div class="col-12 col-sm-10">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <input type="text" id="car-gps-service-provider" class="form-control" />
+                </div><!-- col-12 -->
+              </div><!-- row -->
+            </div><!-- col-12 -->
+          </div><!-- row -->
+          <hr class="my-3">
+          <div class="row align-items-center">
             <label class="col-sm-2 col-form-label fw-medium" for="car-gps">GPS</label>
             <div class="col-12 col-sm-10">
               <div class="row">
@@ -302,6 +313,7 @@
                     <option></option>
                     <option value="new">جديدة</option>
                     <option value="used">مستعملة</option>
+                    <option value="canceled">ملغية</option>
                   </select>
                 </div><!-- col-12 -->
               </div><!-- row -->

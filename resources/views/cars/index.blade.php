@@ -16,7 +16,7 @@
       <div class="d-flex align-content-center flex-wrap gap-3 flex-shrink-0">
         <a href="{{ url('/cars/create') }}" class="btn btn-primary waves-effect waves-light"><span class="ti-xs ti ti-plus me-2"></span> إضافة مركبة جديدة</a>
       </div>
-    </div>
+    </div><!-- d-flex -->
 
     <div class="d-flex justify-content-end mb-4">
       <button class="btn btn-icon btn-secondary waves-effect waves-light" type="button" data-bs-toggle="collapse" data-bs-target="#cars-filter-collapse" aria-expanded="false" aria-controls="cars-filter-collapse"><span class="ti ti-filter"></span></button>
@@ -28,53 +28,54 @@
           <div class="row row-cols-1 row-cols-md-4 g-3">
             <div class="col">
               <div class="form-group">
-                <label for="exampleFormControlInput1" class="form-label">رقم السياره</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" />
+                <label for="car-number" class="form-label fw-medium mb-2">رقم السياره</label>
+                <input type="text" class="form-control" id="car-number" />
               </div><!-- form-group -->
             </div><!-- col -->
             <div class="col">
               <div class="form-group">
-                <label for="exampleFormControlInput1" class="form-label">ماركة السيارة</label>
-                <select id="car-brand" class="select2 form-select" data-allow-clear="true" data-placeholder="">
+                <label for="car-brand" class="form-label fw-medium mb-2">ماركة السيارة</label>
+                <select id="car-brand" class="select2 form-select" data-allow-clear="false" data-placeholder="اختر">
                   <option></option>
-                  <option value="AK">Alaska</option>
-                  <option value="HI">Hawaii</option>
+                  <option value="AK">تويوتا</option>
+                  <option value="HI">كيا</option>
                 </select>
               </div><!-- form-group -->
             </div><!-- col -->
             <div class="col">
               <div class="form-group">
-                <label for="exampleFormControlInput1" class="form-label">موديل السيارة</label>
-                <select id="car-model" class="select2 form-select" data-allow-clear="true" data-placeholder="">
+                <label for="car-model" class="form-label fw-medium mb-2">موديل السيارة</label>
+                <select id="car-model" class="select2 form-select" data-allow-clear="false" data-placeholder="اختر">
                   <option></option>
-                  <option value="AK">Alaska</option>
-                  <option value="HI">Hawaii</option>
+                  <option value="AK">موديل ١</option>
+                  <option value="HI">موديل ٢</option>
                 </select>
               </div><!-- form-group -->
             </div><!-- col -->
             <div class="col">
               <div class="form-group">
-                <label for="exampleFormControlInput1" class="form-label">فئة السيارة</label>
-                <select id="car-category" class="select2 form-select" data-allow-clear="true" data-placeholder="">
+                <label for="car-category" class="form-label fs-6 fw-medium mb-2">فئة السيارة</label>
+                <select id="car-category" class="select2 form-select" data-allow-clear="true" data-placeholder="اختر">
                   <option></option>
-                  <option value="AK">Alaska</option>
-                  <option value="HI">Hawaii</option>
+                  <option value="AK">فئة ١</option>
+                  <option value="HI">فئة ٢</option>
                 </select>
               </div><!-- form-group -->
             </div><!-- col -->
             <div class="col">
               <div class="form-group">
-                <label for="exampleFormControlInput1" class="form-label">سنة الصنع</label>
-                <input type="tel" pattern="[0-9]{9}" maxlength="4" class="form-control" id="exampleFormControlInput1" />
+                <label for="car-date" class="form-label">سنة الصنع</label>
+                <input type="number" inputmode="numeric" id="car-date" class="form-control" pattern="[0-9]{9}" />
               </div><!-- form-group -->
             </div><!-- col -->
             <div class="col">
               <div class="form-group">
-                <label for="exampleFormControlInput1" class="form-label">حالة السيارة</label>
-                <select id="car-status" class="select2 form-select" data-allow-clear="true" data-placeholder="">
+                <label for="car-status" class="form-label">حالة السيارة</label>
+                <select id="car-status" class="select2 form-select" data-allow-clear="false" data-placeholder="اختر">
                   <option></option>
-                  <option value="AK">Alaska</option>
-                  <option value="HI">Hawaii</option>
+                  <option value="new">جديدة</option>
+                  <option value="used">مستعملة</option>
+                  <option value="canceled">ملغية</option>
                 </select>
               </div><!-- form-group -->
             </div><!-- col -->
@@ -89,7 +90,7 @@
 
     <div class="card">
       <div class="table-responsive text-nowrap">
-        <table class="table table-striped">
+        <table class="table table-striped table-hover">
           <thead>
             <tr>
               <th class="fw-bold">رقم السياره</th>
@@ -97,22 +98,22 @@
               <th class="fw-bold">الموديل</th>
               <th class="fw-bold">الفئة</th>
               <th class="fw-bold">سنة الصنع</th>
+              <th class="fw-bold">الفرع</th>
               <th class="fw-bold">حالة السياره</th>
-              <th class="fw-bold">لون السيارة</th>
               <th width="5%"></th>
             </tr>
           </thead>
           <tbody class="table-border-bottom-0">
             <tr>
-              <td>9408 - TB</td>
+              <td>
+                <a href="{{ url('/cars/{id}/view') }}">TB - 3456</a>
+              </td>
               <td>كيا</td>
               <td>سبورتاج</td>
               <td>بي 1</td>
               <td>2010</td>
-              <td>جديدة</td>
-              <td>
-                <div class="badge badge-center rounded-1 d-block border" style="background-color: blue;"></div>
-              </td>
+              <td>فرع الواحة</td>
+              <td><span class="badge bg-label-success">جديدة</span></td>
               <td>
                 <div class="dropdown">
                   <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
@@ -125,15 +126,15 @@
               </td>
             </tr>
             <tr>
-              <td>1 2 3 ف ق ص</td>
+              <td>
+                <a href="{{ url('/cars/{id}/view') }}">AR - 6389</a>
+              </td>
               <td>كيا</td>
               <td>سبورتاج</td>
               <td>بي 1</td>
               <td>2010</td>
-              <td>مستعملة</td>
-              <td>
-                <div class="badge badge-center rounded-1 d-block border" style="background-color: white;"></div>
-              </td>
+              <td>فرع الواحة</td>
+              <td><span class="badge bg-label-secondary">مستعملة</span></td>
               <td>
                 <div class="dropdown">
                   <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
@@ -146,162 +147,15 @@
               </td>
             </tr>
             <tr>
-              <td>1 2 3 ف ق ص</td>
+              <td>
+                <a href="{{ url('/cars/{id}/view') }}">YR - 1903</a>
+              </td>
               <td>كيا</td>
               <td>سبورتاج</td>
               <td>بي 1</td>
               <td>2010</td>
-              <td>جديدة</td>
-              <td>
-                <div class="badge badge-center rounded-1 d-block border" style="background-color: black;"></div>
-              </td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/cars/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/cars/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#carDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>1 2 3 ف ق ص</td>
-              <td>كيا</td>
-              <td>سبورتاج</td>
-              <td>بي 1</td>
-              <td>2010</td>
-              <td>مستعملة</td>
-              <td>
-                <div class="badge badge-center rounded-1 d-block border" style="background-color: red;"></div>
-              </td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/cars/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/cars/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#carDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>1 2 3 ف ق ص</td>
-              <td>كيا</td>
-              <td>سبورتاج</td>
-              <td>بي 1</td>
-              <td>2010</td>
-              <td>جديدة</td>
-              <td>
-                <div class="badge badge-center rounded-1 d-block border" style="background-color: blue;"></div>
-              </td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/cars/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/cars/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#carDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>1 2 3 ف ق ص</td>
-              <td>كيا</td>
-              <td>سبورتاج</td>
-              <td>بي 1</td>
-              <td>2010</td>
-              <td>مستعملة</td>
-              <td>
-                <div class="badge badge-center rounded-1 d-block border" style="background-color: red;"></div>
-              </td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/cars/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/cars/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#carDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>1 2 3 ف ق ص</td>
-              <td>كيا</td>
-              <td>سبورتاج</td>
-              <td>بي 1</td>
-              <td>2010</td>
-              <td>جديدة</td>
-              <td>
-                <div class="badge badge-center rounded-1 d-block border" style="background-color: blue;"></div>
-              </td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/cars/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/cars/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#carDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>1 2 3 ف ق ص</td>
-              <td>كيا</td>
-              <td>سبورتاج</td>
-              <td>بي 1</td>
-              <td>2010</td>
-              <td>مستعملة</td>
-              <td>
-                <div class="badge badge-center rounded-1 d-block border" style="background-color: red;"></div>
-              </td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/cars/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/cars/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#carDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>1 2 3 ف ق ص</td>
-              <td>كيا</td>
-              <td>سبورتاج</td>
-              <td>بي 1</td>
-              <td>2010</td>
-              <td>جديدة</td>
-              <td>
-                <div class="badge badge-center rounded-1 d-block border" style="background-color: blue;"></div>
-              </td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/cars/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/cars/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#carDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>1 2 3 ف ق ص</td>
-              <td>كيا</td>
-              <td>سبورتاج</td>
-              <td>بي 1</td>
-              <td>2010</td>
-              <td>مستعملة</td>
-              <td>
-                <div class="badge badge-center rounded-1 d-block border" style="background-color: red;"></div>
-              </td>
+              <td>فرع الواحة</td>
+              <td><span class="badge bg-label-danger">ملغية</span></td>
               <td>
                 <div class="dropdown">
                   <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
@@ -352,7 +206,12 @@
 
 @push('scripts')
   <script src="{{ asset('assets/vendor/libs/select2/select2.js') }}"></script>
-  <script type="module">
-    $(".select2").select2();
+  <script type="text/javascript">
+    // --------------------------------------------------------------------
+    // Select2
+    // --------------------------------------------------------------------
+    $(document).ready(function() {
+      $('.select2').select2();
+    });
   </script>
 @endpush

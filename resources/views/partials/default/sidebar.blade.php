@@ -31,32 +31,10 @@
     </li>
     <!-- Employees -->
     <li class="menu-item">
-      <a href="javascript:void(0);" class="menu-link menu-toggle">
+      <a href="{{ url('/employees') }}" class="menu-link">
         <i class="menu-icon tf-icons ti ti-users"></i>
         <div>إدارة الموظفين</div>
       </a>
-      <ul class="menu-sub">
-        <li class="menu-item">
-          <a href="{{ url('/employees') }}" class="menu-link">
-            <div>كل الموظفين</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="{{ url('/employees/penalties') }}" class="menu-link">
-            <div>الجزاءات</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="{{ url('/employees/advances') }}" class="menu-link">
-            <div>السَّلَفُ</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="{{ url('/employees/rewards') }}" class="menu-link">
-            <div>المكافآت</div>
-          </a>
-        </li>
-      </ul>
     </li>
     <!-- Manage Permissions -->
     <li class="menu-item">

@@ -22,7 +22,7 @@
         <div class="accordion-header" id="heading-personal-information">
           <button
             type="button"
-            class="accordion-button d-flex align-items-center justify-content-between"
+            class="accordion-button d-flex align-items-center justify-content-between p-3"
             data-bs-toggle="collapse"
             data-bs-target="#accordion-personal-information"
             aria-expanded="true"
@@ -33,7 +33,7 @@
         </div><!-- accordion-header -->
         <div id="accordion-personal-information" class="accordion-collapse collapse show" data-bs-parent="#accordionEmployee">
           <div class="accordion-body p-3">
-            <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
                 <div class="form-group">
                   <label class="form-label mb-2 fs-6 required" for="employee-name">الاسم</label>
@@ -51,7 +51,7 @@
               </div><!-- col -->
               <div class="col">
                 <div class="form-group">
-                  <label class="form-label mb-2 fs-6 required" for="employee-email">البريد الإلكتروني</label>
+                  <label class="form-label mb-2 fs-6" for="employee-email">البريد الإلكتروني</label>
                   <input type="email" inputmode="email" class="form-control" id="employee-email" dir="ltr" />
                 </div><!-- form-group -->
               </div><!-- col -->
@@ -70,35 +70,35 @@
               <div class="col">
                 <div class="form-group">
                   <label class="form-label mb-2 fs-6 required" for="employee-sex">الجنس</label>
-                    <div class="row row-cols-2 g-1 g-md-3">
-                      <div class="col">
-                        <div class="form-check custom-option custom-option-basic m-0">
-                          <label class="form-check-label custom-option-content py-2" for="employee-male">
-                            <input
-                              name="employee-sex"
-                              class="form-check-input"
-                              type="radio"
-                              id="employee-male"
-                              checked
-                            />
-                            <span class="custom-option-header p-0">ذكر</span>
-                          </label>
-                        </div><!-- form-check -->
-                      </div><!-- col -->
-                      <div class="col">
-                        <div class="form-check custom-option custom-option-basic m-0">
-                          <label class="form-check-label custom-option-content py-2" for="employee-female">
-                            <input
-                              name="employee-sex"
-                              class="form-check-input"
-                              type="radio"
-                              id="employee-female"
-                            />
-                            <span class="custom-option-header p-0">آنثي</span>
-                          </label>
-                        </div><!-- form-check -->
-                      </div><!-- col -->
-                    </div><!-- row -->
+                  <div class="row row-cols-2 g-1 g-md-3">
+                    <div class="col">
+                      <div class="form-check custom-option custom-option-basic m-0">
+                        <label class="form-check-label custom-option-content py-2" for="employee-male">
+                          <input
+                            name="employee-sex"
+                            class="form-check-input"
+                            type="radio"
+                            id="employee-male"
+                            checked
+                          />
+                          <span class="custom-option-header p-0">ذكر</span>
+                        </label>
+                      </div><!-- form-check -->
+                    </div><!-- col -->
+                    <div class="col">
+                      <div class="form-check custom-option custom-option-basic m-0">
+                        <label class="form-check-label custom-option-content py-2" for="employee-female">
+                          <input
+                            name="employee-sex"
+                            class="form-check-input"
+                            type="radio"
+                            id="employee-female"
+                          />
+                          <span class="custom-option-header p-0">آنثي</span>
+                        </label>
+                      </div><!-- form-check -->
+                    </div><!-- col -->
+                  </div><!-- row -->
                 </div><!-- form-group -->
               </div><!-- col -->
               <div class="col">
@@ -132,7 +132,7 @@
         <div class="accordion-header" id="heading-job-info">
           <button
             type="button"
-            class="accordion-button d-flex align-items-center justify-content-between collapsed"
+            class="accordion-button d-flex align-items-center justify-content-between p-3 collapsed"
             data-bs-toggle="collapse"
             data-bs-target="#accordion-job-info"
             aria-expanded="false"
@@ -143,7 +143,7 @@
         </div><!-- accordion-header -->
         <div id="accordion-job-info" class="accordion-collapse collapse" aria-labelledby="heading-job-info" data-bs-parent="#accordionEmployee">
           <div class="accordion-body p-3">
-            <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
                 <div class="form-group">
                   <label class="form-label mb-2 fs-6 required" for="employee-job-title">المسمي الوظيفي</label>
@@ -226,7 +226,7 @@
         <div class="accordion-header" id="heading-official-documents">
           <button
             type="button"
-            class="accordion-button d-flex align-items-center justify-content-between collapsed"
+            class="accordion-button d-flex align-items-center justify-content-between p-3 collapsed"
             data-bs-toggle="collapse"
             data-bs-target="#accordion-official-documents"
             aria-expanded="false"
@@ -237,10 +237,10 @@
         </div><!-- accordion-header -->
         <div id="accordion-official-documents" class="accordion-collapse collapse" aria-labelledby="heading-official-documents" data-bs-parent="#accordionEmployee">
           <div class="accordion-body p-3">
-            <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
                 <div class="form-group">
-                  <label class="form-label mb-2 fs-6 required" for="employee-selfie">الصورة الشخصية</label>
+                  <label class="form-label mb-2 fs-6" for="employee-selfie">الصورة الشخصية</label>
                   <div action="/upload" class="dropzone needsclick dropzoneBasic" id="employee-selfie">
                     <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
                     <div class="fallback">
@@ -251,7 +251,7 @@
               </div><!-- col -->
               <div class="col">
                 <div class="form-group">
-                  <label class="form-label mb-2 fs-6 required" for="employee-id-card">بطاقة الهوية الوطنية</label>
+                  <label class="form-label mb-2 fs-6" for="employee-id-card">بطاقة الهوية الوطنية</label>
                   <div action="/upload" class="dropzone needsclick dropzoneBasic" id="employee-id-card">
                     <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
                     <div class="fallback">
@@ -262,13 +262,13 @@
               </div><!-- col -->
               <div class="col">
                 <div class="form-group">
-                  <label class="form-label mb-2 fs-6 required" for="employee-national-id-expiry-date">تاريخ إنتهاء الهوية الوطنية</label>
+                  <label class="form-label mb-2 fs-6" for="employee-national-id-expiry-date">تاريخ إنتهاء الهوية الوطنية</label>
                   <input type="date" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="employee-national-id-expiry-date" readonly="readonly" />
                 </div><!-- form-group -->
               </div><!-- col -->
               <div class="col">
                 <div class="form-group">
-                  <label class="form-label mb-2 fs-6 required" for="employee-vehicle-license">رخصة القيادة</label>
+                  <label class="form-label mb-2 fs-6" for="employee-vehicle-license">رخصة القيادة</label>
                   <div action="/upload" class="dropzone needsclick dropzoneBasic" id="employee-vehicle-license">
                     <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
                     <div class="fallback">
@@ -279,7 +279,7 @@
               </div><!-- col -->
               <div class="col">
                 <div class="form-group">
-                  <label class="form-label mb-2 fs-6 required" for="employee-driving-license-duration">مدة رخصة القيادة</label>
+                  <label class="form-label mb-2 fs-6" for="employee-driving-license-duration">مدة رخصة القيادة</label>
                   <div class="input-group">
                     <span class="input-group-text">من</span>
                     <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="employee-driving-license-duration" readonly="readonly" />
@@ -290,7 +290,7 @@
               </div><!-- col -->
               <div class="col">
                 <div class="form-group">
-                  <label class="form-label mb-2 fs-6 required" for="employee-passport-photo">صورة جواز السفر</label>
+                  <label class="form-label mb-2 fs-6" for="employee-passport-photo">صورة جواز السفر</label>
                   <div action="/upload" class="dropzone needsclick dropzoneBasic" id="employee-passport-photo">
                     <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
                     <div class="fallback">
@@ -301,13 +301,13 @@
               </div><!-- col -->
               <div class="col">
                 <div class="form-group">
-                  <label class="form-label mb-2 fs-6 required" for="employee-passport-number">رقم جواز السفر</label>
+                  <label class="form-label mb-2 fs-6" for="employee-passport-number">رقم جواز السفر</label>
                   <input type="number" class="form-control" id="employee-passport-number" />
                 </div><!-- form-group -->
               </div><!-- col -->
               <div class="col">
                 <div class="form-group">
-                  <label class="form-label mb-2 fs-6 required" for="employee-passport-duration">مدة جواز السفر</label>
+                  <label class="form-label mb-2 fs-6" for="employee-passport-duration">مدة جواز السفر</label>
                   <div class="input-group">
                     <span class="input-group-text">من</span>
                     <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="employee-passport-duration" readonly="readonly" />
@@ -318,7 +318,7 @@
               </div><!-- col -->
               <div class="col">
                 <div class="form-group">
-                  <label class="form-label mb-2 fs-6 required" for="employee-visa-photo">صورة التآشيرة</label>
+                  <label class="form-label mb-2 fs-6" for="employee-visa-photo">صورة التآشيرة</label>
                   <div action="/upload" class="dropzone needsclick dropzoneBasic" id="employee-visa-photo">
                     <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
                     <div class="fallback">
@@ -329,13 +329,13 @@
               </div><!-- col -->
               <div class="col">
                 <div class="form-group">
-                  <label class="form-label mb-2 fs-6 required" for="employee-visa-number">رقم التآشيرة</label>
+                  <label class="form-label mb-2 fs-6" for="employee-visa-number">رقم التآشيرة</label>
                   <input type="number" class="form-control" id="employee-visa-number" />
                 </div><!-- form-group -->
               </div><!-- col -->
               <div class="col">
                 <div class="form-group">
-                  <label class="form-label mb-2 fs-6 required" for="employee-visa-duration">مدة التآشيرة</label>
+                  <label class="form-label mb-2 fs-6" for="employee-visa-duration">مدة التآشيرة</label>
                   <div class="input-group">
                     <span class="input-group-text">من</span>
                     <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="employee-visa-duration" readonly="readonly" />
@@ -353,7 +353,7 @@
         <div class="accordion-header" id="heading-financial-information">
           <button
             type="button"
-            class="accordion-button d-flex align-items-center justify-content-between collapsed"
+            class="accordion-button d-flex align-items-center justify-content-between p-3 collapsed"
             data-bs-toggle="collapse"
             data-bs-target="#accordion-financial-information"
             aria-expanded="false"
@@ -364,10 +364,10 @@
         </div><!-- accordion-header -->
         <div id="accordion-financial-information" class="accordion-collapse collapse" aria-labelledby="heading-financial-information" data-bs-parent="#accordionEmployee">
           <div class="accordion-body p-3">
-            <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
                 <div class="form-group">
-                  <label class="form-label mb-2 fs-6 required" for="employee-salary">الراتب الشهري</label>
+                  <label class="form-label mb-2 fs-6" for="employee-salary">الراتب الشهري</label>
                   <div class="input-group">
                     <input type="number" inputmode="numeric" class="form-control" id="employee-salary" />
                     <span class="input-group-text">ريال</span>
@@ -376,13 +376,13 @@
               </div><!-- col -->
               <div class="col">
                 <div class="form-group">
-                  <label class="form-label mb-2 fs-6 required" for="employee-bank-account-number">رقم الحساب البنكي</label>
+                  <label class="form-label mb-2 fs-6" for="employee-bank-account-number">رقم الحساب البنكي</label>
                   <input type="number" inputmode="numeric" class="form-control" id="employee-bank-account-number" />
                 </div><!-- form-group -->
               </div><!-- col -->
               <div class="col">
                 <div class="form-group">
-                  <label class="form-label mb-2 fs-6 required" for="employee-bank-name">اسم البنك التابع له الحساب</label>
+                  <label class="form-label mb-2 fs-6" for="employee-bank-name">اسم البنك التابع له الحساب</label>
                   <input type="text" class="form-control" id="employee-bank-name" />
                 </div><!-- form-group -->
               </div><!-- col -->

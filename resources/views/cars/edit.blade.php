@@ -15,10 +15,10 @@
       <div class="d-flex flex-column justify-content-center">
         <h4 class="m-0">تعديل مركبة : 9408 - TB</h4>
       </div>
-    </div>
+    </div><!-- d-flex -->
 
     <div class="card mb-4">
-      <div class="card-body">
+      <div class="card-body p-3">
         <form>
           <div class="row align-items-center">
             <label class="col-sm-2 col-form-label fw-medium" for="car-number">رقم السيارة</label>
@@ -32,14 +32,14 @@
           </div><!-- row -->
           <hr class="my-3">
           <div class="row align-items-center">
-            <label class="col-sm-2 col-form-label fw-medium" for="car-brand">الفرع</label>
+            <label class="col-sm-2 col-form-label fw-medium" for="car-branch">الفرع</label>
             <div class="col-12 col-sm-10">
               <div class="row">
                 <div class="col-12 col-md-6">
-                  <select id="car-brand22" class="select2 form-select" data-allow-clear="true" data-placeholder="">
+                  <select id="car-branch" class="select2 form-select" data-allow-clear="false" data-placeholder="اختر">
                     <option></option>
-                    <option value="AK">Alaska</option>
-                    <option value="HI">Hawaii</option>
+                    <option value="AK">فرع الواحة</option>
+                    <option value="HI">فرع مكة</option>
                   </select>
                 </div><!-- col-12 -->
               </div><!-- row -->
@@ -51,7 +51,12 @@
             <div class="col-12 col-sm-10">
               <div class="row">
                 <div class="col-12 col-md-6">
-                  <input class="form-control" type="file" id="employee-vehicle-license">
+                  <div action="/upload" class="dropzone needsclick dropzoneBasic" id="car-image">
+                    <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
+                    <div class="fallback">
+                      <input name="car-image" type="file" />
+                    </div>
+                  </div><!-- dropzone -->
                 </div><!-- col-12 -->
               </div><!-- row -->
             </div><!-- col-12 -->
@@ -60,35 +65,42 @@
           <div class="row">
             <label class="col-sm-2 col-form-label fw-medium" for="car-gallery">معرض صور السيارة</label>
             <div class="col-12 col-sm-10">
-              <div action="/upload" class="dropzone needsclick" id="car-images">
-                <div class="dz-message needsclick">
-                  Drop files here or click to upload
-                  <span class="note needsclick">(This is just a demo dropzone. Selected files are <span class="fw-medium">not</span> actually uploaded.)</span>
-                </div>
+              <div action="/upload" class="dropzone needsclick dropzoneBasic" id="car-gallery">
+                <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
                 <div class="fallback">
-                  <input name="file" type="file" accept="image/png, image/jpeg" />
+                  <input name="car-gallery" type="file" />
                 </div>
-              </div>
+              </div><!-- dropzone -->
             </div><!-- col-12 -->
           </div><!-- row -->
           <hr class="my-3">
           <div class="row">
-            <label class="col-sm-2 col-form-label fw-medium" for="car-image">صورة الملكية</label>
+            <label class="col-sm-2 col-form-label fw-medium" for="car-property-image">صورة الملكية</label>
             <div class="col-12 col-sm-10">
               <div class="row">
                 <div class="col-12 col-md-6">
-                  <input class="form-control" type="file" id="employee-vehicle-license">
+                  <div action="/upload" class="dropzone needsclick dropzoneBasic" id="car-property-image">
+                    <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
+                    <div class="fallback">
+                      <input name="car-property-image" type="file" />
+                    </div>
+                  </div><!-- dropzone -->
                 </div><!-- col-12 -->
               </div><!-- row -->
             </div><!-- col-12 -->
           </div><!-- row -->
           <hr class="my-3">
           <div class="row">
-            <label class="col-sm-2 col-form-label fw-medium" for="car-image">صورة بطاقة التشغيل</label>
+            <label class="col-sm-2 col-form-label fw-medium" for="car-operating-card-image">صورة بطاقة التشغيل</label>
             <div class="col-12 col-sm-10">
               <div class="row">
                 <div class="col-12 col-md-6">
-                  <input class="form-control" type="file" id="employee-vehicle-license">
+                  <div action="/upload" class="dropzone needsclick dropzoneBasic" id="car-operating-card-image">
+                    <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
+                    <div class="fallback">
+                      <input name="car-operating-card-image" type="file" />
+                    </div>
+                  </div><!-- dropzone -->
                 </div><!-- col-12 -->
               </div><!-- row -->
             </div><!-- col-12 -->
@@ -99,10 +111,10 @@
             <div class="col-12 col-sm-10">
               <div class="row">
                 <div class="col-12 col-md-6">
-                  <select id="car-brand" class="select2 form-select" data-allow-clear="true" data-placeholder="">
+                  <select id="car-brand" class="select2 form-select" data-allow-clear="false" data-placeholder="اختر">
                     <option></option>
-                    <option value="AK">Alaska</option>
-                    <option value="HI">Hawaii</option>
+                    <option value="AK">كيا</option>
+                    <option value="HI">اوبترا</option>
                   </select>
                 </div><!-- col-12 -->
               </div><!-- row -->
@@ -114,10 +126,10 @@
             <div class="col-12 col-sm-10">
               <div class="row">
                 <div class="col-12 col-md-6">
-                  <select id="car-model" class="select2 form-select" data-allow-clear="true" data-placeholder="">
+                  <select id="car-model" class="select2 form-select" data-allow-clear="false" data-placeholder="اختر">
                     <option></option>
-                    <option value="AK">Alaska</option>
-                    <option value="HI">Hawaii</option>
+                    <option value="AK">موديل ١</option>
+                    <option value="HI">موديل ٢</option>
                   </select>
                 </div><!-- col-12 -->
               </div><!-- row -->
@@ -129,10 +141,10 @@
             <div class="col-12 col-sm-10">
               <div class="row">
                 <div class="col-12 col-md-6">
-                  <select id="car-category" class="select2 form-select" data-allow-clear="true" data-placeholder="">
+                  <select id="car-category" class="select2 form-select" data-allow-clear="false" data-placeholder="اختر">
                     <option></option>
-                    <option value="AK">Alaska</option>
-                    <option value="HI">Hawaii</option>
+                    <option value="AK">فئة ١</option>
+                    <option value="HI">فئة ٢</option>
                   </select>
                 </div><!-- col-12 -->
               </div><!-- row -->
@@ -144,7 +156,7 @@
             <div class="col-12 col-sm-10">
               <div class="row">
                 <div class="col-12 col-md-6">
-                  <input class="form-control" type="tel" id="car-date" pattern="[0-9]{9}" maxlength="4" />
+                  <input type="number" inputmode="numeric" id="car-date" class="form-control" pattern="[0-9]{9}" />
                 </div><!-- col-12 -->
               </div><!-- row -->
             </div><!-- col-12 -->
@@ -155,21 +167,21 @@
             <div class="col-12 col-sm-10">
               <div class="row">
                 <div class="col-12 col-md-6">
-                  <input class="form-control" type="tel" id="car-shasy" pattern="[0-9]{9}" />
+                  <input type="number" inputmode="numeric" id="car-shasy" class="form-control" pattern="[0-9]{9}" />
                 </div><!-- col-12 -->
               </div><!-- row -->
             </div><!-- col-12 -->
           </div><!-- row -->
           <hr class="my-3">
           <div class="row align-items-center">
-            <label class="col-sm-2 col-form-label fw-medium" for="insurance-company">شركة التآمين</label>
+            <label class="col-sm-2 col-form-label fw-medium" for="car-insurance-company">شركة التآمين</label>
             <div class="col-12 col-sm-10">
               <div class="row">
                 <div class="col-12 col-md-6">
-                  <select id="insurance-company" class="select2 form-select" data-allow-clear="true" data-placeholder="">
+                  <select id="car-insurance-company" class="select2 form-select" data-allow-clear="false" data-placeholder="اختر">
                     <option></option>
-                    <option value="AK">Alaska</option>
-                    <option value="HI">Hawaii</option>
+                    <option value="AK">مصر للتآمين</option>
+                    <option value="HI">الهدف للتآمين</option>
                   </select>
                 </div><!-- col-12 -->
               </div><!-- row -->
@@ -177,16 +189,27 @@
           </div><!-- row -->
           <hr class="my-3">
           <div class="row align-items-center">
-            <label class="col-sm-2 col-form-label fw-medium" for="insurance-company">مدة التآمين</label>
+            <label class="col-sm-2 col-form-label fw-medium" for="car-insurance-period">مدة التآمين</label>
             <div class="col-12 col-sm-10">
               <div class="row">
                 <div class="col-12 col-md-6">
                   <div class="input-group">
                     <span class="input-group-text">من</span>
-                    <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="insurance-company-from" readonly="readonly" />
+                    <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="car-insurance-period" readonly="readonly" />
                     <span class="input-group-text">إلي</span>
-                    <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="insurance-company-to" readonly="readonly" />
-                  </div>
+                    <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="car-insurance-period-to" readonly="readonly" />
+                  </div><!-- input-group -->
+                </div><!-- col-12 -->
+              </div><!-- row -->
+            </div><!-- col-12 -->
+          </div><!-- row -->
+          <hr class="my-3">
+          <div class="row align-items-center">
+            <label class="col-sm-2 col-form-label fw-medium" for="car-type-insurance">نوع التآمين</label>
+            <div class="col-12 col-sm-10">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <input type="text" id="car-type-insurance" class="form-control" />
                 </div><!-- col-12 -->
               </div><!-- row -->
             </div><!-- col-12 -->
@@ -199,7 +222,7 @@
                 <div class="col-12 col-md-6">
               <div class="input-group">
                 <span class="input-group-text">من</span>
-                <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="car-ownership-from" readonly="readonly" />
+                <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="car-ownership" readonly="readonly" />
                 <span class="input-group-text">إلي</span>
                 <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="car-ownership-to" readonly="readonly" />
               </div>
@@ -209,54 +232,74 @@
           </div><!-- row -->
           <hr class="my-3">
           <div class="row align-items-center">
-            <label class="col-sm-2 col-form-label fw-medium" for="operating-card">رقم بطاقة التشغيل</label>
+            <label class="col-sm-2 col-form-label fw-medium" for="card-operating-card">رقم بطاقة التشغيل</label>
             <div class="col-12 col-sm-10">
               <div class="row">
                 <div class="col-12 col-md-6">
-                  <input type="text" class="form-control" id="employee-name" />
+                  <input type="text" id="card-operating-card" class="form-control" />
                 </div><!-- col-12 -->
               </div><!-- row -->
             </div><!-- col-12 -->
           </div><!-- row -->
           <hr class="my-3">
           <div class="row align-items-center">
-            <label class="col-sm-2 col-form-label fw-medium" for="operating-card">مدة بطاقة التشغيل</label>
+            <label class="col-sm-2 col-form-label fw-medium" for="car-operating-card-duration">مدة بطاقة التشغيل</label>
             <div class="col-12 col-sm-10">
               <div class="row">
                 <div class="col-12 col-md-6">
                   <div class="input-group">
                     <span class="input-group-text">من</span>
-                    <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="operating-card-from" readonly="readonly" />
+                    <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="car-operating-card-duration" readonly="readonly" />
                     <span class="input-group-text">إلي</span>
-                    <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="operating-card-to" readonly="readonly" />
-                  </div>
+                    <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="car-operating-card-duration-to" readonly="readonly" />
+                  </div><!-- input-group -->
                 </div><!-- col-12 -->
               </div><!-- row -->
             </div><!-- col-12 -->
           </div><!-- row -->
           <hr class="my-3">
           <div class="row align-items-center">
-            <label class="col-sm-2 col-form-label fw-medium" for="operating-card">GPS</label>
+            <label class="col-sm-2 col-form-label fw-medium" for="car-gps-service-provider">مزود خدمة GPS</label>
+            <div class="col-12 col-sm-10">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <input type="text" id="car-gps-service-provider" class="form-control" />
+                </div><!-- col-12 -->
+              </div><!-- row -->
+            </div><!-- col-12 -->
+          </div><!-- row -->
+          <hr class="my-3">
+          <div class="row align-items-center">
+            <label class="col-sm-2 col-form-label fw-medium" for="car-gps">GPS</label>
             <div class="col-12 col-sm-10">
               <div class="row">
                 <div class="col-12 col-md-6">
                   <div class="input-group">
                     <span class="input-group-text">من</span>
-                    <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="GPS-from" readonly="readonly" />
+                    <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="car-gps" readonly="readonly" />
                     <span class="input-group-text">إلي</span>
-                    <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="GPS-to" readonly="readonly" />
-                  </div>
+                    <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="car-gps-to" readonly="readonly" />
+                  </div><!-- input-group -->
                 </div><!-- col-12 -->
               </div><!-- row -->
             </div><!-- col-12 -->
           </div><!-- row -->
           <hr class="my-3">
           <div class="row align-items-center">
-            <label class="col-sm-2 col-form-label fw-medium" for="color-picker-classic">لون السيارة</label>
+            <label class="col-sm-2 col-form-label fw-medium" for="color-color">لون السيارة</label>
             <div class="col-12 col-sm-10">
               <div class="row">
                 <div class="col-12 col-md-6">
-                  <div id="color-picker-classic"></div>
+                  <select id="car-color" class="select2-color-car form-select" data-allow-clear="false" data-placeholder="اختر">
+                    <option></option>
+                    <option value="red" data-class="car-red">احمر</option>
+                    <option value="white" data-class="car-white">ابيض</option>
+                    <option value="blue" data-class="car-blue">ازرق</option>
+                    <option value="gray" data-class="car-gray">رمادي</option>
+                    <option value="maroon" data-class="car-maroon">عنابي</option>
+                    <option value="yellow" data-class="car-yellow">اصفر</option>
+                    <option value="black" data-class="car-black">اسود</option>
+                  </select>
                 </div><!-- col-12 -->
               </div><!-- row -->
             </div><!-- col-12 -->
@@ -267,10 +310,11 @@
             <div class="col-12 col-sm-10">
               <div class="row">
                 <div class="col-12 col-md-6">
-                  <select id="car-status" class="select2 form-select" data-allow-clear="true" data-placeholder="">
+                  <select id="car-status" class="select2 form-select" data-allow-clear="false" data-placeholder="اختر">
                     <option></option>
                     <option value="new">جديدة</option>
                     <option value="used">مستعملة</option>
+                    <option value="canceled">ملغية</option>
                   </select>
                 </div><!-- col-12 -->
               </div><!-- row -->

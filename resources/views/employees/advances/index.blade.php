@@ -17,11 +17,48 @@
       <div class="d-flex align-content-center flex-wrap gap-3 flex-shrink-0">
         <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#advanceCreateModal" class="btn btn-primary waves-effect waves-light"><span class="ti-xs ti ti-plus me-2"></span> إضافة سَلَفَهُ جديد</a>
       </div>
-    </div>
+    </div><!-- d-flex -->
+
+    <div class="d-flex align-items-center justify-content-between gap-2 flex-wrap mb-4">
+      <div class="tabs-area d-flex align-items-center justify-content-start gap-3 flex-wrap">
+        <a href="{{ url('/employees') }}" title="الموظفين" class="btn btn-label-dark waves-effect">الموظفين</a>
+        <a href="{{ url('/employees/penalties') }}" title="الخصومات" class="btn btn-label-dark waves-effect">الخصومات</a>
+        <a href="{{ url('/employees/advances') }}" title="السَّلَفُ" class="btn btn-primary waves-effect waves-light">السَّلَفُ</a>
+        <a href="{{ url('/employees/rewards') }}" title="المكافآت" class="btn btn-label-dark waves-effect">المكافآت</a>
+      </div><!-- tabs-area -->
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-icon btn-secondary waves-effect waves-light" type="button" data-bs-toggle="collapse" data-bs-target="#advances-filter-collapse" aria-expanded="false" aria-controls="advances-filter-collapse"><span class="ti ti-filter"></span></button>
+      </div><!-- d-flex -->
+    </div><!-- d-flex -->
+
+    <div class="collapse" id="advances-filter-collapse">
+      <div class="card mb-4">
+        <div class="card-body p-3">
+          <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="form-group">
+                <label class="form-label mb-2 fs-6" for="advances-employee-name">اسم الموظف</label>
+                <input type="text" class="form-control" id="employee-name" />
+              </div><!-- form-group -->
+            </div><!-- col -->
+            <div class="col">
+              <div class="form-group">
+                <label class="form-label mb-2 fs-6" for="advances-date">التاريخ</label>
+                <input type="date" class="form-control flatpickr-date" id="advances-date" placeholder="YYYY-MM-DD" readonly="readonly" />
+              </div><!-- form-group -->
+            </div><!-- col -->
+          </div><!-- row -->
+        </div><!-- card-body -->
+        <div class="card-footer d-flex justify-content-end gap-2 flex-wrap p-3 pt-0">
+          <button type="submit" class="btn btn-label-primary waves-effect px-5">بحث</button>
+          <button type="reset" class="btn btn-icon btn-label-secondary waves-effect"><span class="ti ti-refresh"></span></button>
+        </div><!-- card-footer -->
+      </div><!-- card -->
+    </div><!-- advances-filter-collapse -->
 
     <div class="card">
       <div class="table-responsive text-nowrap">
-        <table class="table table-striped">
+        <table class="table table-striped table-hover">
           <thead>
             <tr>
               <th class="fw-bold">الموظف</th>

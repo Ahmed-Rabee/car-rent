@@ -17,10 +17,18 @@
       <div class="d-flex align-content-center flex-wrap gap-3 flex-shrink-0">
         <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardCreateModal" class="btn btn-primary waves-effect waves-light"><span class="ti-xs ti ti-plus me-2"></span> إضافة مكافآة جديد</a>
       </div>
-    </div>
+    </div><!-- d-flex -->
 
-    <div class="d-flex justify-content-end mb-4">
-      <button class="btn btn-icon btn-secondary waves-effect waves-light" type="button" data-bs-toggle="collapse" data-bs-target="#rewards-filter-collapse" aria-expanded="false" aria-controls="rewards-filter-collapse"><span class="ti ti-filter"></span></button>
+    <div class="d-flex align-items-center justify-content-between gap-2 flex-wrap mb-4">
+      <div class="tabs-area d-flex align-items-center justify-content-start gap-3 flex-wrap">
+        <a href="{{ url('/employees') }}" title="الموظفين" class="btn btn-label-dark waves-effect">الموظفين</a>
+        <a href="{{ url('/employees/penalties') }}" title="الخصومات" class="btn btn-label-dark waves-effect">الخصومات</a>
+        <a href="{{ url('/employees/advances') }}" title="السَّلَفُ" class="btn btn-label-dark waves-effect">السَّلَفُ</a>
+        <a href="{{ url('/employees/rewards') }}" title="المكافآت" class="btn btn-primary waves-effect waves-light">المكافآت</a>
+      </div><!-- tabs-area -->
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-icon btn-secondary waves-effect waves-light" type="button" data-bs-toggle="collapse" data-bs-target="#rewards-filter-collapse" aria-expanded="false" aria-controls="rewards-filter-collapse"><span class="ti ti-filter"></span></button>
+      </div><!-- d-flex -->
     </div><!-- d-flex -->
 
     <div class="collapse" id="rewards-filter-collapse">
@@ -29,33 +37,14 @@
           <div class="row row-cols-1 row-cols-md-3 g-3">
             <div class="col">
               <div class="form-group">
-                <label class="form-label mb-2 fs-6" for="rewards-branch">الفرع</label>
-                <select id="rewards-branch" class="select2 form-select" data-allow-clear="false" data-placeholder="اختر">
-                  <option></option>
-                  <option value="AK">فرع الواحة</option>
-                  <option value="HI">فرع السليمانية</option>
-                  <option value="HI3">فرع الرياض</option>
-                </select>
-              </div><!-- form-group -->
-            </div><!-- col -->
-            <div class="col">
-              <div class="form-group">
-                <label class="form-label mb-2 fs-6" for="rewards-employee">الموظف</label>
-                <select id="employee-name" class="select2 form-select" data-allow-clear="false" data-placeholder="اختر">
-                  <option></option>
-                  <option value="AK">#1123 | 343434 | محمد احمد</option>
-                  <option value="HI">#5790 | 365970 | مصطفي محفوظ</option>
-                  <option value="HI1">#2376 | 206872 | زين عبدالله</option>
-                </select>
+                <label class="form-label mb-2 fs-6" for="rewards-employee-name">اسم الموظف</label>
+                <input type="text" class="form-control" id="employee-name" />
               </div><!-- form-group -->
             </div><!-- col -->
             <div class="col">
               <div class="form-group">
                 <label class="form-label mb-2 fs-6" for="rewards-date">التاريخ</label>
-                <div class="input-group input-group-merge">
-                  <span class="input-group-text"><i class="ti ti-calendar-month"></i></span>
-                  <input type="text" class="form-control employee-month-filter" id="rewards-date" placeholder="YYYY-MM" readonly="readonly" />
-                </div><!-- input-group -->
+                <input type="date" class="form-control flatpickr-date" id="rewards-date" placeholder="YYYY-MM-DD" readonly="readonly" />
               </div><!-- form-group -->
             </div><!-- col -->
           </div><!-- row -->
@@ -65,150 +54,116 @@
           <button type="reset" class="btn btn-icon btn-label-secondary waves-effect"><span class="ti ti-refresh"></span></button>
         </div><!-- card-footer -->
       </div><!-- card -->
-    </div><!-- cars-filter-collapse -->
+    </div><!-- rewards-filter-collapse -->
 
     <div class="card">
-        <div class="table-responsive text-nowrap">
-          <table class="table table-striped table-bordered">
-            <thead class="table-light">
-              <tr>
-                <th width="5%" class="fw-bold p-3">الموظف</th>
-                <th class="fw-bold p-3">التفاصيل</th>
-                <th width="5%" class="fw-bold p-3">المبلغ</th>
-                <th width="5%" class="fw-bold p-3">التاريخ</th>
-                <th width="5%" class="p-3"></th>
-              </tr>
-            </thead>
-            <tbody class="table-border-bottom-0">
-              <tr>
-                <td class="p-3">
-                  <a href="{{ url('/employees/{id}/view') }}">احمد محمد محمود</a>
-                </td>
-                <td class="p-3">إيجاد حلول لمشاكل العملاء وتحسين خدمات العملاء</td>
-                <td class="p-3">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    121 <small>ريال</small>
-                  </div><!-- d-flex -->
-                </td>
-                <td class="p-3">2024-11-11</td>
-                <td class="p-3">
-                  <div class="dropdown">
-                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                      <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                    </div>
+      <div class="table-responsive text-nowrap">
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th width="5%" class="fw-bold">الموظف</th>
+              <th class="fw-bold">التفاصيل</th>
+              <th width="5%" class="fw-bold">المبلغ</th>
+              <th width="5%" class="fw-bold">التاريخ</th>
+              <th width="5%"></th>
+            </tr>
+          </thead>
+          <tbody class="table-border-bottom-0">
+            <tr>
+              <td>
+                <a href="{{ url('/employees/{id}/view') }}">احمد محمد محمود</a>
+              </td>
+              <td>التحدث مع العميل بشكل لائق</td>
+              <td>
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  121 <small>ريال</small>
+                </div><!-- d-flex -->
+              </td>
+              <td>
+                2024-11-11
+              </td>
+              <td>
+                <div class="dropdown">
+                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
                   </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="p-3">
-                  <a href="{{ url('/employees/{id}/view') }}">احمد محمد محمود</a>
-                </td>
-                <td class="p-3">إيجاد حلول لمشاكل العملاء وتحسين خدمات العملاء</td>
-                <td class="p-3">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    121 <small>ريال</small>
-                  </div><!-- d-flex -->
-                </td>
-                <td class="p-3">2024-11-11</td>
-                <td class="p-3">
-                  <div class="dropdown">
-                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                      <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                    </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="{{ url('/employees/{id}/view') }}">احمد محمد محمود</a>
+              </td>
+              <td>التحدث مع العميل بشكل لائق</td>
+              <td>
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  121 <small>ريال</small>
+                </div><!-- d-flex -->
+              </td>
+              <td>
+                2024-11-11
+              </td>
+              <td>
+                <div class="dropdown">
+                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
                   </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="p-3">
-                  <a href="{{ url('/employees/{id}/view') }}">احمد محمد محمود</a>
-                </td>
-                <td class="p-3">إيجاد حلول لمشاكل العملاء وتحسين خدمات العملاء</td>
-                <td class="p-3">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    121 <small>ريال</small>
-                  </div><!-- d-flex -->
-                </td>
-                <td class="p-3">2024-11-11</td>
-                <td class="p-3">
-                  <div class="dropdown">
-                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                      <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                    </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="{{ url('/employees/{id}/view') }}">احمد محمد محمود</a>
+              </td>
+              <td>التحدث مع العميل بشكل لائق</td>
+              <td>
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  121 <small>ريال</small>
+                </div><!-- d-flex -->
+              </td>
+              <td>
+                2024-11-11
+              </td>
+              <td>
+                <div class="dropdown">
+                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
                   </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="p-3">
-                  <a href="{{ url('/employees/{id}/view') }}">احمد محمد محمود</a>
-                </td>
-                <td class="p-3">إيجاد حلول لمشاكل العملاء وتحسين خدمات العملاء</td>
-                <td class="p-3">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    121 <small>ريال</small>
-                  </div><!-- d-flex -->
-                </td>
-                <td class="p-3">2024-11-11</td>
-                <td class="p-3">
-                  <div class="dropdown">
-                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                      <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                    </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="{{ url('/employees/{id}/view') }}">احمد محمد محمود</a>
+              </td>
+              <td>التحدث مع العميل بشكل لائق</td>
+              <td>
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  121 <small>ريال</small>
+                </div><!-- d-flex -->
+              </td>
+              <td>
+                2024-11-11
+              </td>
+              <td>
+                <div class="dropdown">
+                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
                   </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="p-3">
-                  <a href="{{ url('/employees/{id}/view') }}">احمد محمد محمود</a>
-                </td>
-                <td class="p-3">إيجاد حلول لمشاكل العملاء وتحسين خدمات العملاء</td>
-                <td class="p-3">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    121 <small>ريال</small>
-                  </div><!-- d-flex -->
-                </td>
-                <td class="p-3">2024-11-11</td>
-                <td class="p-3">
-                  <div class="dropdown">
-                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                      <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="p-3">
-                  <a href="{{ url('/employees/{id}/view') }}">احمد محمد محمود</a>
-                </td>
-                <td class="p-3">إيجاد حلول لمشاكل العملاء وتحسين خدمات العملاء</td>
-                <td class="p-3">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    121 <small>ريال</small>
-                  </div><!-- d-flex -->
-                </td>
-                <td class="p-3">2024-11-11</td>
-                <td class="p-3">
-                  <div class="dropdown">
-                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                      <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#rewardDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div><!-- table-responsive -->
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- table-responsive -->
     </div><!-- card -->
 
     <!-- Reward Create Modal -->

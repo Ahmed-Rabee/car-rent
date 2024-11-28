@@ -2,7 +2,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header p-3">
-        <h5 class="modal-title" id="penaltyCreateModalLabel1">إضافة جزاء جديد</h5>
+        <h5 class="modal-title" id="penaltyCreateModalLabel1">إضافة خصم جديد</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div><!-- modal-header -->
       <div class="modal-body p-3">

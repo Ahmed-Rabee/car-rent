@@ -125,7 +125,7 @@
           aria-controls="employee-financial-info"
           aria-selected="false"
         >
-          المعلومات الماليه
+          المعاملات المالية
         </button>
       </li>
       <li class="nav-item">
@@ -138,7 +138,7 @@
           aria-controls="employee-penalties"
           aria-selected="false"
         >
-          الجزاءات
+          الخصومات
         </button>
       </li>
       <li class="nav-item">
@@ -169,166 +169,331 @@
       </li>
     </ul>
 
-    <div class="tab-content p-3">
+    <div class="tab-content bg-transparent p-0">
 
       <div class="tab-pane fade show active" id="employee-job-info" role="tabpanel">
-        <div class="table-responsive">
-          <table class="table table-striped table-bordered">
-            <tbody class="table-border-bottom-0">
-              <tr>
-                <td width="5%" class="p-3 text-nowrap">تاريخ التعيين</td>
-                <td class="p-3">2024-11-17</td>
-              </tr>
-              <tr>
-                <td width="5%" class="p-3 text-nowrap">الحالة</td>
-                <td class="p-3">مفعل</td>
-              </tr>
-              <tr>
-                <td width="5%" class="p-3 text-nowrap">ايام العطلات</td>
-                <td class="p-3">
-                  <div class="d-flex align-items-center justify-content-start flex-wrap gap-2">
-                    <span class="badge bg-label-dark">الجمعة</span>
-                    <span class="badge bg-label-dark">السبت</span>
-                  </div><!-- d-flex -->
-                </td>
-              </tr>
-              <tr>
-                <td width="5%" class="p-3 text-nowrap">ساعات العمل</td>
-                <td class="p-3">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    8 <small>ساعة</small>
-                  </div><!-- d-flex -->
-                </td>
-              </tr>
-              <tr>
-                <td width="5%" class="p-3 text-nowrap">الصلاحيات</td>
-                <td class="p-3">موظف</td>
-              </tr>
-              <tr>
-                <td width="5%" class="p-3 text-nowrap">الفرع</td>
-                <td class="p-3">فرع الواحة</td>
-              </tr>
-            </tbody>
-          </table>
-        </div><!-- table-responsive -->
+        <div class="row row-cols-1 row-cols-md-2 g-3">
+          <div class="col">
+            <div class="card">
+              <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                  <tbody class="table-border-bottom-0">
+                    <tr>
+                      <td width="5%" class="p-3 text-nowrap">تاريخ التعيين</td>
+                      <td class="p-3">2024-11-17</td>
+                    </tr>
+                    <tr>
+                      <td width="5%" class="p-3 text-nowrap">الحالة</td>
+                      <td class="p-3">مفعل</td>
+                    </tr>
+                    <tr>
+                      <td width="5%" class="p-3 text-nowrap">ايام العطلات</td>
+                      <td class="p-3">
+                        <div class="d-flex align-items-center justify-content-start flex-wrap gap-2">
+                          <span class="badge bg-label-dark">الجمعة</span>
+                          <span class="badge bg-label-dark">السبت</span>
+                        </div><!-- d-flex -->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- table-responsive -->
+            </div><!-- card -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="card">
+              <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                  <tbody class="table-border-bottom-0">
+                    <tr>
+                      <td width="5%" class="p-3 text-nowrap">ساعات العمل</td>
+                      <td class="p-3">
+                        <div class="d-flex align-items-center justify-content-start gap-1">
+                          8 <small>ساعة</small>
+                        </div><!-- d-flex -->
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="5%" class="p-3 text-nowrap">الصلاحيات</td>
+                      <td class="p-3">موظف</td>
+                    </tr>
+                    <tr>
+                      <td width="5%" class="p-3 text-nowrap">الفرع</td>
+                      <td class="p-3">فرع الواحة</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- table-responsive -->
+            </div><!-- card -->
+          </div><!-- col -->
+        </div><!-- row -->
       </div><!-- tab-pane -->
 
       <div class="tab-pane fade" id="employee-documents" role="tabpanel">
-        <div class="table-responsive">
-          <table class="table table-striped table-bordered">
-            <tbody class="table-border-bottom-0">
-              <tr>
-                <td width="5%" class="p-3 text-nowrap">بطاقة الهوية الوطنية</td>
-                <td class="p-3">
-                  <div class="d-flex justify-content-start flex-wrap gap-3">
-                    <a href="../../assets/img/elements/4.jpg" data-fancybox="employee-id-card" data-caption="بطاقة الهوية الوطنية">
-                      <img src="../../assets/img/elements/4.jpg" class="rounded-1 m-0" alt="بطاقة الهوية الوطنية" height="32" width="32">
-                    </a>
-                    <a href="../../assets/img/elements/3.jpg" data-fancybox="employee-id-card" data-caption="بطاقة الهوية الوطنية">
-                      <img src="../../assets/img/elements/3.jpg" class="rounded-1 m-0" alt="بطاقة الهوية الوطنية" height="32" width="32">
-                    </a>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td width="5%" class="p-3 text-nowrap">تاريخ إنتهاء الهوية الوطنية</td>
-                <td class="p-3">2024-11-17</td>
-              </tr>
-              <tr>
-                <td width="5%" class="p-3 text-nowrap">رخصة القيادة</td>
-                <td class="p-3">
-                  <div class="d-flex justify-content-start flex-wrap gap-3">
-                    <a href="../../assets/img/elements/5.jpg" data-fancybox="employee-vehicle-license" data-caption="رخصة القيادة">
-                      <img src="../../assets/img/elements/5.jpg" class="rounded-1 m-0" alt="رخصة القيادة" height="32" width="32">
-                    </a>
-                    <a href="../../assets/img/elements/6.jpg" data-fancybox="employee-vehicle-license" data-caption="رخصة القيادة">
-                      <img src="../../assets/img/elements/6.jpg" class="rounded-1 m-0" alt="رخصة القيادة" height="32" width="32">
-                    </a>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td width="5%" class="p-3 text-nowrap">مدة رخصة القيادة</td>
-                <td class="p-3">
-                  <div class="d-flex align-items-center justify-content-start gap-3">
-                    <span>من : 18 / 11 / 2024</span>
-                    <span>-</span>
-                    <span>إلي : 18 / 11 / 2024</span>
-                  </div><!-- d-flex -->
-                </td>
-              </tr>
-              <tr>
-                <td width="5%" class="p-3 text-nowrap">صورة جواز السفر</td>
-                <td class="p-3">
-                  <a href="../../assets/img/elements/1.jpg" data-fancybox data-caption="صورة جواز السفر">
-                    <img src="../../assets/img/elements/1.jpg" class="rounded-1 m-0" alt="صورة جواز السفر" height="32" width="32">
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td width="5%" class="p-3 text-nowrap">رقم جواز السفر</td>
-                <td class="p-3">74466367373737</td>
-              </tr>
-              <tr>
-                <td width="5%" class="p-3 text-nowrap">مدة جواز السفر</td>
-                <td class="p-3">
-                  <div class="d-flex align-items-center justify-content-start gap-3">
-                    <span>من : 18 / 11 / 2024</span>
-                    <span>-</span>
-                    <span>إلي : 18 / 11 / 2024</span>
-                  </div><!-- d-flex -->
-                </td>
-              </tr>
-              <tr>
-                <td width="5%" class="p-3 text-nowrap">صورة التآشيرة</td>
-                <td class="p-3">
-                  <a href="../../assets/img/elements/11.jpg" data-fancybox data-caption="صورة التآشيرة">
-                    <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="صورة التآشيرة" height="32" width="32">
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td width="5%" class="p-3 text-nowrap">رقم التآشيرة</td>
-                <td class="p-3">45684735348758734</td>
-              </tr>
-              <tr>
-                <td width="5%" class="p-3 text-nowrap">مدة التآشيرة</td>
-                <td class="p-3">
-                  <div class="d-flex align-items-center justify-content-start gap-2">
-                    <span>من : 18 / 11 / 2024</span>
-                    <span>-</span>
-                    <span>إلي : 18 / 11 / 2024</span>
-                  </div><!-- d-flex -->
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div><!-- table-responsive -->
+      <div class="row row-cols-1 row-cols-md-2 g-3">
+          <div class="col">
+            <div class="card">
+              <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                  <tbody class="table-border-bottom-0">
+                    <tr>
+                      <td width="5%" class="p-3 text-nowrap">بطاقة الهوية الوطنية</td>
+                      <td class="p-3">
+                        <div class="d-flex justify-content-start flex-wrap gap-3">
+                          <a href="../../assets/img/elements/4.jpg" data-fancybox="employee-id-card" data-caption="بطاقة الهوية الوطنية">
+                            <img src="../../assets/img/elements/4.jpg" class="rounded-1 m-0" alt="بطاقة الهوية الوطنية" height="32" width="32">
+                          </a>
+                          <a href="../../assets/img/elements/3.jpg" data-fancybox="employee-id-card" data-caption="بطاقة الهوية الوطنية">
+                            <img src="../../assets/img/elements/3.jpg" class="rounded-1 m-0" alt="بطاقة الهوية الوطنية" height="32" width="32">
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="5%" class="p-3 text-nowrap">تاريخ إنتهاء الهوية الوطنية</td>
+                      <td class="p-3">2024-11-17</td>
+                    </tr>
+                    <tr>
+                      <td width="5%" class="p-3 text-nowrap">رخصة القيادة</td>
+                      <td class="p-3">
+                        <div class="d-flex justify-content-start flex-wrap gap-3">
+                          <a href="../../assets/img/elements/5.jpg" data-fancybox="employee-vehicle-license" data-caption="رخصة القيادة">
+                            <img src="../../assets/img/elements/5.jpg" class="rounded-1 m-0" alt="رخصة القيادة" height="32" width="32">
+                          </a>
+                          <a href="../../assets/img/elements/6.jpg" data-fancybox="employee-vehicle-license" data-caption="رخصة القيادة">
+                            <img src="../../assets/img/elements/6.jpg" class="rounded-1 m-0" alt="رخصة القيادة" height="32" width="32">
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="5%" class="p-3 text-nowrap">مدة رخصة القيادة</td>
+                      <td class="p-3">
+                        <div class="d-flex align-items-center justify-content-start gap-3">
+                          <span>من : 18 / 11 / 2024</span>
+                          <span>-</span>
+                          <span>إلي : 18 / 11 / 2024</span>
+                        </div><!-- d-flex -->
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="5%" class="p-3 text-nowrap">صورة جواز السفر</td>
+                      <td class="p-3">
+                        <a href="../../assets/img/elements/1.jpg" data-fancybox data-caption="صورة جواز السفر">
+                          <img src="../../assets/img/elements/1.jpg" class="rounded-1 m-0" alt="صورة جواز السفر" height="32" width="32">
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- table-responsive -->
+            </div><!-- card -->
+          </div><!-- col -->
+          <div class="col">
+            <div class="card">
+              <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                  <tbody class="table-border-bottom-0">
+                    <tr>
+                      <td width="5%" class="p-3 text-nowrap">رقم جواز السفر</td>
+                      <td class="p-3">74466367373737</td>
+                    </tr>
+                    <tr>
+                      <td width="5%" class="p-3 text-nowrap">مدة جواز السفر</td>
+                      <td class="p-3">
+                        <div class="d-flex align-items-center justify-content-start gap-3">
+                          <span>من : 18 / 11 / 2024</span>
+                          <span>-</span>
+                          <span>إلي : 18 / 11 / 2024</span>
+                        </div><!-- d-flex -->
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="5%" class="p-3 text-nowrap">صورة التآشيرة</td>
+                      <td class="p-3">
+                        <a href="../../assets/img/elements/11.jpg" data-fancybox data-caption="صورة التآشيرة">
+                          <img src="../../assets/img/elements/11.jpg" class="rounded-1 m-0" alt="صورة التآشيرة" height="32" width="32">
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="5%" class="p-3 text-nowrap">رقم التآشيرة</td>
+                      <td class="p-3">45684735348758734</td>
+                    </tr>
+                    <tr>
+                      <td width="5%" class="p-3 text-nowrap">مدة التآشيرة</td>
+                      <td class="p-3">
+                        <div class="d-flex align-items-center justify-content-start gap-2">
+                          <span>من : 18 / 11 / 2024</span>
+                          <span>-</span>
+                          <span>إلي : 18 / 11 / 2024</span>
+                        </div><!-- d-flex -->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- table-responsive -->
+            </div><!-- card -->
+          </div><!-- col -->
+        </div><!-- row -->
       </div><!-- tab-pane -->
 
       <div class="tab-pane fade" id="employee-financial-info" role="tabpanel">
-        <div class="table-responsive">
-          <table class="table table-striped table-bordered">
-            <tbody class="table-border-bottom-0">
-              <tr>
-                <td width="5%" class="p-3 text-nowrap">الراتب الشهري</td>
-                <td class="p-3">
-                  <div class="d-flex align-items-center justify-content-start gap-1">
-                    1213 <small>ريال</small>
-                  </div><!-- d-flex -->
-                </td>
-              </tr>
-              <tr>
-                <td width="5%" class="p-3 text-nowrap">رقم الحساب البنكي</td>
-                <td class="p-3">76348765783465347</td>
-              </tr>
-              <tr>
-                <td width="5%" class="p-3 text-nowrap">اسم البنك التابع له الحساب</td>
-                <td class="p-3">البنك الوطني المتحد</td>
-              </tr>
-            </tbody>
-          </table>
-        </div><!-- table-responsive -->
+
+        <div class="accordion d-flex flex-column gap-4 mb-4" id="accordionEmployees">
+
+          <div class="card accordion-item m-0 active">
+            <div class="accordion-header" id="heading-accordionEmployees">
+              <button
+                type="button"
+                class="accordion-button d-flex align-items-center justify-content-between p-3"
+                data-bs-toggle="collapse"
+                data-bs-target="#accordion-accordionEmployees"
+                aria-expanded="true"
+                aria-controls="accordion-accordionEmployees"
+              >
+                <h5 class="m-0">معلومات الحساب</h5>
+              </button>
+            </div><!-- accordion-header -->
+            <div id="accordion-accordionEmployees" class="accordion-collapse collapse show" data-bs-parent="#accordionEmployees">
+              <div class="accordion-body p-3 pt-0">
+                <div class="table-responsive text-nowrap">
+                  <table class="table table-striped table-bordered">
+                    <thead>
+                      <tr>
+                        <th class="fw-bold text-center">رقم الحساب البنكي</th>
+                        <th class="fw-bold text-center">البنك التابع له الحساب</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                      <tr>
+                        <td class="text-center">76348765783465347</td>
+                        <td class="text-center">البنك الوطني المتحد</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div><!-- table-responsive -->
+              </div><!-- accordion-body -->
+            </div><!-- accordion-collapse -->
+          </div><!-- card -->
+
+        </div><!-- accordion -->
+
+        <div class="card">
+          <div class="table-responsive text-nowrap">
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th class="fw-bold">العام</th>
+                  <th class="fw-bold">الشهر</th>
+                  <th class="fw-bold">الراتب</th>
+                  <th class="fw-bold">إجمالي الخصومات</th>
+                  <th class="fw-bold">إجمالي السَّلَفُ</th>
+                  <th class="fw-bold">إجمالي المكافآت</th>
+                  <th class="fw-bold">الراتب المستحق</th>
+                </tr>
+              </thead>
+              <tbody class="table-border-bottom-0">
+                <tr>
+                  <td>2024</td>
+                  <td>يناير</td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1">121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 text-danger">- 121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 text-danger">- 121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 text-success">+ 121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 fw-bold text-primary">121 <small>ريال</small></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2024</td>
+                  <td>يناير</td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1">121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 text-danger">- 121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 text-danger">- 121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 text-success">+ 121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 fw-bold text-primary">121 <small>ريال</small></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2024</td>
+                  <td>يناير</td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1">121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 text-danger">- 121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 text-danger">- 121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 text-success">+ 121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 fw-bold text-primary">121 <small>ريال</small></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2024</td>
+                  <td>يناير</td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1">121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 text-danger">- 121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 text-danger">- 121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 text-success">+ 121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 fw-bold text-primary">121 <small>ريال</small></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2024</td>
+                  <td>يناير</td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1">121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 text-danger">- 121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 text-danger">- 121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 text-success">+ 121 <small>ريال</small></span>
+                  </td>
+                  <td>
+                    <span class="d-flex align-items-center justify-content-start gap-1 fw-bold text-primary">121 <small>ريال</small></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- table-responsive -->
+        </div><!-- card -->
+
       </div><!-- tab-pane -->
 
       <div class="tab-pane fade" id="employee-penalties" role="tabpanel">
