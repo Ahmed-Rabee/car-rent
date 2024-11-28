@@ -230,7 +230,7 @@
       </div><!-- tab-pane -->
 
       <div class="tab-pane fade" id="employee-documents" role="tabpanel">
-      <div class="row row-cols-1 row-cols-md-2 g-3">
+        <div class="row row-cols-1 row-cols-md-2 g-3">
           <div class="col">
             <div class="card">
               <div class="table-responsive">
@@ -505,32 +505,57 @@
             </div><!-- input-group -->
           </div><!-- col-12 -->
         </div><!-- row -->
-        <div class="table-responsive text-nowrap">
-          <table class="table table-striped table-bordered">
+        <div class="card">
+          <div class="table-responsive text-nowrap">
+            <table class="table table-striped table-hover">
             <thead>
               <tr>
-                <th class="fw-bold p-3">التفاصيل</th>
-                <th width="5%" class="fw-bold p-3">المبلغ</th>
-                <th width="5%" class="fw-bold p-3">التاريخ</th>
+                <th class="fw-bold">التفاصيل</th>
+                <th width="5%" class="fw-bold">المبلغ</th>
+                <th width="5%" class="fw-bold">التاريخ</th>
               </tr>
             </thead>
             <tbody class="table-border-bottom-0">
               <tr>
-                <td class="p-3">
-                  التحدث مع العميل بشكل غير لائق
-                </td>
-                <td class="p-3">
+                <td>التحدث مع العميل بشكل غير لائق</td>
+                <td>
                   <div class="d-flex align-items-center justify-content-start gap-1">
                     121 <small>ريال</small>
                   </div><!-- d-flex -->
                 </td>
-                <td class="p-3">
-                  2024-11-11
+                <td>2024-11-11</td>
+              </tr>
+              <tr>
+                <td>التحدث مع العميل بشكل غير لائق</td>
+                <td>
+                  <div class="d-flex align-items-center justify-content-start gap-1">
+                    121 <small>ريال</small>
+                  </div><!-- d-flex -->
                 </td>
+                <td>2024-11-11</td>
+              </tr>
+              <tr>
+                <td>التحدث مع العميل بشكل غير لائق</td>
+                <td>
+                  <div class="d-flex align-items-center justify-content-start gap-1">
+                    121 <small>ريال</small>
+                  </div><!-- d-flex -->
+                </td>
+                <td>2024-11-11</td>
+              </tr>
+              <tr>
+                <td>التحدث مع العميل بشكل غير لائق</td>
+                <td>
+                  <div class="d-flex align-items-center justify-content-start gap-1">
+                    121 <small>ريال</small>
+                  </div><!-- d-flex -->
+                </td>
+                <td>2024-11-11</td>
               </tr>
             </tbody>
-          </table>
-        </div><!-- table-responsive -->
+            </table>
+          </div><!-- table-responsive -->
+        </div><!-- card -->
       </div><!-- tab-pane -->
 
       <div class="tab-pane fade" id="employee-advances" role="tabpanel">
@@ -542,28 +567,52 @@
             </div><!-- input-group -->
           </div><!-- col-12 -->
         </div><!-- row -->
-        <div class="table-responsive text-nowrap">
-          <table class="table table-striped table-bordered">
+        <div class="card">
+          <div class="table-responsive text-nowrap">
+            <table class="table table-striped table-hover">
             <thead>
               <tr>
-                <th class="fw-bold p-3">المبلغ</th>
-                <th width="5%" class="fw-bold p-3">التاريخ</th>
+                <th class="fw-bold">المبلغ</th>
+                <th width="5%" class="fw-bold">التاريخ</th>
               </tr>
             </thead>
             <tbody class="table-border-bottom-0">
               <tr>
-                <td class="p-3">
+                <td>
                   <div class="d-flex align-items-center justify-content-start gap-1">
                     121 <small>ريال</small>
                   </div><!-- d-flex -->
                 </td>
-                <td class="p-3">
-                  2024-11-11
+                <td>2024-11-11</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center justify-content-start gap-1">
+                    121 <small>ريال</small>
+                  </div><!-- d-flex -->
                 </td>
+                <td>2024-11-11</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center justify-content-start gap-1">
+                    121 <small>ريال</small>
+                  </div><!-- d-flex -->
+                </td>
+                <td>2024-11-11</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center justify-content-start gap-1">
+                    121 <small>ريال</small>
+                  </div><!-- d-flex -->
+                </td>
+                <td>2024-11-11</td>
               </tr>
             </tbody>
-          </table>
-        </div><!-- table-responsive -->
+            </table>
+          </div><!-- table-responsive -->
+        </div><!-- card -->
       </div><!-- tab-pane -->
 
       <div class="tab-pane fade" id="employee-rewards" role="tabpanel">
