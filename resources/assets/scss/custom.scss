@@ -128,8 +128,6 @@
   margin-top: 1rem;
 }
 
-
-
 body {
   font-family: 'Cairo', 'Public Sans', Arial, sans-serif !important;
   [dir="ltr"] {
@@ -138,7 +136,7 @@ body {
 } // body
 
 .table-hover > tbody > tr:hover > * {
-  --bs-table-bg-state: rgba(0, 0, 0, 0.08) !important;
+  --bs-table-bg-state: rgba(0, 0, 0, 0.06) !important;
 }
 
 input::-webkit-outer-spin-button,
@@ -161,7 +159,6 @@ input[type=number] {
     inset-block-start: calc(78px + 1rem);
   } // reservation-cart-side
 } // reservations-create-page
-
 
 label.form-label, label.col-form-label {
   &.required {
@@ -296,7 +293,6 @@ label.form-label, label.col-form-label {
   } // iti--allow-dropdown
 } // iti
 
-
 .flatpickr-monthSelect-theme-light, .flatpickr-monthSelect-theme-dark {
   .flatpickr-innerContainer {
     display: block !important;
@@ -328,16 +324,13 @@ label.form-label, label.col-form-label {
   } // flatpickr-innerContainer
 } // flatpickr-monthSelect-theme-light
 
-
 .flatpickr-calendar {
   direction: ltr !important;
 } // flatpickr-calendar
 
-
 .slider-disabled {
-  pointer-events: none; /* Prevent interactions */
+  pointer-events: none;
 } // slider-disabled
-
 
 ul#select2-car-color-results {
   li.select2-results__option {
@@ -357,7 +350,6 @@ ul#select2-car-color-results {
     } // car-class-option
   } // li.select2-results__option
 } // select2-car-color-results
-
 
 #select2-car-color-container {
   span {

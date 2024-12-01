@@ -198,6 +198,27 @@
               </div><!-- col -->
               <div class="col">
                 <div class="form-group">
+                  <label class="form-label mb-2 fs-6 required" for="contract-current-kilometer">الكيلو متر عند العودة</label>
+                  <div class="input-group">
+                    <input type="number" inputmode="numeric" id="contract-current-kilometer" class="form-control">
+                    <span class="input-group-text">كم</span>
+                  </div><!-- input-group -->
+                </div><!-- form-group -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="form-group">
+                  <label class="form-label mb-2 fs-6 required" for="contract-status">حالة العقد</label>
+                  <select id="contract-status" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
+                    <option></option>
+                    <option value="AK">ساري</option>
+                    <option value="HI">مديونية</option>
+                    <option value="HI">منتهي</option>
+                    <option value="HI">ملغي</option>
+                  </select>
+                </div><!-- form-group -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="form-group">
                   <label class="form-label mb-2 fs-6 required" for="contract-notes">الملاحظات</label>
                   <input type="text" id="contract-notes" class="form-control" />
                 </div><!-- form-group -->

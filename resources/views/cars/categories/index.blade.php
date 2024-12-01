@@ -16,7 +16,14 @@
       <div class="d-flex align-content-center flex-wrap gap-3 flex-shrink-0">
         <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#categoryCreateModal" class="btn btn-primary waves-effect waves-light"><span class="ti-xs ti ti-plus me-2"></span> إضافة فئة جديدة</a>
       </div>
-    </div>
+    </div><!-- d-flex -->
+
+    <div class="tabs-area d-flex align-items-center justify-content-start gap-3 flex-wrap mb-4">
+      <a href="{{ url('/cars') }}" title="المركبات" class="btn btn-label-dark waves-effect">المركبات</a>
+      <a href="{{ url('/cars/brands') }}" title="الماركات" class="btn btn-label-dark waves-effect">الماركات</a>
+      <a href="{{ url('/cars/models') }}" title="الموديلات" class="btn btn-label-dark waves-effect">الموديلات</a>
+      <a href="{{ url('/cars/categories') }}" title="الفئات" class="btn btn-primary waves-effect waves-light">الفئات</a>
+    </div><!-- tabs-area -->
 
     <div class="card">
       <div class="table-responsive text-nowrap">

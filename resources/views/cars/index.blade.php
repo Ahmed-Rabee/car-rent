@@ -11,15 +11,23 @@
 
     <div class="d-flex flex-wrap gap-3 justify-content-between align-items-start align-items-md-center mb-4">
       <div class="d-flex flex-column justify-content-center flex-grow-1">
-        <h4 class="m-0">إدارة المركبات</h4>
+        <h4 class="m-0">المركبات</h4>
       </div>
       <div class="d-flex align-content-center flex-wrap gap-3 flex-shrink-0">
         <a href="{{ url('/cars/create') }}" class="btn btn-primary waves-effect waves-light"><span class="ti-xs ti ti-plus me-2"></span> إضافة مركبة جديدة</a>
       </div>
     </div><!-- d-flex -->
 
-    <div class="d-flex justify-content-end mb-4">
-      <button class="btn btn-icon btn-secondary waves-effect waves-light" type="button" data-bs-toggle="collapse" data-bs-target="#cars-filter-collapse" aria-expanded="false" aria-controls="cars-filter-collapse"><span class="ti ti-filter"></span></button>
+    <div class="d-flex align-items-center justify-content-between gap-2 flex-wrap mb-4">
+      <div class="tabs-area d-flex align-items-center justify-content-start gap-3 flex-wrap">
+        <a href="{{ url('/cars') }}" title="المركبات" class="btn btn-primary waves-effect waves-light">المركبات</a>
+        <a href="{{ url('/cars/brands') }}" title="الماركات" class="btn btn-label-dark waves-effect">الماركات</a>
+        <a href="{{ url('/cars/models') }}" title="الموديلات" class="btn btn-label-dark waves-effect">الموديلات</a>
+        <a href="{{ url('/cars/categories') }}" title="الفئات" class="btn btn-label-dark waves-effect">الفئات</a>
+      </div><!-- tabs-area -->
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-icon btn-secondary waves-effect waves-light" type="button" data-bs-toggle="collapse" data-bs-target="#cars-filter-collapse" aria-expanded="false" aria-controls="cars-filter-collapse"><span class="ti ti-filter"></span></button>
+      </div><!-- d-flex -->
     </div><!-- d-flex -->
 
     <div class="collapse" id="cars-filter-collapse">
@@ -73,8 +81,8 @@
                 <label for="car-status" class="form-label">حالة السيارة</label>
                 <select id="car-status" class="select2 form-select" data-allow-clear="false" data-placeholder="اختر">
                   <option></option>
-                  <option value="new">جديدة</option>
-                  <option value="used">مستعملة</option>
+                  <option value="available">متاحة</option>
+                  <option value="maintenance">في الصيانة</option>
                   <option value="canceled">ملغية</option>
                 </select>
               </div><!-- form-group -->
@@ -93,13 +101,13 @@
         <table class="table table-striped table-hover">
           <thead>
             <tr>
-              <th class="fw-bold">رقم السياره</th>
+              <th class="fw-bold">رقم المركبة</th>
               <th class="fw-bold">الماركة</th>
               <th class="fw-bold">الموديل</th>
               <th class="fw-bold">الفئة</th>
               <th class="fw-bold">سنة الصنع</th>
               <th class="fw-bold">الفرع</th>
-              <th class="fw-bold">حالة السياره</th>
+              <th class="fw-bold">حالة المركبة</th>
               <th width="5%"></th>
             </tr>
           </thead>
@@ -113,7 +121,7 @@
               <td>بي 1</td>
               <td>2010</td>
               <td>فرع الواحة</td>
-              <td><span class="badge bg-label-success">جديدة</span></td>
+              <td><span class="badge bg-label-success">متاحة</span></td>
               <td>
                 <div class="dropdown">
                   <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
@@ -134,7 +142,7 @@
               <td>بي 1</td>
               <td>2010</td>
               <td>فرع الواحة</td>
-              <td><span class="badge bg-label-secondary">مستعملة</span></td>
+              <td><span class="badge bg-label-warning">في الصيانة</span></td>
               <td>
                 <div class="dropdown">
                   <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>

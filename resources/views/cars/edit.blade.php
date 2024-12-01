@@ -2,7 +2,6 @@
 
 @push('styles')
   <link rel="stylesheet" href="{{ asset('assets/vendor/libs/select2/select2.css') }}" />
-  <link rel="stylesheet" href="{{ asset('assets/vendor/libs/pickr/pickr-themes.css') }}" />
   <link rel="stylesheet" href="{{ asset('assets/vendor/libs/flatpickr/flatpickr.css') }}" />
   <link rel="stylesheet" href="{{ asset('assets/vendor/libs/dropzone/dropzone.css') }}" />
 @endpush
@@ -59,18 +58,6 @@
                   </div><!-- dropzone -->
                 </div><!-- col-12 -->
               </div><!-- row -->
-            </div><!-- col-12 -->
-          </div><!-- row -->
-          <hr class="my-3">
-          <div class="row">
-            <label class="col-sm-2 col-form-label fw-medium" for="car-gallery">معرض صور السيارة</label>
-            <div class="col-12 col-sm-10">
-              <div action="/upload" class="dropzone needsclick dropzoneBasic" id="car-gallery">
-                <div class="dz-message needsclick">قم بإسقاط الملفات هنا أو انقر للتحميل</div>
-                <div class="fallback">
-                  <input name="car-gallery" type="file" />
-                </div>
-              </div><!-- dropzone -->
             </div><!-- col-12 -->
           </div><!-- row -->
           <hr class="my-3">
@@ -312,8 +299,8 @@
                 <div class="col-12 col-md-6">
                   <select id="car-status" class="select2 form-select" data-allow-clear="false" data-placeholder="اختر">
                     <option></option>
-                    <option value="new">جديدة</option>
-                    <option value="used">مستعملة</option>
+                    <option value="available">متاحة</option>
+                    <option value="maintenance">في الصيانة</option>
                     <option value="canceled">ملغية</option>
                   </select>
                 </div><!-- col-12 -->
@@ -336,86 +323,40 @@
   <script src="{{ asset('assets/vendor/libs/moment/moment.js') }}"></script>
   <script src="{{ asset('assets/vendor/libs/flatpickr/flatpickr.js') }}"></script>
   <script src="{{ asset('assets/vendor/libs/select2/select2.js') }}"></script>
-  <script src="{{ asset('assets/vendor/libs/pickr/pickr.js') }}"></script>
   <script src="{{ asset('assets/vendor/libs/dropzone/dropzone.js') }}"></script>
-    <script type="module">
-      (function () {
-        const select2 = $('.select2');
-        if (select2.length) {
-          select2.each(function () {
-            var $this = $(this);
-            $this.wrap('<div class="position-relative"></div>').select2({
-              placeholder: 'Select value',
-              dropdownParent: $this.parent()
-            });
-          });
+  <script type="text/javascript">
+    // --------------------------------------------------------------------
+    // Select2
+    // --------------------------------------------------------------------
+    $(document).ready(function() {
+      $('.select2').select2();
+      $('.select2-color-car').select2({
+        containerCssClass: 'color-car-dropdown',
+        templateResult: function(option) {
+          if (!option.id) {
+            return option.text; // Return text for placeholder
+          }
+          const $option = $(`<div class="car-class-option ${option.element.className}"><div class="color-box" style="background-color: ${option.id};"></div> ${option.text}</div>`);
+          return $option;
+        },
+        templateSelection: function(option) {
+          if (option.id) {
+            const colorValue = option.id;
+            const $selection = $(`<span><div class="color-box" style="background-color: ${colorValue}; display: inline-block;"></div>${option.text}</span>`);
+            return $selection;
+          } else {
+            return 'اختر'; // Placeholder text
+          }
         }
-      })();
+      });
+    });
 
-      // color picker (pickr)
-      // --------------------------------------------------------------------
-      (function () {
-        const classicPicker = document.querySelector('#color-picker-classic');
-        if (classicPicker) {
-          pickr.create({
-            el: classicPicker,
-            theme: 'classic',
-            default: '#000000',
-            swatches: [
-              '#000000',
-              '#ffffff',
-              '#C0C0C0',
-              '#808080',
-              '#FF0000',
-              '#800000',
-              '#FFFF00',
-              '#008000',
-              '#00FF00',
-              '#0000FF',
-            ],
-            components: {
-              // Main components
-              preview: true,
-              opacity: false,
-              hue: true,
-              // Input / output Options
-              interaction: {
-                hex: true,
-                rgba: false,
-                hsla: false,
-                hsva: false,
-                cmyk: false,
-                input: true,
-                clear: false,
-                save: true
-              }
-            }
-          });
-        }
-      })();
-
-      (function () {
-        const flatpickrDateTime = $('.flatpickr-datetime'),
-              flatpickrDate = $('.flatpickr-date');
-
-        if (flatpickrDateTime) {
-          flatpickrDateTime.flatpickr({
-            enableTime: true,
-            dateFormat: 'Y-m-d H:i'
-          });
-        }
-
-        if (flatpickrDate) {
-          flatpickrDate.flatpickr({
-            monthSelectorType: 'static'
-          });
-        }
-      })();
-
-      (function () {
-        // previewTemplate: Updated Dropzone default previewTemplate
-        // ! Don't change it unless you really know what you are doing
-        const previewTemplate = `<div class="dz-preview dz-file-preview">
+    // --------------------------------------------------------------------
+    // Dropzone
+    // --------------------------------------------------------------------
+    $(document).ready(function () {
+      const previewTemplate = `
+        <div class="dz-preview dz-file-preview">
           <div class="dz-details">
             <div class="dz-thumbnail">
               <img data-dz-thumbnail>
@@ -427,24 +368,137 @@
                 <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-dz-uploadprogress></div>
               </div>
             </div>
-            <div class="dz-filename" data-dz-name></div>
-            <div class="dz-size" data-dz-size></div>
           </div>
-          </div>`;
+        </div>
+      `;
+      const car_image_photo = document.querySelector('#car-image');
+      if (car_image_photo) {
+        const myDropzoneMulti = new Dropzone(car_image_photo, {
+          previewTemplate: previewTemplate,
+          url: "/file-upload", // Replace with your upload URL
+          acceptedFiles: "image/png, image/jpeg, image/jpg, image/webp",
+          dictInvalidFileType: "Only images (PNG, JPEG, JPG, WEBP) are allowed.",
+          parallelUploads: 1,
+          maxFiles: 1, // Allow only one file
+          maxFilesize: 1,
+          addRemoveLinks: true,
+          dictRemoveFile: "حذف الصورة",
+          init: function () {
+            const car_image_photo_Instance = this;
+            car_image_photo_Instance.on("addedfile", function () {
+              if (car_image_photo_Instance.files.length === 1) {
+                $("#car-image").addClass("dz-upload-disabled");
+              }
+            });
+            car_image_photo_Instance.on("removedfile", function () {
+              $("#car-image").removeClass("dz-upload-disabled");
+            });
+          },
+        });
+      };
+      const car_property_image = document.querySelector('#car-property-image');
+      if (car_property_image) {
+        const myDropzoneMulti = new Dropzone(car_property_image, {
+          previewTemplate: previewTemplate,
+          url: "/file-upload", // Replace with your upload URL
+          acceptedFiles: "image/png, image/jpeg, image/jpg, image/webp",
+          dictInvalidFileType: "Only images (PNG, JPEG, JPG, WEBP) are allowed.",
+          parallelUploads: 1,
+          maxFiles: 1, // Allow only one file
+          maxFilesize: 1,
+          addRemoveLinks: true,
+          dictRemoveFile: "حذف الصورة",
+          init: function () {
+            const car_property_image_Instance = this;
+            car_property_image_Instance.on("addedfile", function () {
+              if (car_property_image_Instance.files.length === 1) {
+                $("#car-property-image").addClass("dz-upload-disabled");
+              }
+            });
+            car_property_image_Instance.on("removedfile", function () {
+              $("#car-property-image").removeClass("dz-upload-disabled");
+            });
+          },
+        });
+      };
+      const car_operating_card_image = document.querySelector('#car-operating-card-image');
+      if (car_operating_card_image) {
+        const myDropzoneMulti = new Dropzone(car_operating_card_image, {
+          previewTemplate: previewTemplate,
+          url: "/file-upload", // Replace with your upload URL
+          acceptedFiles: "image/png, image/jpeg, image/jpg, image/webp",
+          dictInvalidFileType: "Only images (PNG, JPEG, JPG, WEBP) are allowed.",
+          parallelUploads: 1,
+          maxFiles: 1, // Allow only one file
+          maxFilesize: 1,
+          addRemoveLinks: true,
+          dictRemoveFile: "حذف الصورة",
+          init: function () {
+            const car_operating_card_image_Instance = this;
+            car_operating_card_image_Instance.on("addedfile", function () {
+              if (car_operating_card_image_Instance.files.length === 1) {
+                $("#car-operating-card-image").addClass("dz-upload-disabled");
+              }
+            });
+            car_operating_card_image_Instance.on("removedfile", function () {
+              $("#car-operating-card-image").removeClass("dz-upload-disabled");
+            });
+          },
+        });
+      };
+    });
 
-        // ? Start your code from here
+    (function () {
+      const flatpickrDateTime = $('.flatpickr-datetime'),
+            flatpickrDate = $('.flatpickr-date');
 
-        // Multiple Dropzone
-        // --------------------------------------------------------------------
-        const dropzoneMulti = document.querySelector('#car-images');
-        if (dropzoneMulti) {
-          const myDropzoneMulti = new Dropzone(dropzoneMulti, {
-            previewTemplate: previewTemplate,
-            parallelUploads: 1,
-            maxFilesize: 5,
-            addRemoveLinks: true
-          });
-        }
-      })();
-    </script>
+      if (flatpickrDateTime) {
+        flatpickrDateTime.flatpickr({
+          enableTime: true,
+          dateFormat: 'Y-m-d H:i'
+        });
+      }
+
+      if (flatpickrDate) {
+        flatpickrDate.flatpickr({
+          monthSelectorType: 'static'
+        });
+      }
+    })();
+
+    (function () {
+      // previewTemplate: Updated Dropzone default previewTemplate
+      // ! Don't change it unless you really know what you are doing
+      const previewTemplate = `<div class="dz-preview dz-file-preview">
+        <div class="dz-details">
+          <div class="dz-thumbnail">
+            <img data-dz-thumbnail>
+            <span class="dz-nopreview">No preview</span>
+            <div class="dz-success-mark"></div>
+            <div class="dz-error-mark"></div>
+            <div class="dz-error-message"><span data-dz-errormessage></span></div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-dz-uploadprogress></div>
+            </div>
+          </div>
+          <div class="dz-filename" data-dz-name></div>
+          <div class="dz-size" data-dz-size></div>
+        </div>
+        </div>`;
+
+      // ? Start your code from here
+
+      // Multiple Dropzone
+      // --------------------------------------------------------------------
+      const dropzoneMulti = document.querySelector('#car-images');
+      if (dropzoneMulti) {
+        const myDropzoneMulti = new Dropzone(dropzoneMulti, {
+          previewTemplate: previewTemplate,
+          parallelUploads: 1,
+          maxFilesize: 5,
+          addRemoveLinks: true
+        });
+      }
+    })();
+  </script>
 @endpush

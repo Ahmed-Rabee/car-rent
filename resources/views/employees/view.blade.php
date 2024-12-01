@@ -269,10 +269,10 @@
                     <tr>
                       <td width="5%" class="p-3 text-nowrap">مدة رخصة القيادة</td>
                       <td class="p-3">
-                        <div class="d-flex align-items-center justify-content-start gap-3">
-                          <span>من : 18 / 11 / 2024</span>
+                        <div class="d-flex align-items-center justify-content-start flex-wrap gap-3">
+                          <span>من : 2024-11-17</span>
                           <span>-</span>
-                          <span>إلي : 18 / 11 / 2024</span>
+                          <span>إلي : 2024-11-17</span>
                         </div><!-- d-flex -->
                       </td>
                     </tr>
@@ -301,10 +301,10 @@
                     <tr>
                       <td width="5%" class="p-3 text-nowrap">مدة جواز السفر</td>
                       <td class="p-3">
-                        <div class="d-flex align-items-center justify-content-start gap-3">
-                          <span>من : 18 / 11 / 2024</span>
+                        <div class="d-flex align-items-center justify-content-start flex-wrap gap-3">
+                          <span>من : 2024-11-17</span>
                           <span>-</span>
-                          <span>إلي : 18 / 11 / 2024</span>
+                          <span>إلي : 2024-11-17</span>
                         </div><!-- d-flex -->
                       </td>
                     </tr>
@@ -323,10 +323,10 @@
                     <tr>
                       <td width="5%" class="p-3 text-nowrap">مدة التآشيرة</td>
                       <td class="p-3">
-                        <div class="d-flex align-items-center justify-content-start gap-2">
-                          <span>من : 18 / 11 / 2024</span>
+                        <div class="d-flex align-items-center justify-content-start flex-wrap gap-3">
+                          <span>من : 2024-11-17</span>
                           <span>-</span>
-                          <span>إلي : 18 / 11 / 2024</span>
+                          <span>إلي : 2024-11-17</span>
                         </div><!-- d-flex -->
                       </td>
                     </tr>

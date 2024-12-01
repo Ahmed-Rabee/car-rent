@@ -15,21 +15,26 @@
       <div class="d-flex align-content-center flex-wrap gap-3 flex-shrink-0">
         <a href="{{ url('/technical/create') }}" class="btn btn-primary waves-effect waves-light"><span class="ti-xs ti ti-plus me-2"></span> إضافة حالة فنية جديدة</a>
       </div>
-    </div>
+    </div><!-- d-flex -->
+
+    <div class="tabs-area d-flex align-items-center justify-content-start gap-3 flex-wrap mb-4">
+      <a href="{{ url('/technical') }}" title="الحالات الفنية" class="btn btn-primary waves-effect waves-light">الحالات الفنية</a>
+      <a href="{{ url('/technical/periodic-maintenance') }}" title="الصيانة الدورية" class="btn btn-label-dark waves-effect">الصيانة الدورية</a>
+    </div><!-- tabs-area -->
 
     <div class="card">
       <div class="table-responsive text-nowrap">
-        <table class="table table-striped">
+        <table class="table table-striped table-hover">
           <thead>
             <tr>
               <th width="5%" class="fw-bold">#</th>
               <th class="fw-bold">رقم المركبة</th>
               <th class="fw-bold">الماركة</th>
-              <th class="fw-bold">مفتاح احتياطي</th>
-              <th class="fw-bold">اخر تحديث</th>
-              <th class="fw-bold">الموظف</th>
+              <th class="fw-bold">حالة المركبة</th>
               <th class="fw-bold">كم الحالي</th>
               <th class="fw-bold">كم الباقي</th>
+              <th class="fw-bold">اخر تحديث</th>
+              <th class="fw-bold">الموظف</th>
               <th width="5%"></th>
             </tr>
           </thead>
@@ -40,13 +45,11 @@
               </td>
               <td>9408 - TB</td>
               <td>تويوتا</td>
-              <td>
-                <span class="badge badge-center bg-label-success"><i class="ti ti-check"></i></span>
-              </td>
-              <td>18 / 11 / 2024</td>
-              <td>Ahmed rabee</td>
+              <td><span class="badge bg-label-success">متاحة</span></td>
               <td dir="ltr">1000 K.M</td>
               <td dir="ltr">1500 K.M</td>
+              <td>2024-10-13</td>
+              <td>Ahmed rabee</td>
               <td>
                 <div class="dropdown">
                   <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
@@ -64,13 +67,11 @@
               </td>
               <td>8182 - TA</td>
               <td>كيا</td>
-              <td>
-                <span class="badge badge-center bg-label-danger"><i class="ti ti-x"></i></span>
-              </td>
-              <td>18 / 11 / 2024</td>
-              <td>Ahmed rabee</td>
+              <td><span class="badge bg-label-warning">في الصيانة</span></td>
               <td dir="ltr">1000 K.M</td>
               <td dir="ltr">1500 K.M</td>
+              <td>2024-10-13</td>
+              <td>Ahmed rabee</td>
               <td>
                 <div class="dropdown">
                   <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>

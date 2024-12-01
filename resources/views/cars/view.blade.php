@@ -145,7 +145,11 @@
               </tr>
               <tr>
                 <td width="5%" class="p-3">حالة السياره</td>
-                <td class="p-3">جديدة</td>
+                <td class="p-3">
+                  <span class="badge bg-label-success">متاحة</span>
+                  <span class="badge bg-label-warning">في الصيانة</span>
+                  <span class="badge bg-label-danger">ملغية</span>
+                </td>
               </tr>
             </tbody>
           </table>

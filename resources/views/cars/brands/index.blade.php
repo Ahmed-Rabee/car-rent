@@ -15,70 +15,129 @@
       <div class="d-flex align-content-center flex-wrap gap-3 flex-shrink-0">
         <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandCreateModal" class="btn btn-primary waves-effect waves-light"><span class="ti-xs ti ti-plus me-2"></span> إضافة ماركة جديدة</a>
       </div>
-    </div>
+    </div><!-- d-flex -->
 
-    <div class="card">
-      <div class="table-responsive text-nowrap">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th class="fw-bold">الماركة</th>
-              <th width="5%"></th>
-            </tr>
-          </thead>
-          <tbody class="table-border-bottom-0">
-            <tr>
-              <td>كيا</td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>كيا</td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>كيا</td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>كيا</td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div><!-- table-responsive -->
-    </div><!-- card -->
+    <div class="tabs-area d-flex align-items-center justify-content-start gap-3 flex-wrap mb-4">
+      <a href="{{ url('/cars') }}" title="المركبات" class="btn btn-label-dark waves-effect">المركبات</a>
+      <a href="{{ url('/cars/brands') }}" title="الماركات" class="btn btn-primary waves-effect waves-light">الماركات</a>
+      <a href="{{ url('/cars/models') }}" title="الموديلات" class="btn btn-label-dark waves-effect">الموديلات</a>
+      <a href="{{ url('/cars/categories') }}" title="الفئات" class="btn btn-label-dark waves-effect">الفئات</a>
+    </div><!-- tabs-area -->
+
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card">
+          <div class="card-body p-3 d-flex align-items-center justify-content-between gap-2 flex-wrap">
+            <span class="d-block flex-grow-1 fs-6 fw-medium">كيا</span>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+              </div><!-- dropdown-menu -->
+            </div><!-- dropdown -->
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- col -->
+      <div class="col">
+        <div class="card">
+          <div class="card-body p-3 d-flex align-items-center justify-content-between gap-2 flex-wrap">
+            <span class="d-block flex-grow-1 fs-6 fw-medium">كيا</span>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+              </div><!-- dropdown-menu -->
+            </div><!-- dropdown -->
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- col -->
+      <div class="col">
+        <div class="card">
+          <div class="card-body p-3 d-flex align-items-center justify-content-between gap-2 flex-wrap">
+            <span class="d-block flex-grow-1 fs-6 fw-medium">كيا</span>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+              </div><!-- dropdown-menu -->
+            </div><!-- dropdown -->
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- col -->
+      <div class="col">
+        <div class="card">
+          <div class="card-body p-3 d-flex align-items-center justify-content-between gap-2 flex-wrap">
+            <span class="d-block flex-grow-1 fs-6 fw-medium">كيا</span>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+              </div><!-- dropdown-menu -->
+            </div><!-- dropdown -->
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- col -->
+      <div class="col">
+        <div class="card">
+          <div class="card-body p-3 d-flex align-items-center justify-content-between gap-2 flex-wrap">
+            <span class="d-block flex-grow-1 fs-6 fw-medium">كيا</span>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+              </div><!-- dropdown-menu -->
+            </div><!-- dropdown -->
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- col -->
+      <div class="col">
+        <div class="card">
+          <div class="card-body p-3 d-flex align-items-center justify-content-between gap-2 flex-wrap">
+            <span class="d-block flex-grow-1 fs-6 fw-medium">كيا</span>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+              </div><!-- dropdown-menu -->
+            </div><!-- dropdown -->
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- col -->
+      <div class="col">
+        <div class="card">
+          <div class="card-body p-3 d-flex align-items-center justify-content-between gap-2 flex-wrap">
+            <span class="d-block flex-grow-1 fs-6 fw-medium">كيا</span>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+              </div><!-- dropdown-menu -->
+            </div><!-- dropdown -->
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- col -->
+      <div class="col">
+        <div class="card">
+          <div class="card-body p-3 d-flex align-items-center justify-content-between gap-2 flex-wrap">
+            <span class="d-block flex-grow-1 fs-6 fw-medium">كيا</span>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandEditModal"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#brandDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+              </div><!-- dropdown-menu -->
+            </div><!-- dropdown -->
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- col -->
+    </div><!-- row -->
 
     <!-- Brand Create Modal -->
     <div class="modal fade" id="brandCreateModal" tabindex="-1" aria-hidden="true">

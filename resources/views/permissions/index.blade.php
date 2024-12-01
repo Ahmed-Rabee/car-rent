@@ -17,85 +17,128 @@
       </div>
     </div>
 
-    <div class="card">
-      <div class="table-responsive text-nowrap">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th class="fw-bold">اسم الدور</th>
-              <th width="5%"></th>
-            </tr>
-          </thead>
-          <tbody class="table-border-bottom-0">
-            <tr>
-              <td>المدير العام</td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#permissionDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>المشرف العام</td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#permissionDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>موظف إستقبال</td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#permissionDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>المدير العام</td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#permissionDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>المدير العام</td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#permissionDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div><!-- table-responsive -->
-    </div><!-- card -->
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card">
+          <div class="card-body p-3 d-flex align-items-center justify-content-between gap-2 flex-wrap">
+            <span class="d-block flex-grow-1 fs-6 fw-medium">المدير العام</span>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
+                <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#permissionDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+              </div>
+            </div>
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- col -->
+      <div class="col">
+        <div class="card">
+          <div class="card-body p-3 d-flex align-items-center justify-content-between gap-2 flex-wrap">
+            <span class="d-block flex-grow-1 fs-6 fw-medium">المدير العام</span>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
+                <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#permissionDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+              </div>
+            </div>
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- col -->
+      <div class="col">
+        <div class="card">
+          <div class="card-body p-3 d-flex align-items-center justify-content-between gap-2 flex-wrap">
+            <span class="d-block flex-grow-1 fs-6 fw-medium">المدير العام</span>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
+                <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#permissionDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+              </div>
+            </div>
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- col -->
+      <div class="col">
+        <div class="card">
+          <div class="card-body p-3 d-flex align-items-center justify-content-between gap-2 flex-wrap">
+            <span class="d-block flex-grow-1 fs-6 fw-medium">المدير العام</span>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
+                <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#permissionDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+              </div>
+            </div>
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- col -->
+      <div class="col">
+        <div class="card">
+          <div class="card-body p-3 d-flex align-items-center justify-content-between gap-2 flex-wrap">
+            <span class="d-block flex-grow-1 fs-6 fw-medium">المدير العام</span>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
+                <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#permissionDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+              </div>
+            </div>
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- col -->
+      <div class="col">
+        <div class="card">
+          <div class="card-body p-3 d-flex align-items-center justify-content-between gap-2 flex-wrap">
+            <span class="d-block flex-grow-1 fs-6 fw-medium">المدير العام</span>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
+                <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#permissionDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+              </div>
+            </div>
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- col -->
+      <div class="col">
+        <div class="card">
+          <div class="card-body p-3 d-flex align-items-center justify-content-between gap-2 flex-wrap">
+            <span class="d-block flex-grow-1 fs-6 fw-medium">المدير العام</span>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
+                <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#permissionDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+              </div>
+            </div>
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- col -->
+      <div class="col">
+        <div class="card">
+          <div class="card-body p-3 d-flex align-items-center justify-content-between gap-2 flex-wrap">
+            <span class="d-block flex-grow-1 fs-6 fw-medium">المدير العام</span>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
+                <a class="dropdown-item waves-effect" href="{{ url('/permissions/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
+                <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#permissionDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
+              </div>
+            </div>
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- col -->
+    </div><!-- row -->
 
     <!-- Permission Delete Modal -->
     <div class="modal fade" id="permissionDeleteModal" tabindex="-1" aria-hidden="true">

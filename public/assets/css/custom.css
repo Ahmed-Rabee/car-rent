@@ -129,7 +129,7 @@ body [dir=ltr] {
 }
 
 .table-hover > tbody > tr:hover > * {
-  --bs-table-bg-state: rgba(0, 0, 0, 0.08) !important;
+  --bs-table-bg-state: rgba(0, 0, 0, 0.06) !important;
 }
 
 input::-webkit-outer-spin-button,
@@ -311,7 +311,7 @@ label.form-label.required::after, label.col-form-label.required::after {
 }
 
 .slider-disabled {
-  pointer-events: none; /* Prevent interactions */
+  pointer-events: none;
 }
 
 ul#select2-car-color-results li.select2-results__option .car-class-option {
