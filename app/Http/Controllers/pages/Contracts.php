@@ -23,4 +23,8 @@ class Contracts extends Controller
   {
     return view('contracts.view');
   }
+  public function print()
+  {
+    return view('contracts.print');
+  }
 }

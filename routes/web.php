@@ -10,6 +10,8 @@ use App\Http\Controllers\pages\Technical;
 use App\Http\Controllers\pages\Reservations;
 use App\Http\Controllers\pages\Clients;
 use App\Http\Controllers\pages\Contracts;
+use App\Http\Controllers\pages\Reports;
+
 
 
 // Main Page Route
@@ -50,6 +52,7 @@ Route::get('/technical', [Technical::class, 'index'])->name('technical-index');
 Route::get('/technical/create', [Technical::class, 'create'])->name('technical-create');
 Route::get('/technical/{id}/edit', [Technical::class, 'edit'])->name('technical-edit');
 Route::get('/technical/{id}/view', [Technical::class, 'view'])->name('technical-view');
+Route::get('/technical/periodic-maintenance', [Technical::class, 'periodicMaintenanceIndex'])->name('technical-.periodic-maintenance.index');
 
 // Reservations Routes
 Route::get('/reservations', [Reservations::class, 'index'])->name('reservations-index');
@@ -68,6 +71,10 @@ Route::get('/contracts', [Contracts::class, 'index'])->name('contracts-index');
 Route::get('/contracts/create', [Contracts::class, 'create'])->name('contracts-create');
 Route::get('/contracts/{id}/edit', [Contracts::class, 'edit'])->name('contracts-edit');
 Route::get('/contracts/{id}/view', [Contracts::class, 'view'])->name('contracts-view');
+Route::get('/contracts/print', [Contracts::class, 'print'])->name('contracts-print');
+
+// Reports Routes
+Route::get('/reports', [Reports::class, 'index'])->name('reports-index');
 
 
 

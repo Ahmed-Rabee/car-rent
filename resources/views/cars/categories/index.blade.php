@@ -66,8 +66,19 @@
           </div><!-- modal-header -->
           <div class="modal-body p-3">
             <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label fw-medium" for="select-car-model">الموديل</label>
-              <div class="col-12 col-sm-9">
+              <label class="col-sm-4 col-form-label fw-medium" for="select-car-brand">الماركة</label>
+              <div class="col-12 col-sm-8">
+                <select id="select-car-brand" class="select2 form-select" data-allow-clear="true" data-placeholder="" data-dropdown-parent="#categoryCreateModal">
+                  <option></option>
+                  <option value="AK">Alaska</option>
+                  <option value="HI">Hawaii</option>
+                </select>
+              </div><!-- col-12 -->
+            </div><!-- row -->
+            <hr class="my-3">
+            <div class="row align-items-center">
+              <label class="col-sm-4 col-form-label fw-medium" for="select-car-model">الموديل</label>
+              <div class="col-12 col-sm-8">
                 <select id="select-car-model" class="select2 form-select" data-allow-clear="true" data-placeholder="" data-dropdown-parent="#categoryCreateModal">
                   <option></option>
                   <option value="AK">Alaska</option>
@@ -77,9 +88,19 @@
             </div><!-- row -->
             <hr class="my-3">
             <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label fw-medium" for="car-number">اسم الفئة</label>
-              <div class="col-12 col-sm-9">
+              <label class="col-sm-4 col-form-label fw-medium" for="car-number">اسم الفئة</label>
+              <div class="col-12 col-sm-8">
                 <input type="text" class="form-control" id="car-number" />
+              </div><!-- col-12 -->
+            </div><!-- row -->
+            <hr class="my-3">
+            <div class="row align-items-center">
+              <label class="col-sm-4 col-form-label fw-medium" for="car-number">سعر الكيلو متر الزيادة</label>
+              <div class="col-12 col-sm-8">
+                <div class="input-group">
+                  <input type="number" inputmode="numeric" id="contract-daily-price" class="form-control">
+                  <span class="input-group-text">ريال</span>
+                </div><!-- input-group -->
               </div><!-- col-12 -->
             </div><!-- row -->
           </div><!-- modal-body -->
@@ -102,9 +123,9 @@
           </div><!-- modal-header -->
           <div class="modal-body p-3">
             <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label fw-medium" for="select-car-model">الموديل</label>
-              <div class="col-12 col-sm-9">
-                <select id="edit-car-model" class="select2 form-select" data-allow-clear="true" data-placeholder="" data-dropdown-parent="#categoryEditModal">
+              <label class="col-sm-4 col-form-label fw-medium" for="select-car-edit-brand">الماركة</label>
+              <div class="col-12 col-sm-8">
+                <select id="select-car-edit-brand" class="select2 form-select" data-allow-clear="true" data-placeholder="" data-dropdown-parent="#categoryEditModal">
                   <option></option>
                   <option value="AK">Alaska</option>
                   <option value="HI">Hawaii</option>
@@ -113,9 +134,30 @@
             </div><!-- row -->
             <hr class="my-3">
             <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label fw-medium" for="car-number">اسم الفئة</label>
-              <div class="col-12 col-sm-9">
+              <label class="col-sm-4 col-form-label fw-medium" for="select-car-edit-model">الموديل</label>
+              <div class="col-12 col-sm-8">
+                <select id="select-car-edit-model" class="select2 form-select" data-allow-clear="true" data-placeholder="" data-dropdown-parent="#categoryEditModal">
+                  <option></option>
+                  <option value="AK">Alaska</option>
+                  <option value="HI">Hawaii</option>
+                </select>
+              </div><!-- col-12 -->
+            </div><!-- row -->
+            <hr class="my-3">
+            <div class="row align-items-center">
+              <label class="col-sm-4 col-form-label fw-medium" for="car-number">اسم الفئة</label>
+              <div class="col-12 col-sm-8">
                 <input type="text" class="form-control" id="car-number" />
+              </div><!-- col-12 -->
+            </div><!-- row -->
+            <hr class="my-3">
+            <div class="row align-items-center">
+              <label class="col-sm-4 col-form-label fw-medium" for="car-number">سعر الكيلو متر الزيادة</label>
+              <div class="col-12 col-sm-8">
+                <div class="input-group">
+                  <input type="number" inputmode="numeric" id="contract-daily-price" class="form-control">
+                  <span class="input-group-text">ريال</span>
+                </div><!-- input-group -->
               </div><!-- col-12 -->
             </div><!-- row -->
           </div><!-- modal-body -->

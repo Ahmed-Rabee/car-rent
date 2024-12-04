@@ -123,6 +123,8 @@
 
 body {
   font-family: "Cairo", "Public Sans", Arial, sans-serif !important;
+  font-weight: 500;
+  font-size: 15px;
 }
 body [dir=ltr] {
   font-family: "Public Sans", "Cairo" !important;
@@ -146,7 +148,7 @@ input[type=number] {
   letter-spacing: 0 !important;
 }
 
-#reservations-create-page .reservation-cart-side {
+.reservation-cart-side {
   inset-block-start: calc(78px + 1rem);
 }
 
@@ -342,4 +344,80 @@ ul#select2-car-color-results li.select2-results__option .car-class-option .color
   height: 25px;
   border-radius: 0.25rem;
   border: 1px solid #dddddd;
+}
+
+#contracts-print-page {
+  color: #000000;
+}
+#contracts-print-page .print-header .col-right, #contracts-print-page .print-header .col-left {
+  width: 40%;
+  font-size: 13px;
+}
+#contracts-print-page .print-header .col-center {
+  width: 20%;
+}
+#contracts-print-page .print-header .col-center img {
+  max-height: 70px;
+}
+#contracts-print-page .print-page-title span {
+  color: #000000;
+  border: 1px solid #000000;
+  font-size: 20px;
+}
+#contracts-print-page table {
+  border-color: #000000;
+}
+#contracts-print-page table th {
+  color: #000000;
+  font-size: 14px;
+  background-color: #fafafa;
+}
+#contracts-print-page table td {
+  color: #000000;
+  font-size: 13px;
+}
+#contracts-print-page table td .item b::before {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  width: 100%;
+  height: 2px;
+  border-bottom: 1px dashed #bbb;
+  inset-block-end: 5px;
+}
+#contracts-print-page table td .item b:empty {
+  display: none !important;
+}
+#contracts-print-page .print-page-content {
+  border: 1px solid #000000;
+  font-size: 13px;
+}
+#contracts-print-page .print-page-content .client-info {
+  border-bottom: 1px solid #000000;
+}
+#contracts-print-page .print-page-content .client-info .client-info-title {
+  border-block-end: 1px solid #000000;
+  color: #000000;
+  background-color: #fafafa;
+}
+#contracts-print-page .print-page-content .client-info .client-info-content .col-right {
+  width: 60%;
+  border-inline-end: 1px solid #000000;
+}
+#contracts-print-page .print-page-content .client-info .client-info-content .col-left {
+  width: 40%;
+}
+#contracts-print-page .print-page-content .client-info .client-info-content .item b::before {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  width: 100%;
+  height: 2px;
+  border-bottom: 1px dashed #bbb;
+  inset-block-end: 5px;
+}
+#contracts-print-page .print-page-content .car-info .car-info-title {
+  border-block-end: 1px solid #000000;
+  color: #000000;
+  background-color: #fafafa;
 }

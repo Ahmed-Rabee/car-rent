@@ -106,11 +106,35 @@
               <div class="col">
                 <div class="form-group">
                   <label class="form-label mb-2 fs-6 required" for="contract-delivery-service">خدمة التوصيل</label>
-                  <select id="contract-delivery-service" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
-                    <option></option>
-                    <option value="payment">مدفوعة</option>
-                    <option value="free">مجانية</option>
-                  </select>
+                  <div class="row row-cols-2 g-1 g-md-3">
+                    <div class="col">
+                      <div class="form-check custom-option custom-option-basic m-0">
+                        <label class="form-check-label custom-option-content py-2" for="contract-delivery-service-free">
+                          <input
+                            name="contract-delivery-service"
+                            class="form-check-input"
+                            type="radio"
+                            id="contract-delivery-service-free"
+                            checked
+                          />
+                          <span class="custom-option-header p-0">مجانية</span>
+                        </label>
+                      </div><!-- form-check -->
+                    </div><!-- col -->
+                    <div class="col">
+                      <div class="form-check custom-option custom-option-basic m-0">
+                        <label class="form-check-label custom-option-content py-2" for="contract-delivery-service-payment">
+                          <input
+                            name="contract-delivery-service"
+                            class="form-check-input"
+                            type="radio"
+                            id="contract-delivery-service-payment"
+                          />
+                          <span class="custom-option-header p-0">مدفوعة</span>
+                        </label>
+                      </div><!-- form-check -->
+                    </div><!-- col -->
+                  </div><!-- row -->
                 </div><!-- form-group -->
               </div><!-- col -->
               <div class="col" id="contract-delivery-service-cost-element" style="display: none;">
@@ -133,7 +157,7 @@
               </div><!-- col -->
               <div class="col">
                 <div class="form-group">
-                  <label class="form-label mb-2 fs-6 required" for="contract-oil-status">حالة البترول</label>
+                  <label class="form-label mb-2 fs-6 required" for="contract-oil-status">حالة الوقود</label>
                   <div class="row g-3">
                     <div class="col-12 col-md-7">
                       <div id="slider-pips"></div>
@@ -198,22 +222,11 @@
               </div><!-- col -->
               <div class="col">
                 <div class="form-group">
-                  <label class="form-label mb-2 fs-6 required" for="contract-current-kilometer">الكيلو متر عند العودة</label>
-                  <div class="input-group">
-                    <input type="number" inputmode="numeric" id="contract-current-kilometer" class="form-control">
-                    <span class="input-group-text">كم</span>
-                  </div><!-- input-group -->
-                </div><!-- form-group -->
-              </div><!-- col -->
-              <div class="col">
-                <div class="form-group">
                   <label class="form-label mb-2 fs-6 required" for="contract-status">حالة العقد</label>
                   <select id="contract-status" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
                     <option></option>
                     <option value="AK">ساري</option>
                     <option value="HI">مديونية</option>
-                    <option value="HI">منتهي</option>
-                    <option value="HI">ملغي</option>
                   </select>
                 </div><!-- form-group -->
               </div><!-- col -->
@@ -278,15 +291,16 @@
       $('.select2').select2();
     });
 
-    $(document).ready(function() {
-      $('#contract-delivery-service').change(function() {
-        var selectedValue = $(this).val();
-        if (selectedValue === 'payment') {
-          $('#contract-delivery-service-cost-element').show(); // Show the element
+    $(document).ready(function () {
+      function toggleCostElement() {
+        if ($('#contract-delivery-service-payment').is(':checked')) {
+          $('#contract-delivery-service-cost-element').show(); // Show the cost element
         } else {
-          $('#contract-delivery-service-cost-element').hide(); // Hide the element
+          $('#contract-delivery-service-cost-element').hide(); // Hide the cost element
         }
-      });
+      }
+      $('input[name="contract-delivery-service"]').change(toggleCostElement);
+      toggleCostElement();
     });
 
     $(document).ready(function() {
@@ -327,11 +341,7 @@
         }
     });
 
-    /**
-     * Sliders
-     */
     'use strict';
-
     (function () {
       const sliderPips = document.getElementById('slider-pips');
       const customLabels = {

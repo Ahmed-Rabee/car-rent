@@ -26,7 +26,7 @@
     <li class="menu-item">
       <a href="{{ url('/branches') }}" class="menu-link">
         <i class="menu-icon tf-icons ti ti-building"></i>
-        <div>الفروع</div>
+        <div>إدارة الفروع</div>
       </a>
     </li>
     <!-- Employees -->
@@ -68,14 +68,21 @@
     <li class="menu-item">
       <a href="{{ url('/clients') }}" class="menu-link">
         <i class="menu-icon tf-icons ti ti-friends"></i>
-        <div>العملاء</div>
+        <div>إدارة العملاء</div>
       </a>
     </li>
-    <!-- Clients -->
+    <!-- Contracts -->
     <li class="menu-item">
       <a href="{{ url('/contracts') }}" class="menu-link">
         <i class="menu-icon tf-icons ti ti-contract"></i>
         <div>إدارة العقود</div>
+      </a>
+    </li>
+    <!-- Reports -->
+    <li class="menu-item">
+      <a href="{{ url('/reports') }}" class="menu-link">
+        <i class="menu-icon tf-icons ti ti-report-analytics"></i>
+        <div>إدارة التقارير</div>
       </a>
     </li>
   </ul>

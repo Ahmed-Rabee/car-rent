@@ -23,4 +23,8 @@ class Technical extends Controller
   {
     return view('technical.view');
   }
+  public function periodicMaintenanceIndex()
+  {
+    return view('technical.periodic-maintenance.index');
+  }
 }

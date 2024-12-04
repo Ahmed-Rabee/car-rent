@@ -57,7 +57,6 @@
                   <div class="dropdown-menu">
                     <a class="dropdown-item waves-effect" href="{{ url('/contracts/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
                     <a class="dropdown-item waves-effect" href="{{ url('/contracts/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#contractDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
                   </div><!-- dropdown-menu -->
                 </div><!-- dropdown -->
               </td>
@@ -84,7 +83,6 @@
                   <div class="dropdown-menu">
                     <a class="dropdown-item waves-effect" href="{{ url('/contracts/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
                     <a class="dropdown-item waves-effect" href="{{ url('/contracts/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#contractDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
                   </div>
                 </div>
               </td>
@@ -111,7 +109,6 @@
                   <div class="dropdown-menu">
                     <a class="dropdown-item waves-effect" href="{{ url('/contracts/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
                     <a class="dropdown-item waves-effect" href="{{ url('/contracts/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#contractDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
                   </div>
                 </div>
               </td>
@@ -138,61 +135,6 @@
                   <div class="dropdown-menu">
                     <a class="dropdown-item waves-effect" href="{{ url('/contracts/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
                     <a class="dropdown-item waves-effect" href="{{ url('/contracts/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#contractDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="{{ url('/contracts/{id}/view') }}" title="#">234</a>
-              </td>
-              <td>343433</td>
-              <td>9408 - TB</td>
-              <td>محمد احمد محمود</td>
-              <td>المطار</td>
-              <td>
-                <span dir="ltr">2024-11-08 12:00 PM</span>
-              </td>
-              <td>الفندق</td>
-              <td>
-                <span dir="ltr">2024-11-08 12:00 PM</span>
-              </td>
-              <td><span class="badge bg-label-danger">ملغي</span></td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/contracts/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/contracts/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#contractDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="{{ url('/contracts/{id}/view') }}" title="#">234</a>
-              </td>
-              <td>343433</td>
-              <td>9408 - TB</td>
-              <td>محمد احمد محمود</td>
-              <td>المطار</td>
-              <td>
-                <span dir="ltr">2024-11-08 12:00 PM</span>
-              </td>
-              <td>الفندق</td>
-              <td>
-                <span dir="ltr">2024-11-08 12:00 PM</span>
-              </td>
-              <td><span class="badge bg-label-success">ساري</span></td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/contracts/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/contracts/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#contractDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
                   </div>
                 </div>
               </td>
@@ -201,10 +143,6 @@
         </table>
       </div><!-- table-responsive -->
     </div><!-- card -->
-
-    <!-- contracts Delete Modal -->
-    @include('contracts.Modals.delete')
-    <!-- contracts Delete Modal -->
 
   </div><!-- contracts-index-page -->
 
