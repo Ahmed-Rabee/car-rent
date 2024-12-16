@@ -396,38 +396,20 @@ ul#select2-car-color-results {
     } // col-center
   } // print-header
   .print-page-title {
-    span {
-      color: #000000;
-      border: 1px solid #000000;
-      font-size: 20px;
-    } // span
+    div {
+      border: 1px solid;
+      font-size: 0.9375rem;
+    } // div
   } // print-page-title
   table {
     border-color: #000000;
     th {
       color: #000000;
-      font-size: 14px;
-      background-color: #fafafa;
+      font-size: 13px;
     } // th
     td {
       color: #000000;
       font-size: 13px;
-      .item {
-        b {
-          &::before {
-            content: "";
-            position: absolute;
-            inset-inline: 0;
-            width: 100%;
-            height: 2px;
-            border-bottom: 1px dashed #bbb;
-            inset-block-end: 5px;
-          } // before
-          &:empty {
-            display: none !important;
-          } // empty
-        } // b
-      } // item
     } // td
   } // table
   .print-page-content {

@@ -369,34 +369,20 @@ ul#select2-car-color-results li.select2-results__option .car-class-option .color
 #contracts-print-page .print-header .col-center img {
   max-height: 70px;
 }
-#contracts-print-page .print-page-title span {
-  color: #000000;
-  border: 1px solid #000000;
-  font-size: 20px;
+#contracts-print-page .print-page-title div {
+  border: 1px solid;
+  font-size: 0.9375rem;
 }
 #contracts-print-page table {
   border-color: #000000;
 }
 #contracts-print-page table th {
   color: #000000;
-  font-size: 14px;
-  background-color: #fafafa;
+  font-size: 13px;
 }
 #contracts-print-page table td {
   color: #000000;
   font-size: 13px;
-}
-#contracts-print-page table td .item b::before {
-  content: "";
-  position: absolute;
-  inset-inline: 0;
-  width: 100%;
-  height: 2px;
-  border-bottom: 1px dashed #bbb;
-  inset-block-end: 5px;
-}
-#contracts-print-page table td .item b:empty {
-  display: none !important;
 }
 #contracts-print-page .print-page-content {
   border: 1px solid #000000;
