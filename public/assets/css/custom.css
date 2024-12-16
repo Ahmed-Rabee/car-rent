@@ -121,6 +121,16 @@
   margin-top: 1rem;
 }
 
+:root {
+  --show-label-data-bg: #fafafa;
+  --show-label-data-border: #dbdade;
+}
+
+html.dark-style {
+  --show-label-data-bg: rgba(134, 146, 208, 0.08);
+  --show-label-data-border: #434968;
+}
+
 body {
   font-family: "Cairo", "Public Sans", Arial, sans-serif !important;
   font-weight: 500;
@@ -420,4 +430,33 @@ ul#select2-car-color-results li.select2-results__option .car-class-option .color
   border-block-end: 1px solid #000000;
   color: #000000;
   background-color: #fafafa;
+}
+
+.slider-size {
+  min-height: 44px;
+  padding-block-start: 5px;
+}
+
+b.show-label-data {
+  min-height: 38px;
+  padding: 0.422rem 0.875rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  background-color: var(--show-label-data-bg);
+  border: var(--bs-border-width) solid var(--show-label-data-border);
+  border-radius: var(--bs-border-radius);
+}
+
+b.show-label-data-group {
+  min-height: 38px;
+  padding: 0.422rem 0.875rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  background-color: var(--show-label-data-bg);
+  border: var(--bs-border-width) solid var(--show-label-data-border);
+  border-radius: var(--bs-border-radius);
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
 }

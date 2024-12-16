@@ -128,6 +128,19 @@
   margin-top: 1rem;
 }
 
+//* Custom Style For Dashboard *\\
+
+:root {
+  --show-label-data-bg: #fafafa;
+  --show-label-data-border: #dbdade;
+} // :root
+
+html.dark-style {
+  --show-label-data-bg: rgba(134, 146, 208, 0.08);
+  --show-label-data-border: #434968;
+} // html.dark-style
+
+
 body {
   font-family: 'Cairo', 'Public Sans', Arial, sans-serif !important;
   font-weight: 500;
@@ -459,3 +472,32 @@ ul#select2-car-color-results {
     } // car-info
   } // print-page-content
 } // contracts-print-page
+
+.slider-size {
+  min-height: 44px;
+  padding-block-start: 5px;
+} // slider-size
+
+b.show-label-data {
+  min-height: 38px;
+  padding: 0.422rem 0.875rem;
+  font-size: 0.8000rem;
+  line-height: 1.5;
+  background-color: var(--show-label-data-bg);
+  border: var(--bs-border-width) solid var(--show-label-data-border);
+  border-radius: var(--bs-border-radius);
+} // show-label-data
+
+b.show-label-data-group {
+  min-height: 38px;
+  padding: 0.422rem 0.875rem;
+  font-size: 0.8000rem;
+  line-height: 1.5;
+  background-color: var(--show-label-data-bg);
+  border: var(--bs-border-width) solid var(--show-label-data-border);
+  border-radius: var(--bs-border-radius);
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+} // show-label-data

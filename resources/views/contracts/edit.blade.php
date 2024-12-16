@@ -212,15 +212,11 @@
             <div class="card-body p-3">
               <ul class="d-flex flex-column gap-2 m-0 p-0 list-unstyled">
                 <li class="d-flex align-items-center justify-content-between">
-                  <span>مدة الحجر :</span>
+                  <span>مدة الإيجار :</span>
                   <p class="m-0">4 <small>ايام</small></p>
                 </li>
                 <li class="d-flex align-items-center justify-content-between">
                   <span>السعر اليومي :</span>
-                  <p class="m-0">123 <small>ريال</small></p>
-                </li>
-                <li class="d-flex align-items-center justify-content-between">
-                  <span>سعر الحجز :</span>
                   <p class="m-0">123 <small>ريال</small></p>
                 </li>
                 <li class="d-flex align-items-center justify-content-between">

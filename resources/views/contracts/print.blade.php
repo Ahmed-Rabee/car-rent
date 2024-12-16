@@ -2,30 +2,51 @@
 
 @push('styles')
   <link rel="stylesheet" href="{{ asset('assets/vendor/libs/nouislider/nouislider.css') }}" />
+  <style>
+    @media print {
+      @page {
+        size: A4;
+        margin: 0; /* This is for page margins */
+        -webkit-print-color-adjust: exact;
+      }
+      body {
+        margin: 0; /* This removes default body margins */
+        padding: 0; /* This removes padding */
+        -webkit-print-color-adjust: exact;
+      }
+      header, footer {
+        display: none; /* Hide headers and footers */
+      }
+    }
+  </style>
 @endpush
 
 @section('content')
-  <div id="contracts-print-page" class="min-vh-100 bg-white">
-    <div class="print-header d-flex justify-content-between">
-      <div class="col-right d-flex flex-column gap-1 p-2">
-        <span class="d-flex align-items-center justify-content-start gap-2 text-body fw-medium"><i class="ti ti-xs ti-phone"></i> 1345780</span>
-        <span class="d-flex align-items-center justify-content-start gap-2 text-body fw-medium"><i class="ti ti-xs ti-device-mobile"></i> 99887766 - 99887766</span>
-        <span class="d-flex align-items-center justify-content-start gap-2 text-body fw-medium"><i class="ti ti-xs ti-mailbox"></i> 1984</span>
-        <span class="d-flex align-items-center justify-content-start gap-2 text-body fw-medium"><i class="ti ti-xs ti-map-pin"></i> صلاله - 211 - سلطنة عمان</span>
-      </div><!-- col-right -->
-      <div class="col-center align-self-stretch d-flex align-items-center justify-content-center">
-        <img src="https://shasha.test/wp-content/themes/Shasha_2023/website/resources/images/logo.webp" alt="" class="mw-100 h-auto w-auto">
-      </div><!-- col-right -->
-      <div class="col-left d-flex flex-column align-items-end gap-2 p-2">
-        <div class="contarct-number fw-bold fs-5">رقم العقد : #4563</div>
-        <div class="contarct-date d-block">بتاريخ : 12-12-2024</div>
-        <div class="contarct-date d-block">الفرع : فرع الواحة</div>
-      </div><!-- col-left -->
-    </div><!-- print-header -->
-    <div class="print-page-title d-flex align-items-center justify-content-center p-2">
-      <span class="d-flex align-items-center justify-content-center fw-bold px-4 py-2">عــقــد تآجــيــر سيـــارة</span>
-    </div><!-- print-page-title -->
-    <div class="p-2 d-flex flex-column gap-2">
+  <div id="contracts-print-page" class="min-vh-100 bg-white d-flex flex-column">
+    <div class="page-header flex-shrink-0">
+      <div class="print-header d-flex justify-content-between">
+        <div class="col-right d-flex flex-column gap-1 p-2">
+          <h6 class="d-block m-0">اسم السجل التجاري</h6>
+          <h6 class="d-block mb-1">س.ت : 335346</h6>
+          <span class="d-flex align-items-center justify-content-start gap-2 text-body fw-medium"><i class="ti ti-xs ti-phone"></i> 99887766 - 99887766</span>
+          <span class="d-flex align-items-center justify-content-start gap-2 text-body fw-medium"><i class="ti ti-xs ti-mailbox"></i> 1984</span>
+          <span class="d-flex align-items-center justify-content-start gap-2 text-body fw-medium"><i class="ti ti-xs ti-map-pin"></i> صلاله - 211 - سلطنة عمان</span>
+        </div><!-- col-right -->
+        <div class="col-center align-self-stretch d-flex align-items-center justify-content-center flex-column gap-2 p-2">
+          <img src="https://shasha.test/wp-content/themes/Shasha_2023/website/resources/images/logo.webp" alt="" class="mw-100 h-auto w-auto">
+          <h4 class="d-block text-dark fw-bold m-0 text-center text-nowrap">شركة الآمانة لتآجير السيارات</h4>
+        </div><!-- col-right -->
+        <div class="col-left d-flex flex-column align-items-end gap-2 p-2">
+          <div class="contarct-number fw-bold fs-5">رقم العقد : #4563</div>
+          <div class="contarct-date d-block">بتاريخ : 12-12-2024</div>
+          <div class="contarct-date d-block">الفرع : فرع الواحة</div>
+        </div><!-- col-left -->
+      </div><!-- print-header -->
+      <div class="print-page-title d-flex align-items-center justify-content-center p-2">
+        <span class="d-flex align-items-center justify-content-center fw-bold px-4 py-2">عــقــد تآجــيــر سيـــارة</span>
+      </div><!-- print-page-title -->
+    </div><!-- page-header -->
+    <div class="page-content flex-grow-1 p-2 d-flex flex-column gap-2">
       <table class="table table-bordered">
         <thead>
           <tr>
@@ -107,7 +128,7 @@
       </table>
       <div class="row row-cols-2 g-2">
         <div class="col">
-          <table class="table table-bordered">
+          <table class="table table-bordered h-100">
             <thead>
               <tr>
                 <th class="text-center fw-bold text-capitalize p-2">بيانات السيارة</th>
@@ -160,50 +181,40 @@
           </table><!-- table -->
         </div><!-- col -->
         <div class="col">
-          <table class="table table-bordered">
+          <table class="table table-bordered h-100">
             <thead>
               <tr>
-                <th class="text-center fw-bold text-capitalize p-2">مدة التآجير</th>
+                <th class="text-center fw-bold text-capitalize p-2">حالة السيارة</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td class="p-2 align-top">
                   <div class="d-flex flex-column gap-2">
+                    <div class="item d-flex align-items-start justify-content-between gap-2">
+                      <span class="d-block fw-medium flex-shrink-0">حالة الوقود :</span>
+                      <div class="oil-status d-flex flex-grow-1 align-items-center justify-content-start gap-4">
+                        <div class="slider-size flex-grow-1">
+                          <div id="slider-pips"></div>
+                        </div><!-- slider-size -->
+                      </div><!-- oil-status -->
+                    </div><!-- item -->
                     <div class="item d-flex align-items-center justify-content-between gap-2">
-                      <span class="d-block fw-medium flex-shrink-0">من :</span>
+                      <span class="d-block fw-medium flex-shrink-0">حالة النظافة :</span>
                       <b class="d-block flex-grow-1 align-self-stretch position-relative">
-                        <p class="d-block m-0 position-relative z-1">16-02-2024</p>
+                        <p class="d-block m-0 position-relative z-1">نظيفة</p>
                       </b>
                     </div><!-- item -->
                     <div class="item d-flex align-items-center justify-content-between gap-2">
-                      <span class="d-block fw-medium flex-shrink-0">إلي :</span>
+                      <span class="d-block fw-medium flex-shrink-0"> :</span>
                       <b class="d-block flex-grow-1 align-self-stretch position-relative">
-                        <p class="d-block m-0 position-relative z-1">25-02-2024</p>
+                        <p class="d-block m-0 position-relative z-1"></p>
                       </b>
                     </div><!-- item -->
                     <div class="item d-flex align-items-center justify-content-between gap-2">
-                      <span class="d-block fw-medium flex-shrink-0">عدد الآيام :</span>
+                      <span class="d-block fw-medium flex-shrink-0"> :</span>
                       <b class="d-block flex-grow-1 align-self-stretch position-relative">
-                        <p class="d-block m-0 position-relative z-1">6 يوم</p>
-                      </b>
-                    </div><!-- item -->
-                    <div class="item d-flex align-items-center justify-content-between gap-2">
-                      <span class="d-block fw-medium flex-shrink-0">تاريخ المغادرة :</span>
-                      <b class="d-block flex-grow-1 align-self-stretch position-relative">
-                        <p class="d-block m-0 position-relative z-1" dir="ltr">12-12-2024 12:32 PM</p>
-                      </b>
-                    </div><!-- item -->
-                    <div class="item d-flex align-items-center justify-content-between gap-2">
-                      <span class="d-block fw-medium flex-shrink-0">تاريخ العودة :</span>
-                      <b class="d-block flex-grow-1 align-self-stretch position-relative">
-                        <p class="d-block m-0 position-relative z-1" dir="ltr">23-12-2024 10:32 AM</p>
-                      </b>
-                    </div><!-- item -->
-                    <div class="item d-flex align-items-center justify-content-between gap-2">
-                      <span class="d-block fw-medium flex-shrink-0">الكيلو متر عند المغادرة :</span>
-                      <b class="d-block flex-grow-1 align-self-stretch position-relative">
-                        <p class="d-block m-0 position-relative z-1" dir="ltr">2345 K.M</p>
+                        <p class="d-block m-0 position-relative z-1"></p>
                       </b>
                     </div><!-- item -->
                   </div><!-- d-flex -->
@@ -213,56 +224,176 @@
           </table><!-- table -->
         </div><!-- col -->
       </div><!-- row -->
+
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th class="text-center fw-bold text-capitalize p-2">حالة السيارة</th>
+            <th colspan="3" class="text-center fw-bold text-capitalize p-2">مدة الإيجار</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="p-2 align-top">
+            <td width="33.333%" class="p-2 align-center">
+              <div class="item d-flex align-items-center justify-content-between gap-2">
+                <span class="d-block fw-medium flex-shrink-0">من :</span>
+                <b class="d-block flex-grow-1 align-self-stretch position-relative">
+                  <p class="d-block m-0 position-relative z-1" dir="ltr">12-12-2024</p>
+                </b>
+              </div><!-- item -->
+            </td>
+            <td width="33.333%" class="p-2 align-center">
+              <div class="item d-flex align-items-center justify-content-between gap-2">
+                <span class="d-block fw-medium flex-shrink-0">إلي :</span>
+                <b class="d-block flex-grow-1 align-self-stretch position-relative">
+                  <p class="d-block m-0 position-relative z-1" dir="ltr">12-12-2024</p>
+                </b>
+              </div><!-- item -->
+            </td>
+            <td width="33.333%" class="p-2 align-center">
+              <div class="item d-flex align-items-center justify-content-between gap-2">
+                <span class="d-block fw-medium flex-shrink-0">عدد الايام :</span>
+                <b class="d-block flex-grow-1 align-self-stretch position-relative">
+                  <p class="d-block m-0 position-relative z-1">5 يوم</p>
+                </b>
+              </div><!-- item -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th colspan="2" class="text-center fw-bold text-capitalize p-2">تفاصيل الإيجار</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td width="50%" class="p-2 align-top">
               <div class="d-flex flex-column gap-2">
-                <div class="item d-flex align-items-start justify-content-between gap-2">
-                  <span class="d-block fw-medium flex-shrink-0">حالة الوقود :</span>
-                  <div class="oil-status d-flex flex-grow-1 align-items-center justify-content-start gap-4 mb-4">
-                    <div id="slider-pips" class="flex-grow-1"></div>
-                    <span class="d-block flex-shrink-0">4353 كم</span>
-                  </div><!-- oil-status -->
-                </div><!-- item -->
                 <div class="item d-flex align-items-center justify-content-between gap-2">
-                  <span class="d-block fw-medium flex-shrink-0"> :</span>
+                  <span class="d-block fw-medium flex-shrink-0">تاريخ المغادرة :</span>
                   <b class="d-block flex-grow-1 align-self-stretch position-relative">
-                    <p class="d-block m-0 position-relative z-1"></p>
+                    <p class="d-block m-0 position-relative z-1" dir="ltr">12-12-2024</p>
                   </b>
                 </div><!-- item -->
                 <div class="item d-flex align-items-center justify-content-between gap-2">
-                  <span class="d-block fw-medium flex-shrink-0"> :</span>
+                  <span class="d-block fw-medium flex-shrink-0">وقت المغادرة :</span>
                   <b class="d-block flex-grow-1 align-self-stretch position-relative">
-                    <p class="d-block m-0 position-relative z-1"></p>
+                    <p class="d-block m-0 position-relative z-1" dir="ltr">12:32 PM</p>
                   </b>
                 </div><!-- item -->
                 <div class="item d-flex align-items-center justify-content-between gap-2">
-                  <span class="d-block fw-medium flex-shrink-0"> :</span>
+                  <span class="d-block fw-medium flex-shrink-0">الكيلو متر عند المغادرة :</span>
                   <b class="d-block flex-grow-1 align-self-stretch position-relative">
-                    <p class="d-block m-0 position-relative z-1"></p>
+                    <p class="d-flex align-items-center justify-content-start gap-1 m-0 position-relative z-1">34343 <small>كم</small></p>
+                  </b>
+                </div><!-- item -->
+                <div class="item d-flex align-items-center justify-content-between gap-2">
+                  <span class="d-block fw-medium flex-shrink-0">مكان المغادرة :</span>
+                  <b class="d-block flex-grow-1 align-self-stretch position-relative">
+                    <p class="d-block gap-1 m-0 position-relative z-1">المطار</p>
+                  </b>
+                </div><!-- item -->
+              </div><!-- d-flex -->
+            </td>
+            <td width="50%" class="p-2 align-top">
+              <div class="d-flex flex-column gap-2">
+                <div class="item d-flex align-items-center justify-content-between gap-2">
+                  <span class="d-block fw-medium flex-shrink-0">تاريخ العودة :</span>
+                  <b class="d-block flex-grow-1 align-self-stretch position-relative">
+                    <p class="d-block m-0 position-relative z-1" dir="ltr">12-12-2024</p>
+                  </b>
+                </div><!-- item -->
+                <div class="item d-flex align-items-center justify-content-between gap-2">
+                  <span class="d-block fw-medium flex-shrink-0">وقت العودة :</span>
+                  <b class="d-block flex-grow-1 align-self-stretch position-relative">
+                    <p class="d-block m-0 position-relative z-1" dir="ltr">12:32 PM</p>
+                  </b>
+                </div><!-- item -->
+                <div class="item d-flex align-items-center justify-content-between gap-2">
+                  <span class="d-block fw-medium flex-shrink-0">مكان العودة :</span>
+                  <b class="d-block flex-grow-1 align-self-stretch position-relative">
+                    <p class="d-block gap-1 m-0 position-relative z-1">الفرع</p>
+                  </b>
+                </div><!-- item -->
+                <div class="item d-flex align-items-center justify-content-between gap-2">
+                  <span class="d-block fw-medium flex-shrink-0">إجمالي الكيلو متر المسموح :</span>
+                  <b class="d-block flex-grow-1 align-self-stretch position-relative">
+                    <p class="d-flex align-items-center justify-content-start gap-1 m-0 position-relative z-1">500 <small>كم</small></p>
                   </b>
                 </div><!-- item -->
               </div><!-- d-flex -->
             </td>
           </tr>
         </tbody>
-      </table><!-- table -->
+      </table>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th class="text-center fw-bold text-capitalize p-2">الفاتورة</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td width="50%" class="p-2 align-top">
+              <div class="d-flex flex-column gap-2">
+                <div class="item d-flex align-items-center justify-content-between gap-2">
+                  <span class="d-block fw-medium flex-shrink-0">سعر الإيجار اليومي :</span>
+                  <b class="d-block flex-grow-1 align-self-stretch position-relative">
+                    <p class="d-flex align-items-center justify-content-start gap-1 m-0 position-relative z-1">10 <small>ريال</small></p>
+                  </b>
+                </div><!-- item -->
+                <div class="item d-flex align-items-center justify-content-between gap-2">
+                  <span class="d-block fw-medium flex-shrink-0">المبلغ المدفوع مقدماً :</span>
+                  <b class="d-block flex-grow-1 align-self-stretch position-relative">
+                    <p class="d-flex align-items-center justify-content-start gap-1 m-0 position-relative z-1">10 <small>ريال</small></p>
+                  </b>
+                </div><!-- item -->
+                <div class="item d-flex align-items-center justify-content-between gap-2">
+                  <span class="d-block fw-medium flex-shrink-0">المبلغ المتبقي :</span>
+                  <b class="d-block flex-grow-1 align-self-stretch position-relative">
+                    <p class="d-flex align-items-center justify-content-start gap-1 m-0 position-relative z-1">5 <small>ريال</small></p>
+                  </b>
+                </div><!-- item -->
+                <div class="item d-flex align-items-center justify-content-between gap-2">
+                  <span class="d-block fw-medium flex-shrink-0">تكلفة خدمة التوصيل :</span>
+                  <b class="d-block flex-grow-1 align-self-stretch position-relative">
+                    <p class="d-flex align-items-center justify-content-start gap-1 m-0 position-relative z-1">3 <small>ريال</small></p>
+                  </b>
+                </div><!-- item -->
+                <div class="item d-flex align-items-center justify-content-between gap-2">
+                  <span class="d-block fw-medium flex-shrink-0">خصم :</span>
+                  <b class="d-block flex-grow-1 align-self-stretch position-relative">
+                    <p class="d-flex align-items-center justify-content-start gap-1 m-0 position-relative z-1">- 2 <small>ريال</small></p>
+                  </b>
+                </div><!-- item -->
+                <div class="item d-flex align-items-center justify-content-between gap-2">
+                  <span class="d-block fw-medium flex-shrink-0">إجمالي المبلغ :</span>
+                  <b class="d-block flex-grow-1 align-self-stretch position-relative">
+                    <p class="d-flex align-items-center justify-content-start gap-1 m-0 position-relative z-1">456 <small>ريال</small></p>
+                  </b>
+                </div><!-- item -->
+              </div><!-- d-flex -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
     </div><!-- p-2 -->
+    <div class="print-footer flex-shrink-0 p-2">
+    dfdfsd
+    </div><!-- print-footer -->
   </div><!-- contracts-print-page -->
 @endsection
 
 @push('scripts')
 <script type="text/javascript" src="{{ asset('assets/vendor/libs/nouislider/nouislider.js') }}"></script>
   <script type="text/javascript">
-    window.onload = function() {
-            window.print(); // Automatically open the print dialog when the page is loaded
-        };
+    // window.onload = function() {
+    //   window.print(); // Automatically open the print dialog when the page is loaded
+    // };
 
 
     'use strict';

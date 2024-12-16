@@ -160,6 +160,45 @@
         </div><!-- row -->
         <hr class="my-3">
         <div class="row align-items-center">
+          <label class="col-sm-2 col-form-label fw-medium" for="car-meter-type">نوع العداد</label>
+          <div class="col-12 col-sm-10">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="row row-cols-2 g-1 g-md-3">
+                  <div class="col">
+                    <div class="form-check custom-option custom-option-basic m-0">
+                      <label class="form-check-label custom-option-content py-2" for="contract-car-cleanliness-status-yes">
+                        <input
+                          name="contract-car-cleanliness-status"
+                          class="form-check-input"
+                          type="radio"
+                          id="contract-car-cleanliness-status-yes"
+                          checked
+                        />
+                        <span class="custom-option-header p-0">كيلو متر</span>
+                      </label>
+                    </div><!-- form-check -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="form-check custom-option custom-option-basic m-0">
+                      <label class="form-check-label custom-option-content py-2" for="contract-car-cleanliness-status-no">
+                        <input
+                          name="contract-car-cleanliness-status"
+                          class="form-check-input"
+                          type="radio"
+                          id="contract-car-cleanliness-status-no"
+                        />
+                        <span class="custom-option-header p-0">ميل</span>
+                      </label>
+                    </div><!-- form-check -->
+                  </div><!-- col -->
+                </div><!-- row -->
+              </div><!-- col-12 -->
+            </div><!-- row -->
+          </div><!-- col-12 -->
+        </div><!-- row -->
+        <hr class="my-3">
+        <div class="row align-items-center">
           <label class="col-sm-2 col-form-label fw-medium" for="car-insurance-company">شركة التآمين</label>
           <div class="col-12 col-sm-10">
             <div class="row">
@@ -307,82 +346,6 @@
           </div><!-- col-12 -->
         </div><!-- row -->
       </div><!-- card-body -->
-    </div><!-- card -->
-
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-4">
-      <div class="d-flex flex-column justify-content-center">
-        <h4 class="m-0">الصيانة الدورية</h4>
-      </div>
-    </div><!-- d-flex -->
-
-    <div class="card mb-4">
-      <div class="card-body p-3">
-        <div class="row align-items-center">
-          <label class="col-sm-2 col-form-label fw-medium" for="color-oil-type">نوع الزيت</label>
-          <div class="col-12 col-sm-10">
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <select id="car-oil-type" class="select2-color-car form-select" data-allow-clear="false" data-placeholder="اختر">
-                  <option></option>
-                  <option value="red" data-class="car-red">احمر</option>
-                  <option value="white" data-class="car-white">ابيض</option>
-                  <option value="blue" data-class="car-blue">ازرق</option>
-                  <option value="gray" data-class="car-gray">رمادي</option>
-                  <option value="maroon" data-class="car-maroon">عنابي</option>
-                  <option value="yellow" data-class="car-yellow">اصفر</option>
-                  <option value="black" data-class="car-black">اسود</option>
-                </select>
-              </div><!-- col-12 -->
-            </div><!-- row -->
-          </div><!-- col-12 -->
-          </div><!-- row -->
-          <hr class="my-3">
-          <div class="row align-items-center">
-            <label class="col-sm-2 col-form-label fw-medium" for="car-gps-service-provider">فاصل الكيلو متر</label>
-            <div class="col-12 col-sm-10">
-              <div class="row">
-                <div class="col-12 col-md-6">
-                  <div class="input-group">
-                    <input type="number" class="form-control">
-                    <span class="input-group-text">كم</span>
-                  </div><!-- input-group -->
-                </div><!-- col-12 -->
-              </div><!-- row -->
-            </div><!-- col-12 -->
-          </div><!-- row -->
-          <hr class="my-3">
-          <div class="row align-items-center">
-            <label class="col-sm-2 col-form-label fw-medium" for="car-gps-service-provider">آخر صيانة</label>
-            <div class="col-12 col-sm-10">
-              <div class="row g-3">
-                <div class="col-12 col-md-6">
-                  <div class="input-group">
-                    <input type="number" class="form-control">
-                    <span class="input-group-text">كم</span>
-                  </div><!-- input-group -->
-                </div><!-- col-12 -->
-                <div class="col-12 col-md-6">
-                  <input class="form-control" type="date" id="html5-date-input" />
-                </div><!-- col-12 -->
-              </div><!-- row -->
-            </div><!-- col-12 -->
-          </div><!-- row -->
-          <hr class="my-3">
-          <div class="row align-items-center">
-            <label class="col-sm-2 col-form-label fw-medium" for="car-gps-service-provider">الكيلو متر الحالي</label>
-            <div class="col-12 col-sm-10">
-              <div class="row g-3">
-                <div class="col-12 col-md-6">
-                  <div class="input-group">
-                    <input type="number" class="form-control">
-                    <span class="input-group-text">كم</span>
-                  </div><!-- input-group -->
-                </div><!-- col-12 -->
-              </div><!-- row -->
-            </div><!-- col-12 -->
-          </div><!-- row -->
-        </form>
-      </div>
     </div><!-- card -->
 
     <div class="button-area d-flex align-items-center justify-content-end">

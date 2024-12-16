@@ -14,8 +14,7 @@
         <h4 class="m-0">تفاصيل عقد : 9408</h4>
       </div>
       <div class="d-flex align-content-center flex-wrap gap-2 flex-shrink-0">
-      <a href="{{ url('/contracts/print') }}" class="btn btn-primary">Print</a>
-
+        <a href="{{ url('/contracts/print') }}" class="btn btn-primary">Print</a>
         <a href="{{ url('/contracts/{id}/edit') }}" class="btn btn-icon btn-label-info waves-effect"><span class="ti ti-pencil"></span></a>
       </div>
     </div>
@@ -156,7 +155,7 @@
             <div class="card-body p-3">
               <ul class="d-flex flex-column gap-2 m-0 p-0 list-unstyled">
                 <li class="d-flex align-items-center justify-content-between">
-                  <span>مدة الحجر :</span>
+                  <span>مدة الإيجار :</span>
                   <p class="m-0">4 <small>ايام</small></p>
                 </li>
                 <li class="d-flex align-items-center justify-content-between">
@@ -164,8 +163,8 @@
                   <p class="m-0">123 <small>ريال</small></p>
                 </li>
                 <li class="d-flex align-items-center justify-content-between">
-                  <span>سعر الحجز :</span>
-                  <p class="m-0">453 <small>ريال</small></p>
+                  <span>القيمة المضافة <small>(2%)</small> :</span>
+                  <p class="m-0">2 <small>ريال</small></p>
                 </li>
                 <li class="d-flex align-items-center justify-content-between">
                   <span>تكلفة خدمة التوصيل :</span>
@@ -183,7 +182,7 @@
               </div>
             </div><!-- card-body -->
           </div><!-- card -->
-          <button type="button" class="btn btn-success waves-effect waves-light w-100 mt-3" data-bs-toggle="modal" data-bs-target="#contractConfirmationModal">إنهاء العقد</button>
+          <a href="{{ url('/contracts/{id}/confirmation') }}" class="btn btn-success waves-effect waves-light w-100 mt-3">إنهاء العقد</a>
           <button type="button" class="btn btn-danger waves-effect waves-light w-100 mt-3" data-bs-toggle="modal" data-bs-target="#contractCancelModal">إلغاء العقد</button>
         </div><!-- reservation-cart-side -->
       </div><!-- col-12 -->
@@ -226,17 +225,17 @@
             </div><!-- row -->
             <hr class="my-3">
             <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label required" for="car-number">حالة النظافة</label>
+              <label class="col-sm-3 col-form-label required" for="contract-car-cleanliness-status">حالة النظافة</label>
               <div class="col-12 col-sm-9">
                 <div class="row row-cols-2 g-1 g-md-3">
                   <div class="col">
                     <div class="form-check custom-option custom-option-basic m-0">
-                      <label class="form-check-label custom-option-content py-2" for="contract-cleanliness-yes">
+                      <label class="form-check-label custom-option-content py-2" for="contract-car-cleanliness-status-yes">
                         <input
-                          name="contract-cleanliness-status"
+                          name="contract-car-cleanliness-status"
                           class="form-check-input"
                           type="radio"
-                          id="contract-cleanliness-yes"
+                          id="contract-car-cleanliness-status-yes"
                           checked
                         />
                         <span class="custom-option-header p-0">نظيفة</span>
@@ -245,12 +244,12 @@
                   </div><!-- col -->
                   <div class="col">
                     <div class="form-check custom-option custom-option-basic m-0">
-                      <label class="form-check-label custom-option-content py-2" for="contract-cleanliness-no">
+                      <label class="form-check-label custom-option-content py-2" for="contract-car-cleanliness-status-no">
                         <input
-                          name="contract-cleanliness-status"
+                          name="contract-car-cleanliness-status"
                           class="form-check-input"
                           type="radio"
-                          id="contract-cleanliness-no"
+                          id="contract-car-cleanliness-status-no"
                         />
                         <span class="custom-option-header p-0">غير نظيفة</span>
                       </label>
@@ -259,6 +258,18 @@
                 </div><!-- row -->
               </div><!-- col-12 -->
             </div><!-- row -->
+            <div id="contract-car-cleanliness-status-no-element" style="display: none;">
+              <hr class="my-3">
+              <div class="row align-items-center">
+                <label class="col-sm-3 col-form-label" for="car-number">تكلفة غسيل</label>
+                <div class="col-12 col-sm-9">
+                  <div class="input-group">
+                    <input type="number" inputmode="numeric" id="oil-status" class="form-control">
+                    <span class="input-group-text">ريال</span>
+                  </div><!-- input-group -->
+                </div><!-- col-12 -->
+              </div><!-- row -->
+            </div><!-- contract-car-cleanliness-status-no-element -->
             <hr class="my-3">
             <div class="row align-items-center">
               <label class="col-sm-3 col-form-label required" for="car-number">زيادة الكيلو متر</label>
@@ -271,27 +282,7 @@
             </div><!-- row -->
             <hr class="my-3">
             <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label" for="car-number">مواقف مطار</label>
-              <div class="col-12 col-sm-9">
-                <div class="input-group">
-                  <input type="number" inputmode="numeric" id="oil-status" class="form-control">
-                  <span class="input-group-text">ريال</span>
-                </div><!-- input-group -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-            <hr class="my-3">
-            <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label" for="car-number">غسيل</label>
-              <div class="col-12 col-sm-9">
-                <div class="input-group">
-                  <input type="number" inputmode="numeric" id="oil-status" class="form-control">
-                  <span class="input-group-text">ريال</span>
-                </div><!-- input-group -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-            <hr class="my-3">
-            <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label" for="car-number">تصليح</label>
+              <label class="col-sm-3 col-form-label" for="car-number">فرق بترول</label>
               <div class="col-12 col-sm-9">
                 <div class="input-group">
                   <input type="number" inputmode="numeric" id="oil-status" class="form-control">
@@ -443,5 +434,20 @@
       }
 
     })();
+
+
+
+
+    $(document).ready(function () {
+      function toggleCostElement() {
+        if ($('#contract-car-cleanliness-status-no').is(':checked')) {
+          $('#contract-car-cleanliness-status-no-element').show(); // Show the cost element
+        } else {
+          $('#contract-car-cleanliness-status-no-element').hide(); // Hide the cost element
+        }
+      }
+      $('input[name="contract-car-cleanliness-status"]').change(toggleCostElement);
+      toggleCostElement();
+    });
   </script>
 @endpush
