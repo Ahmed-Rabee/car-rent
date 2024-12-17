@@ -384,6 +384,9 @@ ul#select2-car-color-results {
 #contracts-print-page {
   color: #000000;
   max-width: 210mm;
+  @media print {
+    max-width: 100%;
+  }
   .print-header {
     .col-right, .col-left {
       width: 40%;
@@ -417,6 +420,19 @@ ul#select2-car-color-results {
     td {
       color: #000000;
       font-size: 0.6375rem;
+      .item-with-dots {
+        b {
+          &::before {
+            content: "";
+            position: absolute;
+            inset-inline: 0;
+            width: 100%;
+            height: 2px;
+            border-bottom: 1px dashed #bbb;
+            inset-block-end: 5px;
+          } // before
+        } // b
+      } // item
       small {
         font-size: 0.5375rem;
       } // small
@@ -428,14 +444,32 @@ ul#select2-car-color-results {
     } // td
   } // table
   .print-page-content {
+    .slider-size {
+      min-height: 35px;
+      padding-block-start: 5px;
+      padding-inline: .25rem;
+    } // slider-size
+    .noUi-connect {
+      background-color: #000 !important;
+    } // noUi-connect
     .noUi-handle {
       border-radius: 0;
       width: 3px;
       border: none;
-      background-color: #93909d !important;
+      background-color: #000000 !important;
       box-shadow: none;
       inset-inline-start: -2px;
     } // noUi-handle
+    .noUi-pips-horizontal {
+      padding-block-start: .25rem;
+      .noUi-marker {
+        background-color: #000000;
+      } // noUi-marker
+      .noUi-value {
+        color: #000000;
+        padding: 0;
+      } // noUi-marker
+    } // noUi-pips-horizontal
   } // print-page-content
   .print-footer {
     .top-area {
@@ -450,6 +484,7 @@ ul#select2-car-color-results {
       } // ul
     } // top-area
     .bottom-area {
+      border: 1px solid #000000;
       .bottom-area-title {
         div {
           border: 1px solid;

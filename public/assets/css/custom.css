@@ -360,6 +360,11 @@ ul#select2-car-color-results li.select2-results__option .car-class-option .color
   color: #000000;
   max-width: 210mm;
 }
+@media print {
+  #contracts-print-page {
+    max-width: 100%;
+  }
+}
 #contracts-print-page .print-header .col-right, #contracts-print-page .print-header .col-left {
   width: 40%;
   font-size: 0.6375rem;
@@ -391,19 +396,46 @@ ul#select2-car-color-results li.select2-results__option .car-class-option .color
   color: #000000;
   font-size: 0.6375rem;
 }
+#contracts-print-page table td .item-with-dots b::before {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  width: 100%;
+  height: 2px;
+  border-bottom: 1px dashed #bbb;
+  inset-block-end: 5px;
+}
 #contracts-print-page table td small {
   font-size: 0.5375rem;
 }
 #contracts-print-page table td .imgthumb img {
   max-height: 150px;
 }
+#contracts-print-page .print-page-content .slider-size {
+  min-height: 35px;
+  padding-block-start: 5px;
+  padding-inline: 0.25rem;
+}
+#contracts-print-page .print-page-content .noUi-connect {
+  background-color: #000 !important;
+}
 #contracts-print-page .print-page-content .noUi-handle {
   border-radius: 0;
   width: 3px;
   border: none;
-  background-color: #93909d !important;
+  background-color: #000000 !important;
   box-shadow: none;
   inset-inline-start: -2px;
+}
+#contracts-print-page .print-page-content .noUi-pips-horizontal {
+  padding-block-start: 0.25rem;
+}
+#contracts-print-page .print-page-content .noUi-pips-horizontal .noUi-marker {
+  background-color: #000000;
+}
+#contracts-print-page .print-page-content .noUi-pips-horizontal .noUi-value {
+  color: #000000;
+  padding: 0;
 }
 #contracts-print-page .print-footer .top-area ul {
   display: grid;
@@ -413,6 +445,9 @@ ul#select2-car-color-results li.select2-results__option .car-class-option .color
 }
 #contracts-print-page .print-footer .top-area ul li {
   font-size: 0.6375rem;
+}
+#contracts-print-page .print-footer .bottom-area {
+  border: 1px solid #000000;
 }
 #contracts-print-page .print-footer .bottom-area .bottom-area-title div {
   border: 1px solid;

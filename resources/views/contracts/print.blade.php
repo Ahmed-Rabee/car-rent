@@ -22,7 +22,7 @@
 @endpush
 
 @section('content')
-  <div id="contracts-print-page" class="min-vh-100 bg-white d-flex flex-column p-2 mx-auto">
+  <div id="contracts-print-page" class="min-vh-100 bg-white d-flex flex-column p-2 overflow-hidden mx-auto">
     <div class="page-header flex-shrink-0">
       <div class="print-header d-flex justify-content-between">
         <div class="col-right d-flex flex-column gap-1">
@@ -327,18 +327,20 @@
           <table class="table table-bordered">
             <tbody>
               <tr>
-                <td class="p-1 align-top">
-                  <div class="d-flex flex-column gap-1">
-                    <div class="item d-flex align-items-center justify-content-between gap-2">
+                <td class="py-2 px-1 align-top">
+                  <div class="d-flex flex-column gap-2">
+                    <div class="item-with-dots d-flex align-items-center justify-content-between gap-2">
                       <div class="d-block flex-shrink-0">تاريخ العودة :</div>
-                      <b class="d-block flex-grow-1" dir="ltr"></b>
-                    </div><!-- item -->
-                    <div class="item d-flex align-items-center justify-content-between gap-2">
+                      <b class="d-block flex-grow-1 align-self-stretch position-relative">
+                        <b class="d-block flex-grow-1" dir="ltr"></b>
+                      </b>
+                    </div><!-- item-with-dots -->
+                    <div class="item-with-dots d-flex align-items-center justify-content-between gap-2">
                       <div class="d-block flex-shrink-0">وقت العودة :</div>
                       <b class="d-block flex-grow-1 align-self-stretch position-relative">
-                      <b class="d-block flex-grow-1" dir="ltr"></b>
+                        <b class="d-block flex-grow-1" dir="ltr"></b>
                       </b>
-                    </div><!-- item -->
+                    </div><!-- item-with-dots -->
                     <div class="item d-flex align-items-center justify-content-between gap-2">
                       <div class="d-block flex-shrink-0">مكان العودة :</div>
                       <b class="d-block flex-grow-1">الفرع</b>
@@ -379,7 +381,7 @@
           <li>لا تستلم السيارة بدون مفتاح</li>
         </ul>
       </div><!-- top-area -->
-      <div class="bottom-area border-top pt-2">
+      <div class="bottom-area p-1">
         <div class="bottom-area-title d-flex align-items-center justify-content-center mb-2">
           <div class="d-flex align-items-center justify-content-center fw-bold px-4 py-2">إقرار وتعهد من المستأجر</div>
         </div><!-- bottom-area-title -->
@@ -387,16 +389,16 @@
           هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها.
         </div><!-- bottom-area-content -->
         <div class="txt text-center mt-2 fw-bold">أقر أنا المستأجر بأن بياناتي وعنواني صحيحة وأتحمل كامل المسئولية الناتجة عن أي خطأ في ذلك</div>
-        <div class="signature-area d-flex align-items-center justify-content-end mt-2">
+        <div class="signature-area d-flex align-items-center justify-content-end mt-3 pb-3">
           <div class="item d-flex align-items-center justify-content-between gap-2">
             <span class="d-block fw-medium flex-shrink-0">توقيع المستأجر :</span>
             <b class="d-block flex-grow-1 align-self-stretch position-relative"></b>
           </div><!-- item -->
         </div><!-- signature-area -->
       </div><!-- bottom-area -->
-      <div class="signature-users border-top pt-2 mt-2">
+      <div class="signature-users pt-2 pb-2">
         <div class="row align-items-center justify-content-between">
-          <div class="col-5 d-flex flex-column gap-2">
+          <div class="col-5 d-flex flex-column gap-3">
             <div class="item d-flex align-items-center justify-content-between gap-2">
               <span class="d-block fw-medium flex-shrink-0">توقيع المسؤول عند المغادرة :</span>
               <b class="d-block flex-grow-1 align-self-stretch position-relative"></b>
@@ -406,7 +408,7 @@
               <b class="d-block flex-grow-1 align-self-stretch position-relative"></b>
             </div><!-- item -->
           </div><!-- col -->
-          <div class="col-5 d-flex flex-column gap-2">
+          <div class="col-5 d-flex flex-column gap-3">
             <div class="item d-flex align-items-center justify-content-between gap-2">
               <span class="d-block fw-medium flex-shrink-0">توقيع المستاجر عند المغارة :</span>
               <b class="d-block flex-grow-1 align-self-stretch position-relative"></b>
