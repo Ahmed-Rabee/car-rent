@@ -358,56 +358,76 @@ ul#select2-car-color-results li.select2-results__option .car-class-option .color
 
 #contracts-print-page {
   color: #000000;
-  max-width: 72%;
+  max-width: 210mm;
 }
 #contracts-print-page .print-header .col-right, #contracts-print-page .print-header .col-left {
   width: 40%;
-  font-size: 13px;
+  font-size: 0.6375rem;
 }
 #contracts-print-page .print-header .col-center {
   width: 20%;
 }
 #contracts-print-page .print-header .col-center img {
-  max-height: 70px;
+  max-height: 50px;
+}
+#contracts-print-page .print-header .col-center div {
+  font-size: 0.7375rem;
 }
 #contracts-print-page .print-page-title div {
   border: 1px solid;
-  font-size: 0.9375rem;
+  font-size: 0.7375rem;
 }
 #contracts-print-page table {
   border-color: #000000;
 }
 #contracts-print-page table th {
   color: #000000;
-  font-size: 13px;
+  font-size: 0.6375rem;
+}
+#contracts-print-page table th small {
+  font-size: 0.5375rem;
 }
 #contracts-print-page table td {
   color: #000000;
-  font-size: 13px;
+  font-size: 0.6375rem;
+}
+#contracts-print-page table td small {
+  font-size: 0.5375rem;
 }
 #contracts-print-page table td .imgthumb img {
-  max-height: 180px;
+  max-height: 150px;
 }
-#contracts-print-page .print-page-content {
-  border: 1px solid #000000;
-  font-size: 13px;
+#contracts-print-page .print-page-content .noUi-handle {
+  border-radius: 0;
+  width: 3px;
+  border: none;
+  background-color: #93909d !important;
+  box-shadow: none;
+  inset-inline-start: -2px;
 }
-#contracts-print-page .print-page-content .client-info {
-  border-bottom: 1px solid #000000;
+#contracts-print-page .print-footer .top-area ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.25rem;
+  list-style: inside;
 }
-#contracts-print-page .print-page-content .client-info .client-info-title {
-  border-block-end: 1px solid #000000;
-  color: #000000;
-  background-color: #fafafa;
+#contracts-print-page .print-footer .top-area ul li {
+  font-size: 0.6375rem;
 }
-#contracts-print-page .print-page-content .client-info .client-info-content .col-right {
-  width: 60%;
-  border-inline-end: 1px solid #000000;
+#contracts-print-page .print-footer .bottom-area .bottom-area-title div {
+  border: 1px solid;
+  font-size: 0.7375rem;
 }
-#contracts-print-page .print-page-content .client-info .client-info-content .col-left {
-  width: 40%;
+#contracts-print-page .print-footer .bottom-area .bottom-area-content {
+  font-size: 0.6375rem;
 }
-#contracts-print-page .print-page-content .client-info .client-info-content .item b::before {
+#contracts-print-page .print-footer .bottom-area .signature-area .item {
+  font-size: 0.7375rem;
+}
+#contracts-print-page .print-footer .bottom-area .signature-area .item b {
+  min-width: 200px;
+}
+#contracts-print-page .print-footer .bottom-area .signature-area .item b::before {
   content: "";
   position: absolute;
   inset-inline: 0;
@@ -416,35 +436,22 @@ ul#select2-car-color-results li.select2-results__option .car-class-option .color
   border-bottom: 1px dashed #bbb;
   inset-block-end: 5px;
 }
-#contracts-print-page .print-page-content .car-info .car-info-title {
-  border-block-end: 1px solid #000000;
-  color: #000000;
-  background-color: #fafafa;
+#contracts-print-page .print-footer .bottom-area .txt {
+  font-size: 0.7375rem;
+}
+#contracts-print-page .print-footer .signature-users .item {
+  font-size: 0.7375rem;
+}
+#contracts-print-page .print-footer .signature-users .item b::before {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  width: 100%;
+  height: 2px;
+  border-bottom: 1px dashed #bbb;
+  inset-block-end: 5px;
 }
 
-@media print {
-  #contracts-print-page {
-    max-width: 100%;
-  }
-  #contracts-print-page .print-header .col-right, #contracts-print-page .print-header .col-left {
-    font-size: 0.6375rem;
-  }
-  #contracts-print-page .print-page-title div {
-    font-size: 0.9375rem;
-  }
-  #contracts-print-page table th {
-    font-size: 0.6375rem;
-  }
-  #contracts-print-page table td {
-    font-size: 0.6375rem;
-  }
-  #contracts-print-page table td small {
-    font-size: 0.5375rem;
-  }
-  #contracts-print-page .print-page-content {
-    font-size: 0.6375rem;
-  }
-}
 .slider-size {
   min-height: 44px;
   padding-block-start: 5px;

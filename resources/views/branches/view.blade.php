@@ -47,6 +47,10 @@
                     <td class="p-3">14 ش محمد احمد - من ش المنتصر بالله - مدينة نصر - القاهرة</td>
                   </tr>
                   <tr>
+                    <td width="5%" class="p-3">رقم صندوق بريد</td>
+                    <td class="p-3">1234</td>
+                  </tr>
+                  <tr>
                     <td width="5%" class="p-3">ايام العطلات</td>
                     <td class="p-3">
                       <div class="d-flex justify-content-start flex-wrap gap-2">

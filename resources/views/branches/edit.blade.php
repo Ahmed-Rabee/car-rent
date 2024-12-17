@@ -40,6 +40,17 @@
         </div><!-- row -->
         <hr class="my-3">
         <div class="row align-items-center">
+          <label class="col-sm-2 col-form-label" for="branch-box-number">رقم صندوق بريد</label>
+          <div class="col-sm-10">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <input type="number" inputmode="numeric" class="form-control" id="branch-box-number" />
+              </div><!-- col-12 -->
+            </div><!-- row -->
+          </div><!-- col-12 -->
+        </div><!-- row -->
+        <hr class="my-3">
+        <div class="row align-items-center">
           <label class="col-sm-2 col-form-label" for="branch-holidays">ايام العطلات</label>
           <div class="col-sm-10">
             <div class="row">
