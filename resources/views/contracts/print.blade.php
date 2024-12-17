@@ -22,7 +22,7 @@
 @endpush
 
 @section('content')
-  <div id="contracts-print-page" class="min-vh-100 bg-white d-flex flex-column p-2">
+  <div id="contracts-print-page" class="min-vh-100 bg-white d-flex flex-column p-2 mx-auto">
     <div class="page-header flex-shrink-0">
       <div class="print-header d-flex justify-content-between">
         <div class="col-right d-flex flex-column gap-1">
@@ -149,35 +149,112 @@
           </table><!-- table -->
         </div><!-- col -->
         <div class="col">
-          <table class="table table-bordered h-100">
+          <table class="table table-bordered">
             <thead>
               <tr>
-                <th class="fw-bold text-capitalize p-2">حالة السيارة</th>
+                <th class="fw-bold text-capitalize p-2">الفاتورة</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td class="p-2 align-top">
-                  <div class="d-flex flex-column gap-1">
-                    <div class="item d-flex align-items-start justify-content-between gap-2">
-                      <div class="d-block flex-shrink-0">حالة الوقود :</div>
-                      <div class="oil-status d-flex flex-grow-1 align-items-center justify-content-start gap-4">
-                        <div class="slider-size flex-grow-1">
-                          <div id="slider-pips"></div>
-                        </div><!-- slider-size -->
-                      </div><!-- oil-status -->
-                    </div><!-- item -->
-                    <div class="item d-flex align-items-center justify-content-between gap-2">
-                      <div class="d-block flex-shrink-0">حالة النظافة :</div>
-                      <b class="d-block flex-grow-1">نظيفة</b>
-                    </div><!-- item -->
-                  </div><!-- d-flex -->
+                  <div class="row">
+                    <div class="col">
+                      <div class="d-flex flex-column gap-1">
+                        <div class="item d-flex align-items-center justify-content-between gap-2">
+                          <div class="d-block flex-shrink-0">سعر الإيجار اليومي :</div>
+                          <b class="d-flex align-items-center justify-content-start gap-1 flex-grow-1">100 <small>ريال</small></b>
+                        </div><!-- item -->
+                        <div class="item d-flex align-items-center justify-content-between gap-2">
+                          <div class="d-block flex-shrink-0">المبلغ المدفوع مقدماً :</div>
+                          <b class="d-flex align-items-center justify-content-start gap-1 flex-grow-1">100 <small>ريال</small></b>
+                        </div><!-- item -->
+                        <div class="item d-flex align-items-center justify-content-between gap-2">
+                          <div class="d-block flex-shrink-0">المبلغ المتبقي :</div>
+                          <b class="d-flex align-items-center justify-content-start gap-1 flex-grow-1">100 <small>ريال</small></b>
+                        </div><!-- item -->
+                        <div class="item d-flex align-items-center justify-content-between gap-2">
+                          <div class="d-block flex-shrink-0">تكلفة خدمة التوصيل :</div>
+                          <b class="d-flex align-items-center justify-content-start gap-1 flex-grow-1">100 <small>ريال</small></b>
+                        </div><!-- item -->
+                        <div class="item d-flex align-items-center justify-content-between gap-2">
+                          <div class="d-block flex-shrink-0">خصم :</div>
+                          <b class="d-flex align-items-center justify-content-start gap-1 flex-grow-1">- 100 <small>ريال</small></b>
+                        </div><!-- item -->
+                      </div><!-- d-flex -->
+                    </div><!-- col -->
+                    <div class="col">
+                      <div class="d-flex flex-column gap-1">
+                        <div class="item d-flex align-items-center justify-content-between gap-2">
+                          <div class="d-block flex-shrink-0">غسيل :</div>
+                          <b class="d-flex align-items-center justify-content-start gap-1 flex-grow-1">100 <small>ريال</small></b>
+                        </div><!-- item -->
+                        <div class="item d-flex align-items-center justify-content-between gap-2">
+                          <div class="d-block flex-shrink-0">كيلو متر زيادة :</div>
+                          <b class="d-flex align-items-center justify-content-start gap-1 flex-grow-1">100 <small>ريال</small></b>
+                        </div><!-- item -->
+                        <div class="item d-flex align-items-center justify-content-between gap-2">
+                          <div class="d-block flex-shrink-0">فرق بترول :</div>
+                          <b class="d-flex align-items-center justify-content-start gap-1 flex-grow-1">100 <small>ريال</small></b>
+                        </div><!-- item -->
+                        <div class="item d-flex align-items-center justify-content-between gap-2">
+                          <div class="d-block flex-shrink-0">خصم عند العودة :</div>
+                          <b class="d-flex align-items-center justify-content-start gap-1 flex-grow-1">- 100 <small>ريال</small></b>
+                        </div><!-- item -->
+                      </div><!-- d-flex -->
+                    </div><!-- col -->
+                  </div><!-- row -->
                 </td>
               </tr>
             </tbody>
-          </table><!-- table -->
+            <tfoot>
+              <tr>
+                <th class="fw-bold text-capitalize p-2">
+                  <div class="item d-flex align-items-center justify-content-between gap-2">
+                    <div class="d-block flex-shrink-0">إجمالي المبلغ :</div>
+                    <b class="d-block flex-grow-1 align-self-stretch position-relative">
+                      <p class="d-flex align-items-center justify-content-start gap-1 m-0 position-relative z-1">456 <small>ريال</small></p>
+                    </b>
+                  </div><!-- item -->
+                </th>
+              </tr>
+            </tfoot>
+          </table>
         </div><!-- col -->
       </div><!-- row -->
+
+      <table class="table table-bordered h-100">
+        <tbody>
+          <tr>
+            <td width="60%" class="p-2 align-middle">
+              <div class="d-flex flex-column gap-1">
+                <div class="item d-flex align-items-start justify-content-between gap-2">
+                  <div class="d-block flex-shrink-0">حالة الوقود :</div>
+                  <div class="oil-status d-flex flex-grow-1 align-items-center justify-content-start gap-4">
+                    <div class="slider-size flex-grow-1">
+                      <div id="slider-pips"></div>
+                    </div><!-- slider-size -->
+                  </div><!-- oil-status -->
+                </div><!-- item -->
+              </div><!-- d-flex -->
+            </td>
+            <td width="20%" class="p-2 align-middle">
+                <div class="item d-flex align-items-center justify-content-between gap-2">
+                  <div class="d-block flex-shrink-0">نوع الوقود :</div>
+                  <b class="d-block flex-grow-1">95</b>
+                </div><!-- item -->
+              </div><!-- d-flex -->
+            </td>
+            <td width="20%" class="p-2 align-middle">
+                <div class="item d-flex align-items-center justify-content-between gap-2">
+                  <div class="d-block flex-shrink-0">حالة النظافة :</div>
+                  <b class="d-block flex-grow-1">نظيفة</b>
+                </div><!-- item -->
+              </div><!-- d-flex -->
+            </td>
+          </tr>
+        </tbody>
+      </table><!-- table -->
 
       <table class="table table-bordered">
         <thead>
@@ -264,61 +341,15 @@
       </table>
 
       <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th class="fw-bold text-capitalize p-2">الفاتورة</th>
-          </tr>
-        </thead>
         <tbody>
           <tr>
-            <td class="p-2 align-top">
-              <div class="row row-cols-3 g-1">
-                <div class="col">
-                  <div class="item d-flex align-items-center justify-content-between gap-2">
-                    <div class="d-block flex-shrink-0">سعر الإيجار اليومي :</div>
-                    <b class="d-flex align-items-center justify-content-start gap-1 flex-grow-1">100 <small>ريال</small></b>
-                  </div><!-- item -->
-                </div><!-- col -->
-                <div class="col">
-                  <div class="item d-flex align-items-center justify-content-between gap-2">
-                    <div class="d-block flex-shrink-0">المبلغ المدفوع مقدماً :</div>
-                    <b class="d-flex align-items-center justify-content-start gap-1 flex-grow-1">100 <small>ريال</small></b>
-                  </div><!-- item -->
-                </div><!-- col -->
-                <div class="col">
-                  <div class="item d-flex align-items-center justify-content-between gap-2">
-                    <div class="d-block flex-shrink-0">المبلغ المتبقي :</div>
-                    <b class="d-flex align-items-center justify-content-start gap-1 flex-grow-1">100 <small>ريال</small></b>
-                  </div><!-- item -->
-                </div><!-- col -->
-                <div class="col">
-                  <div class="item d-flex align-items-center justify-content-between gap-2">
-                    <div class="d-block flex-shrink-0">تكلفة خدمة التوصيل :</div>
-                    <b class="d-flex align-items-center justify-content-start gap-1 flex-grow-1">100 <small>ريال</small></b>
-                  </div><!-- item -->
-                </div><!-- col -->
-                <div class="col">
-                  <div class="item d-flex align-items-center justify-content-between gap-2">
-                    <div class="d-block flex-shrink-0">خصم :</div>
-                    <b class="d-flex align-items-center justify-content-start gap-1 flex-grow-1">- 100 <small>ريال</small></b>
-                  </div><!-- item -->
-                </div><!-- col -->
-              </div><!-- row -->
+            <td width="50%" class="p-2 align-top">
+              <div class="imgthumb d-flex align-items-center justify-content-center">
+                <img src="https://i.postimg.cc/MH4KSpD4/car-image.png" alt="Car" class="img-fluid">
+              </div><!-- imgthumb -->
             </td>
           </tr>
         </tbody>
-        <tfoot>
-          <tr>
-            <th class="fw-bold text-capitalize p-2">
-              <div class="item d-flex align-items-center justify-content-between gap-2">
-                <div class="d-block flex-shrink-0">إجمالي المبلغ :</div>
-                <b class="d-block flex-grow-1 align-self-stretch position-relative">
-                  <p class="d-flex align-items-center justify-content-start gap-1 m-0 position-relative z-1">456 <small>ريال</small></p>
-                </b>
-              </div><!-- item -->
-            </th>
-          </tr>
-        </tfoot>
       </table>
 
     </div><!-- p-2 -->

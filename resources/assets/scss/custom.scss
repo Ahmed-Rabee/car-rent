@@ -383,6 +383,7 @@ ul#select2-car-color-results {
 
 #contracts-print-page {
   color: #000000;
+  max-width: 72%;
   .print-header {
     .col-right, .col-left {
       width: 40%;
@@ -410,6 +411,11 @@ ul#select2-car-color-results {
     td {
       color: #000000;
       font-size: 13px;
+      .imgthumb {
+        img {
+          max-height: 180px;
+        } // img
+      } // imgthumb
     } // td
   } // table
   .print-page-content {
@@ -454,6 +460,36 @@ ul#select2-car-color-results {
     } // car-info
   } // print-page-content
 } // contracts-print-page
+
+@media print {
+  #contracts-print-page {
+    max-width: 100%;
+    .print-header {
+      .col-right, .col-left {
+        font-size: 0.6375rem;
+      } // col-right
+    } // print-header
+    .print-page-title {
+      div {
+        font-size: 0.9375rem;
+      } // div
+    } // print-page-title
+    table {
+      th {
+        font-size: 0.6375rem;
+      } // th
+      td {
+        font-size: 0.6375rem;
+        small {
+          font-size: 0.5375rem;
+        } // small
+      } // td
+    } // table
+    .print-page-content {
+      font-size: 0.6375rem;
+    } // print-page-content
+  } // contracts-print-page
+} // print
 
 .slider-size {
   min-height: 44px;

@@ -358,6 +358,7 @@ ul#select2-car-color-results li.select2-results__option .car-class-option .color
 
 #contracts-print-page {
   color: #000000;
+  max-width: 72%;
 }
 #contracts-print-page .print-header .col-right, #contracts-print-page .print-header .col-left {
   width: 40%;
@@ -383,6 +384,9 @@ ul#select2-car-color-results li.select2-results__option .car-class-option .color
 #contracts-print-page table td {
   color: #000000;
   font-size: 13px;
+}
+#contracts-print-page table td .imgthumb img {
+  max-height: 180px;
 }
 #contracts-print-page .print-page-content {
   border: 1px solid #000000;
@@ -418,6 +422,29 @@ ul#select2-car-color-results li.select2-results__option .car-class-option .color
   background-color: #fafafa;
 }
 
+@media print {
+  #contracts-print-page {
+    max-width: 100%;
+  }
+  #contracts-print-page .print-header .col-right, #contracts-print-page .print-header .col-left {
+    font-size: 0.6375rem;
+  }
+  #contracts-print-page .print-page-title div {
+    font-size: 0.9375rem;
+  }
+  #contracts-print-page table th {
+    font-size: 0.6375rem;
+  }
+  #contracts-print-page table td {
+    font-size: 0.6375rem;
+  }
+  #contracts-print-page table td small {
+    font-size: 0.5375rem;
+  }
+  #contracts-print-page .print-page-content {
+    font-size: 0.6375rem;
+  }
+}
 .slider-size {
   min-height: 44px;
   padding-block-start: 5px;
