@@ -22,7 +22,7 @@
 @endpush
 
 @section('content')
-  <div id="contracts-print-page" class="min-vh-100 bg-white d-flex flex-column p-2 overflow-hidden mx-auto">
+  <div id="contracts-print-page" class="min-vh-100 bg-white d-flex flex-column p-2 mx-auto">
     <div class="page-header flex-shrink-0">
       <div class="print-header d-flex justify-content-between">
         <div class="col-right d-flex flex-column gap-1">
@@ -397,28 +397,26 @@
         </div><!-- signature-area -->
       </div><!-- bottom-area -->
       <div class="signature-users pt-2 pb-2">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-5 d-flex flex-column gap-3">
-            <div class="item d-flex align-items-center justify-content-between gap-2">
-              <span class="d-block fw-medium flex-shrink-0">توقيع المسؤول عند المغادرة :</span>
-              <b class="d-block flex-grow-1 align-self-stretch position-relative"></b>
-            </div><!-- item -->
-            <div class="item d-flex align-items-center justify-content-between gap-2">
-              <span class="d-block fw-medium flex-shrink-0">توقيع المسؤول عند العودة :</span>
-              <b class="d-block flex-grow-1 align-self-stretch position-relative"></b>
-            </div><!-- item -->
-          </div><!-- col -->
-          <div class="col-5 d-flex flex-column gap-3">
-            <div class="item d-flex align-items-center justify-content-between gap-2">
-              <span class="d-block fw-medium flex-shrink-0">توقيع المستاجر عند المغارة :</span>
-              <b class="d-block flex-grow-1 align-self-stretch position-relative"></b>
-            </div><!-- item -->
-            <div class="item d-flex align-items-center justify-content-between gap-2">
-              <span class="d-block fw-medium flex-shrink-0">توقيع المستاجر عند العودة :</span>
-              <b class="d-block flex-grow-1 align-self-stretch position-relative"></b>
-            </div><!-- item -->
-          </div><!-- col -->
-        </div><!-- row -->
+        <div class="item-col d-flex flex-column gap-3">
+          <div class="item d-flex align-items-center justify-content-between gap-2">
+            <span class="d-block fw-medium flex-shrink-0">توقيع المسؤول عند المغادرة :</span>
+            <b class="d-block flex-grow-1 align-self-stretch position-relative"></b>
+          </div><!-- item -->
+          <div class="item d-flex align-items-center justify-content-between gap-2">
+            <span class="d-block fw-medium flex-shrink-0">توقيع المسؤول عند العودة :</span>
+            <b class="d-block flex-grow-1 align-self-stretch position-relative"></b>
+          </div><!-- item -->
+        </div><!-- col -->
+        <div class="item-col d-flex flex-column gap-3">
+          <div class="item d-flex align-items-center justify-content-between gap-2">
+            <span class="d-block fw-medium flex-shrink-0">توقيع المستاجر عند المغارة :</span>
+            <b class="d-block flex-grow-1 align-self-stretch position-relative"></b>
+          </div><!-- item -->
+          <div class="item d-flex align-items-center justify-content-between gap-2">
+            <span class="d-block fw-medium flex-shrink-0">توقيع المستاجر عند العودة :</span>
+            <b class="d-block flex-grow-1 align-self-stretch position-relative"></b>
+          </div><!-- item -->
+        </div><!-- col -->
       </div><!-- signature-users -->
     </div><!-- print-footer -->
   </div><!-- contracts-print-page -->

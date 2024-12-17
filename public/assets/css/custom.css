@@ -358,7 +358,6 @@ ul#select2-car-color-results li.select2-results__option .car-class-option .color
 
 #contracts-print-page {
   color: #000000;
-  max-width: 210mm;
 }
 @media print {
   #contracts-print-page {
@@ -473,6 +472,11 @@ ul#select2-car-color-results li.select2-results__option .car-class-option .color
 }
 #contracts-print-page .print-footer .bottom-area .txt {
   font-size: 0.7375rem;
+}
+#contracts-print-page .print-footer .signature-users {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
 }
 #contracts-print-page .print-footer .signature-users .item {
   font-size: 0.7375rem;

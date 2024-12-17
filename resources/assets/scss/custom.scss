@@ -383,7 +383,7 @@ ul#select2-car-color-results {
 
 #contracts-print-page {
   color: #000000;
-  max-width: 210mm;
+  // max-width: 210mm;
   @media print {
     max-width: 100%;
   }
@@ -516,6 +516,9 @@ ul#select2-car-color-results {
       } // txt
     } // bottom-area
     .signature-users {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 3rem;
       .item {
         font-size: 0.7375rem;
         b {
