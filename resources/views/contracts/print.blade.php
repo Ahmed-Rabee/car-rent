@@ -5,7 +5,7 @@
   <style>
     @media print {
       @page {
-        size: A4;
+        size: A4 portrait;
         margin: 0; /* This is for page margins */
         -webkit-print-color-adjust: exact;
       }

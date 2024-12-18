@@ -383,10 +383,8 @@ ul#select2-car-color-results {
 
 #contracts-print-page {
   color: #000000;
-  // max-width: 210mm;
-  @media print {
-    max-width: 100%;
-  }
+  width: 210mm;
+  height: 297mm;
   .print-header {
     .col-right, .col-left {
       width: 40%;

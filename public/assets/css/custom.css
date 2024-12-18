@@ -358,11 +358,8 @@ ul#select2-car-color-results li.select2-results__option .car-class-option .color
 
 #contracts-print-page {
   color: #000000;
-}
-@media print {
-  #contracts-print-page {
-    max-width: 100%;
-  }
+  width: 210mm;
+  height: 297mm;
 }
 #contracts-print-page .print-header .col-right, #contracts-print-page .print-header .col-left {
   width: 40%;
