@@ -85,5 +85,12 @@
         <div>إدارة التقارير</div>
       </a>
     </li>
+    <!-- Calculations -->
+    <li class="menu-item">
+      <a href="{{ url('/calculations') }}" class="menu-link">
+        <i class="menu-icon tf-icons ti ti-calculator"></i>
+        <div>الحسابات</div>
+      </a>
+    </li>
   </ul>
 </aside>

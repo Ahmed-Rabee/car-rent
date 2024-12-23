@@ -11,6 +11,8 @@ use App\Http\Controllers\pages\Reservations;
 use App\Http\Controllers\pages\Clients;
 use App\Http\Controllers\pages\Contracts;
 use App\Http\Controllers\pages\Reports;
+use App\Http\Controllers\pages\Calculations;
+
 
 
 
@@ -77,5 +79,10 @@ Route::get('/contracts/print', [Contracts::class, 'print'])->name('contracts-pri
 // Reports Routes
 Route::get('/reports', [Reports::class, 'index'])->name('reports-index');
 
-
-
+// Calculations Routes
+Route::get('/calculations', [Calculations::class, 'calculationsIndex'])->name('calculations-index');
+Route::get('/calculations/incomes', [calculations::class, 'incomesIndex'])->name('calculations-incomes-index');
+Route::get('/calculations/incomes/create', [calculations::class, 'incomesCreate'])->name('calculations-incomes-create');
+Route::get('/calculations/incomes/{id}/edit', [calculations::class, 'incomesEdit'])->name('calculations-incomes-edit');
+Route::get('/calculations/incomes/{id}/view', [calculations::class, 'incomesView'])->name('calculations-incomes-view');
+Route::get('/calculations/incomes/categories', [calculations::class, 'incomesCategories'])->name('calculations-incomes-categories');
