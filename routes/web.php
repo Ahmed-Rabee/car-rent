@@ -86,3 +86,9 @@ Route::get('/calculations/incomes/create', [calculations::class, 'incomesCreate'
 Route::get('/calculations/incomes/{id}/edit', [calculations::class, 'incomesEdit'])->name('calculations-incomes-edit');
 Route::get('/calculations/incomes/{id}/view', [calculations::class, 'incomesView'])->name('calculations-incomes-view');
 Route::get('/calculations/incomes/categories', [calculations::class, 'incomesCategories'])->name('calculations-incomes-categories');
+
+Route::get('/calculations/general-expenses', [calculations::class, 'generalExpensesIndex'])->name('calculations-general-expenses-index');
+Route::get('/calculations/general-expenses/create', [calculations::class, 'generalExpensesCreate'])->name('calculations-general-expenses-create');
+Route::get('/calculations/general-expenses/categories', [calculations::class, 'generalExpensesCategories'])->name('calculations-general-expenses-categories');
+
+

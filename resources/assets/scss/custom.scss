@@ -133,11 +133,14 @@
 :root {
   --show-label-data-bg: #fafafa;
   --show-label-data-border: #dbdade;
+  --a-card-box-shadow-hover: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
 } // :root
 
 html.dark-style {
   --show-label-data-bg: rgba(134, 146, 208, 0.08);
   --show-label-data-border: #434968;
+  --a-card-box-shadow-hover: 0 0.625rem 1.25rem rgba(15, 20, 34, 0.5);
 } // html.dark-style
 
 
@@ -564,3 +567,16 @@ b.show-label-data-group {
   width: 1%;
   min-width: 0;
 } // show-label-data
+
+.select2-results__option {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+a.card {
+  transition: .3s;
+  &:hover {
+    box-shadow: var(--a-card-box-shadow-hover);
+  } // hover
+} // a.card

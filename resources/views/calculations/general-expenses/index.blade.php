@@ -5,23 +5,19 @@
 @endpush
 
 @section('content')
-  <div id="incomes-index-page">
+  <div id="general-expenses-index-page">
 
-    <div class="d-flex flex-wrap gap-3 justify-content-between align-items-start align-items-md-center mb-3">
-      <div class="d-flex flex-column justify-content-center flex-grow-1">
-        <h4 class="m-0">الإيرادات</h4>
-      </div><!-- d-flex -->
-    </div><!-- d-flex -->
+    <h4 class=" mb-3">المصروفات العامة</h4>
 
     <div class="tabs-area d-flex align-items-center justify-content-start gap-3 flex-wrap mb-3">
-      <div class="btn btn-primary waves-effect waves-light">الإيرادات</div>
-      <a href="{{ url('/calculations/incomes/categories') }}" title="أقسام الإيرادات" class="btn btn-label-dark waves-effect">أقسام الإيرادات</a>
+      <div class="btn btn-primary waves-effect waves-light">المصروفات العامة</div>
+      <a href="{{ url('/calculations/general-expenses/categories') }}" title="أقسام المصروفات العامة" class="btn btn-label-dark waves-effect">أقسام المصروفات العامة</a>
     </div><!-- tabs-area -->
 
     <div class="d-flex flex-wrap gap-3 justify-content-between align-items-start align-items-md-center mb-3">
       <a href="{{ url('/calculations') }}" class="btn btn-icon bg-white text-body waves-effect waves-light"><span class="ti ti-chevron-right"></span></a>
       <div class="d-flex align-content-center flex-wrap gap-3 flex-shrink-0">
-        <a href="{{ url('/calculations/incomes/create') }}" class="btn btn-primary waves-effect waves-light"><span class="ti-xs ti ti-plus me-2"></span> إضافة إيراد جديد</a>
+        <a href="{{ url('/calculations/general-expenses/create') }}" class="btn btn-primary waves-effect waves-light"><span class="ti-xs ti ti-plus me-2"></span> إضافة مصروف عام جديد</a>
       </div><!-- d-flex -->
     </div><!-- d-flex -->
 
@@ -80,12 +76,12 @@
       </div><!-- table-responsive -->
     </div><!-- card -->
 
-    <!-- Income Delete Modal -->
-    <div class="modal fade" id="incomesDeleteModal" tabindex="-1" aria-hidden="true">
+    <!-- General Expenses Delete Modal -->
+    <div class="modal fade" id="generalExpensesDeleteModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header p-3">
-            <h5 class="modal-title" id="incomesDeleteModalLabel1">حذف الإيراد : بيع سيارة مستعمله</h5>
+            <h5 class="modal-title" id="generalExpensesDeleteModalLabel1">حذف الإيراد : بيع سيارة مستعمله</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div><!-- modal-header -->
           <div class="modal-body p-3">
@@ -106,9 +102,9 @@
         </div>
       </div>
     </div>
-    <!-- Income Delete Modal -->
+    <!-- General Expenses Delete Modal -->
 
-  </div><!-- incomes-index-page -->
+  </div><!-- general-expenses-index-page -->
 @endsection
 
 @push('scripts')
