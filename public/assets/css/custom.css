@@ -509,7 +509,6 @@ b.show-label-data {
 b.show-label-data-group {
   min-height: 38px;
   padding: 0.422rem 0.875rem;
-  font-size: 0.8rem;
   line-height: 1.5;
   background-color: var(--show-label-data-bg);
   border: var(--bs-border-width) solid var(--show-label-data-border);

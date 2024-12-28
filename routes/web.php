@@ -89,6 +89,18 @@ Route::get('/calculations/incomes/categories', [calculations::class, 'incomesCat
 
 Route::get('/calculations/general-expenses', [calculations::class, 'generalExpensesIndex'])->name('calculations-general-expenses-index');
 Route::get('/calculations/general-expenses/create', [calculations::class, 'generalExpensesCreate'])->name('calculations-general-expenses-create');
+Route::get('/calculations/general-expenses/{id}/edit', [calculations::class, 'generalExpensesEdit'])->name('calculations-general-expenses-edit');
+Route::get('/calculations/general-expenses/{id}/view', [calculations::class, 'generalExpensesView'])->name('calculations-general-expenses-view');
 Route::get('/calculations/general-expenses/categories', [calculations::class, 'generalExpensesCategories'])->name('calculations-general-expenses-categories');
 
+Route::get('/calculations/vehicle-expenses', [calculations::class, 'vehicleExpensesIndex'])->name('calculations-vehicle-expenses-index');
+Route::get('/calculations/vehicle-expenses/create', [calculations::class, 'vehicleExpensesCreate'])->name('calculations-vehicle-expenses-create');
+Route::get('/calculations/vehicle-expenses/{id}/edit', [calculations::class, 'vehicleExpensesEdit'])->name('calculations-vehicle-expenses-edit');
+Route::get('/calculations/vehicle-expenses/{id}/view', [calculations::class, 'vehicleExpensesView'])->name('calculations-vehicle-expenses-view');
+Route::get('/calculations/vehicle-expenses/categories', [calculations::class, 'vehicleExpensesCategories'])->name('calculations-vehicle-expenses-categories');
 
+Route::get('/calculations/origins', [calculations::class, 'originsIndex'])->name('calculations-origins-index');
+Route::get('/calculations/origins/create', [calculations::class, 'originsCreate'])->name('calculations-origins-create');
+Route::get('/calculations/origins/{id}/edit', [calculations::class, 'originsEdit'])->name('calculations-origins-edit');
+Route::get('/calculations/origins/{id}/view', [calculations::class, 'originsView'])->name('calculations-origins-view');
+Route::get('/calculations/origins/categories', [calculations::class, 'originsCategories'])->name('calculations-origins-categories');

@@ -93,7 +93,7 @@
             <div class="row">
               <div class="col-12 col-md-6">
                 <div class="input-group">
-                  <input type="number" inputmode="numeric" class="form-control" id="income-amount-including-tax" value="0" disabled />
+                  <b class="show-label-data-group d-flex align-items-center justify-content-start gap-1" id="amount-including-tax-field">0</b>
                   <span class="input-group-text">ريال</span>
                 </div><!-- input-group -->
               </div><!-- col-12 -->
@@ -106,7 +106,7 @@
           <div class="col-sm-10">
             <div class="row">
               <div class="col-12 col-md-6">
-                <select id="income-payment-methods" class="select2 form-select" data-allow-clear="false" data-placeholder="">
+                <select id="income-payment-methods" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
                   <option></option>
                   <option value="AK">نقداً</option>
                   <option value="HI">تحويل بنكي</option>
@@ -122,7 +122,7 @@
           <div class="col-sm-10">
             <div class="row">
               <div class="col-12 col-md-6">
-                <select id="income-status" class="select2 form-select" data-allow-clear="false" data-placeholder="">
+                <select id="income-status" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
                   <option></option>
                   <option value="AK">آجل</option>
                   <option value="HI">مدفوع</option>
@@ -185,6 +185,16 @@
   <script src="{{ asset('assets/vendor/libs/select2/select2.js') }}"></script>
   <script src="{{ asset('assets/vendor/libs/dropzone/dropzone.js') }}"></script>
   <script type="module">
+    $(document).ready(function() {
+      function calculateAmountIncludingTax() {
+        var amount = parseFloat($('#income-amount').val()) || 0;
+        var tax = parseFloat($('#income-tax').val()) || 0;
+        var total = amount + tax;
+        $('#amount-including-tax-field').text(total);
+      }
+      $('#income-amount, #income-tax').on('input', calculateAmountIncludingTax);
+    });
+
     // --------------------------------------------------------------------
     // Flat Picker
     // --------------------------------------------------------------------

@@ -101,7 +101,7 @@
             <div class="row">
               <div class="col-12 col-md-6">
                 <div class="input-group">
-                  <input type="number" inputmode="numeric" class="form-control" id="general-expenses-amount-including-tax" value="0" disabled />
+                  <b class="show-label-data-group d-flex align-items-center justify-content-start gap-1" id="amount-including-tax-field">0</b>
                   <span class="input-group-text">ريال</span>
                 </div><!-- input-group -->
               </div><!-- col-12 -->
@@ -193,6 +193,16 @@
   <script src="{{ asset('assets/vendor/libs/select2/select2.js') }}"></script>
   <script src="{{ asset('assets/vendor/libs/dropzone/dropzone.js') }}"></script>
   <script type="module">
+    $(document).ready(function() {
+      function calculateAmountIncludingTax() {
+        var amount = parseFloat($('#general-expenses-amount').val()) || 0;
+        var tax = parseFloat($('#general-expenses-tax').val()) || 0;
+        var total = amount + tax;
+        $('#amount-including-tax-field').text(total);
+      }
+      $('#general-expenses-amount, #general-expenses-tax').on('input', calculateAmountIncludingTax);
+    });
+
     // --------------------------------------------------------------------
     // Flat Picker
     // --------------------------------------------------------------------

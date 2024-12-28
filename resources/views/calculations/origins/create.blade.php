@@ -8,11 +8,13 @@
 
 @section('content')
 
-  <div id="incomes-create-page">
+  <div id="origins-create-page">
 
-    <h4 class="mb-3">تعديل إيراد : بيع مركبة مستعمله</h4>
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-3">
+      <h4 class="m-0">إضافة أصل جديد</h4>
+    </div><!-- d-flex -->
 
-    <a href="{{ url('/calculations/incomes/{id}/view') }}" class="btn btn-icon bg-white text-body waves-effect waves-light mb-3"><span class="ti ti-chevron-right"></span></a>
+    <a href="{{ url('/calculations/origins') }}" class="btn btn-icon bg-white text-body waves-effect waves-light mb-3"><span class="ti ti-chevron-right"></span></a>
 
     <div class="card mb-3">
       <div class="card-body p-3">
@@ -52,6 +54,17 @@
                   <option value="AK">فرع الواحة</option>
                   <option value="HI">فرع جدة</option>
                 </select>
+              </div><!-- col-12 -->
+            </div><!-- row -->
+          </div><!-- col-12 -->
+        </div><!-- row -->
+        <hr class="my-3">
+        <div class="row align-items-center">
+          <label class="col-sm-2 col-form-label" for="general-expenses-supplier">المورد</label>
+          <div class="col-sm-10">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <input type="text" class="form-control" id="general-expenses-supplier" />
               </div><!-- col-12 -->
             </div><!-- row -->
           </div><!-- col-12 -->
@@ -131,11 +144,14 @@
         </div><!-- row -->
         <hr class="my-3">
         <div class="row align-items-center">
-          <label class="col-sm-2 col-form-label" for="income-date">تاريخ الصرف</label>
+          <label class="col-sm-2 col-form-label" for="income-depreciation">معدل الإهلاك</label>
           <div class="col-sm-10">
             <div class="row">
               <div class="col-12 col-md-6">
-                <input type="date" class="form-control flatpickr-date" id="income-date" placeholder="YYYY-MM-DD" readonly="readonly" />
+                <div class="input-group">
+                  <input type="number" inputmode="numeric" class="form-control" id="income-depreciation" />
+                  <span class="input-group-text"><i class="ti ti-percentage"></i></span>
+                </div><!-- input-group -->
               </div><!-- col-12 -->
             </div><!-- row -->
           </div><!-- col-12 -->
@@ -174,7 +190,7 @@
       <button type="submit" class="btn btn-lg btn-primary px-5">{{ __('Save') }}</button>
     </div><!-- button-area -->
 
-  </div><!-- incomes-create-page -->
+  </div><!-- origins-create-page -->
 
 @endsection
 
@@ -241,12 +257,12 @@
             const income_attach_image_Instance = this;
             income_attach_image_Instance.on("addedfile", function () {
               if (income_attach_image_Instance.files.length === 2) {
-                $("#employee-id-card").addClass("dz-upload-disabled");
+                $("#income-attach").addClass("dz-upload-disabled");
               }
             });
             // When a file is removed
             income_attach_image_Instance.on("removedfile", function () {
-              $("#employee-id-card").removeClass("dz-upload-disabled");
+              $("#income-attach").removeClass("dz-upload-disabled");
             });
           },
         });
