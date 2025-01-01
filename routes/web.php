@@ -12,6 +12,7 @@ use App\Http\Controllers\pages\Clients;
 use App\Http\Controllers\pages\Contracts;
 use App\Http\Controllers\pages\Reports;
 use App\Http\Controllers\pages\Calculations;
+use App\Http\Controllers\pages\Checks;
 
 
 
@@ -104,3 +105,7 @@ Route::get('/calculations/origins/create', [calculations::class, 'originsCreate'
 Route::get('/calculations/origins/{id}/edit', [calculations::class, 'originsEdit'])->name('calculations-origins-edit');
 Route::get('/calculations/origins/{id}/view', [calculations::class, 'originsView'])->name('calculations-origins-view');
 Route::get('/calculations/origins/categories', [calculations::class, 'originsCategories'])->name('calculations-origins-categories');
+
+// Checks Routes
+Route::get('/checks', [Checks::class, 'index'])->name('checsk-index');
+Route::get('/checks/categories', [Checks::class, 'categories'])->name('checks-categories');

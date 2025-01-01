@@ -92,5 +92,12 @@
         <div>الحسابات</div>
       </a>
     </li>
+    <!-- Calculations -->
+    <li class="menu-item">
+      <a href="{{ url('/checks') }}" class="menu-link">
+        <i class="menu-icon tf-icons ti ti-receipt"></i>
+        <div>إدارة الشيكات</div>
+      </a>
+    </li>
   </ul>
 </aside>
