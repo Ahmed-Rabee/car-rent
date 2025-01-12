@@ -3,19 +3,13 @@
 @push('styles')
   <link rel="stylesheet" href="{{ asset('assets/vendor/libs/select2/select2.css') }}" />
   <link rel="stylesheet" href="{{ asset('assets/vendor/libs/flatpickr/flatpickr.css') }}" />
-  <link rel="stylesheet" href="{{ asset('assets/vendor/libs/pickr/pickr-themes.css') }}" />
-
 @endpush
 
 @section('content')
 
   <div id="technical-create-page">
 
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-4">
-      <div class="d-flex flex-column justify-content-center">
-        <h4 class="m-0">إضافة حالة فنية جديدة</h4>
-      </div>
-    </div>
+    <h4 class="m-0 mb-3">إضافة حالة فنية جديدة</h4>
 
     <div class="card">
       <div class="card-body">
@@ -87,9 +81,9 @@
       </div><!-- card-body -->
     </div><!-- card -->
 
-    <hr class="my-4">
+    <hr class="my-3">
 
-    <div class="accordion mb-4" id="accordionTechnical">
+    <div class="accordion mb-3" id="accordionTechnical">
 
       <div class="card border-0 shadow-none bg-transparent m-0 accordion-item">
         <h2 class="accordion-header" id="headingMechanical">
@@ -110,119 +104,74 @@
           aria-labelledby="headingMechanical"
           data-bs-parent="#accordionTechnical"
         >
-          <div class="accordion-body pt-4 px-0 pb-0">
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/x1RnbhSG/gear.png" alt="Status General Mechanical" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Status General Mechanical</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/9FDWKJZC/oil-img.png" alt="Oil Last check" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Oil Last check</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
+          <div class="accordion-body pt-3 px-0 pb-0">
+            <div class="card mb-3">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-1.svg') }}" height="24px">
+                <h5 class="m-0 text-capitalize fw-semibold">Status General Mechanical</h5>
+              </div><!-- card-header -->
+              <div class="card-body p-3">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput"/>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">العداد</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                </div><!-- row -->
+              </div><!-- card-body -->
+            </div><!-- card -->
+            <div class="card">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-2.svg') }}" height="24px">
+                <h5 class="m-0 text-capitalize fw-semibold">Oil Last check</h5>
+              </div><!-- card-header -->
+              <div class="card-body p-3">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput"/>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">العداد</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                </div><!-- row -->
+              </div><!-- card-body -->
+            </div><!-- card -->
           </div><!-- accordion-body -->
         </div><!-- accordion-collapse -->
       </div><!-- card -->
 
-      <hr class="my-4">
+      <hr class="my-3">
 
       <div class="card border-0 shadow-none bg-transparent m-0 accordion-item">
         <h2 class="accordion-header" id="headingCooling">
@@ -243,140 +192,112 @@
           aria-labelledby="headingCooling"
           data-bs-parent="#accordionTechnical"
         >
-          <div class="accordion-body pt-4 px-0 pb-0">
-
-            <div class="card form-repeater mb-4">
+          <div class="accordion-body pt-3 px-0 pb-0">
+            <div class="card mb-3">
               <div class="card-body p-3">
-                <div class="row g-3">
-                  <div class="col-6">
-                    <div class="row align-items-center">
-                      <label class="col-sm-4 col-form-label fw-medium" for="car-number">Date Filling</label>
-                      <div class="col-12 col-sm-8">
-                        <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-6 -->
-                  <div class="col-6">
-                    <div class="row align-items-center">
-                      <label class="col-sm-4 col-form-label fw-medium" for="car-number">Water Type</label>
-                      <div class="col-12 col-sm-8">
-                        <div id="color-picker-classic"></div>
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-6 -->
+                <div class="row row-cols-1 row-cols-md-3 g-3">
+                  <div class="col">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">Date Filling</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">Water Color</label>
+                      <select id="car-color" class="select2-color-car form-select" data-allow-clear="false" data-placeholder="اختر" data-minimum-results-for-search="Infinity">
+                        <option></option>
+                        <option value="red" data-class="car-red">احمر</option>
+                        <option value="white" data-class="car-white">ابيض</option>
+                        <option value="blue" data-class="car-blue">ازرق</option>
+                        <option value="gray" data-class="car-gray">رمادي</option>
+                        <option value="maroon" data-class="car-maroon">عنابي</option>
+                        <option value="yellow" data-class="car-yellow">اصفر</option>
+                        <option value="black" data-class="car-black">اسود</option>
+                      </select>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">Water Type</label>
+                      <select id="car-water-type" class="select2 form-select" data-placeholder="اختر" data-allow-clear="false" data-minimum-results-for-search="Infinity">
+                        <option></option>
+                        <option value="1">مياة وكالة</option>
+                        <option value="2">مياة تجاري</option>
+                        <option value="3">مياة عادية</option>
+                      </select>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
                 </div><!-- row -->
               </div><!-- card-body -->
             </div><!-- card -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-end gap-3">
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-end gap-3">
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
+            <div class="card mb-3">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-3.svg') }}" height="24px">
+                <h5 class="m-0 text-capitalize fw-semibold">Coolant Overflow Tank</h5>
+              </div><!-- card-header -->
+              <div class="card-body p-3">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput"/>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">العداد</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                </div><!-- row -->
+              </div><!-- card-body -->
+            </div><!-- card -->
+            <div class="card">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-4.svg') }}" height="24px">
+                <h5 class="m-0 text-capitalize fw-semibold">radiator</h5>
+              </div><!-- card-header -->
+              <div class="card-body p-3">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput"/>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">العداد</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                </div><!-- row -->
+              </div><!-- card-body -->
+            </div><!-- card -->
           </div><!-- accordion-body -->
         </div><!-- accordion-collapse -->
       </div><!-- card -->
 
-      <hr class="my-4">
+      <hr class="my-3">
 
       <div class="card border-0 shadow-none bg-transparent m-0 accordion-item">
         <h2 class="accordion-header" id="headingElectricity">
@@ -397,211 +318,131 @@
           aria-labelledby="headingElectricity"
           data-bs-parent="#accordionTechnical"
         >
-          <div class="accordion-body pt-4 px-0 pb-0">
-
-            <div class="row mb-4">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Battery</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end g-3">
-                          <div class="col-lg-6 col-xl-6 col-12">
-                            <div class="from-group">
-                              <label class="form-label mb-2" for="battary-type">نوع البطارية</label>
-                              <select id="battary-type" class="select2 form-select" data-placeholder="اختر" data-allow-clear="flase" data-minimum-results-for-search="Infinity">
-                                <option></option>
-                                <option value="1">وكالة</option>
-                                <option value="2">تجاري</option>
-                              </select>
-                            </div><!-- from-group -->
-                          </div><!-- col -->
-                          <div class="col-lg-6 col-xl-5 col-12">
-                            <div class="from-group">
-                              <label class="form-label mb-2" for="battary-statuss">تاريخ التركيب</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="insurance-company-from" readonly="readonly" />
-                            </div><!-- from-group -->
-                          </div><!-- col -->
-                          <div class="col-lg-12 col-xl-1 col-12 d-flex align-items-center">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
-
-                <div class="card form-repeater m-0">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Battery Test</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Spark Plug</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Coils</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
+          <div class="accordion-body pt-3 px-0 pb-0">
+            <div class="card mb-3">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-5.svg') }}" height="24px">
+                <h5 class="m-0 text-capitalize fw-semibold">Battery</h5>
+              </div><!-- card-header -->
+              <div class="card-body p-3">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">نوع البطارية</label>
+                      <select id="battary-type" class="select2 form-select" data-placeholder="اختر" data-allow-clear="flase" data-minimum-results-for-search="Infinity">
+                        <option></option>
+                        <option value="1">وكالة</option>
+                        <option value="2">تجاري</option>
+                      </select>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-6">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">تاريخ التركيب</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                </div><!-- row -->
+              </div><!-- card-body -->
+            </div><!-- card -->
+            <div class="card mb-3">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-8.svg') }}" height="24px">
+                <h5 class="m-0 text-capitalize fw-semibold">Battery Test</h5>
+              </div><!-- card-header -->
+              <div class="card-body p-3">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput"/>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">العداد</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                </div><!-- row -->
+              </div><!-- card-body -->
+            </div><!-- card -->
+            <div class="card mb-3">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-6.svg') }}" height="24px">
+                <h5 class="m-0 text-capitalize fw-semibold">Spark Plug</h5>
+              </div><!-- card-header -->
+              <div class="card-body p-3">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput"/>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">العداد</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                </div><!-- row -->
+              </div><!-- card-body -->
+            </div><!-- card -->
+            <div class="card">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-7.svg') }}" height="24px">
+                <h5 class="m-0 text-capitalize fw-semibold">Coils</h5>
+              </div><!-- card-header -->
+              <div class="card-body p-3">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput"/>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">العداد</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                </div><!-- row -->
+              </div><!-- card-body -->
+            </div><!-- card -->
           </div><!-- accordion-body -->
         </div><!-- accordion-collapse -->
       </div><!-- card -->
 
-      <hr class="my-4">
+      <hr class="my-3">
 
       <div class="card border-0 shadow-none bg-transparent m-0 accordion-item">
         <h2 class="accordion-header" id="headingTayrs">
@@ -623,703 +464,433 @@
           data-bs-parent="#accordionTechnical"
         >
           <div class="accordion-body pt-4 px-0 pb-0">
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Tire Rotation</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">الميزانية</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="card mb-4">
-              <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+            <div class="card mb-3">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-9.svg') }}" height="24px">
+                <h5 class="m-0 text-capitalize fw-semibold">Tire Rotation</h5>
+              </div><!-- card-header -->
+              <div class="card-body p-3">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput"/>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">العداد</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                </div><!-- row -->
+              </div><!-- card-body -->
+            </div><!-- card -->
+            <div class="card mb-3">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-10.svg') }}" height="24px">
+                <h5 class="m-0 text-capitalize fw-semibold">ميزانية الترصيص</h5>
+              </div><!-- card-header -->
+              <div class="card-body p-3">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput"/>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">العداد</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                </div><!-- row -->
+              </div><!-- card-body -->
+            </div><!-- card -->
+            <div class="card mb-3">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-11.svg') }}" height="24px">
                 <h5 class="m-0 text-capitalize fw-semibold">Spare</h5>
               </div><!-- card-header -->
               <div class="card-body p-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">Sensor</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <div class="row row-cols-2">
-                          <div class="col">
-                                  <div class="form-check">
-                                    <input name="default-radio-1" class="form-check-input" type="radio" value="" id="defaultRadio2" checked="">
-                                    <label class="form-check-label" for="defaultRadio2">نعم</label>
-                                  </div>
-                          </div><!-- col -->
-                          <div class="col">
-                                  <div class="form-check">
-                                    <input name="default-radio-1" class="form-check-input" type="radio" value="" id="defaultRadio3">
-                                    <label class="form-check-label" for="defaultRadio2">لا</label>
-                                  </div>
-                          </div><!-- col -->
-                        </div><!-- row -->
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
+                <div class="row row-cols-1 row-cols-md-4 g-3">
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="employee-sex">Sensor</label>
+                      <select id="spare-sensor" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
+                        <option></option>
+                        <option value="1">نعم</option>
+                        <option value="2">لا</option>
+                      </select>
+                    </div><!-- form-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="employee-sex">Brand</label>
+                      <select id="spare-brand" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
+                        <option></option>
+                        <option value="1">8977 - TB</option>
+                        <option value="2">7565 - T</option>
+                        <option value="3">9856 - TH</option>
+                        <option value="4">5709 - TB</option>
+                      </select>
+                    </div><!-- form-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="employee-sex">تاريخ الإنتاج</label>
+                      <input type="number" inputmode="numeric" class="form-control" />
+                    </div><!-- form-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="employee-sex">K.M</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- form-group -->
+                  </div><!-- col -->
                 </div><!-- row -->
                 <hr class="my-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">Brand</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <select id="Battery-Type" class="select2 form-select" data-placeholder="Choose" data-allow-clear="true">
-                          <option></option>
-                          <option value="1">8977 - TB</option>
-                          <option value="2">7565 - T</option>
-                          <option value="3">9856 - TH</option>
-                          <option value="4">5709 - TB</option>
-                        </select>
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
+                <h5 class="card-title">Spare Test</h5>
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput"/>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">العداد</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
                 </div><!-- row -->
-                <hr class="my-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">تاريخ الإنتاج</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <input type="number" inputmode="numeric" class="form-control" />
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
-                </div><!-- row -->
-                <hr class="my-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">K.M</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <div class="input-group">
-                          <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                          <span class="input-group-text" id="basic-addon11">كم</span>
-                        </div>
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
-                </div><!-- row -->
-                <hr class="my-3">
-                <div class="card shadow-none bg-transparent border border-secondary form-repeater m-0">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Spare Test</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
               </div><!-- card-body -->
             </div><!-- card -->
-
-            <div class="card mb-4">
-              <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+            <div class="card mb-3">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
                 <h5 class="m-0 text-capitalize fw-semibold">Front Right</h5>
               </div><!-- card-header -->
               <div class="card-body p-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">Sensor</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <div class="row row-cols-2">
-                          <div class="col">
-                                  <div class="form-check">
-                                    <input name="default-radio-1" class="form-check-input" type="radio" value="" id="defaultRadio2" checked="">
-                                    <label class="form-check-label" for="defaultRadio2">نعم</label>
-                                  </div>
-                          </div><!-- col -->
-                          <div class="col">
-                                  <div class="form-check">
-                                    <input name="default-radio-1" class="form-check-input" type="radio" value="" id="defaultRadio3">
-                                    <label class="form-check-label" for="defaultRadio2">لا</label>
-                                  </div>
-                          </div><!-- col -->
-                        </div><!-- row -->
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
+                <div class="row row-cols-1 row-cols-md-4 g-3">
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="front-right-sensor">Sensor</label>
+                      <select id="front-right-sensor" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
+                        <option></option>
+                        <option value="1">نعم</option>
+                        <option value="2">لا</option>
+                      </select>
+                    </div><!-- form-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="employee-sex">Brand</label>
+                      <select id="front-right-brand" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
+                        <option></option>
+                        <option value="1">8977 - TB</option>
+                        <option value="2">7565 - T</option>
+                        <option value="3">9856 - TH</option>
+                        <option value="4">5709 - TB</option>
+                      </select>
+                    </div><!-- form-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="employee-sex">تاريخ الإنتاج</label>
+                      <input type="number" inputmode="numeric" class="form-control" />
+                    </div><!-- form-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="employee-sex">K.M</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- form-group -->
+                  </div><!-- col -->
                 </div><!-- row -->
                 <hr class="my-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">Brand</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <select id="Battery-Type" class="select2 form-select" data-placeholder="Choose" data-allow-clear="true">
-                          <option></option>
-                          <option value="1">8977 - TB</option>
-                          <option value="2">7565 - T</option>
-                          <option value="3">9856 - TH</option>
-                          <option value="4">5709 - TB</option>
-                        </select>
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
+                <h5 class="card-title">Front Right Test</h5>
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput"/>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">العداد</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
                 </div><!-- row -->
-                <hr class="my-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">تاريخ الإنتاج</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <input type="number" inputmode="numeric" class="form-control" />
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
-                </div><!-- row -->
-                <hr class="my-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">K.M</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <div class="input-group">
-                          <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                          <span class="input-group-text" id="basic-addon11">كم</span>
-                        </div>
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
-                </div><!-- row -->
-                <hr class="my-3">
-                <div class="card shadow-none bg-transparent border border-secondary form-repeater m-0">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Front Right Test</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
               </div><!-- card-body -->
             </div><!-- card -->
-
-            <div class="card mb-4">
-              <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+            <div class="card mb-3">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
                 <h5 class="m-0 text-capitalize fw-semibold">Front Left</h5>
               </div><!-- card-header -->
               <div class="card-body p-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">Sensor</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <div class="row row-cols-2">
-                          <div class="col">
-                                  <div class="form-check">
-                                    <input name="default-radio-1" class="form-check-input" type="radio" value="" id="defaultRadio2" checked="">
-                                    <label class="form-check-label" for="defaultRadio2">نعم</label>
-                                  </div>
-                          </div><!-- col -->
-                          <div class="col">
-                                  <div class="form-check">
-                                    <input name="default-radio-1" class="form-check-input" type="radio" value="" id="defaultRadio3">
-                                    <label class="form-check-label" for="defaultRadio2">لا</label>
-                                  </div>
-                          </div><!-- col -->
-                        </div><!-- row -->
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
+                <div class="row row-cols-1 row-cols-md-4 g-3">
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="front-left-sensor">Sensor</label>
+                      <select id="front-left-sensor" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
+                        <option></option>
+                        <option value="1">نعم</option>
+                        <option value="2">لا</option>
+                      </select>
+                    </div><!-- form-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="employee-sex">Brand</label>
+                      <select id="front-left-brand" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
+                        <option></option>
+                        <option value="1">8977 - TB</option>
+                        <option value="2">7565 - T</option>
+                        <option value="3">9856 - TH</option>
+                        <option value="4">5709 - TB</option>
+                      </select>
+                    </div><!-- form-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="employee-sex">تاريخ الإنتاج</label>
+                      <input type="number" inputmode="numeric" class="form-control" />
+                    </div><!-- form-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="employee-sex">K.M</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- form-group -->
+                  </div><!-- col -->
                 </div><!-- row -->
                 <hr class="my-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">Brand</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <select id="Battery-Type" class="select2 form-select" data-placeholder="Choose" data-allow-clear="true">
-                          <option></option>
-                          <option value="1">8977 - TB</option>
-                          <option value="2">7565 - T</option>
-                          <option value="3">9856 - TH</option>
-                          <option value="4">5709 - TB</option>
-                        </select>
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
+                <h5 class="card-title">Front Left Test</h5>
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput"/>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">العداد</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
                 </div><!-- row -->
-                <hr class="my-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">تاريخ الإنتاج</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <input type="number" inputmode="numeric" class="form-control" />
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
-                </div><!-- row -->
-                <hr class="my-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">K.M</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <div class="input-group">
-                          <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                          <span class="input-group-text" id="basic-addon11">كم</span>
-                        </div>
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
-                </div><!-- row -->
-                <hr class="my-3">
-                <div class="card shadow-none bg-transparent border border-secondary form-repeater m-0">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Front Left Test</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
               </div><!-- card-body -->
             </div><!-- card -->
-
-            <div class="card mb-4">
-              <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+            <div class="card mb-3">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
                 <h5 class="m-0 text-capitalize fw-semibold">Back Right</h5>
               </div><!-- card-header -->
               <div class="card-body p-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">Sensor</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <div class="row row-cols-2">
-                          <div class="col">
-                                  <div class="form-check">
-                                    <input name="default-radio-1" class="form-check-input" type="radio" value="" id="defaultRadio2" checked="">
-                                    <label class="form-check-label" for="defaultRadio2">نعم</label>
-                                  </div>
-                          </div><!-- col -->
-                          <div class="col">
-                                  <div class="form-check">
-                                    <input name="default-radio-1" class="form-check-input" type="radio" value="" id="defaultRadio3">
-                                    <label class="form-check-label" for="defaultRadio2">لا</label>
-                                  </div>
-                          </div><!-- col -->
-                        </div><!-- row -->
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
+                <div class="row row-cols-1 row-cols-md-4 g-3">
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="back-right-sensor">Sensor</label>
+                      <select id="back-right-sensor" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
+                        <option></option>
+                        <option value="1">نعم</option>
+                        <option value="2">لا</option>
+                      </select>
+                    </div><!-- form-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="employee-sex">Brand</label>
+                      <select id="back-right-brand" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
+                        <option></option>
+                        <option value="1">8977 - TB</option>
+                        <option value="2">7565 - T</option>
+                        <option value="3">9856 - TH</option>
+                        <option value="4">5709 - TB</option>
+                      </select>
+                    </div><!-- form-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="employee-sex">تاريخ الإنتاج</label>
+                      <input type="number" inputmode="numeric" class="form-control" />
+                    </div><!-- form-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="employee-sex">K.M</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- form-group -->
+                  </div><!-- col -->
                 </div><!-- row -->
                 <hr class="my-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">Brand</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <select id="Battery-Type" class="select2 form-select" data-placeholder="Choose" data-allow-clear="true">
-                          <option></option>
-                          <option value="1">8977 - TB</option>
-                          <option value="2">7565 - T</option>
-                          <option value="3">9856 - TH</option>
-                          <option value="4">5709 - TB</option>
-                        </select>
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
+                <h5 class="card-title">Back Right Test</h5>
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput"/>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">العداد</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
                 </div><!-- row -->
-                <hr class="my-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">تاريخ الإنتاج</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <input type="number" inputmode="numeric" class="form-control" />
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
-                </div><!-- row -->
-                <hr class="my-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">K.M</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <div class="input-group">
-                          <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                          <span class="input-group-text" id="basic-addon11">كم</span>
-                        </div>
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
-                </div><!-- row -->
-                <hr class="my-3">
-                <div class="card shadow-none bg-transparent border border-secondary form-repeater m-0">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Back Right Test</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
               </div><!-- card-body -->
             </div><!-- card -->
-
             <div class="card">
-              <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
                 <h5 class="m-0 text-capitalize fw-semibold">Back Left</h5>
               </div><!-- card-header -->
               <div class="card-body p-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">Sensor</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <div class="row row-cols-2">
-                          <div class="col">
-                                  <div class="form-check">
-                                    <input name="default-radio-1" class="form-check-input" type="radio" value="" id="defaultRadio2" checked="">
-                                    <label class="form-check-label" for="defaultRadio2">نعم</label>
-                                  </div>
-                          </div><!-- col -->
-                          <div class="col">
-                                  <div class="form-check">
-                                    <input name="default-radio-1" class="form-check-input" type="radio" value="" id="defaultRadio3">
-                                    <label class="form-check-label" for="defaultRadio2">لا</label>
-                                  </div>
-                          </div><!-- col -->
-                        </div><!-- row -->
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
+                <div class="row row-cols-1 row-cols-md-4 g-3">
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="back-left-sensor">Sensor</label>
+                      <select id="back-left-sensor" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
+                        <option></option>
+                        <option value="1">نعم</option>
+                        <option value="2">لا</option>
+                      </select>
+                    </div><!-- form-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="employee-sex">Brand</label>
+                      <select id="back-left-brand" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
+                        <option></option>
+                        <option value="1">8977 - TB</option>
+                        <option value="2">7565 - T</option>
+                        <option value="3">9856 - TH</option>
+                        <option value="4">5709 - TB</option>
+                      </select>
+                    </div><!-- form-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="employee-sex">تاريخ الإنتاج</label>
+                      <input type="number" inputmode="numeric" class="form-control" />
+                    </div><!-- form-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-label mb-2 fs-6" for="employee-sex">K.M</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- form-group -->
+                  </div><!-- col -->
                 </div><!-- row -->
                 <hr class="my-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">Brand</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <select id="Battery-Type" class="select2 form-select" data-placeholder="Choose" data-allow-clear="true">
-                          <option></option>
-                          <option value="1">8977 - TB</option>
-                          <option value="2">7565 - T</option>
-                          <option value="3">9856 - TH</option>
-                          <option value="4">5709 - TB</option>
-                        </select>
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
+                <h5 class="card-title">Back Left Test</h5>
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput"/>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">العداد</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
                 </div><!-- row -->
-                <hr class="my-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">تاريخ الإنتاج</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <input type="number" inputmode="numeric" class="form-control" />
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
-                </div><!-- row -->
-                <hr class="my-3">
-                <div class="row align-items-center">
-                  <label class="col-sm-2 col-form-label fw-medium" for="car-number">K.M</label>
-                  <div class="col-12 col-sm-10">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <div class="input-group">
-                          <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                          <span class="input-group-text" id="basic-addon11">كم</span>
-                        </div>
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col-12 -->
-                </div><!-- row -->
-                <hr class="my-3">
-                <div class="card shadow-none bg-transparent border border-secondary form-repeater m-0">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Back Left Test</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
               </div><!-- card-body -->
             </div><!-- card -->
-
           </div><!-- accordion-body -->
         </div><!-- accordion-collapse -->
       </div><!-- card -->
 
-      <hr class="my-4">
+      <hr class="my-3">
 
       <div class="card border-0 shadow-none bg-transparent m-0 accordion-item">
         <h2 class="accordion-header" id="headingSuspensions">
@@ -1341,807 +912,508 @@
           data-bs-parent="#accordionTechnical"
         >
           <div class="accordion-body pt-4 px-0 pb-0">
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+              <div class="col">
+                <div class="card">
+                  <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                    <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
                     <h5 class="m-0 text-capitalize fw-semibold">Transmission Mount</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
                   </div><!-- card-header -->
                   <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                          <input type="text" class="form-control" id="defaultFormControlInput"/>
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                          <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">العداد</label>
+                          <div class="input-group">
+                            <input type="number" class="form-control" aria-describedby="basic-addon11">
+                            <span class="input-group-text" id="basic-addon11">كم</span>
+                          </div><!-- input-group -->
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                    </div><!-- row -->
                   </div><!-- card-body -->
                 </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+              </div><!-- col -->
+              <div class="col">
+                <div class="card">
+                  <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                    <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
                     <h5 class="m-0 text-capitalize fw-semibold">Rod</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
                   </div><!-- card-header -->
                   <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                          <input type="text" class="form-control" id="defaultFormControlInput"/>
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                          <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">العداد</label>
+                          <div class="input-group">
+                            <input type="number" class="form-control" aria-describedby="basic-addon11">
+                            <span class="input-group-text" id="basic-addon11">كم</span>
+                          </div><!-- input-group -->
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                    </div><!-- row -->
                   </div><!-- card-body -->
                 </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+              </div><!-- col -->
+              <div class="col">
+                <div class="card">
+                  <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                    <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
                     <h5 class="m-0 text-capitalize fw-semibold">Bushing</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
                   </div><!-- card-header -->
                   <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                          <input type="text" class="form-control" id="defaultFormControlInput"/>
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                          <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">العداد</label>
+                          <div class="input-group">
+                            <input type="number" class="form-control" aria-describedby="basic-addon11">
+                            <span class="input-group-text" id="basic-addon11">كم</span>
+                          </div><!-- input-group -->
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                    </div><!-- row -->
                   </div><!-- card-body -->
                 </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+              </div><!-- col -->
+              <div class="col">
+                <div class="card">
+                  <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                    <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
                     <h5 class="m-0 text-capitalize fw-semibold">Shock</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
                   </div><!-- card-header -->
                   <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                          <input type="text" class="form-control" id="defaultFormControlInput"/>
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                          <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">العداد</label>
+                          <div class="input-group">
+                            <input type="number" class="form-control" aria-describedby="basic-addon11">
+                            <span class="input-group-text" id="basic-addon11">كم</span>
+                          </div><!-- input-group -->
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                    </div><!-- row -->
                   </div><!-- card-body -->
                 </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+              </div><!-- col -->
+              <div class="col">
+                <div class="card">
+                  <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                    <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
                     <h5 class="m-0 text-capitalize fw-semibold">Absorbers</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
                   </div><!-- card-header -->
                   <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                          <input type="text" class="form-control" id="defaultFormControlInput"/>
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                          <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">العداد</label>
+                          <div class="input-group">
+                            <input type="number" class="form-control" aria-describedby="basic-addon11">
+                            <span class="input-group-text" id="basic-addon11">كم</span>
+                          </div><!-- input-group -->
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                    </div><!-- row -->
                   </div><!-- card-body -->
                 </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+              </div><!-- col -->
+              <div class="col">
+                <div class="card">
+                  <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                    <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
                     <h5 class="m-0 text-capitalize fw-semibold">AXLE</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
                   </div><!-- card-header -->
                   <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                          <input type="text" class="form-control" id="defaultFormControlInput"/>
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                          <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">العداد</label>
+                          <div class="input-group">
+                            <input type="number" class="form-control" aria-describedby="basic-addon11">
+                            <span class="input-group-text" id="basic-addon11">كم</span>
+                          </div><!-- input-group -->
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                    </div><!-- row -->
                   </div><!-- card-body -->
                 </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+              </div><!-- col -->
+              <div class="col">
+                <div class="card">
+                  <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                    <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
                     <h5 class="m-0 text-capitalize fw-semibold">SEAL</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
                   </div><!-- card-header -->
                   <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                          <input type="text" class="form-control" id="defaultFormControlInput"/>
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                          <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">العداد</label>
+                          <div class="input-group">
+                            <input type="number" class="form-control" aria-describedby="basic-addon11">
+                            <span class="input-group-text" id="basic-addon11">كم</span>
+                          </div><!-- input-group -->
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                    </div><!-- row -->
                   </div><!-- card-body -->
                 </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+              </div><!-- col -->
+              <div class="col">
+                <div class="card">
+                  <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                    <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
                     <h5 class="m-0 text-capitalize fw-semibold">Lower Arm</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
                   </div><!-- card-header -->
                   <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                          <input type="text" class="form-control" id="defaultFormControlInput"/>
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                          <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">العداد</label>
+                          <div class="input-group">
+                            <input type="number" class="form-control" aria-describedby="basic-addon11">
+                            <span class="input-group-text" id="basic-addon11">كم</span>
+                          </div><!-- input-group -->
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                    </div><!-- row -->
                   </div><!-- card-body -->
                 </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+              </div><!-- col -->
+              <div class="col">
+                <div class="card">
+                  <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                    <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
                     <h5 class="m-0 text-capitalize fw-semibold">Bearing Front</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
                   </div><!-- card-header -->
                   <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                          <input type="text" class="form-control" id="defaultFormControlInput"/>
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                          <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">العداد</label>
+                          <div class="input-group">
+                            <input type="number" class="form-control" aria-describedby="basic-addon11">
+                            <span class="input-group-text" id="basic-addon11">كم</span>
+                          </div><!-- input-group -->
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                    </div><!-- row -->
                   </div><!-- card-body -->
                 </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+              </div><!-- col -->
+              <div class="col">
+                <div class="card">
+                  <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                    <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
                     <h5 class="m-0 text-capitalize fw-semibold">Bearing Back</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
                   </div><!-- card-header -->
                   <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                          <input type="text" class="form-control" id="defaultFormControlInput"/>
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                          <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">العداد</label>
+                          <div class="input-group">
+                            <input type="number" class="form-control" aria-describedby="basic-addon11">
+                            <span class="input-group-text" id="basic-addon11">كم</span>
+                          </div><!-- input-group -->
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                    </div><!-- row -->
                   </div><!-- card-body -->
                 </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Drum  Lathe Front</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
+              </div><!-- col -->
+              <div class="col">
+                <div class="card">
+                  <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                    <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
+                    <h5 class="m-0 text-capitalize fw-semibold">Drum Lathe Front</h5>
                   </div><!-- card-header -->
                   <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                          <input type="text" class="form-control" id="defaultFormControlInput"/>
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                          <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">العداد</label>
+                          <div class="input-group">
+                            <input type="number" class="form-control" aria-describedby="basic-addon11">
+                            <span class="input-group-text" id="basic-addon11">كم</span>
+                          </div><!-- input-group -->
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                    </div><!-- row -->
                   </div><!-- card-body -->
                 </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Drum  Lathe Back</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
+              </div><!-- col -->
+              <div class="col">
+                <div class="card">
+                  <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                    <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
+                    <h5 class="m-0 text-capitalize fw-semibold">Drum Lathe Back</h5>
                   </div><!-- card-header -->
                   <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                          <input type="text" class="form-control" id="defaultFormControlInput"/>
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                          <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">العداد</label>
+                          <div class="input-group">
+                            <input type="number" class="form-control" aria-describedby="basic-addon11">
+                            <span class="input-group-text" id="basic-addon11">كم</span>
+                          </div><!-- input-group -->
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                    </div><!-- row -->
                   </div><!-- card-body -->
                 </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+              </div><!-- col -->
+              <div class="col">
+                <div class="card">
+                  <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                    <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
                     <h5 class="m-0 text-capitalize fw-semibold">Bad Brakes Front</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
                   </div><!-- card-header -->
                   <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                          <input type="text" class="form-control" id="defaultFormControlInput"/>
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                          <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">العداد</label>
+                          <div class="input-group">
+                            <input type="number" class="form-control" aria-describedby="basic-addon11">
+                            <span class="input-group-text" id="basic-addon11">كم</span>
+                          </div><!-- input-group -->
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                    </div><!-- row -->
                   </div><!-- card-body -->
                 </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+              </div><!-- col -->
+              <div class="col">
+                <div class="card">
+                  <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                    <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
                     <h5 class="m-0 text-capitalize fw-semibold">Bad Brakes Back</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
                   </div><!-- card-header -->
                   <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                          <input type="text" class="form-control" id="defaultFormControlInput"/>
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                          <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">العداد</label>
+                          <div class="input-group">
+                            <input type="number" class="form-control" aria-describedby="basic-addon11">
+                            <span class="input-group-text" id="basic-addon11">كم</span>
+                          </div><!-- input-group -->
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                    </div><!-- row -->
                   </div><!-- card-body -->
                 </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+              </div><!-- col -->
+              <div class="col">
+                <div class="card">
+                  <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                    <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
                     <h5 class="m-0 text-capitalize fw-semibold">Brake OIL</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
                   </div><!-- card-header -->
                   <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end">
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                          <input type="text" class="form-control" id="defaultFormControlInput"/>
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                          <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                      <div class="col-6">
+                        <div class="formGroup">
+                          <label for="defaultFormControlInput" class="form-label">العداد</label>
+                          <div class="input-group">
+                            <input type="number" class="form-control" aria-describedby="basic-addon11">
+                            <span class="input-group-text" id="basic-addon11">كم</span>
+                          </div><!-- input-group -->
+                        </div><!-- formGroup -->
+                      </div><!-- col -->
+                    </div><!-- row -->
                   </div><!-- card-body -->
                 </div><!-- card -->
-              </div><!-- col-12 -->
+              </div><!-- col -->
             </div><!-- row -->
-
           </div><!-- accordion-body -->
         </div><!-- accordion-collapse -->
       </div><!-- card -->
 
-      <hr class="my-4">
+      <hr class="my-3">
 
       <div class="card border-0 shadow-none bg-transparent m-0 accordion-item">
         <h2 class="accordion-header" id="headingAirCondition">
@@ -2163,193 +1435,135 @@
           data-bs-parent="#accordionTechnical"
         >
           <div class="accordion-body pt-4 px-0 pb-0">
-
-            <div class="row mb-4">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">AC - Condition FILTER</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end g-3">
-                          <div class="col-lg-6 col-xl-3 col-12">
-                            <div class="from-group">
-                              <label class="form-label mb-2" for="latest-maintenance">نوع الفلتر</label>
-                              <select id="latest-maintenance" class="select2 form-select" data-placeholder="اختر" data-allow-clear="flase" data-minimum-results-for-search="Infinity">
-                                <option></option>
-                                <option value="1">وكالة</option>
-                                <option value="2">تجاري</option>
-                              </select>
-                            </div><!-- from-group -->
-                          </div><!-- col -->
-                          <div class="col-lg-6 col-xl-3 col-12">
-                            <div class="from-group">
-                              <label class="form-label mb-2" for="filter-status">حالة الفلتر</label>
-                              <select id="filter-status" class="select2 form-select" data-placeholder="اختر" data-allow-clear="flase" data-minimum-results-for-search="Infinity">
-                                <option></option>
-                                <option value="1">وكالة</option>
-                                <option value="2">تجاري</option>
-                              </select>
-                            </div><!-- from-group -->
-                          </div><!-- col -->
-                          <div class="col-lg-6 col-xl-2 col-12">
-                            <div class="from-group">
-                              <label class="form-label mb-2" for="car-statuss">تاريخ التركيب</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="insurance-company-from" readonly="readonly" />
-                            </div><!-- from-group -->
-                          </div><!-- col -->
-                          <div class="col-lg-6 col-xl-3 col-12">
-                            <div class="from-group">
-                              <label class="form-label mb-2" for="car-statuss">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div><!-- input-group -->
-                            </div><!-- from-group -->
-                          </div><!-- col -->
-                          <div class="col-lg-12 col-xl-1 col-12 d-flex align-items-center">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
-
-                <div class="card form-repeater m-0">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Cooling Rate Test</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end g-3">
-                          <div class="col-lg-6 col-xl-3 col-12">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-xl-4 col-12">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-xl-2 col-12">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">يمين</label>
-                              <input type="text" class="form-control" id="insurance-company-from"  />
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-xl-2 col-12">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">يسار</label>
-                              <input type="text" class="form-control" id="insurance-company-from"  />
-                            </div>
-                          </div>
-                          <div class="col-lg-12 col-xl-1 col-12 d-flex align-items-center">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-              <div class="col-12 col-md-1">
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="https://i.postimg.cc/kgnd9st2/erba.png" alt="" class="w-auto h-auto mw-100" style="max-height: 75px;">
-                </div><!-- d-flex -->
-              </div><!-- col-12 -->
-              <div class="col-12 col-md-11">
-                <div class="card form-repeater mb-4">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Air FILTER</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end g-3">
-                          <div class="col-lg-6 col-xl-3 col-12">
-                            <div class="from-group">
-                              <label class="form-label mb-2" for="latest-maintenance">نوع الفلتر</label>
-                              <select id="latest-maintenance" class="select2 form-select" data-placeholder="اختر" data-allow-clear="flase" data-minimum-results-for-search="Infinity">
-                                <option></option>
-                                <option value="1">وكالة</option>
-                                <option value="2">تجاري</option>
-                              </select>
-                            </div><!-- from-group -->
-                          </div><!-- col -->
-                          <div class="col-lg-6 col-xl-3 col-12">
-                            <div class="from-group">
-                              <label class="form-label mb-2" for="filter-status">حالة الفلتر</label>
-                              <select id="filter-status" class="select2 form-select" data-placeholder="اختر" data-allow-clear="flase" data-minimum-results-for-search="Infinity">
-                                <option></option>
-                                <option value="1">وكالة</option>
-                                <option value="2">تجاري</option>
-                              </select>
-                            </div><!-- from-group -->
-                          </div><!-- col -->
-                          <div class="col-lg-6 col-xl-2 col-12">
-                            <div class="from-group">
-                              <label class="form-label mb-2" for="car-statuss">تاريخ التركيب</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="insurance-company-from" readonly="readonly" />
-                            </div><!-- from-group -->
-                          </div><!-- col -->
-                          <div class="col-lg-6 col-xl-3 col-12">
-                            <div class="from-group">
-                              <label class="form-label mb-2" for="car-statuss">العداد</label>
-                              <div class="input-group">
-                                <input type="number" class="form-control" value="43438" aria-describedby="basic-addon11">
-                                <span class="input-group-text" id="basic-addon11">كم</span>
-                              </div><!-- input-group -->
-                            </div><!-- from-group -->
-                          </div><!-- col -->
-                          <div class="col-lg-12 col-xl-1 col-12 d-flex align-items-center">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-
+            <div class="card mb-3">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-13.svg') }}" height="24px">
+                <h5 class="m-0 text-capitalize fw-semibold">AC - Condition FILTER</h5>
+              </div><!-- card-header -->
+              <div class="card-body p-3">
+                <div class="row row-cols-1 row-cols-md-4 g-3">
+                  <div class="col">
+                    <div class="from-group">
+                      <label class="form-label mb-2" for="latest-maintenance">نوع الفلتر</label>
+                      <select id="latest-maintenance" class="select2 form-select" data-placeholder="اختر" data-allow-clear="flase" data-minimum-results-for-search="Infinity">
+                        <option></option>
+                        <option value="1">وكالة</option>
+                        <option value="2">تجاري</option>
+                      </select>
+                    </div><!-- from-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="from-group">
+                      <label class="form-label mb-2" for="filter-status">حالة الفلتر</label>
+                      <select id="filter-status" class="select2 form-select" data-placeholder="اختر" data-allow-clear="flase" data-minimum-results-for-search="Infinity">
+                        <option></option>
+                        <option value="1">وكالة</option>
+                        <option value="2">تجاري</option>
+                      </select>
+                    </div><!-- from-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="from-group">
+                      <label class="form-label mb-2" for="car-statuss">تاريخ التركيب</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- from-group -->
+                  </div><!-- col -->
+                  <div class="col-6">
+                    <div class="from-group">
+                      <label class="form-label mb-2" for="car-statuss">العداد</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- from-group -->
+                  </div><!-- col -->
+                </div><!-- row -->
+              </div><!-- card-body -->
+            </div><!-- card -->
+            <div class="card mb-3">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-14.svg') }}" height="24px">
+                <h5 class="m-0 text-capitalize fw-semibold">Cooling Rate Test</h5>
+              </div><!-- card-header -->
+              <div class="card-body p-3">
+                <div class="row row-cols-1 row-cols-md-4 g-3">
+                  <div class="col">
+                    <div class="from-group">
+                      <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput"/>
+                    </div><!-- from-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="from-group">
+                      <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- from-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="from-group">
+                      <label for="defaultFormControlInput" class="form-label">يمين</label>
+                      <input type="text" class="form-control" id="insurance-company-from"  />
+                    </div><!-- from-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="from-group">
+                      <label for="defaultFormControlInput" class="form-label">يسار</label>
+                      <input type="text" class="form-control" id="insurance-company-from"  />
+                    </div><!-- from-group -->
+                  </div><!-- col -->
+                </div><!-- row -->
+              </div><!-- card-body -->
+            </div><!-- card -->
+            <div class="card">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-15.svg') }}" height="24px">
+                <h5 class="m-0 text-capitalize fw-semibold">Air FILTER</h5>
+              </div><!-- card-header -->
+              <div class="card-body p-3">
+                <div class="row row-cols-1 row-cols-md-4 g-3">
+                  <div class="col">
+                    <div class="from-group">
+                      <label class="form-label mb-2" for="latest-maintenance">نوع الفلتر</label>
+                      <select id="latest-maintenance" class="select2 form-select" data-placeholder="اختر" data-allow-clear="flase" data-minimum-results-for-search="Infinity">
+                        <option></option>
+                        <option value="1">وكالة</option>
+                        <option value="2">تجاري</option>
+                      </select>
+                    </div><!-- from-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="from-group">
+                      <label class="form-label mb-2" for="filter-status">حالة الفلتر</label>
+                      <select id="filter-status" class="select2 form-select" data-placeholder="اختر" data-allow-clear="flase" data-minimum-results-for-search="Infinity">
+                        <option></option>
+                        <option value="1">وكالة</option>
+                        <option value="2">تجاري</option>
+                      </select>
+                    </div><!-- from-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="from-group">
+                      <label class="form-label mb-2" for="car-statuss">تاريخ التركيب</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY-MM-DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- from-group -->
+                  </div><!-- col -->
+                  <div class="col-6">
+                    <div class="from-group">
+                      <label class="form-label mb-2" for="car-statuss">العداد</label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" aria-describedby="basic-addon11">
+                        <span class="input-group-text" id="basic-addon11">كم</span>
+                      </div><!-- input-group -->
+                    </div><!-- from-group -->
+                  </div><!-- col -->
+                </div><!-- row -->
+              </div><!-- card-body -->
+            </div><!-- card -->
           </div><!-- accordion-body -->
         </div><!-- accordion-collapse -->
       </div><!-- card -->
 
-      <hr class="my-4">
+      <hr class="my-3">
 
       <div class="card border-0 shadow-none bg-transparent m-0 accordion-item">
         <h2 class="accordion-header" id="headingVehicleLighting">
@@ -2371,234 +1585,156 @@
           data-bs-parent="#accordionTechnical"
         >
           <div class="accordion-body pt-4 px-0 pb-0">
-
             <div class="card">
-              <div class="card-body">
-                <div class="row row-cols-2 row-cols-md-2 g-3">
+              <div class="card-body p-3">
+                <div class="row row-cols-2 row-cols-md-4 g-4">
                   <div class="col">
-                    <div class="row align-items-center">
-                      <label class="col-sm-4 col-form-label fw-medium" for="car-number">Back Right - Basic</label>
-                      <div class="col-12 col-sm-8">
-                        <div class="row">
-                          <div class="col-12 col-md-6">
-                            <label class="switch switch-lg">
-                              <input type="checkbox" class="switch-input" />
-                              <span class="switch-toggle-slider">
-                                <span class="switch-on">
-                                  <i class="ti ti-check"></i>
-                                </span>
-                                <span class="switch-off">
-                                  <i class="ti ti-x"></i>
-                                </span>
-                              </span>
-                            </label>
-                          </div><!-- col-12 -->
-                        </div><!-- row -->
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
+                    <div class="from-group d-flex align-items-center justify-content-start gap-3">
+                      <label for="back-right-basic" class="form-label m-0 fs-6">Back Right - Basic</label>
+                      <label class="switch switch-lg">
+                        <input type="checkbox" class="switch-input" id="back-right-basic" />
+                        <span class="switch-toggle-slider">
+                          <span class="switch-on">
+                            <i class="ti ti-check"></i>
+                          </span>
+                          <span class="switch-off">
+                            <i class="ti ti-x"></i>
+                          </span>
+                        </span>
+                      </label>
+                    </div><!-- from-group -->
                   </div><!-- col -->
                   <div class="col">
-                    <div class="row align-items-center">
-                      <label class="col-sm-4 col-form-label fw-medium" for="car-number">Back Right - Break</label>
-                      <div class="col-12 col-sm-8">
-                        <div class="row">
-                          <div class="col-12 col-md-6">
-                            <label class="switch switch-lg">
-                              <input type="checkbox" class="switch-input" />
-                              <span class="switch-toggle-slider">
-                                <span class="switch-on">
-                                  <i class="ti ti-check"></i>
-                                </span>
-                                <span class="switch-off">
-                                  <i class="ti ti-x"></i>
-                                </span>
-                              </span>
-                            </label>
-                          </div><!-- col-12 -->
-                        </div><!-- row -->
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col -->
-                </div><!-- row -->
-                <hr class="my-3">
-                <div class="row row-cols-2 row-cols-md-2 g-3">
-                  <div class="col">
-                    <div class="row align-items-center">
-                      <label class="col-sm-4 col-form-label fw-medium" for="car-number">Back Left - Basic</label>
-                      <div class="col-12 col-sm-8">
-                        <div class="row">
-                          <div class="col-12 col-md-6">
-                            <label class="switch switch-lg">
-                              <input type="checkbox" class="switch-input" />
-                              <span class="switch-toggle-slider">
-                                <span class="switch-on">
-                                  <i class="ti ti-check"></i>
-                                </span>
-                                <span class="switch-off">
-                                  <i class="ti ti-x"></i>
-                                </span>
-                              </span>
-                            </label>
-                          </div><!-- col-12 -->
-                        </div><!-- row -->
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
+                    <div class="from-group d-flex align-items-center justify-content-start gap-3">
+                      <label for="back-right-break" class="form-label m-0 fs-6">Back Right - Break</label>
+                      <label class="switch switch-lg">
+                        <input type="checkbox" class="switch-input" id="back-right-break" />
+                        <span class="switch-toggle-slider">
+                          <span class="switch-on">
+                            <i class="ti ti-check"></i>
+                          </span>
+                          <span class="switch-off">
+                            <i class="ti ti-x"></i>
+                          </span>
+                        </span>
+                      </label>
+                    </div><!-- from-group -->
                   </div><!-- col -->
                   <div class="col">
-                    <div class="row align-items-center">
-                      <label class="col-sm-4 col-form-label fw-medium" for="car-number">Back Left - Break</label>
-                      <div class="col-12 col-sm-8">
-                        <div class="row">
-                          <div class="col-12 col-md-6">
-                            <label class="switch switch-lg">
-                              <input type="checkbox" class="switch-input" />
-                              <span class="switch-toggle-slider">
-                                <span class="switch-on">
-                                  <i class="ti ti-check"></i>
-                                </span>
-                                <span class="switch-off">
-                                  <i class="ti ti-x"></i>
-                                </span>
-                              </span>
-                            </label>
-                          </div><!-- col-12 -->
-                        </div><!-- row -->
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
-                  </div><!-- col -->
-                </div><!-- row -->
-                <hr class="my-3">
-                <div class="row row-cols-2 row-cols-md-2 g-3">
-                  <div class="col">
-                    <div class="row align-items-center">
-                      <label class="col-sm-4 col-form-label fw-medium" for="car-number">Front Right - Basic</label>
-                      <div class="col-12 col-sm-8">
-                        <div class="row">
-                          <div class="col-12 col-md-6">
-                            <label class="switch switch-lg">
-                              <input type="checkbox" class="switch-input" />
-                              <span class="switch-toggle-slider">
-                                <span class="switch-on">
-                                  <i class="ti ti-check"></i>
-                                </span>
-                                <span class="switch-off">
-                                  <i class="ti ti-x"></i>
-                                </span>
-                              </span>
-                            </label>
-                          </div><!-- col-12 -->
-                        </div><!-- row -->
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
+                    <div class="from-group d-flex align-items-center justify-content-start gap-3">
+                      <label for="back-left-basic" class="form-label m-0 fs-6">Back Left - Basic</label>
+                      <label class="switch switch-lg">
+                        <input type="checkbox" class="switch-input" id="back-left-basic" />
+                        <span class="switch-toggle-slider">
+                          <span class="switch-on">
+                            <i class="ti ti-check"></i>
+                          </span>
+                          <span class="switch-off">
+                            <i class="ti ti-x"></i>
+                          </span>
+                        </span>
+                      </label>
+                    </div><!-- from-group -->
                   </div><!-- col -->
                   <div class="col">
-                    <div class="row align-items-center">
-                      <label class="col-sm-4 col-form-label fw-medium" for="car-number">Front Right - L & H</label>
-                      <div class="col-12 col-sm-8">
-                        <div class="row">
-                          <div class="col-12 col-md-6">
-                            <label class="switch switch-lg">
-                              <input type="checkbox" class="switch-input" />
-                              <span class="switch-toggle-slider">
-                                <span class="switch-on">
-                                  <i class="ti ti-check"></i>
-                                </span>
-                                <span class="switch-off">
-                                  <i class="ti ti-x"></i>
-                                </span>
-                              </span>
-                            </label>
-                          </div><!-- col-12 -->
-                        </div><!-- row -->
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
+                    <div class="from-group d-flex align-items-center justify-content-start gap-3">
+                      <label for="back-left-break" class="form-label m-0 fs-6">Back Left - Break</label>
+                      <label class="switch switch-lg">
+                        <input type="checkbox" class="switch-input" id="back-left-break" />
+                        <span class="switch-toggle-slider">
+                          <span class="switch-on">
+                            <i class="ti ti-check"></i>
+                          </span>
+                          <span class="switch-off">
+                            <i class="ti ti-x"></i>
+                          </span>
+                        </span>
+                      </label>
+                    </div><!-- from-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="from-group d-flex align-items-center justify-content-start gap-3">
+                      <label for="front-right-basic" class="form-label m-0 fs-6">Front Right - Basic</label>
+                      <label class="switch switch-lg">
+                        <input type="checkbox" class="switch-input" id="front-right-basic" />
+                        <span class="switch-toggle-slider">
+                          <span class="switch-on">
+                            <i class="ti ti-check"></i>
+                          </span>
+                          <span class="switch-off">
+                            <i class="ti ti-x"></i>
+                          </span>
+                        </span>
+                      </label>
+                    </div><!-- from-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="from-group d-flex align-items-center justify-content-start gap-3">
+                      <label for="front-right-lh" class="form-label m-0 fs-6">Front Right - L & H</label>
+                      <label class="switch switch-lg">
+                        <input type="checkbox" class="switch-input" id="front-right-lh" />
+                        <span class="switch-toggle-slider">
+                          <span class="switch-on">
+                            <i class="ti ti-check"></i>
+                          </span>
+                          <span class="switch-off">
+                            <i class="ti ti-x"></i>
+                          </span>
+                        </span>
+                      </label>
+                    </div><!-- from-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="from-group d-flex align-items-center justify-content-start gap-3">
+                      <label for="front-left-basic" class="form-label m-0 fs-6">Front Left - Basic</label>
+                      <label class="switch switch-lg">
+                        <input type="checkbox" class="switch-input" id="front-left-basic" />
+                        <span class="switch-toggle-slider">
+                          <span class="switch-on">
+                            <i class="ti ti-check"></i>
+                          </span>
+                          <span class="switch-off">
+                            <i class="ti ti-x"></i>
+                          </span>
+                        </span>
+                      </label>
+                    </div><!-- from-group -->
+                  </div><!-- col -->
+                  <div class="col">
+                    <div class="from-group d-flex align-items-center justify-content-start gap-3">
+                      <label for="front-left-lh" class="form-label m-0 fs-6">Front Left - L & H</label>
+                      <label class="switch switch-lg">
+                        <input type="checkbox" class="switch-input" id="front-left-lh" />
+                        <span class="switch-toggle-slider">
+                          <span class="switch-on">
+                            <i class="ti ti-check"></i>
+                          </span>
+                          <span class="switch-off">
+                            <i class="ti ti-x"></i>
+                          </span>
+                        </span>
+                      </label>
+                    </div><!-- from-group -->
                   </div><!-- col -->
                 </div><!-- row -->
                 <hr class="my-3">
-                <div class="row row-cols-2 row-cols-md-2 g-3">
-                  <div class="col">
-                    <div class="row align-items-center">
-                      <label class="col-sm-4 col-form-label fw-medium" for="car-number">Front Left - Basic</label>
-                      <div class="col-12 col-sm-8">
-                        <div class="row">
-                          <div class="col-12 col-md-6">
-                            <label class="switch switch-lg">
-                              <input type="checkbox" class="switch-input" />
-                              <span class="switch-toggle-slider">
-                                <span class="switch-on">
-                                  <i class="ti ti-check"></i>
-                                </span>
-                                <span class="switch-off">
-                                  <i class="ti ti-x"></i>
-                                </span>
-                              </span>
-                            </label>
-                          </div><!-- col-12 -->
-                        </div><!-- row -->
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
+                <h5 class="card-title">Lighting Details</h5>
+                <div class="row g-3">
+                  <div class="col-12 col-md-8">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput"/>
+                    </div><!-- formGroup -->
                   </div><!-- col -->
-                  <div class="col">
-                    <div class="row align-items-center">
-                      <label class="col-sm-4 col-form-label fw-medium" for="car-number">Front Left - L & H</label>
-                      <div class="col-12 col-sm-8">
-                        <div class="row">
-                          <div class="col-12 col-md-6">
-                            <label class="switch switch-lg">
-                              <input type="checkbox" class="switch-input" />
-                              <span class="switch-toggle-slider">
-                                <span class="switch-on">
-                                  <i class="ti ti-check"></i>
-                                </span>
-                                <span class="switch-off">
-                                  <i class="ti ti-x"></i>
-                                </span>
-                              </span>
-                            </label>
-                          </div><!-- col-12 -->
-                        </div><!-- row -->
-                      </div><!-- col-12 -->
-                    </div><!-- row -->
+                  <div class="col-12 col-md-4">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
                   </div><!-- col -->
                 </div><!-- row -->
-                <hr class="my-3">
-                <div class="card shadow-none bg-transparent border border-secondary form-repeater m-0">
-                  <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                    <h5 class="m-0 text-capitalize fw-semibold">Lighting Details</h5>
-                    <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                      <span class="ti ti-plus"></span>
-                    </button>
-                  </div><!-- card-header -->
-                  <div class="card-body p-3">
-                    <div data-repeater-list="group-a">
-                      <div data-repeater-item>
-                        <div class="row align-items-end g-3">
-                          <div class="col-lg-6 col-xl-3 col-12">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                              <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-xl-8 col-12">
-                            <div>
-                              <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                              <input type="text" class="form-control" id="defaultFormControlInput"/>
-                            </div>
-                          </div>
-                          <div class="col-lg-12 col-xl-1 col-12 d-flex align-items-center">
-                            <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                              <i class="ti ti-x ti-xs"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <hr>
-                      </div>
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
               </div><!-- card-body -->
             </div><!-- card -->
-
           </div><!-- accordion-body -->
         </div><!-- accordion-collapse -->
       </div><!-- card -->
@@ -2625,130 +1761,90 @@
           data-bs-parent="#accordionTechnical"
         >
           <div class="accordion-body pt-4 px-0 pb-0">
-
-            <div class="card form-repeater mb-4">
-              <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
-                <h5 class="m-0 text-capitalize fw-semibold">ملاحظات خارجية</h5>
-                <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                  <span class="ti ti-plus"></span>
-                </button>
-              </div><!-- card-header -->
-              <div class="card-body p-3 pt-0">
-                <div data-repeater-list="group-a">
-                  <div data-repeater-item>
-                    <div class="row align-items-end">
-                      <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                        <div>
-                          <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                          <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                        </div>
-                      </div>
-                      <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                        <div>
-                          <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                          <input type="text" class="form-control" id="defaultFormControlInput"/>
-                        </div>
-                      </div>
-                      <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                        <div>
-                          <label for="defaultFormControlInput" class="form-label">صورة</label>
-                          <input class="form-control" type="file" id="formFile" />
-                        </div>
-                      </div>
-                      <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                        <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                          <i class="ti ti-x ti-xs"></i>
-                        </button>
-                      </div>
-                    </div>
-                    <hr>
-                  </div>
-                </div>
-              </div><!-- card-body -->
-            </div><!-- card -->
-
-            <div class="card form-repeater mb-4">
-              <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+            <div class="card mb-3">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-16.svg') }}" height="24px">
                 <h5 class="m-0 text-capitalize fw-semibold">ملاحظات داخلية</h5>
-                <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                  <span class="ti ti-plus"></span>
-                </button>
               </div><!-- card-header -->
-              <div class="card-body p-3 pt-0">
-                <div data-repeater-list="group-a">
-                  <div data-repeater-item>
-                    <div class="row align-items-end">
-                      <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                        <div>
-                          <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                          <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                        </div>
-                      </div>
-                      <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                        <div>
-                          <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                          <input type="text" class="form-control" id="defaultFormControlInput"/>
-                        </div>
-                      </div>
-                      <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                        <div>
-                          <label for="defaultFormControlInput" class="form-label">صورة</label>
-                          <input class="form-control" type="file" id="formFile" />
-                        </div>
-                      </div>
-                      <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                        <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                          <i class="ti ti-x ti-xs"></i>
-                        </button>
-                      </div>
-                    </div>
-                    <hr>
-                  </div>
-                </div>
+              <div class="card-body p-3">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput"/>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">الصورة</label>
+                      <input class="form-control" type="file" id="formFile" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                </div><!-- row -->
               </div><!-- card-body -->
             </div><!-- card -->
-
-            <div class="card form-repeater mb-4">
-              <div class="card-header p-3 d-flex align-items-center justify-content-between gap-3">
+            <div class="card mb-3">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-16.svg') }}" height="24px">
+                <h5 class="m-0 text-capitalize fw-semibold">ملاحظات خارجية</h5>
+              </div><!-- card-header -->
+              <div class="card-body p-3">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput"/>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">الصورة</label>
+                      <input class="form-control" type="file" id="formFile" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                </div><!-- row -->
+              </div><!-- card-body -->
+            </div><!-- card -->
+            <div class="card">
+              <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
+                <img src="{{ asset('assets/images/technical/technical-icon-16.svg') }}" height="24px">
                 <h5 class="m-0 text-capitalize fw-semibold">ملاحظات اسفل السياره</h5>
-                <button type="button" class="btn btn-icon btn-primary waves-effect waves-light m-0" data-repeater-create>
-                  <span class="ti ti-plus"></span>
-                </button>
               </div><!-- card-header -->
-              <div class="card-body p-3 pt-0">
-                <div data-repeater-list="group-a">
-                  <div data-repeater-item>
-                    <div class="row align-items-end">
-                      <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                        <div>
-                          <label for="defaultFormControlInput" class="form-label">التاريخ</label>
-                          <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
-                        </div>
-                      </div>
-                      <div class="mb-1 col-lg-6 col-xl-5 col-12 mb-0">
-                        <div>
-                          <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
-                          <input type="text" class="form-control" id="defaultFormControlInput"/>
-                        </div>
-                      </div>
-                      <div class="mb-1 col-lg-6 col-xl-3 col-12 mb-0">
-                        <div>
-                          <label for="defaultFormControlInput" class="form-label">صورة</label>
-                          <input class="form-control" type="file" id="formFile" />
-                        </div>
-                      </div>
-                      <div class="mb-1 col-lg-12 col-xl-1 col-12 d-flex align-items-center mb-0">
-                        <button class="btn btn-icon btn-label-danger waves-effect" type="button" data-repeater-delete>
-                          <i class="ti ti-x ti-xs"></i>
-                        </button>
-                      </div>
-                    </div>
-                    <hr>
-                  </div>
-                </div>
+              <div class="card-body p-3">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التفاصيل</label>
+                      <input type="text" class="form-control" id="defaultFormControlInput"/>
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">التاريخ</label>
+                      <input type="text" class="form-control flatpickr-date" placeholder="YYYY / MM / DD" id="insurance-company-from" readonly="readonly" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                  <div class="col-12 col-md-3">
+                    <div class="formGroup">
+                      <label for="defaultFormControlInput" class="form-label">الصورة</label>
+                      <input class="form-control" type="file" id="formFile" />
+                    </div><!-- formGroup -->
+                  </div><!-- col -->
+                </div><!-- row -->
               </div><!-- card-body -->
             </div><!-- card -->
-
           </div><!-- accordion-body -->
         </div><!-- accordion-collapse -->
       </div><!-- card -->
@@ -2768,9 +1864,32 @@
   <script src="{{ asset('assets/vendor/libs/flatpickr/flatpickr.js') }}"></script>
   <script src="{{ asset('assets/vendor/libs/select2/select2.js') }}"></script>
   <script src="{{ asset('assets/vendor/libs/jquery-repeater/jquery-repeater.js') }}"></script>
-  <script src="{{ asset('assets/vendor/libs/pickr/pickr.js') }}"></script>
   <script type="module">
-    $(".select2").select2();
+    // --------------------------------------------------------------------
+    // Select2
+    // --------------------------------------------------------------------
+    $(document).ready(function() {
+      $('.select2').select2();
+      $('.select2-color-car').select2({
+        containerCssClass: 'color-car-dropdown',
+        templateResult: function(option) {
+          if (!option.id) {
+            return option.text; // Return text for placeholder
+          }
+          const $option = $(`<div class="car-class-option ${option.element.className}"><div class="color-box" style="background-color: ${option.id};"></div> ${option.text}</div>`);
+          return $option;
+        },
+        templateSelection: function(option) {
+          if (option.id) {
+            const colorValue = option.id;
+            const $selection = $(`<span><div class="color-box" style="background-color: ${colorValue}; display: inline-block;"></div>${option.text}</span>`);
+            return $selection;
+          } else {
+            return 'اختر'; // Placeholder text
+          }
+        }
+      });
+    });
 
     $(".flatpickr-date").flatpickr({
       monthSelectorType: 'static',
