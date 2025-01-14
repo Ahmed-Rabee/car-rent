@@ -54,28 +54,13 @@
         <hr class="my-3">
         <div class="row row-cols-3 row-cols-md-3 g-3">
           <div class="col">
-            <div class="row align-items-center">
-              <label class="col-sm-4 col-form-label fw-medium" for="car-brand">الماركة</label>
-              <div class="col-12 col-sm-8">
-                <p class="d-block m-0">AVEO</p>
-              </div><!-- col-12 -->
-            </div><!-- row -->
+            <p class="d-flex align-items-center justify-content-start gap-1 fw-medium m-0">الماركة : <b>AVEO</b></p>
           </div><!-- col -->
           <div class="col">
-            <div class="row align-items-center">
-              <label class="col-sm-4 col-form-label fw-medium" for="car-model">الموديل</label>
-              <div class="col-12 col-sm-8">
-              <p class="d-block m-0">AVEO</p>
-              </div><!-- col-12 -->
-            </div><!-- row -->
+            <p class="d-flex align-items-center justify-content-start gap-1 fw-medium m-0">الموديل : <b>AVEO</b></p>
           </div><!-- col -->
           <div class="col">
-            <div class="row align-items-center">
-              <label class="col-sm-4 col-form-label fw-medium" for="car-category">الفئة</label>
-              <div class="col-12 col-sm-8">
-                <p class="d-block m-0">AVEO</p>
-              </div><!-- col-12 -->
-            </div><!-- row -->
+            <p class="d-flex align-items-center justify-content-start gap-1 fw-medium m-0">الفئة : <b>AVEO</b></p>
           </div><!-- col -->
         </div><!-- row -->
       </div><!-- card-body -->
@@ -916,7 +901,7 @@
               <div class="col">
                 <div class="card">
                   <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
-                    <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
+                    <img src="{{ asset('assets/images/technical/technical-icon-18.svg') }}" height="24px">
                     <h5 class="m-0 text-capitalize fw-semibold">Transmission Mount</h5>
                   </div><!-- card-header -->
                   <div class="card-body p-3">
@@ -949,7 +934,7 @@
               <div class="col">
                 <div class="card">
                   <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
-                    <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
+                    <img src="{{ asset('assets/images/technical/technical-icon-19.svg') }}" height="24px">
                     <h5 class="m-0 text-capitalize fw-semibold">Rod</h5>
                   </div><!-- card-header -->
                   <div class="card-body p-3">
@@ -1081,7 +1066,7 @@
               <div class="col">
                 <div class="card">
                   <div class="card-header p-3 pb-0 d-flex align-items-center justify-content-start gap-3">
-                    <img src="{{ asset('assets/images/technical/technical-icon-12.svg') }}" height="24px">
+                    <img src="{{ asset('assets/images/technical/technical-icon-17.svg') }}" height="24px">
                     <h5 class="m-0 text-capitalize fw-semibold">AXLE</h5>
                   </div><!-- card-header -->
                   <div class="card-body p-3">
