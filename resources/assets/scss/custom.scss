@@ -579,3 +579,44 @@ a.card {
     box-shadow: var(--a-card-box-shadow-hover);
   } // hover
 } // a.card
+
+.Stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: 24px;
+  font-family: Times;
+  line-height: 1;
+  &::before {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    background: linear-gradient(-90deg, #ff9f43 var(--percent), #dbdade var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    [dir="ltr"] {
+      background: linear-gradient(90deg, #ff9f43 var(--percent), #dbdade var(--percent));
+    } // ltr
+  } // before
+} // stars
+
+
+ul#stars-rating {
+  -moz-user-select:none;
+  -webkit-user-select:none;
+  li {
+    cursor: pointer;
+    i {
+      font-size: 32px;
+      color: #dbdade;
+    } // i
+    &.hover {
+      i {
+        color: #ff9f43;
+      } // i
+    } // hover
+    &.selected {
+      i {
+        color: #ff9f43;
+      } // i
+    } // selected
+  } // li
+} // stars-rating

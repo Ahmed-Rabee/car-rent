@@ -9,7 +9,7 @@
 
   <div id="clients-index-page">
 
-    <div class="d-flex flex-wrap gap-3 justify-content-between align-items-start align-items-md-center mb-4">
+    <div class="d-flex flex-wrap gap-3 justify-content-between align-items-start align-items-md-center mb-3">
       <div class="d-flex flex-column justify-content-center flex-grow-1">
         <h4 class="m-0">العملاء</h4>
       </div>
@@ -17,6 +17,11 @@
         <a href="{{ url('/clients/create') }}" class="btn btn-primary waves-effect waves-light"><span class="ti-xs ti ti-plus me-2"></span> إضافة عميل جديد</a>
       </div>
     </div><!-- d-flex -->
+
+    <div class="tabs-area d-flex align-items-center justify-content-start gap-3 flex-wrap mb-3">
+      <div class="btn btn-primary waves-effect waves-light">العملاء</div>
+      <a href="{{ url('/clients/reviews') }}" title="تقييمات العملاء" class="btn btn-label-dark waves-effect">تقييمات العملاء</a>
+    </div><!-- tabs-area -->
 
     <div class="card">
       <div class="table-responsive text-nowrap">

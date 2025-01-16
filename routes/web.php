@@ -13,6 +13,7 @@ use App\Http\Controllers\pages\Contracts;
 use App\Http\Controllers\pages\Reports;
 use App\Http\Controllers\pages\Calculations;
 use App\Http\Controllers\pages\Checks;
+use App\Http\Controllers\pages\Reviews;
 
 
 
@@ -68,6 +69,10 @@ Route::get('/clients', [Clients::class, 'index'])->name('clients-index');
 Route::get('/clients/create', [Clients::class, 'create'])->name('clients-create');
 Route::get('/clients/{id}/edit', [Clients::class, 'edit'])->name('clients-edit');
 Route::get('/clients/{id}/view', [Clients::class, 'view'])->name('clients-view');
+
+// Clients Reviews Routes
+Route::get('/clients/reviews', [Reviews::class, 'index'])->name('clients-reviews-index');
+Route::get('/clients/reviews/{id}/view', [Reviews::class, 'view'])->name('clients-reviews-view');
 
 // Contracts Routes
 Route::get('/contracts', [Contracts::class, 'index'])->name('contracts-index');

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 * demo.css
 * File include item demo only specific css only
@@ -530,4 +531,40 @@ a.card {
 }
 a.card:hover {
   box-shadow: var(--a-card-box-shadow-hover);
+}
+
+.Stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: 24px;
+  font-family: Times;
+  line-height: 1;
+}
+.Stars::before {
+  content: "★★★★★";
+  letter-spacing: 3px;
+  background: linear-gradient(-90deg, #ff9f43 var(--percent), #dbdade var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Stars::before [dir=ltr] {
+  background: linear-gradient(90deg, #ff9f43 var(--percent), #dbdade var(--percent));
+}
+
+ul#stars-rating {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+ul#stars-rating li {
+  cursor: pointer;
+}
+ul#stars-rating li i {
+  font-size: 32px;
+  color: #dbdade;
+}
+ul#stars-rating li.hover i {
+  color: #ff9f43;
+}
+ul#stars-rating li.selected i {
+  color: #ff9f43;
 }
