@@ -3,23 +3,44 @@
 @push('styles')
   <link rel="stylesheet" href="{{ asset('assets/vendor/libs/sweetalert2/sweetalert2.css') }}" />
   <link rel="stylesheet" href="{{ asset('assets/vendor/libs/fancybox/fancybox.css') }}" />
+  <link rel="stylesheet" href="{{ asset('assets/vendor/libs/select2/select2.css') }}" />
 @endpush
 
 @section('content')
 
   <div id="client-view-page">
 
-    <div class="d-flex flex-wrap gap-3 justify-content-between align-items-start align-items-md-center mb-4">
+    <div class="d-flex flex-wrap gap-3 justify-content-between align-items-start align-items-md-center mb-3">
       <div class="d-flex flex-column justify-content-center flex-grow-1">
         <h4 class="m-0">تفاصيل عميل : احمد محمد محمود</h4>
       </div>
       <div class="d-flex align-content-center flex-wrap gap-2 flex-shrink-0">
+        <!-- Client Add Debt Modal -->
+        @include('clients.Modals.add-debt')
+        <!-- Client Add Debt Modal -->
         <a href="{{ url('/clients/{id}/edit') }}" class="btn btn-icon btn-label-info waves-effect"><span class="ti ti-pencil"></span></a>
         <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#clientDeleteModal" class="btn btn-icon btn-label-danger waves-effect"><span class="ti ti-trash"></span></a>
       </div>
-    </div>
+    </div><!-- d-flex -->
 
-    <div class="row g-4 mb-4">
+    <div class="alert alert-danger alert-dismissible d-flex align-items-baseline" role="alert">
+      <span class="alert-icon alert-icon-lg text-danger me-2">
+        <i class="ti ti-ban ti-sm"></i>
+      </span>
+      <div class="d-flex flex-column ps-1">
+        <h5 class="alert-heading mb-2">
+          <span class="d-flex gap-1">يوجد مديونية علي العميل بقيمة <b>500</b> ريال</span>
+        </h5>
+        <p class="mb-0">
+          Sugar plum apple pie sesame snaps croissant marshmallow apple pie liquorice. Cheesecake bear
+          claw tiramisu shortbread cupcake. Sugar plum candy canes jujubes liquorice tiramisu gummi
+          bears muffin dragée gingerbread.
+        </p>
+      </div><!-- d-flex -->
+    </div><!-- alert -->
+
+
+    <div class="row g-4 mb-3">
       <div class="col-xl-3 col-lg-4 col-md-4">
         <div class="card">
           <div class="card-body p-3">
@@ -27,6 +48,10 @@
               <img class="img-fluid rounded mb-3" src="{{ asset('assets/images/user-avatar.webp') }}" height="100" width="100" alt="User avatar">
               <div class="user-info text-center">
                 <h5 class="mb-2">احمد محمد محمود</h5>
+                <p class="d-flex align-items-center justify-content-center gap-1" dir="ltr">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-icon ipc-icon--star sc-d541859f-4 LNYqq" viewBox="0 0 24 24" fill="#f5c518" role="presentation"><path d="M12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"></path></svg>
+                  <span class="d-flex align-items-center justify-content-center gap-1 lh-1"><b class="fs-5">4.6</b> / 10</span>
+                </p>
                 <span class="badge bg-label-secondary py-2">محلي</span>
               </div><!-- user-info -->
             </div><!-- d-flex -->
@@ -114,6 +139,32 @@
           aria-selected="false"
         >
           الحجوزات
+        </button>
+      </li>
+      <li class="nav-item">
+        <button
+          type="button"
+          class="nav-link"
+          role="tab"
+          data-bs-toggle="tab"
+          data-bs-target="#client-reviews"
+          aria-controls="client-reviews"
+          aria-selected="false"
+        >
+          التقييمات
+        </button>
+      </li>
+      <li class="nav-item">
+        <button
+          type="button"
+          class="nav-link"
+          role="tab"
+          data-bs-toggle="tab"
+          data-bs-target="#client-debts"
+          aria-controls="client-debts"
+          aria-selected="false"
+        >
+          المديونيات
         </button>
       </li>
     </ul>
@@ -357,6 +408,51 @@
         </div><!-- table-responsive -->
       </div><!-- tab-pane -->
 
+      <div class="tab-pane fade" id="client-reviews" role="tabpanel">
+        <ul class="timeline mb-0">
+          <li class="timeline-item timeline-item-transparent">
+            <span class="timeline-point timeline-point-primary"></span>
+            <div class="timeline-event px-0">
+              <div class="timeline-header border-bottom mb-3 pb-2">
+                <h6 class="mb-0">الفرع : الواحة</h6>
+                <span class="text-muted">18 / 11 / 2024</span>
+              </div>
+              <div class="Stars m-0 mb-3" style="--rating: 2;"></div>
+              <p>عميل محترم في التعامل من اول مره</p>
+              <small class="d-flex align-items-center justify-content-start text-muted">الموظف : محمد احمد محمود</small>
+            </div>
+          </li>
+          <li class="timeline-item timeline-item-transparent">
+            <span class="timeline-point timeline-point-primary"></span>
+            <div class="timeline-event px-0">
+              <div class="timeline-header border-bottom mb-3 pb-2">
+                <h6 class="mb-0">الفرع : جدة</h6>
+                <span class="text-muted">11 / 11 / 2024</span>
+              </div>
+              <div class="Stars m-0 mb-3" style="--rating: 2;"></div>
+              <p>عميل محترم في التعامل من اول مره</p>
+              <small class="d-flex align-items-center justify-content-start text-muted">الموظف : محمد احمد محمود</small>
+            </div>
+          </li>
+          <li class="timeline-item timeline-item-transparent">
+            <span class="timeline-point timeline-point-primary"></span>
+            <div class="timeline-event px-0">
+              <div class="timeline-header border-bottom mb-3 pb-2">
+                <h6 class="mb-0">الفرع : الرياض</h6>
+                <span class="text-muted">02 / 11 / 2024</span>
+              </div>
+              <div class="Stars m-0 mb-3" style="--rating: 2;"></div>
+              <p>عميل محترم في التعامل من اول مره</p>
+              <small class="d-flex align-items-center justify-content-start text-muted">الموظف : محمد احمد محمود</small>
+            </div>
+          </li>
+        </ul>
+      </div><!-- tab-pane -->
+
+      <div class="tab-pane fade" id="client-debts" role="tabpanel">
+        dfds
+      </div><!-- tab-pane -->
+
     </div><!-- tab-content -->
 
     <!-- Client Delete Modal -->
@@ -369,7 +465,9 @@
 
 @push('scripts')
   <script src="{{ asset('assets/vendor/libs/fancybox/fancybox.umd.js') }}"></script>
-  <script>
+  <script src="{{ asset('assets/vendor/libs/select2/select2.js') }}"></script>
+  <script type="module">
+    $(".select2").select2();
     Fancybox.bind("[data-fancybox]");
     Fancybox.bind('[data-fancybox="gallery"]');
   </script>

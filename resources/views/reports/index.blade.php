@@ -64,6 +64,49 @@
       </div><!-- col -->
     </div><!-- row -->
 
+
+
+    <div class="card">
+      <div class="table-responsive text-nowrap">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th class="fw-bold">اسم العميل</th>
+              <th class="fw-bold">مبلغ المدونية</th>
+              <th class="fw-bold">التفاصيل</th>
+              <th class="fw-bold">الحالة</th>
+              <th class="fw-bold">التاريخ</th>
+            </tr>
+          </thead>
+          <tbody class="table-border-bottom-0">
+            <tr>
+              <td>محمد احمد محمود</td>
+              <td>
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  2334 <small>ريال</small>
+                </div><!-- d-flex -->
+              </td>
+              <td>مبلغ صيانه لكسر المرايه جهة اليمين</td>
+              <td><span class="badge bg-label-success">مدفوع</span></td>
+            </tr>
+            <tr>
+              <td>محمد احمد محمود</td>
+              <td>
+                <div class="d-flex align-items-center justify-content-start gap-1">
+                  2334 <small>ريال</small>
+                </div><!-- d-flex -->
+              </td>
+              <td>
+                مبلغ مديونية علي العقد
+                <a href="#">#5656</a>
+              </td>
+              <td><span class="badge bg-label-danger">مديونية</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- table-responsive -->
+    </div><!-- card -->
+
   </div><!-- reports-index-page -->
 
 @endsection

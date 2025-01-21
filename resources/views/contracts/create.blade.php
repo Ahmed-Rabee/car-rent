@@ -228,6 +228,43 @@
             </div><!-- row -->
           </div><!-- card-body -->
         </div><!-- card -->
+        <div class="card">
+          <h5 class="card-header p-3">التآمين</h5>
+          <div class="card-body p-3">
+            <div class="row row-cols-1 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="form-group">
+                  <label class="form-label mb-2 fs-6 required" for="contract-delivery-service">نوع التآمين</label>
+                  <select id="contract-delivery-service" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
+                    <option></option>
+                    <option value="free" selected>تآمين مخالفات مرورية</option>
+                    <option value="payment">تآمين أضرار</option>
+                  </select>
+                </div><!-- form-group -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="form-group">
+                  <label class="form-label mb-2 fs-6 required" for="contract-discount">مبلغ التآمين</label>
+                  <div class="input-group">
+                    <input type="number" inputmode="numeric" id="contract-discount" class="form-control" />
+                    <span class="input-group-text">ريال</span>
+                  </div><!-- input-group -->
+                </div><!-- form-group -->
+              </div><!-- col -->
+              <div class="col">
+                <div class="form-group">
+                  <label class="form-label mb-2 fs-6 required" for="contract-payment-method1">طريقة الدفع</label>
+                  <select id="contract-payment-method1" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
+                    <option></option>
+                    <option value="free">نقداً</option>
+                    <option value="payment2">POS</option>
+                    <option value="payment3">تحويل بنكي</option>
+                  </select>
+                </div><!-- form-group -->
+              </div><!-- col -->
+            </div><!-- row -->
+          </div><!-- card-body -->
+        </div><!-- card -->
       </div><!-- col-12 -->
       <div class="col-12 col-md-3">
         <div class="reservation-cart-side position-sticky">
