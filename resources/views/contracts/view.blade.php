@@ -17,11 +17,25 @@
         <a href="{{ url('/contracts/print') }}" class="btn btn-primary">Print</a>
         <a href="{{ url('/contracts/{id}/edit') }}" class="btn btn-icon btn-label-info waves-effect"><span class="ti ti-pencil"></span></a>
       </div>
-    </div>
+    </div><!-- d-flex -->
 
     <div class="alert alert-warning d-flex align-items-center" role="alert">
       <span class="alert-icon text-warning me-2"><i class="ti ti-contract ti-xs"></i></span>
       هذا العقد تابع لحجز برقم - <a href="{{ url('/reservations/{id}/view') }}" class="alert-link text-decoration-underline">#45435</a>
+    </div><!-- alert -->
+
+    <div class="alert alert-danger alert-dismissible d-flex align-items-baseline" role="alert">
+      <span class="alert-icon alert-icon-lg text-danger me-2">
+        <i class="ti ti-ban ti-sm"></i>
+      </span>
+      <div class="d-flex flex-column ps-1">
+        <h5 class="alert-heading mb-2">
+          <span class="d-flex gap-1">يوجد مديونية علي هذا العقد بقيمة <b>500</b> ريال</span>
+        </h5>
+        <p class="mb-0">
+          تكلفة نظافة المركبة وتكلفة اصلاح النور الامامي
+        </p>
+      </div><!-- d-flex -->
     </div><!-- alert -->
 
     <div class="row g-3">
@@ -183,129 +197,18 @@
             </div><!-- card-body -->
           </div><!-- card -->
           <a href="{{ url('/contracts/{id}/confirmation') }}" class="btn btn-success waves-effect waves-light w-100 mt-3">إنهاء العقد</a>
+          <button type="button" class="btn btn-warning waves-effect waves-light w-100 mt-3" data-bs-toggle="modal" data-bs-target="#contractDebtModal">مدونية علي العقد</button>
           <button type="button" class="btn btn-danger waves-effect waves-light w-100 mt-3" data-bs-toggle="modal" data-bs-target="#contractCancelModal">إلغاء العقد</button>
         </div><!-- reservation-cart-side -->
       </div><!-- col-12 -->
     </div><!-- row -->
-
-    <!-- Confirmation Contract Modal -->
-    <div class="modal fade" id="contractConfirmationModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header p-3">
-            <h5 class="modal-title" id="contractConfirmationModalLabel1">إنهاء العقد : 8778</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div><!-- modal-header -->
-          <div class="modal-body p-3">
-            <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label required" for="car-number">الكيلو متر الحالي</label>
-              <div class="col-12 col-sm-9">
-                <div class="input-group">
-                  <input type="number" inputmode="numeric" id="contract-current-kilometer" class="form-control">
-                  <span class="input-group-text">كم</span>
-                </div><!-- input-group -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-            <hr class="my-3">
-            <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label required" for="car-number">حالة الوقود</label>
-              <div class="col-12 col-sm-9">
-              <div class="row g-3">
-                <div class="col-12 col-md-7">
-                  <div id="slider-pips2"></div>
-                </div><!-- col-12 -->
-                <div class="col-12 col-md-5">
-                  <div class="input-group">
-                    <input type="number" inputmode="numeric" id="oil-status" class="form-control">
-                    <span class="input-group-text">كم</span>
-                  </div><!-- input-group -->
-                </div><!-- col-12 -->
-              </div><!-- row -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-            <hr class="my-3">
-            <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label required" for="contract-car-cleanliness-status">حالة النظافة</label>
-              <div class="col-12 col-sm-9">
-                <div class="row row-cols-2 g-1 g-md-3">
-                  <div class="col">
-                    <div class="form-check custom-option custom-option-basic m-0">
-                      <label class="form-check-label custom-option-content py-2" for="contract-car-cleanliness-status-yes">
-                        <input
-                          name="contract-car-cleanliness-status"
-                          class="form-check-input"
-                          type="radio"
-                          id="contract-car-cleanliness-status-yes"
-                          checked
-                        />
-                        <span class="custom-option-header p-0">نظيفة</span>
-                      </label>
-                    </div><!-- form-check -->
-                  </div><!-- col -->
-                  <div class="col">
-                    <div class="form-check custom-option custom-option-basic m-0">
-                      <label class="form-check-label custom-option-content py-2" for="contract-car-cleanliness-status-no">
-                        <input
-                          name="contract-car-cleanliness-status"
-                          class="form-check-input"
-                          type="radio"
-                          id="contract-car-cleanliness-status-no"
-                        />
-                        <span class="custom-option-header p-0">غير نظيفة</span>
-                      </label>
-                    </div><!-- form-check -->
-                  </div><!-- col -->
-                </div><!-- row -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-            <div id="contract-car-cleanliness-status-no-element" style="display: none;">
-              <hr class="my-3">
-              <div class="row align-items-center">
-                <label class="col-sm-3 col-form-label" for="car-number">تكلفة غسيل</label>
-                <div class="col-12 col-sm-9">
-                  <div class="input-group">
-                    <input type="number" inputmode="numeric" id="oil-status" class="form-control">
-                    <span class="input-group-text">ريال</span>
-                  </div><!-- input-group -->
-                </div><!-- col-12 -->
-              </div><!-- row -->
-            </div><!-- contract-car-cleanliness-status-no-element -->
-            <hr class="my-3">
-            <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label required" for="car-number">زيادة الكيلو متر</label>
-              <div class="col-12 col-sm-9">
-                <div class="input-group">
-                  <input type="number" inputmode="numeric" id="oil-status" class="form-control">
-                  <span class="input-group-text">كم</span>
-                </div><!-- input-group -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-            <hr class="my-3">
-            <div class="row align-items-center">
-              <label class="col-sm-3 col-form-label" for="car-number">فرق بترول</label>
-              <div class="col-12 col-sm-9">
-                <div class="input-group">
-                  <input type="number" inputmode="numeric" id="oil-status" class="form-control">
-                  <span class="input-group-text">ريال</span>
-                </div><!-- input-group -->
-              </div><!-- col-12 -->
-            </div><!-- row -->
-          </div><!-- modal-body -->
-          <div class="modal-footer p-3 d-flex align-items-center justify-content-end gap-3">
-            <button type="button" class="btn text-secondary waves-effect m-0" data-bs-dismiss="modal">إلغاء</button>
-            <button type="button" class="btn btn-primary px-5 m-0">حفظ</button>
-          </div>
-        </div>
-      </div>
-    </div><!-- modal -->
-    <!-- Confirmation Contract Modal -->
 
     <!-- Cancel Contract Modal -->
     <div class="modal fade" id="contractCancelModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header p-3">
-            <h5 class="modal-title" id="contractCancelModalLabel1">إلغاء العقد : 8778</h5>
+            <h5 class="modal-title" id="contractCancelModalLabel1">إلغاء العقد</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div><!-- modal-header -->
           <div class="modal-body p-3">
@@ -327,6 +230,43 @@
       </div><!-- modal-dialog -->
     </div><!-- modal -->
     <!-- Cancel Contract Modal -->
+
+    <!-- Debt Contract Modal -->
+    <div class="modal fade" id="contractDebtModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header p-3">
+            <h5 class="modal-title" id="contractDebtModalLabel1">مديونية علي العقد</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div><!-- modal-header -->
+          <div class="modal-body p-3">
+            <div class="row align-items-center">
+              <label class="col-sm-4 col-form-label" for="car-number">مبلغ المديونية</label>
+              <div class="col-12 col-sm-8">
+                <div class="input-group">
+                  <input type="number" inputmode="numeric" id="oil-status" class="form-control">
+                  <span class="input-group-text">ريال</span>
+                </div><!-- input-group -->
+              </div><!-- col-12 -->
+            </div><!-- row -->
+            <hr class="my-3">
+            <div class="row align-items-center">
+              <label class="col-sm-4 col-form-label" for="car-number">تفاصيل المديونية</label>
+              <div class="col-12 col-sm-8">
+                <input type="text" id="contract-pickup-location" class="form-control" />
+              </div><!-- col-12 -->
+            </div><!-- row -->
+          </div><!-- modal-body -->
+          <div class="modal-footer p-3 d-flex align-items-center justify-content-end gap-3">
+            <button type="button" class="btn text-secondary waves-effect m-0" data-bs-dismiss="modal">إلغاء</button>
+            <button type="button" class="btn btn-primary px-5 m-0">حفظ</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- modal -->
+    <!-- Debt Contract Modal -->
+
+
 
   </div><!-- contracts-view-page -->
 
