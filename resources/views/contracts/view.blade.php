@@ -198,6 +198,7 @@
           </div><!-- card -->
           <a href="{{ url('/contracts/{id}/confirmation') }}" class="btn btn-success waves-effect waves-light w-100 mt-3">إنهاء العقد</a>
           <button type="button" class="btn btn-warning waves-effect waves-light w-100 mt-3" data-bs-toggle="modal" data-bs-target="#contractDebtModal">مدونية علي العقد</button>
+          <button type="button" class="btn btn-info waves-effect waves-light w-100 mt-3" data-bs-toggle="modal" data-bs-target="#contractDebtRepaymentModal">سداد المديونية</button>
           <button type="button" class="btn btn-danger waves-effect waves-light w-100 mt-3" data-bs-toggle="modal" data-bs-target="#contractCancelModal">إلغاء العقد</button>
         </div><!-- reservation-cart-side -->
       </div><!-- col-12 -->
@@ -265,6 +266,29 @@
       </div>
     </div><!-- modal -->
     <!-- Debt Contract Modal -->
+
+    <!-- Debt Repayment Contract Modal -->
+    <div class="modal fade" id="contractDebtRepaymentModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header p-3">
+            <h5 class="modal-title" id="contractDebtRepaymentModalLabel1">سداد المدونية</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div><!-- modal-header -->
+          <div class="modal-body p-3">
+            <div class="top-area d-flex align-items-center justify-content-center gap-4 flex-column">
+              <div class="swal2-icon swal2-info swal2-icon-show d-flex m-0" style="display: flex;"><div class="swal2-icon-content">i</div></div>
+              <h5 class="d-block text-center fw-medium m-0">هل أنت متأكد من سداد مدونية العقد ؟</h5>
+            </div><!-- top-area -->
+          </div><!-- modal-body -->
+          <div class="modal-footer p-3 d-flex align-items-center justify-content-end gap-3">
+            <button type="button" class="btn text-secondary waves-effect m-0" data-bs-dismiss="modal">إلغاء</button>
+            <button type="button" class="btn btn-primary px-5 m-0">نعم</button>
+          </div><!-- modal-footer -->
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+    <!-- Debt Repayment Contract Modal -->
 
 
 
