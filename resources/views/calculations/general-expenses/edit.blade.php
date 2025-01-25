@@ -126,32 +126,6 @@
         </div><!-- row -->
         <hr class="my-3">
         <div class="row align-items-center">
-          <label class="col-sm-2 col-form-label" for="general-expenses-status">الحالة</label>
-          <div class="col-sm-10">
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <select id="general-expenses-status" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
-                  <option></option>
-                  <option value="AK">آجل</option>
-                  <option value="HI">مدفوع</option>
-                </select>
-              </div><!-- col-12 -->
-            </div><!-- row -->
-          </div><!-- col-12 -->
-        </div><!-- row -->
-        <hr class="my-3">
-        <div class="row align-items-center">
-          <label class="col-sm-2 col-form-label" for="general-expenses-date">تاريخ الصرف</label>
-          <div class="col-sm-10">
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <input type="date" class="form-control flatpickr-date" id="general-expenses-date" placeholder="YYYY-MM-DD" readonly="readonly" />
-              </div><!-- col-12 -->
-            </div><!-- row -->
-          </div><!-- col-12 -->
-        </div><!-- row -->
-        <hr class="my-3">
-        <div class="row align-items-center">
           <label class="col-sm-2 col-form-label" for="general-expenses-attach">مرفقات</label>
           <div class="col-sm-10">
             <div class="row">

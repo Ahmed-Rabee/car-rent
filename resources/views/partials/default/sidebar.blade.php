@@ -99,5 +99,12 @@
         <div>إدارة الشيكات</div>
       </a>
     </li>
+    <!-- General settings -->
+    <li class="menu-item">
+      <a href="{{ url('/settings') }}" class="menu-link">
+        <i class="menu-icon tf-icons ti ti-settings"></i>
+        <div>الإعدادات</div>
+      </a>
+    </li>
   </ul>
 </aside>

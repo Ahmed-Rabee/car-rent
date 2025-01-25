@@ -148,24 +148,39 @@
               <div class="col-12 col-md-6">
                 <select id="vehicle-expenses-status" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر">
                   <option></option>
-                  <option value="AK">آجل</option>
-                  <option value="HI">مدفوع</option>
+                  <option value="indebtedness">مديونية</option>
+                  <option value="paid">مدفوع</option>
                 </select>
               </div><!-- col-12 -->
             </div><!-- row -->
           </div><!-- col-12 -->
         </div><!-- row -->
-        <hr class="my-3">
-        <div class="row align-items-center">
-          <label class="col-sm-2 col-form-label" for="vehicle-expenses-date">تاريخ الصرف</label>
-          <div class="col-sm-10">
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <input type="date" class="form-control flatpickr-date" id="vehicle-expenses-date" placeholder="YYYY-MM-DD" readonly="readonly" />
-              </div><!-- col-12 -->
-            </div><!-- row -->
-          </div><!-- col-12 -->
-        </div><!-- row -->
+        <div id="indebtedness" class="toggle-element" style="display: none;">
+          <hr class="my-3">
+          <div class="row align-items-center">
+            <label class="col-sm-2 col-form-label" for="vehicle-expenses-date">تاريخ الإستحقاق</label>
+            <div class="col-sm-10">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <input type="date" class="form-control flatpickr-date" id="vehicle-expenses-date" placeholder="YYYY-MM-DD" readonly="readonly" />
+                </div><!-- col-12 -->
+              </div><!-- row -->
+            </div><!-- col-12 -->
+          </div><!-- row -->
+        </div><!-- indebtedness -->
+        <div id="paid" class="toggle-element" style="display: none;">
+          <hr class="my-3">
+          <div class="row align-items-center">
+            <label class="col-sm-2 col-form-label" for="vehicle-expenses-date">تاريخ الصرف</label>
+            <div class="col-sm-10">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <input type="date" class="form-control flatpickr-date" id="vehicle-expenses-date" placeholder="YYYY-MM-DD" readonly="readonly" />
+                </div><!-- col-12 -->
+              </div><!-- row -->
+            </div><!-- col-12 -->
+          </div><!-- row -->
+        </div><!-- indebtedness -->
         <hr class="my-3">
         <div class="row align-items-center">
           <label class="col-sm-2 col-form-label" for="vehicle-expenses-attach">مرفقات</label>
@@ -209,6 +224,21 @@
   <script src="{{ asset('assets/vendor/libs/select2/select2.js') }}"></script>
   <script src="{{ asset('assets/vendor/libs/dropzone/dropzone.js') }}"></script>
   <script type="module">
+    // --------------------------------------------------------------------
+    // Show Vehicle Expenses Status Options
+    // --------------------------------------------------------------------
+    $(document).ready(function () {
+      $('#vehicle-expenses-status').on('change', function () {
+        const selectedValue = $(this).val();
+        // Hide all elements with the class 'toggle-element'
+        $('.toggle-element').hide();
+        // Show the selected element if it's not "none"
+        if (selectedValue !== 'none') {
+          $(`#${selectedValue}`).show();
+        }
+      });
+    });
+
     $(document).ready(function() {
       function calculateAmountIncludingTax() {
         var amount = parseFloat($('#vehicle-expenses-amount').val()) || 0;

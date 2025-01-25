@@ -349,10 +349,58 @@
               </div>
             </div><!-- card-body -->
           </div><!-- card -->
-          <button type="submit" class="btn btn-lg btn-primary px-5 w-100">حفظ</button>
+          <button type="submit" class="btn btn-lg btn-primary waves-effect waves-light w-100">حفظ</button>
+          <button type="button" class="btn btn-lg btn-warning waves-effect waves-light w-100 mt-3" data-bs-toggle="modal" data-bs-target="#contractDebtModal">مدونية علي العقد</button>
         </div><!--  -->
       </div><!-- col-12 -->
     </div><!-- row -->
+
+    <!-- Debt Contract Modal -->
+    <div class="modal fade" id="contractDebtModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header p-3">
+            <h5 class="modal-title" id="contractDebtModalLabel1">مديونية علي العقد</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div><!-- modal-header -->
+          <div class="modal-body p-3">
+            <div class="row align-items-center">
+              <label class="col-sm-4 col-form-label" for="car-number">مبلغ المديونية</label>
+              <div class="col-12 col-sm-8">
+                <div class="input-group">
+                  <input type="number" inputmode="numeric" id="oil-status" class="form-control">
+                  <span class="input-group-text">ريال</span>
+                </div><!-- input-group -->
+              </div><!-- col-12 -->
+            </div><!-- row -->
+            <hr class="my-3">
+            <div class="row align-items-center">
+              <label class="col-sm-4 col-form-label" for="car-number">تاريخ الإستحقاق</label>
+              <div class="col-12 col-sm-8">
+                <input
+                  type="text"
+                  class="form-control flatpickr-date"
+                  id="contract-pickup-date"
+                  placeholder="YYYY-MM-DD"
+                />
+              </div><!-- col-12 -->
+            </div><!-- row -->
+            <hr class="my-3">
+            <div class="row align-items-center">
+              <label class="col-sm-4 col-form-label" for="car-number">تفاصيل المديونية</label>
+              <div class="col-12 col-sm-8">
+                <input type="text" id="contract-pickup-location" class="form-control" />
+              </div><!-- col-12 -->
+            </div><!-- row -->
+          </div><!-- modal-body -->
+          <div class="modal-footer p-3 d-flex align-items-center justify-content-end gap-3">
+            <button type="button" class="btn text-secondary waves-effect m-0" data-bs-dismiss="modal">إلغاء</button>
+            <button type="button" class="btn btn-primary px-5 m-0">حفظ</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- modal -->
+    <!-- Debt Contract Modal -->
 
   </div><!-- contracts-create-page -->
 

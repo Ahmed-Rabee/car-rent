@@ -77,4 +77,9 @@ class Calculations extends Controller {
   public function originsCategories() {
     return view('calculations.origins.categories');
   }
+
+  /** Debts **/
+  public function debtsIndex() {
+    return view('calculations.debts.index');
+  }
 }

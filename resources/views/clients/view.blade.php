@@ -15,13 +15,12 @@
         <h4 class="m-0">تفاصيل عميل : احمد محمد محمود</h4>
       </div>
       <div class="d-flex align-content-center flex-wrap gap-2 flex-shrink-0">
-        <!-- Client Add Debt Modal -->
-        @include('clients.Modals.add-debt')
-        <!-- Client Add Debt Modal -->
         <a href="{{ url('/clients/{id}/edit') }}" class="btn btn-icon btn-label-info waves-effect"><span class="ti ti-pencil"></span></a>
         <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#clientDeleteModal" class="btn btn-icon btn-label-danger waves-effect"><span class="ti ti-trash"></span></a>
       </div>
     </div><!-- d-flex -->
+
+    <a href="{{ url('/clients') }}" class="btn btn-icon bg-white text-body waves-effect waves-light mb-3"><span class="ti ti-chevron-right"></span></a>
 
     <div class="alert alert-danger alert-dismissible d-flex align-items-baseline" role="alert">
       <span class="alert-icon alert-icon-lg text-danger me-2">
@@ -29,16 +28,12 @@
       </span>
       <div class="d-flex flex-column ps-1">
         <h5 class="alert-heading mb-2">
-          <span class="d-flex gap-1">يوجد مديونية علي العميل بقيمة <b>500</b> ريال</span>
+          <span class="d-flex gap-1">يوجد مديونية علي العميل بقيمة <b>500</b> ريال - علي العقد <a href="#" class="alert-link text-decoration-underline">#5656</a> </span>
         </h5>
-        <p class="mb-0">
-          Sugar plum apple pie sesame snaps croissant marshmallow apple pie liquorice. Cheesecake bear
-          claw tiramisu shortbread cupcake. Sugar plum candy canes jujubes liquorice tiramisu gummi
-          bears muffin dragée gingerbread.
-        </p>
+        <p class="mb-1">تكلفة نظافة المركبة وتكلفة اصلاح النور الامامي</p>
+        <small class="d-flex align-items-center justify-content-start gap-1">تاريخ الإستحقاق : <b>2024-12-26</b></small>
       </div><!-- d-flex -->
     </div><!-- alert -->
-
 
     <div class="row g-4 mb-3">
       <div class="col-xl-3 col-lg-4 col-md-4">
@@ -167,9 +162,22 @@
           المديونيات
         </button>
       </li>
+      <li class="nav-item">
+        <button
+          type="button"
+          class="nav-link"
+          role="tab"
+          data-bs-toggle="tab"
+          data-bs-target="#client-contracts"
+          aria-controls="client-contracts"
+          aria-selected="false"
+        >
+          العقود
+        </button>
+      </li>
     </ul>
 
-    <div class="tab-content p-3">
+    <div class="tab-content bg-transparent p-0 shadow-none">
 
       <div class="tab-pane fade show active" id="client-documents" role="tabpanel">
         <div class="table-responsive">
@@ -450,7 +458,92 @@
       </div><!-- tab-pane -->
 
       <div class="tab-pane fade" id="client-debts" role="tabpanel">
-        dfds
+        <div class="card">
+          <div class="table-responsive text-nowrap">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="fw-bold">مبلغ المديونية</th>
+                  <th class="fw-bold">التفاصيل</th>
+                  <th class="fw-bold">تاريخ الإستحقاق</th>
+                  <th class="fw-bold">الحالة</th>
+                  <th class="fw-bold">التاريخ</th>
+                </tr>
+              </thead>
+              <tbody class="table-border-bottom-0">
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center justify-content-start gap-1">
+                      2334 <small>ريال</small>
+                    </div><!-- d-flex -->
+                  </td>
+                  <td>
+                    مبلغ مديونية علي العقد
+                    <a href="#">#5656</a>
+                  </td>
+                  <td><span dir="ltr">-</span></td>
+                  <td><span class="badge bg-label-success">مدفوع</span></td>
+                  <td><span dir="ltr">12-12-2024 12:32 PM</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center justify-content-start gap-1">
+                      2334 <small>ريال</small>
+                    </div><!-- d-flex -->
+                  </td>
+                  <td>
+                    مبلغ مديونية علي العقد
+                    <a href="#">#5656</a>
+                  </td>
+                  <td><span dir="ltr">12-12-2024</span></td>
+                  <td><span class="badge bg-label-warning">مديونية</span></td>
+                  <td><span dir="ltr">12-12-2024 12:32 PM</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- table-responsive -->
+        </div><!-- card -->
+      </div><!-- tab-pane -->
+
+      <div class="tab-pane fade" id="client-contracts" role="tabpanel">
+        <div class="card">
+          <div class="table-responsive text-nowrap">
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th class="fw-bold">رقم العقد</th>
+                  <th class="fw-bold">رقم الحجز</th>
+                  <th class="fw-bold">رقم المركبة</th>
+                  <th class="fw-bold">مكان الاستلام</th>
+                  <th class="fw-bold">تاريخ الاستلام</th>
+                  <th class="fw-bold">مكان العودة</th>
+                  <th class="fw-bold">تاريخ العودة</th>
+                  <th class="fw-bold">حالة العقد</th>
+                  <th width="5%"></th>
+                </tr>
+              </thead>
+              <tbody class="table-border-bottom-0">
+                <tr>
+                  <td>
+                    <a href="{{ url('/contracts/{id}/view') }}" title="#">234</a>
+                  </td>
+                  <td>343433</td>
+                  <td>9408 - TB</td>
+                  <td>المطار</td>
+                  <td>
+                    <span dir="ltr">2024-11-08 12:00 PM</span>
+                  </td>
+                  <td>الفندق</td>
+                  <td>
+                    <span dir="ltr">2024-11-08 12:00 PM</span>
+                  </td>
+                  <td><span class="badge bg-label-secondary">منتهي</span></td>
+                  <td><a href="{{ url('/contracts/{id}/view') }}" class="btn btn-sm btn-icon btn-primary waves-effect waves-light"><span class="ti ti-eye"></span></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- table-responsive -->
+        </div><!-- card -->
       </div><!-- tab-pane -->
 
     </div><!-- tab-content -->

@@ -34,6 +34,7 @@
               <th class="fw-bold">مبلغ الضريبة</th>
               <th class="fw-bold">المبلغ شامل الضريبة</th>
               <th class="fw-bold">تاريخ الصرف</th>
+              <th class="fw-bold">الحالة</th>
               <th class="fw-bold">تاريخ الإضافة</th>
               <th width="5%"></th>
           </thead>
@@ -61,6 +62,7 @@
                 </div><!-- d-flex -->
               </td>
               <td>2024-10-13</td>
+              <td><span class="badge bg-label-success">مدفوع</span></td>
               <td>2024-10-13</td>
               <td>
                 <div class="dropdown">

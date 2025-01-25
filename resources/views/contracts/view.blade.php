@@ -3,6 +3,7 @@
 @push('styles')
   <link rel="stylesheet" href="{{ asset('assets/vendor/libs/sweetalert2/sweetalert2.css') }}" />
   <link rel="stylesheet" href="{{ asset('assets/vendor/libs/nouislider/nouislider.css') }}" />
+  <link rel="stylesheet" href="{{ asset('assets/vendor/libs/select2/select2.css') }}" />
 @endpush
 
 @section('content')
@@ -32,14 +33,13 @@
         <h5 class="alert-heading mb-2">
           <span class="d-flex gap-1">يوجد مديونية علي هذا العقد بقيمة <b>500</b> ريال</span>
         </h5>
-        <p class="mb-0">
-          تكلفة نظافة المركبة وتكلفة اصلاح النور الامامي
-        </p>
+        <p class="mb-1">تكلفة نظافة المركبة وتكلفة اصلاح النور الامامي</p>
+        <small class="d-flex align-items-center justify-content-start gap-1">تاريخ الإستحقاق : <b>2024-12-26</b></small>
       </div><!-- d-flex -->
     </div><!-- alert -->
 
     <div class="row g-3">
-      <div class="col-12 col-md-9">
+      <div class="col-12 col-md-9 order-2 order-md-1">
         <div class="row row-cols-1 row-cols-md-2 g-3">
           <div class="col">
             <div class="card">
@@ -163,7 +163,7 @@
           </div><!-- col-12 -->
         </div><!-- row -->
       </div><!-- col-12 -->
-      <div class="col-12 col-md-3">
+      <div class="col-12 col-md-3 order-1 order-md-2">
         <div class="reservation-cart-side position-sticky">
           <div class="card">
             <div class="card-body p-3">
@@ -196,10 +196,9 @@
               </div>
             </div><!-- card-body -->
           </div><!-- card -->
-          <a href="{{ url('/contracts/{id}/confirmation') }}" class="btn btn-success waves-effect waves-light w-100 mt-3">إنهاء العقد</a>
-          <button type="button" class="btn btn-warning waves-effect waves-light w-100 mt-3" data-bs-toggle="modal" data-bs-target="#contractDebtModal">مدونية علي العقد</button>
-          <button type="button" class="btn btn-info waves-effect waves-light w-100 mt-3" data-bs-toggle="modal" data-bs-target="#contractDebtRepaymentModal">سداد المديونية</button>
-          <button type="button" class="btn btn-danger waves-effect waves-light w-100 mt-3" data-bs-toggle="modal" data-bs-target="#contractCancelModal">إلغاء العقد</button>
+          <a href="{{ url('/contracts/{id}/confirmation') }}" class="btn btn-lg btn-success waves-effect waves-light w-100 mt-3">تقفيل العقد</a>
+          <button type="button" class="btn btn-lg btn-info waves-effect waves-light w-100 mt-3" data-bs-toggle="modal" data-bs-target="#contractDebtRepaymentModal">سداد المديونية</button>
+          <button type="button" class="btn btn-lg btn-danger waves-effect waves-light w-100 mt-3" data-bs-toggle="modal" data-bs-target="#contractCancelModal">إلغاء العقد</button>
         </div><!-- reservation-cart-side -->
       </div><!-- col-12 -->
     </div><!-- row -->
@@ -232,22 +231,41 @@
     </div><!-- modal -->
     <!-- Cancel Contract Modal -->
 
-    <!-- Debt Contract Modal -->
-    <div class="modal fade" id="contractDebtModal" tabindex="-1" aria-hidden="true">
+    <!-- Debt Repayment Contract Modal -->
+    <div class="modal fade" id="contractDebtRepaymentModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header p-3">
-            <h5 class="modal-title" id="contractDebtModalLabel1">مديونية علي العقد</h5>
+            <h5 class="modal-title" id="contractDebtRepaymentModalLabel1">سداد المدونية</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div><!-- modal-header -->
           <div class="modal-body p-3">
             <div class="row align-items-center">
               <label class="col-sm-4 col-form-label" for="car-number">مبلغ المديونية</label>
               <div class="col-12 col-sm-8">
+                <b class="d-flex align-items-center justify-content-start gap-1">12121 <small>ريال</small></b>
+              </div><!-- col-12 -->
+            </div><!-- row -->
+            <hr class="my-3">
+            <div class="row align-items-center">
+              <label class="col-sm-4 col-form-label" for="car-number">المبلغ المدفوع</label>
+              <div class="col-12 col-sm-8">
                 <div class="input-group">
                   <input type="number" inputmode="numeric" id="oil-status" class="form-control">
                   <span class="input-group-text">ريال</span>
                 </div><!-- input-group -->
+              </div><!-- col-12 -->
+            </div><!-- row -->
+            <hr class="my-3">
+            <div class="row align-items-center">
+              <label class="col-sm-4 col-form-label" for="car-number">طريقة الدفع</label>
+              <div class="col-12 col-sm-8">
+                <select id="contract-payment-method" class="select2 form-select" data-allow-clear="false" data-minimum-results-for-search="Infinity" data-placeholder="اختر"  data-dropdown-parent="#contractDebtRepaymentModal">
+                  <option></option>
+                  <option value="free">نقداً</option>
+                  <option value="payment2">POS</option>
+                  <option value="payment3">تحويل بنكي</option>
+                </select>
               </div><!-- col-12 -->
             </div><!-- row -->
             <hr class="my-3">
@@ -262,29 +280,6 @@
             <button type="button" class="btn text-secondary waves-effect m-0" data-bs-dismiss="modal">إلغاء</button>
             <button type="button" class="btn btn-primary px-5 m-0">حفظ</button>
           </div>
-        </div>
-      </div>
-    </div><!-- modal -->
-    <!-- Debt Contract Modal -->
-
-    <!-- Debt Repayment Contract Modal -->
-    <div class="modal fade" id="contractDebtRepaymentModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header p-3">
-            <h5 class="modal-title" id="contractDebtRepaymentModalLabel1">سداد المدونية</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div><!-- modal-header -->
-          <div class="modal-body p-3">
-            <div class="top-area d-flex align-items-center justify-content-center gap-4 flex-column">
-              <div class="swal2-icon swal2-info swal2-icon-show d-flex m-0" style="display: flex;"><div class="swal2-icon-content">i</div></div>
-              <h5 class="d-block text-center fw-medium m-0">هل أنت متأكد من سداد مدونية العقد ؟</h5>
-            </div><!-- top-area -->
-          </div><!-- modal-body -->
-          <div class="modal-footer p-3 d-flex align-items-center justify-content-end gap-3">
-            <button type="button" class="btn text-secondary waves-effect m-0" data-bs-dismiss="modal">إلغاء</button>
-            <button type="button" class="btn btn-primary px-5 m-0">نعم</button>
-          </div><!-- modal-footer -->
         </div><!-- modal-content -->
       </div><!-- modal-dialog -->
     </div><!-- modal -->
@@ -298,7 +293,14 @@
 
 @push('scripts')
   <script type="text/javascript" src="{{ asset('assets/vendor/libs/nouislider/nouislider.js') }}"></script>
+  <script src="{{ asset('assets/vendor/libs/select2/select2.js') }}"></script>
   <script type="text/javascript">
+
+    // --------------------------------------------------------------------
+    // Select2
+    // --------------------------------------------------------------------
+    $(".select2").select2();
+
     'use strict';
     (function () {
       const sliderPips = document.getElementById('slider-pips');

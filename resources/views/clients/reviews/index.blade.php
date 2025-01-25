@@ -113,14 +113,7 @@
                 <div class="Stars" style="--rating: 2;"></div>
               </td>
               <td>عميل محترم في التعامل من اول مره</td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/clients/reviews/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                  </div>
-                </div>
-              </td>
+              <td><a href="{{ url('/clients/reviews/{id}/view') }}" class="btn btn-sm btn-icon btn-primary waves-effect waves-light"><span class="ti ti-eye"></span></a></td>
             </tr>
             <tr>
               <td>
@@ -131,16 +124,7 @@
                 <div class="Stars" style="--rating: 2.5;"></div>
               </td>
               <td>عميل محترم في التعامل من اول مره</td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/clients/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/clients/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#clientDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
+              <td><a href="{{ url('/clients/reviews/{id}/view') }}" class="btn btn-sm btn-icon btn-primary waves-effect waves-light"><span class="ti ti-eye"></span></a></td>
             </tr>
             <tr>
               <td>
@@ -151,16 +135,7 @@
                 <div class="Stars" style="--rating: 5;"></div>
               </td>
               <td>عميل محترم في التعامل من اول مره</td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item waves-effect" href="{{ url('/clients/{id}/view') }}"><i class="ti ti-eye me-1"></i> عرض</a>
-                    <a class="dropdown-item waves-effect" href="{{ url('/clients/{id}/edit') }}"><i class="ti ti-pencil me-1"></i> تعديل</a>
-                    <a class="dropdown-item waves-effect" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#clientDeleteModal"><i class="ti ti-trash me-1"></i> حذف</a>
-                  </div>
-                </div>
-              </td>
+              <td><a href="{{ url('/clients/reviews/{id}/view') }}" class="btn btn-sm btn-icon btn-primary waves-effect waves-light"><span class="ti ti-eye"></span></a></td>
             </tr>
           </tbody>
         </table>
