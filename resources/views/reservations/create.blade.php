@@ -64,6 +64,58 @@
               </div><!-- row -->
               <hr class="my-3">
               <div class="row align-items-center">
+                <label class="col-sm-3 col-form-label required" for="employee-name">تاريخ الاستلام</label>
+                <div class="col-sm-9">
+                  <div class="row">
+                    <div class="col-12 col-md-7">
+                      <input
+                        type="text"
+                        class="form-control flatpickr-datetime"
+                        placeholder="YYYY-MM-DD HH:MM"
+                      />
+                    </div><!-- col-12 -->
+                  </div><!-- row -->
+                </div><!-- col-12 -->
+              </div><!-- row -->
+              <hr class="my-3">
+              <div class="row align-items-center">
+                <label class="col-sm-3 col-form-label required" for="employee-name">مكان الاستلام</label>
+                <div class="col-sm-9">
+                  <div class="row">
+                    <div class="col-12 col-md-7">
+                      <input type="text" class="form-control" />
+                    </div><!-- col-12 -->
+                  </div><!-- row -->
+                </div><!-- col-12 -->
+              </div><!-- row -->
+              <hr class="my-3">
+              <div class="row align-items-center">
+                <label class="col-sm-3 col-form-label required" for="employee-name">تاريخ العودة</label>
+                <div class="col-sm-9">
+                  <div class="row">
+                    <div class="col-12 col-md-7">
+                      <input
+                        type="text"
+                        class="form-control flatpickr-datetime"
+                        placeholder="YYYY-MM-DD HH:MM"
+                      />
+                    </div><!-- col-12 -->
+                  </div><!-- row -->
+                </div><!-- col-12 -->
+              </div><!-- row -->
+              <hr class="my-3">
+              <div class="row align-items-center">
+                <label class="col-sm-3 col-form-label required" for="employee-name">مكان العودة</label>
+                <div class="col-sm-9">
+                  <div class="row">
+                    <div class="col-12 col-md-7">
+                      <input type="text" class="form-control" />
+                    </div><!-- col-12 -->
+                  </div><!-- row -->
+                </div><!-- col-12 -->
+              </div><!-- row -->
+              <hr class="my-3">
+              <div class="row align-items-center">
                 <label class="col-sm-3 col-form-label required" for="employee-name">المركبة</label>
                 <div class="col-sm-9">
                   <div class="row">
@@ -108,58 +160,6 @@
                   <div class="row">
                     <div class="col-12 col-md-7">
                       <input type="number" class="form-control" />
-                    </div><!-- col-12 -->
-                  </div><!-- row -->
-                </div><!-- col-12 -->
-              </div><!-- row -->
-              <hr class="my-3">
-              <div class="row align-items-center">
-                <label class="col-sm-3 col-form-label required" for="employee-name">مكان الاستلام</label>
-                <div class="col-sm-9">
-                  <div class="row">
-                    <div class="col-12 col-md-7">
-                      <input type="text" class="form-control" />
-                    </div><!-- col-12 -->
-                  </div><!-- row -->
-                </div><!-- col-12 -->
-              </div><!-- row -->
-              <hr class="my-3">
-              <div class="row align-items-center">
-                <label class="col-sm-3 col-form-label required" for="employee-name">تاريخ الاستلام</label>
-                <div class="col-sm-9">
-                  <div class="row">
-                    <div class="col-12 col-md-7">
-                      <input
-                        type="text"
-                        class="form-control flatpickr-datetime"
-                        placeholder="YYYY-MM-DD HH:MM"
-                      />
-                    </div><!-- col-12 -->
-                  </div><!-- row -->
-                </div><!-- col-12 -->
-              </div><!-- row -->
-              <hr class="my-3">
-              <div class="row align-items-center">
-                <label class="col-sm-3 col-form-label required" for="employee-name">مكان العودة</label>
-                <div class="col-sm-9">
-                  <div class="row">
-                    <div class="col-12 col-md-7">
-                      <input type="text" class="form-control" />
-                    </div><!-- col-12 -->
-                  </div><!-- row -->
-                </div><!-- col-12 -->
-              </div><!-- row -->
-              <hr class="my-3">
-              <div class="row align-items-center">
-                <label class="col-sm-3 col-form-label required" for="employee-name">تاريخ العودة</label>
-                <div class="col-sm-9">
-                  <div class="row">
-                    <div class="col-12 col-md-7">
-                      <input
-                        type="text"
-                        class="form-control flatpickr-datetime"
-                        placeholder="YYYY-MM-DD HH:MM"
-                      />
                     </div><!-- col-12 -->
                   </div><!-- row -->
                 </div><!-- col-12 -->

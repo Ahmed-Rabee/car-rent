@@ -96,6 +96,20 @@
             </div><!-- row -->
             <hr class="my-3" />
             <div class="row align-items-center">
+              <label class="col-sm-4 col-form-label fw-medium" for="create-check-amount">رقم الشيك</label>
+              <div class="col-12 col-sm-8">
+                <input type="number" inputmode="numeric" class="form-control" id="create-check-amount">
+              </div><!-- col-12 -->
+            </div><!-- row -->
+            <hr class="my-3" />
+            <div class="row align-items-center">
+              <label class="col-sm-4 col-form-label fw-medium" for="create-check-amount">محرر الشيك</label>
+              <div class="col-12 col-sm-8">
+                <input type="text" class="form-control" id="create-check-amount">
+              </div><!-- col-12 -->
+            </div><!-- row -->
+            <hr class="my-3" />
+            <div class="row align-items-center">
               <label class="col-sm-4 col-form-label fw-medium" for="create-check-category">الجهة المستحقة</label>
               <div class="col-12 col-sm-8">
                 <select id="create-check-category" class="select2 form-select" data-allow-clear="false" data-placeholder="اختر" data-dropdown-parent="#checkCreateModal">
@@ -149,6 +163,20 @@
                   <input type="number" inputmode="numeric" class="form-control" id="edit-check-amount">
                   <span class="input-group-text">ريال</span>
                 </div><!-- input-group -->
+              </div><!-- col-12 -->
+            </div><!-- row -->
+            <hr class="my-3" />
+            <div class="row align-items-center">
+              <label class="col-sm-4 col-form-label fw-medium" for="create-check-amount">رقم الشيك</label>
+              <div class="col-12 col-sm-8">
+                <input type="number" inputmode="numeric" class="form-control" id="create-check-amount">
+              </div><!-- col-12 -->
+            </div><!-- row -->
+            <hr class="my-3" />
+            <div class="row align-items-center">
+              <label class="col-sm-4 col-form-label fw-medium" for="create-check-amount">محرر الشيك</label>
+              <div class="col-12 col-sm-8">
+                <input type="text" class="form-control" id="create-check-amount">
               </div><!-- col-12 -->
             </div><!-- row -->
             <hr class="my-3" />
