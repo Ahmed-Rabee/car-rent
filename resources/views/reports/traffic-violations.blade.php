@@ -4,7 +4,9 @@
 
   <div id="traffic-violations-index-page">
 
-    <h4 class="mb-4">إدارة المخالفات المرورية</h4>
+    <h4 class="mb-3">تقرير المخالفات المرورية</h4>
+
+    <a href="{{ url('/reports') }}" class="btn btn-icon bg-white text-body waves-effect waves-light mb-3"><span class="ti ti-chevron-right"></span></a>
 
     <div class="card">
       <div class="table-responsive text-nowrap">

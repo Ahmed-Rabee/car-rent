@@ -78,13 +78,6 @@
         <div>إدارة العقود</div>
       </a>
     </li>
-    <!-- Contracts -->
-    <li class="menu-item">
-      <a href="{{ url('/traffic-violations') }}" class="menu-link">
-        <i class="menu-icon tf-icons ti ti-traffic-lights"></i>
-        <div>إدارة المخالفات المرورية</div>
-      </a>
-    </li>
     <!-- Reports -->
     <li class="menu-item">
       <a href="{{ url('/reports') }}" class="menu-link">

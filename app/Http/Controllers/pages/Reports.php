@@ -11,4 +11,8 @@ class Reports extends Controller
   {
     return view('reports.index');
   }
+  public function trafficViolations()
+  {
+    return view('reports.traffic-violations');
+  }
 }

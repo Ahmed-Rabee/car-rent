@@ -62,6 +62,14 @@
           </div>
         </a>
       </div><!-- col -->
+      <div class="col">
+        <a href="{{ url('/reports/traffic-violations') }}" title="#" class="card">
+          <div class="card-body text-center">
+            <h2 class="d-block mb-2"><i class="ti ti-traffic-lights display-6"></i></h2>
+            <h5 class="d-block m-0">تقرير المخالفات المرورية</h5>
+          </div>
+        </a>
+      </div><!-- col -->
     </div><!-- row -->
 
   </div><!-- reports-index-page -->
