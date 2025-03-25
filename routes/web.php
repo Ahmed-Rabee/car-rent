@@ -14,8 +14,7 @@ use App\Http\Controllers\pages\Reports;
 use App\Http\Controllers\pages\Calculations;
 use App\Http\Controllers\pages\Checks;
 use App\Http\Controllers\pages\Reviews;
-
-
+use App\Http\Controllers\pages\TrafficViolations;
 
 
 // Main Page Route
@@ -112,6 +111,9 @@ Route::get('/calculations/origins/{id}/view', [calculations::class, 'originsView
 Route::get('/calculations/origins/categories', [calculations::class, 'originsCategories'])->name('calculations-origins-categories');
 
 Route::get('/calculations/debts', [calculations::class, 'debtsIndex'])->name('calculations-debts-index');
+
+// Traffic Violations Routes
+Route::get('/traffic-violations', [TrafficViolations::class, 'index'])->name('traffic-violations-index');
 
 // Checks Routes
 Route::get('/checks', [Checks::class, 'index'])->name('checsk-index');

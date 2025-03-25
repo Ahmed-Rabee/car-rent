@@ -4,21 +4,14 @@
   <link rel="stylesheet" href="{{ asset('assets/vendor/libs/sweetalert2/sweetalert2.css') }}" />
   <link rel="stylesheet" href="{{ asset('assets/vendor/libs/nouislider/nouislider.css') }}" />
   <link rel="stylesheet" href="{{ asset('assets/vendor/libs/select2/select2.css') }}" />
+  <link rel="stylesheet" href="{{ asset('assets/vendor/libs/flatpickr/flatpickr.css') }}" />
 @endpush
 
 @section('content')
 
   <div id="contracts-view-page">
 
-    <div class="d-flex flex-wrap gap-3 justify-content-between align-items-start align-items-md-center mb-4">
-      <div class="d-flex flex-column justify-content-center flex-grow-1">
-        <h4 class="m-0">تفاصيل عقد : 9408</h4>
-      </div>
-      <div class="d-flex align-content-center flex-wrap gap-2 flex-shrink-0">
-        <a href="{{ url('/contracts/print') }}" class="btn btn-primary">Print</a>
-        <a href="{{ url('/contracts/{id}/edit') }}" class="btn btn-icon btn-label-info waves-effect"><span class="ti ti-pencil"></span></a>
-      </div>
-    </div><!-- d-flex -->
+    <h4 class="mb-3">تفاصيل عقد : 9408</h4>
 
     <div class="alert alert-warning d-flex align-items-center" role="alert">
       <span class="alert-icon text-warning me-2"><i class="ti ti-contract ti-xs"></i></span>
@@ -26,9 +19,7 @@
     </div><!-- alert -->
 
     <div class="alert alert-danger alert-dismissible d-flex align-items-baseline" role="alert">
-      <span class="alert-icon alert-icon-lg text-danger me-2">
-        <i class="ti ti-ban ti-sm"></i>
-      </span>
+      <span class="alert-icon alert-icon-lg text-danger me-2"><i class="ti ti-ban ti-sm"></i></span>
       <div class="d-flex flex-column ps-1">
         <h5 class="alert-heading mb-2">
           <span class="d-flex gap-1">يوجد مديونية علي هذا العقد بقيمة <b>500</b> ريال</span>
@@ -37,6 +28,18 @@
         <small class="d-flex align-items-center justify-content-start gap-1">تاريخ الإستحقاق : <b>2024-12-26</b></small>
       </div><!-- d-flex -->
     </div><!-- alert -->
+
+    <div class="buttons-area d-flex align-items-center justify-content-start gap-3 flex-wrap mb-3">
+      <a href="{{ url('/contracts/{id}/edit') }}" class="btn btn-info waves-effect waves-light btn-sm">
+        <span class="ti-xs ti ti-pencil me-1"></span> تعديل العقد
+      </a>
+      <a href="{{ url('/contracts/print') }}" class="btn btn-dark waves-effect waves-light btn-sm">
+        <span class="ti-xs ti ti-printer me-1"></span> طباعة العقد
+      </a>
+      <button type="button" class="btn btn-primary waves-effect waves-light btn-sm" data-bs-toggle="modal" data-bs-target="#addTrafficViolationModal">
+        <span class="ti-xs ti ti-traffic-lights me-1"></span> إضافة مخالفة مرورية
+      </button>
+    </div><!-- card-buttons-area -->
 
     <div class="row g-3">
       <div class="col-12 col-md-9 order-2 order-md-1">
@@ -285,7 +288,37 @@
     </div><!-- modal -->
     <!-- Debt Repayment Contract Modal -->
 
-
+    <!-- Add Traffic Violation Modal -->
+    <div class="modal fade" id="addTrafficViolationModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header p-3">
+            <h5 class="modal-title" id="addTrafficViolationModalLabel1">إضافة مخالفة مرورية</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div><!-- modal-header -->
+          <div class="modal-body p-3">
+            <div class="row align-items-center">
+              <label class="col-sm-4 col-form-label" for="car-number">رقم المخالفة</label>
+              <div class="col-12 col-sm-8">
+                <input type="number" inputmode="numeric" id="oil-status" class="form-control">
+              </div><!-- col-12 -->
+            </div><!-- row -->
+            <hr class="my-3">
+            <div class="row align-items-center">
+              <label class="col-sm-4 col-form-label" for="car-number">تاريخ المخالفة</label>
+              <div class="col-12 col-sm-8">
+                <input type="text" class="form-control" placeholder="YYYY-MM-DD HH:MM" id="flatpickr-datetime" />
+              </div><!-- col-12 -->
+            </div><!-- row -->
+          </div><!-- modal-body -->
+          <div class="modal-footer p-3 d-flex align-items-center justify-content-end gap-3">
+            <button type="button" class="btn text-secondary waves-effect m-0" data-bs-dismiss="modal">إلغاء</button>
+            <button type="button" class="btn btn-primary px-5 m-0">حفظ</button>
+          </div>
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+    <!-- Add Traffic Violation Modal -->
 
   </div><!-- contracts-view-page -->
 
@@ -294,6 +327,7 @@
 @push('scripts')
   <script type="text/javascript" src="{{ asset('assets/vendor/libs/nouislider/nouislider.js') }}"></script>
   <script src="{{ asset('assets/vendor/libs/select2/select2.js') }}"></script>
+  <script src="{{ asset('assets/vendor/libs/flatpickr/flatpickr.js') }}"></script>
   <script type="text/javascript">
 
     // --------------------------------------------------------------------
@@ -345,15 +379,9 @@
           direction: isRtl ? 'rtl' : 'ltr'
         });
       }
-    // Initially disable the slider by adding the 'slider-disabled' class
-    sliderPips.classList.add('slider-disabled'); // Disable without button interaction
+    sliderPips.classList.add('slider-disabled');
     })();
 
-
-
-    /**
-     * Sliders
-     */
     'use strict';
     (function () {
       const sliderPips2 = document.getElementById('slider-pips2');
@@ -373,8 +401,6 @@
         12: 'F',
       };
 
-      // Scale and Pips
-      // --------------------------------------------------------------------
       if (sliderPips2) {
         noUiSlider.create(sliderPips2, {
           start: [0],
@@ -401,9 +427,6 @@
 
     })();
 
-
-
-
     $(document).ready(function () {
       function toggleCostElement() {
         if ($('#contract-car-cleanliness-status-no').is(':checked')) {
@@ -415,5 +438,16 @@
       $('input[name="contract-car-cleanliness-status"]').change(toggleCostElement);
       toggleCostElement();
     });
+
+    $(document).ready(function() {
+      const $flatpickrDateTime = $('#flatpickr-datetime');
+      if ($flatpickrDateTime.length) {
+        $flatpickrDateTime.flatpickr({
+          enableTime: true,
+          dateFormat: 'Y-m-d H:i'
+        });
+      }
+    });
+
   </script>
 @endpush
