@@ -83,7 +83,7 @@ Route::get('/contracts/print', [Contracts::class, 'print'])->name('contracts-pri
 
 // Reports Routes
 Route::get('/reports', [Reports::class, 'index'])->name('reports-index');
-Route::get('/reports/traffic-violations', [Reports::class, 'trafficViolations'])->name('reports-traffic-violations');
+// Route::get('/reports/traffic-violations', [Reports::class, 'trafficViolations'])->name('reports-traffic-violations');
 
 // Calculations Routes
 Route::get('/calculations', [Calculations::class, 'calculationsIndex'])->name('calculations-index');
@@ -114,5 +114,10 @@ Route::get('/calculations/origins/categories', [calculations::class, 'originsCat
 Route::get('/calculations/debts', [calculations::class, 'debtsIndex'])->name('calculations-debts-index');
 
 // Checks Routes
-Route::get('/checks', [Checks::class, 'index'])->name('checsk-index');
+Route::get('/checks', [Checks::class, 'index'])->name('checks-index');
 Route::get('/checks/categories', [Checks::class, 'categories'])->name('checks-categories');
+
+// Traffic Violations Routes
+Route::get('/traffic-violations', [TrafficViolations::class, 'index'])->name('traffic-violations-index');
+Route::get('/traffic-violations/{id}/view', [TrafficViolations::class, 'view'])->name('traffic-violations-view');
+Route::get('/traffic-violations/{id}/print', [TrafficViolations::class, 'print'])->name('traffic-violations-print');

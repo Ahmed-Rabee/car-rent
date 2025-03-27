@@ -26,28 +26,28 @@
     <li class="menu-item">
       <a href="{{ url('/branches') }}" class="menu-link">
         <i class="menu-icon tf-icons ti ti-building"></i>
-        <div>إدارة الفروع</div>
+        <div>الفروع</div>
       </a>
     </li>
     <!-- Employees -->
     <li class="menu-item">
       <a href="{{ url('/employees') }}" class="menu-link">
         <i class="menu-icon tf-icons ti ti-users"></i>
-        <div>إدارة الموظفين</div>
+        <div>الموظفين</div>
       </a>
     </li>
     <!-- Manage Permissions -->
     <li class="menu-item">
       <a href="{{ url('/permissions') }}" class="menu-link">
         <i class="menu-icon tf-icons ti ti-file-check"></i>
-        <div>إدارة الصلاحيات</div>
+        <div>الصلاحيات</div>
       </a>
     </li>
     <!-- Cars Management -->
     <li class="menu-item">
       <a href="{{ url('/cars') }}" class="menu-link">
         <i class="menu-icon tf-icons ti ti-car"></i>
-        <div>إدارة المركبات</div>
+        <div>المركبات</div>
       </a>
     </li>
     <!-- Technical Management -->
@@ -61,28 +61,42 @@
     <li class="menu-item">
       <a href="{{ url('/reservations') }}" class="menu-link">
         <i class="menu-icon tf-icons ti ti-calendar-month"></i>
-        <div>إدارة الحجوزات</div>
+        <div>الحجوزات</div>
       </a>
     </li>
     <!-- Clients -->
     <li class="menu-item">
       <a href="{{ url('/clients') }}" class="menu-link">
         <i class="menu-icon tf-icons ti ti-friends"></i>
-        <div>إدارة العملاء</div>
+        <div>العملاء</div>
       </a>
     </li>
     <!-- Contracts -->
     <li class="menu-item">
       <a href="{{ url('/contracts') }}" class="menu-link">
         <i class="menu-icon tf-icons ti ti-contract"></i>
-        <div>إدارة العقود</div>
+        <div>العقود</div>
       </a>
     </li>
     <!-- Reports -->
     <li class="menu-item">
       <a href="{{ url('/reports') }}" class="menu-link">
         <i class="menu-icon tf-icons ti ti-report-analytics"></i>
-        <div>إدارة التقارير</div>
+        <div>التقارير</div>
+      </a>
+    </li>
+    <!-- Checks -->
+    <li class="menu-item">
+      <a href="{{ url('/checks') }}" class="menu-link">
+        <i class="menu-icon tf-icons ti ti-receipt"></i>
+        <div>الشيكات</div>
+      </a>
+    </li>
+    <!-- Traffic Violations -->
+    <li class="menu-item">
+      <a href="{{ url('/traffic-violations') }}" class="menu-link">
+        <i class="menu-icon tf-icons ti ti-traffic-lights"></i>
+        <div>المخالفات المرورية</div>
       </a>
     </li>
     <!-- Calculations -->
@@ -90,13 +104,6 @@
       <a href="{{ url('/calculations') }}" class="menu-link">
         <i class="menu-icon tf-icons ti ti-calculator"></i>
         <div>الحسابات</div>
-      </a>
-    </li>
-    <!-- Calculations -->
-    <li class="menu-item">
-      <a href="{{ url('/checks') }}" class="menu-link">
-        <i class="menu-icon tf-icons ti ti-receipt"></i>
-        <div>إدارة الشيكات</div>
       </a>
     </li>
     <!-- General settings -->
