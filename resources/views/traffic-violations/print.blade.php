@@ -53,7 +53,6 @@
       <tr>
         <td>
           <div class="print-page-content px-2 pb-2">
-
             <div class="d-flex flex-column gap-2">
               <span>شرطة عمان السلطانية</span>
               <span>الفاضل / ظابط قسم السرعه</span>
@@ -62,7 +61,6 @@
             <div class="print-page-title d-flex align-items-center justify-content-center my-1">
               <div class="d-flex align-items-center justify-content-center fw-bold px-4 py-2">الموضوع / تحويل مخالفات</div>
             </div><!-- print-page-title -->
-
             <div class="print-card-descrption d-flex flex-column gap-1 mb-4">
               <p class="m-0 text-center">بالإشارة الى اعلاه نتقدم اليكم بطلب تحويل مخالفات من مكتبنا ومرفق لكم الاثباتات المطلوبة</p>
               <p class="m-0 text-center">وان المكتب سوف يتحمل كافه المسؤولية عن صحه البيانات في العقد والكشف</p>
