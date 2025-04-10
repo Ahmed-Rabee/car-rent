@@ -512,8 +512,22 @@ ul#select2-car-color-results li.select2-results__option .car-class-option .color
   border: 1px solid;
   font-size: 0.7375rem;
 }
-#traffic-violations-print-page .print-page-footer {
-  background-color: #fafafa;
+
+#settings-traffic-violations-print-card .print-page-header .col-left {
+  font-size: 0.6375rem;
+}
+#settings-traffic-violations-print-card .print-page-header .col-right img {
+  max-height: 50px;
+}
+#settings-traffic-violations-print-card .print-page-header .col-right div {
+  font-size: 0.7375rem;
+}
+#settings-traffic-violations-print-card .print-page-header-space, #settings-traffic-violations-print-card .print-page-content-space {
+  height: 1rem;
+}
+#settings-traffic-violations-print-card .print-page-title div {
+  border: 1px solid;
+  font-size: 0.7375rem;
 }
 
 .slider-size {

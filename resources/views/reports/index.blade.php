@@ -7,11 +7,7 @@
 
   <div id="reports-index-page">
 
-    <div class="d-flex flex-wrap gap-3 justify-content-between align-items-start align-items-md-center mb-4">
-      <div class="d-flex flex-column justify-content-center flex-grow-1">
-        <h4 class="m-0">إدارة التقارير</h4>
-      </div>
-    </div><!-- d-flex -->
+    <h4 class="mb-4">إدارة التقارير</h4>
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
       <div class="col">

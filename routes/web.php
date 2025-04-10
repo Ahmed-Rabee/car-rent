@@ -15,6 +15,7 @@ use App\Http\Controllers\pages\Calculations;
 use App\Http\Controllers\pages\Checks;
 use App\Http\Controllers\pages\Reviews;
 use App\Http\Controllers\pages\TrafficViolations;
+use App\Http\Controllers\pages\Settings;
 
 
 // Main Page Route
@@ -121,3 +122,8 @@ Route::get('/checks/categories', [Checks::class, 'categories'])->name('checks-ca
 Route::get('/traffic-violations', [TrafficViolations::class, 'index'])->name('traffic-violations-index');
 Route::get('/traffic-violations/{id}/view', [TrafficViolations::class, 'view'])->name('traffic-violations-view');
 Route::get('/traffic-violations/{id}/print', [TrafficViolations::class, 'print'])->name('traffic-violations-print');
+
+// Settings Routes
+Route::get('/settings', [Settings::class, 'index'])->name('settings-index');
+Route::get('/settings/print-settings', [Settings::class, 'PrintSettings'])->name('settings-print-settings');
+Route::get('/settings/print-settings/traffic-violations-print', [Settings::class, 'trafficViolationsPrint'])->name('settings-print-settings-traffic-violations-print');

@@ -564,10 +564,32 @@ ul#select2-car-color-results {
       font-size: 0.7375rem;
     } // div
   } // print-page-title
-  .print-page-footer {
-    background-color: #fafafa;
-  } // print-page-footer
 } // traffic-violations-print-page
+
+#settings-traffic-violations-print-card {
+  .print-page-header {
+    .col-left {
+      font-size: 0.6375rem;
+    } // col-left
+    .col-right {
+      img {
+        max-height: 50px;
+      } // img
+      div {
+        font-size: 0.7375rem;
+      } // div
+    } // col-center
+  } // print-page-header
+  .print-page-header-space, .print-page-content-space {
+    height: 1rem;
+  } // print-page-header-space & .print-page-content-space
+  .print-page-title {
+    div {
+      border: 1px solid;
+      font-size: 0.7375rem;
+    } // div
+  } // print-page-title
+} // settings-traffic-violations-print-card
 
 .slider-size {
   min-height: 44px;
