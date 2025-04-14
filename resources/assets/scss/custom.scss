@@ -543,12 +543,14 @@ ul#select2-car-color-results {
   border-color: #000000 !important;
   color: #000000;
   .print-page-header {
-    .col-left {
+    .col-left, .col-right {
       font-size: 0.6375rem;
-    } // col-left
-    .col-right {
+      width: 33.3333%;
+    } // col-left, col-right
+    .col-center {
+      width: 33.3333%;
       img {
-        max-height: 50px;
+        max-height: 74px;
       } // img
       div {
         font-size: 0.7375rem;
@@ -566,12 +568,12 @@ ul#select2-car-color-results {
   } // print-page-title
 } // traffic-violations-print-page
 
-#settings-traffic-violations-print-card {
+.settings-traffic-violations-print-card {
   .print-page-header {
-    .col-left {
+    .col-left, .col-right {
       font-size: 0.6375rem;
-    } // col-left
-    .col-right {
+    } // col-left, col-right
+    .col-center {
       img {
         max-height: 50px;
       } // img
@@ -580,9 +582,14 @@ ul#select2-car-color-results {
       } // div
     } // col-center
   } // print-page-header
-  .print-page-header-space, .print-page-content-space {
-    height: 1rem;
-  } // print-page-header-space & .print-page-content-space
+  #content-head-element {
+    p {
+      margin-block-end: .5rem;
+      &:last-of-type {
+        margin-block-end: 0;
+      } // last-of-type
+    } // p
+  } // content-head-element
   .print-page-title {
     div {
       border: 1px solid;
@@ -590,6 +597,14 @@ ul#select2-car-color-results {
     } // div
   } // print-page-title
 } // settings-traffic-violations-print-card
+
+.ql-editor {
+  padding: .5rem !important;
+  min-height: 7rem !important;
+  p {
+    margin-block-end: .5rem;
+  } // p
+} // ql-editor
 
 .slider-size {
   min-height: 44px;
