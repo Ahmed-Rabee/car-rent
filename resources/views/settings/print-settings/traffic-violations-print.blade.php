@@ -83,7 +83,7 @@
               <div class="d-flex align-items-center justify-content-start gap-1"><i class="ti ti-xs ti-map-pin"></i> صلاله - 211 - سلطنة عمان</div>
             </div><!-- col-right -->
             <div class="col-center d-flex align-items-center justify-content-center flex-grow-1 flex-column gap-2">
-              <img src="http://car-rent.test/assets/images/logo-default.png" alt="شركة الآمانة لتآجير السيارات" class="mw-100 h-auto w-auto">
+              <img src="{{ asset('assets/images/logo-default.png') }}" alt="شركة الآمانة لتآجير السيارات" class="mw-100 h-auto w-auto">
               <div class="d-block fw-bold m-0 text-center text-nowrap">شركة الآمانة لتآجير السيارات</div>
             </div><!-- col-center -->
             <div class="col-left d-flex flex-column gap-1 flex-shrink-0" dir="ltr">
@@ -136,16 +136,16 @@
                 <div class="images">
                   <div class="row row-cols-2 g-3">
                     <div class="col">
-                      <img src="https://i.postimg.cc/QNcctzqV/Whats-App-Image-2025-04-10-at-16-01-49.jpg" alt="" class="img-fluid">
+                      <img src="{{ asset('assets/images/drivingـlicenseـphoto.webp') }}" alt="" class="img-fluid">
                     </div><!-- col -->
                     <div class="col">
-                      <img src="https://i.postimg.cc/QNcctzqV/Whats-App-Image-2025-04-10-at-16-01-49.jpg" alt="" class="img-fluid">
+                      <img src="{{ asset('assets/images/drivingـlicenseـphoto.webp') }}" alt="" class="img-fluid">
                     </div><!-- col -->
                     <div class="col">
-                      <img src="https://i.postimg.cc/QNcctzqV/Whats-App-Image-2025-04-10-at-16-01-49.jpg" alt="" class="img-fluid">
+                      <img src="{{ asset('assets/images/drivingـlicenseـphoto.webp') }}" alt="" class="img-fluid">
                     </div><!-- col -->
                     <div class="col">
-                      <img src="https://i.postimg.cc/QNcctzqV/Whats-App-Image-2025-04-10-at-16-01-49.jpg" alt="" class="img-fluid">
+                      <img src="{{ asset('assets/images/drivingـlicenseـphoto.webp') }}" alt="" class="img-fluid">
                     </div><!-- col -->
                   </div><!-- row -->
                 </div><!-- images -->
