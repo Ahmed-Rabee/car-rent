@@ -566,6 +566,11 @@ ul#select2-car-color-results {
       font-size: 0.7375rem;
     } // div
   } // print-page-title
+  &.hide_header {
+    .print-page-header {
+      display: none !important;
+    } // print-page-header
+  } // hide_header
 } // traffic-violations-print-page
 
 .settings-traffic-violations-print-card {
@@ -664,7 +669,6 @@ a.card {
     } // ltr
   } // before
 } // stars
-
 
 ul#stars-rating {
   -moz-user-select:none;

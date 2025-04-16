@@ -16,12 +16,15 @@
       header, footer {
         display: none;
       }
+      #traffic-violations-print-page.hide_header {
+        padding-top: 150px;
+      }
     }
   </style>
 @endpush
 
 @section('content')
-  <div id="traffic-violations-print-page" class="min-vh-100 d-flex flex-column gap-4">
+  <div id="traffic-violations-print-page" class="min-vh-100 d-flex flex-column gap-3 hide_header">
     <div class="print-page-header p-2 d-flex justify-content-between">
       <div class="col-right d-flex flex-column gap-1 flex-shrink-0">
         <div class="d-block">شركة الرؤية المتكاملة للإستثمار ش.م.م</div>
@@ -42,7 +45,7 @@
         <div class="d-flex align-items-center justify-content-start gap-1"><i class="ti ti-xs ti-map-pin"></i> Salalah - 211 - Sultanate of Oman</div>
       </div><!-- col-left -->
     </div><!-- print-page-header -->
-    <div class="print-page-content d-flex flex-column gap-4 px-2 pb-2">
+    <div class="print-page-content d-flex flex-column gap-3 p-2">
       <div class="d-flex flex-column gap-2">
         <span>شرطة عمان السلطانية</span>
         <span>الفاضل / ظابط قسم السرعه</span>
@@ -96,16 +99,16 @@
           <div class="images">
             <div class="row row-cols-2 g-3">
               <div class="col">
-                <img src="https://i.postimg.cc/QNcctzqV/Whats-App-Image-2025-04-10-at-16-01-49.jpg" alt="" class="img-fluid">
+                <img src="{{ asset('assets/images/drivingـlicenseـphoto.webp') }}" alt="" class="img-fluid">
               </div><!-- col -->
               <div class="col">
-                <img src="https://i.postimg.cc/QNcctzqV/Whats-App-Image-2025-04-10-at-16-01-49.jpg" alt="" class="img-fluid">
+                <img src="{{ asset('assets/images/drivingـlicenseـphoto.webp') }}" alt="" class="img-fluid">
               </div><!-- col -->
               <div class="col">
-                <img src="https://i.postimg.cc/QNcctzqV/Whats-App-Image-2025-04-10-at-16-01-49.jpg" alt="" class="img-fluid">
+                <img src="{{ asset('assets/images/drivingـlicenseـphoto.webp') }}" alt="" class="img-fluid">
               </div><!-- col -->
               <div class="col">
-                <img src="https://i.postimg.cc/QNcctzqV/Whats-App-Image-2025-04-10-at-16-01-49.jpg" alt="" class="img-fluid">
+                <img src="{{ asset('assets/images/drivingـlicenseـphoto.webp') }}" alt="" class="img-fluid">
               </div><!-- col -->
             </div><!-- row -->
           </div><!-- images -->

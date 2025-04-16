@@ -2,9 +2,9 @@
   <div class="app-brand demo">
     <a href="index.html" class="app-brand-link">
       <span class="app-brand-logo w-auto demo">
-        <img src="{{ asset('assets/images/favicons/apple-icon-57x57.png') }}" alt="" class="mh-100">
+        <img src="{{ asset('assets/images/logo-default.png') }}" alt="" class="mh-100">
       </span>
-      <span class="app-brand-text demo menu-text fw-medium">إيجار سيارات</span>
+      <span class="app-brand-text  menu-text fw-medium">اسم الشركة هنا</span>
     </a>
     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
       <i class="ti menu-toggle-icon d-none d-xl-block ti-sm align-middle"></i>

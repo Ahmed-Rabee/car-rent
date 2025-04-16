@@ -125,5 +125,6 @@ Route::get('/traffic-violations/{id}/print', [TrafficViolations::class, 'print']
 
 // Settings Routes
 Route::get('/settings', [Settings::class, 'index'])->name('settings-index');
+Route::get('/settings/general-settings', [Settings::class, 'GeneralSettings'])->name('settings-general-settings');
 Route::get('/settings/print-settings', [Settings::class, 'PrintSettings'])->name('settings-print-settings');
 Route::get('/settings/print-settings/traffic-violations-print', [Settings::class, 'trafficViolationsPrint'])->name('settings-print-settings-traffic-violations-print');

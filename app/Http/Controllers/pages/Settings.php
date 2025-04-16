@@ -11,6 +11,10 @@ class Settings extends Controller
   {
     return view('settings.index');
   }
+  public function GeneralSettings()
+  {
+    return view('settings.general-settings');
+  }
   public function PrintSettings()
   {
     return view('settings.print-settings.index');
