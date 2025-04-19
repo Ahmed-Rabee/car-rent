@@ -74,7 +74,7 @@
       </div><!-- col -->
       <div class="col-12 col-md-6">
         <div class="settings-traffic-violations-print-card card">
-          <div id="page_header_element" class="print-page-header p-2 d-none justify-content-between mb-2">
+          <div id="page_header_element" class="print-page-header p-2 d-none justify-content-between mb-4">
             <div class="col-right d-flex flex-column gap-1 flex-shrink-0">
               <div class="d-block">شركة الرؤية المتكاملة للإستثمار ش.م.م</div>
               <div class="d-block">س.ت : 335346</div>
@@ -130,27 +130,6 @@
             </div><!-- table-responsive -->
 
             <div class="print-card-thanks text-center fw-bold">ولكم جزيل الشكر ؛؛؛؛؛</div>
-
-            <div class="row justify-content-center">
-              <div class="col-10">
-                <div class="images">
-                  <div class="row row-cols-2 g-3">
-                    <div class="col">
-                      <img src="{{ asset('assets/images/drivingـlicenseـphoto.webp') }}" alt="" class="img-fluid">
-                    </div><!-- col -->
-                    <div class="col">
-                      <img src="{{ asset('assets/images/drivingـlicenseـphoto.webp') }}" alt="" class="img-fluid">
-                    </div><!-- col -->
-                    <div class="col">
-                      <img src="{{ asset('assets/images/drivingـlicenseـphoto.webp') }}" alt="" class="img-fluid">
-                    </div><!-- col -->
-                    <div class="col">
-                      <img src="{{ asset('assets/images/drivingـlicenseـphoto.webp') }}" alt="" class="img-fluid">
-                    </div><!-- col -->
-                  </div><!-- row -->
-                </div><!-- images -->
-              </div><!-- col -->
-            </div><!-- row -->
 
           </div><!-- print-page-content -->
         </div><!-- settings-traffic-violations-print-card -->
